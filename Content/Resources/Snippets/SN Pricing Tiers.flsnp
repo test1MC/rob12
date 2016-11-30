@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5834" MadCap:lastWidth="1479">
+    <head>
+        <link href="../TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>Use pricing tiers to create a set of tiered percentage <MadCap:glossaryTerm glossTerm="NewGlossary.Term37">markup</MadCap:glossaryTerm> levels. These levels can be applied to catalogue items, catalogue groups and subgroups, customers, contracts, and or jobs.</p>
+        <p>If you have moved from Service to Enterprise, any previous markups that were created (for items, customers and jobs) have been migrated with the upgrade to ensure that previously set defaults are maintained. This means that the tiered pricing system will not affect existing items, customers or jobs.</p>
+        <p>Pricing tiers set at certain levels override pricing tiers set at other levels. For example, the pricing tier set for a job overrides the pricing tier set as a default in <strong>System Setup</strong>. The figure below shows the different levels that pricing tiers can be set and their ability to override defaults.</p>
+        <p>
+            <img src="../Images/Screenshots/System/Tiered pricing - diagram.jpg" alt="A diagram displaying the hierarchy of pricing tier defaults: System Setup &gt; Customer &gt; Contract &gt; Job &gt; Pre-Build &gt; Item." class="border" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create pricing tiers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../Images/Screenshots/System/pricingtier-create.png" alt="A screenshot of the Create Pricing Tier page." class="border" />
+                </p>
+                <p>To create a pricing tier:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; System Setup &gt; Material &gt; Pricing Tiers</strong>.</li>
+                    <li>Click <strong>Create Pricing Tier</strong>.</li>
+                    <li><strong>Name</strong> the pricing tier.</li>
+                    <li>Select <strong>Enable Scaled Pricing</strong> to enable scaled pricing if desired.</li>
+                    <li>Select whether the markup is based on the <strong>Trade Price</strong> or <strong>Cost Price</strong>.</li>
+                    <li>Enter the <strong>Default Markup</strong>.</li>
+                    <li>Select <strong>Default Pricing Tier</strong> to make this pricing tier the default for customers and items created in the future. If this option is selected, you may also select<strong> Update Customers Default Pricing Tier</strong>.</li>
+                    <li>Click <strong>Create</strong>.</li>
+                </ol>
+                <h3>Scaled Pricing</h3>
+                <p>When creating a pricing tier, enable scaled pricing to allow the markup to change based on how expensive the item is. This means that items over a certain price will have a different markup percentage than less expensive items.</p>
+                <p>
+                    <img src="../Images/Screenshots/System/scaled pricing.png" alt="A screenshot of Scaled Pricing in a pricing tier." class="border" />
+                </p>
+                <p>To enable scaled pricing:</p>
+                <ol>
+                    <li>Create a pricing tier as normal.</li>
+                    <li>Select <strong>Enable Scaled Pricing</strong>.</li>
+                    <li>Click <strong>Add Scaled Pricing</strong> to add fields as desired.</li>
+                    <li>For each level, enter a minimum price and a markup percentage. The markup percentage will apply to items from the minimum price and above, up to the next level.</li>
+                    <li>Click <strong>Create</strong>.</li>
+                    <li>In the pricing tiers table, scaled pricing tiers are indicated by a green tick under <strong>Scaled Pricing</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3>Add pricing tier levels</h3>
+        <p>You can add pricing tier levels to customers, customer contracts, catalogue items, catalogue groups and subgroups, and jobs. See the diagram above to ensure that pricing tiers are set at the correct levels to override other pricing tiers.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Add pricing tiers to a customer:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../Images/Screenshots/System/apply pricing tiers - customer.png" alt="A screenshot of the Pricing Tier drop-down in a customer." class="border" />
+                </p>
+                <ol>
+                    <li>Go to <strong>People &gt; Customers</strong>.</li>
+                    <li>Click the desired customer.</li>
+                    <li>Click the <strong>Rates</strong> tab.</li>
+                    <li>Click the<strong> Materials</strong> sub-tab.</li>
+                    <li>Select from the <strong>Pricing Tier</strong> drop-down list.</li>
+                    <li>Select <strong>Use Pricing Tier Default</strong> or enter the markup manually.</li>
+                    <li>Click <strong>Save</strong> or <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Add pricing tiers to a customer contract:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../Images/Screenshots/System/apply pricing tiers - contract.png" alt="A screenshot of the Pricing Tier drop-down in a customer contract." class="border" />
+                </p>
+                <ol>
+                    <li>Go to <strong>People &gt; Customers</strong>.</li>
+                    <li>Click the desired customer.</li>
+                    <li>Click the <strong>Rates</strong> tab.</li>
+                    <li>Click the <strong>Contracts</strong> sub-tab.</li>
+                    <li>Click <strong>Create Contract</strong> or click an existing contract.</li>
+                    <li>Click the <strong>Materials</strong> tab.</li>
+                    <li>Select from the<strong> Pricing Tier</strong> drop-down list.</li>
+                    <li>Select <strong>Use Default</strong> or manually enter the markup.</li>
+                    <li>Click <strong>Save Contract</strong>.</li>
+                    <li>Click <strong>Save</strong> or <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Apply pricing tiers to jobs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you create a new job, the pricing tier in the customer's card file will be automatically applied to the job. You can override this by selecting a different pricing tier on the job.</p>
+                <p>
+                    <img src="../Images/Screenshots/System/pricingtier-job.png" alt="A screenshot of the Pricing Tier drop-down in a job." class="border" />
+                </p>
+                <p>To adjust the pricing tier on a job:</p>
+                <ol>
+                    <li>Create a new job.</li>
+                    <li>Click the <strong>Optional </strong>tab.</li>
+                    <li>Under <strong>Pricing Tier</strong>, select the desired pricing tier. This will clear the <strong>Leave </strong>as default rate check box.</li>
+                    <li>If you want to apply a markup that is different to the pricing tier, clear the <strong>Use Default</strong> check box and manually enter the markup.</li>
+                    <li>Continue creating the job as normal.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Apply pricing tiers to a catalogue group or subgroup:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you apply a pricing tier to a group or subgroup, it will apply as the zero sell quantity level for all items within the group or subgroup.</p>
+                <p>
+                    <img src="../Images/Screenshots/System/apply pricing tiers - catalogue group.png" alt="A screenshot of the Set Group Markup pop-up window." class="border" />
+                </p>
+                <ol>
+                    <li>
+                        <p>Hover over <strong>Materials</strong>, then click <strong>Catalogue</strong>.</p>
+                    </li>
+                    <li>
+                        <p>Locate the desired group / subgroup manually or using the <strong>Advanced </strong>search options.</p>
+                    </li>
+                    <li>
+                        <p>Click <strong>Options &gt; Set Group Markup </strong>/ <strong>Set Subgroup Markup </strong>on the desired group / subgroup.</p>
+                    </li>
+                    <li>
+                        <p>Select the <strong>Pricing Tier</strong> you wish to apply.</p>
+                    </li>
+                    <li>
+                        <p>Enter the desired <strong>Markup</strong>.</p>
+                        <ul>
+                            <li>
+                                <p>​​Alternatively, select <strong>Use Default</strong> to apply the default markup as set at the group, pre-build, job / quote, customer contract, customer or system level.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Adjust pricing tiers for catalogue items</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To adjust pricing tiers at the individual catalogue item level, go to <strong>Materials &gt; Catalogue</strong>, click the applicable group / subgroup, then click the desired item and click the <strong>Pricing </strong>tab.</p>
+                <p>Pricing tiers set at the item level override pricing tiers set at any other level, including in <strong>System &gt; Setup &gt; Materials &gt; Pricing Tiers</strong>, customer card files, customer contracts, jobs, quotes, pre-builds and catalogue groups, and catalogue subgroups.</p>
+                <p>You can also add pricing tier levels based on the sell <strong>Quantity </strong>of an item. For example, an item can have a markup of 25 percent for a sell quantity of zero and above, a markup of 22.5 percent for a sell quantity of five and above, and a markup of 20 percent for a sell quantity of ten and above. Pricing tiers as created in <strong>System Setup </strong>are restricted by default to a quantity of <strong>0 and above</strong>.</p>
+                <p>
+                    <img src="../Images/Screenshots/System/pricingtier-item.png" alt="A screenshot of pricing tiers in a catalogue item." class="border" />
+                </p>
+                <p>You can then select the applicable <strong>Setting </strong>for adjusting the pricing tier / pricing tier level:</p>
+                <table style="width: 100%; mc-table-style: url('../TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Use Default Markup</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select to apply the default markup as set at the subgroup, group, pre-build, job / quote, customer contract, customer or system level. The <strong>Markup </strong>and <strong>Sell Price</strong> will then be greyed out and restricted.</p>
+                                <p>This option is not available for pricing tier levels based on sell <strong>Quantity</strong>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Fixed Markup</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select to adjust the <strong>Markup </strong>percentage The <strong>Sell Price </strong>will then automatically reflect your changes.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Fixed Sell Price</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Select to adjust the <strong>Sell Price</strong>. The <strong>Markup </strong>will then automatically reflect your changes.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>To remove a pricing tier level, click the <strong>red delete</strong> icon.</p>
+                <p class="Infotip">Pricing tiers on items will affect pricing of any standard price pre-builds those items are a part of.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

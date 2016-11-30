@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="7378" MadCap:lastWidth="1743">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Scheduling Tools</h1>
+        <h2>Overview</h2>
+        <p MadCap:conditions="Default.Phase 1">Use scheduling tools such as available hours, cost centres, zones, and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> teams, preferred technicians, and travel distance to schedule your resources quickly and efficiently. Resources in simPRO include employees, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors, plant items, and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" />​ teams.</p>
+        <p MadCap:conditions="Default.Enterprise">Use scheduling tools such as available hours, cost centres, zones, and  teams, preferred technicians, and travel distance to schedule your resources quickly and efficiently. Resources in simPRO include employees,  contractors, plant items, and ​teams.</p>
+        <p MadCap:conditions="Default.Service">Use scheduling tools such as available hours, cost centres, zones, preferred technicians, and travel distance to schedule your resources quickly and efficiently. Resources in simPRO include employees and plant items.</p>
+        <p>You can also display all resources in the schedule<strong> Day View </strong>as well as override zones when scheduling jobs and quotes.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Manage scheduling for resources</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Set up scheduling availability</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Schedules/scheduling tools - availability.png" class="border" alt="A screenshot of the Schedule tab in an employee card." />
+                        </p>
+                        <p>Set available hours for resources to assist in scheduling accuracy and visibility. You can set available hours for individual days, for the weekend, or for all weekdays.</p>
+                        <p>This is necessary when scheduling whole days at a time for jobs in <strong>Schedules &gt; Project View</strong>.</p>
+                        <p>To set up scheduling availability:</p>
+                        <ol>
+                            <li>Access the desired resource.</li>
+                            <li>Click the <strong>Schedule</strong> tab.</li>
+                            <li>If you are setting availability for a plant item, ensure <strong>Enable Scheduling</strong> is selected in the <strong>Details </strong>tab.</li>
+                            <li>Under <strong>Shift Start</strong>, select the <strong>Day </strong>or days you wish to schedule for, then select a starting and ending <strong>Time</strong>.</li>
+                            <li>Click <strong>Add</strong>.</li>
+                            <li>Repeat as necessary until complete.</li>
+                            <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>To remove available hours for a specific day, click the <strong>red delete</strong> icon for the desired day, or alternatively, click <strong>Clear </strong>next to <strong>Availability </strong>to remove all available hours.</p>
+                        <p>To edit available hours for a specific day, select the desired <strong>Shift Start</strong> / <strong>End Day </strong>and <strong>Time</strong>, then click <strong>Add</strong>, and the existing shift will be adjusted.</p>
+                        <p class="Infotip">You can schedule resources outside of their available hours in any schedule except in the <strong>Job Setup</strong> page when you create a job.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Assign cost centres, zones and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> teams</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Assign cost centres and zones to resources so that they can only be scheduled to quotes and jobs with the same cost centres and zones assigned, unless you have unrestricted zones enabled in your security group permissions.</p>
+                        <p>You can also assign resources to <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> teams so that they are scheduled as part of a unit. You can only schedule resources to a job or quote if the other resources in the team are also available.</p>
+                        <p>This is useful for avoiding scheduling conflicts if you have a group of technicians and / or plant items that are commonly scheduled to the same jobs and quotes.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Schedules/scheduling tools - cost centres, zones and teams.png" alt="A screenshot of assigned cost centres, zones and teams in an employee card." class="border" />
+                        </p>
+                        <p>To assign cost centres, zones, and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> teams:</p>
+                        <ol>
+                            <li>Access the desired resource.</li>
+                            <li>Click the <strong>Schedule </strong>tab.</li>
+                            <li>Click the <strong>Available Cost Centres</strong> / <strong>Available Zones</strong> / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> <strong>Available Teams</strong> you wish to assign.</li>
+                            <li>Alternatively, click <strong>Add All</strong>.</li>
+                            <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Alternatively, assign resources to teams in <strong>System &gt; Setup &gt; System Setup &gt; Teams</strong>.</p>
+                        <p>Click <strong>Assigned Cost Centres</strong> / <strong>Zones </strong>/ <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> <strong>Teams </strong>to remove them from a resource, or alternatively, click <strong>Remove All</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Service">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Assign cost centres and zones</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Assign cost centres and zones to resources so that they can only be scheduled to quotes and jobs with the same cost centres and zones assigned, unless you have unrestricted zones enabled in your security group permissions.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Schedules/scheduling tools - cost centres, zones and teams.png" alt="A screenshot of assigned cost centres, zones and teams in an employee card." class="border" />
+                        </p>
+                        <p>To assign cost centres and zones:</p>
+                        <ol>
+                            <li>Access the desired resource.</li>
+                            <li>Click the <strong>Schedule </strong>tab.</li>
+                            <li>Click the <strong>Available Cost Centres</strong> / <strong>Available Zones</strong> you wish to assign.</li>
+                            <li>Alternatively, click <strong>Add All</strong>.</li>
+                            <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>Click <strong>Assigned Cost Centres</strong> / <strong>Zones </strong>to remove them from a resource, or alternatively, click <strong>Remove All</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Assign cost centres, zones and teams</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Assign cost centres and zones to resources so that they can only be scheduled to quotes and jobs with the same cost centres and zones assigned, unless you have unrestricted zones enabled in your security group permissions.</p>
+                        <p>You can also assign resources to teams so that they are scheduled as part of a unit. You can only schedule resources to a job or quote if the other resources in the team are also available.</p>
+                        <p>This is useful for avoiding scheduling conflicts if you have a group of technicians and / or plant items that are commonly scheduled to the same jobs and quotes.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Schedules/scheduling tools - cost centres, zones and teams.png" alt="A screenshot of assigned cost centres, zones and teams in an employee card." class="border" />
+                        </p>
+                        <p>To assign cost centres, zones, and  teams:</p>
+                        <ol>
+                            <li>Access the desired resource.</li>
+                            <li>Click the <strong>Schedule </strong>tab.</li>
+                            <li>Click the <strong>Available Cost Centres</strong> / <strong>Available Zones</strong> / <strong>Available Teams</strong> you wish to assign.</li>
+                            <li>Alternatively, click <strong>Add All</strong>.</li>
+                            <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                        </ol>
+                        <p> Alternatively, assign resources to teams in <strong>System &gt; Setup &gt; System Setup &gt; Teams</strong>.</p>
+                        <p>Click <strong>Assigned Cost Centres</strong> / <strong>Zones </strong>/ <strong>Teams </strong>to remove them from a resource, or alternatively, click <strong>Remove All</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Display all resources in Day View</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When scheduling in <strong>Schedules &gt; Day View</strong>, simPRO only displays resources that have been scheduled and / or created thirty days before the current day, or scheduled in the thirty days after.</p>
+                        <p MadCap:conditions="Default.Phase 1">Select <strong>Show All </strong>to display all resources, both available and unavailable as specified by the available hours, cost centres, zones and / or <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> teams assigned to them.</p>
+                        <p MadCap:conditions="Default.Enterprise">Select <strong>Show All </strong>to display all resources, both available and unavailable as specified by the available hours, cost centres, zones and / or  teams assigned to them.</p>
+                        <p MadCap:conditions="Default.Service">Select <strong>Show All </strong>to display all resources, both available and unavailable as specified by the available hours, cost centres and zones  assigned to them.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Override zones when scheduling</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you have the necessary security group permissions, you can schedule resources assigned to a different zone from the job / quote site. This is useful if all resources assigned to the necessary zone are unavailable and you need to prevent unnecessary delay for the customer.</p>
+                        <p>To enable setting unrestricted zones, go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups</strong>, access the desired security group, then go to <strong>Permissions &gt; Schedule</strong>, select <strong>Unrestricted Zones</strong>, and click <strong>Finish</strong>.</p>
+                        <p>You can then override zones in both the quote or job and the <strong>Day View</strong> or <strong>Week View</strong>. To override zones in a quote / job, go to the <strong>Schedule </strong>tab, then search and select the new <strong>Zone </strong>you wish to schedule for.</p>
+                        <p>To override zones in the <strong>Day View</strong> / <strong>Week View</strong>:</p>
+                        <ol>
+                            <li>Go to <strong>Schedules &gt; Day View</strong> / <strong>Week View</strong>.</li>
+                            <li>Under <strong>Schedule</strong>, select <strong>Job </strong>/ <strong>Quote</strong>, then search for the desired job / quote.</li>
+                            <li>Click <strong>Filter</strong>.</li>
+                            <li>Search and select the desired <strong>Zone </strong>you wish to schedule for.</li>
+                        </ol>
+                        <p>You can then schedule resources to the job / quote as normal.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Schedules/Scheduling tools - override zones.png" alt="A screenshot of the Zone drop-down in the schedule." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Manage scheduling within a <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> lead, quote or job</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Schedule a salesperson in a lead</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If a salesperson needs to follow up on a lead, you can schedule them in simPRO and then send a calendar appointment to both the salesperson and the customer.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Schedule a salesperson in a lead</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If a salesperson needs to follow up on a lead, you can schedule them in simPRO and then send a calendar appointment to both the salesperson and the customer.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Schedule preferred technicians</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Select preferred technicians in the <strong>Preferred Technician </strong>tab of the customer or site card file to quickly schedule them to a job or quote. The preferred technicians set in the customer card file act as a template for sites created against the customer, which means that when you create a site, it will already have the preferred technicians of the customer.</p>
+                        <p>When viewing the schedule in <strong>Day View</strong>, and the <strong>Schedule </strong>tab in jobs and quotes, the preferred technician(s) will be highlighted yellow. You can then hover over a technician’s name to see their preference ranking for the job or quote.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Schedules/scheduling tools - preferred technician.png" alt="A screenshot of preferred technicians highlighted under Available Resources." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Schedule technicians according to travel distance</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When scheduling a job or quote, you can calculate the travel distance between the job / quote site and the nearest available technician to minimise travel time. Travel distance is calculated based on the current job location of the technician or the home address entered in their card file.</p>
+                        <p>You can calculate travel distance either within the created quote or job, or in the <strong>Job Setup</strong> page when you create and schedule a service job.</p>
+                        <p>To schedule according to travel distance within the created quote or job, access the desired quote or job, then go to <strong>Schedule &gt; Help me decide &gt; Technician(s) to Schedule &gt; Travel Distance</strong>, then click <strong>Calculate</strong>.</p>
+                        <p>The available technicians will then reorder according to the shortest travel distance, with the closest technicians highlighted in green.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Schedules/Scheduling tools - Travel distance.png" alt="A screenshot of the Travel Distance column in the scheduling section of Job Setup." class="border" />
+                        </p>
+                        <p class="Infotip" MadCap:conditions="Default.Phase 1">You need to enter addresses in your employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor card files to calculate travel distance.</p>
+                        <p class="Infotip" MadCap:conditions="Default.Enterprise">You need to enter addresses in your employee /  contractor card files to calculate travel distance.</p>
+                        <p class="Infotip" MadCap:conditions="Default.Service">You need to enter addresses in your employee card files to calculate travel distance.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

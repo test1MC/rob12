@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3966" MadCap:lastWidth="1514">
+    <head>
+    </head>
+    <body>
+        <h1>Labour Rates</h1>
+        <h2>Overview</h2>
+        <p>Labour rates are used to estimate the charges of labour for quotes and jobs. You can create different labour rates for different levels of experience, such as senior technicians and apprentices.</p>
+        <p>Then when you add labour to a quote, service job, or project job, you can view the <strong>Actual </strong>and <strong>Estimate Resources Cost</strong> in <strong>Details &gt; Summary</strong>.</p>
+        <p>If you run your business on nett profit, you will need to calculate your overhead, cost rate and markup / sell rate before creating a labour rate. Please consult your financial advisor when calculating these values.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set the default overhead</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="Default.Phase 1">The default overhead represents the corporate overhead for all estimates, and may cover expenses including, but not limited to, rent, accounting fees, marketing, vehicles, internal staff and management wages, and other costs. This should be the same figure as the overhead in the <strong>Rates </strong>tab in employee and, if applicable, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor card files.</p>
+                <p MadCap:conditions="Default.Enterprise">The default overhead represents the corporate overhead for all estimates, and may cover expenses including, but not limited to, rent, accounting fees, marketing, vehicles, internal staff and management wages, and other costs. This should be the same figure as the overhead in the <strong>Rates </strong>tab in employee and, if applicable, contractor card files.</p>
+                <p MadCap:conditions="Default.Service">The default overhead represents the corporate overhead for all estimates, and may cover expenses including, but not limited to, rent, accounting fees, marketing, vehicles, internal staff and management wages, and other costs. This should be the same figure as the overhead in the <strong>Rates </strong>tab in employee card files.</p>
+                <p>In the labour rates table, the <strong>Including Overhead</strong> column displays which labour rates include overhead. The table also displays the <strong>Default </strong>labour rate, and which labour rates have been added to all customers in the <strong>Customer Template</strong> column.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/labour rates - table.png" alt="A screenshots of the labour rates table." class="border" />
+                </p>
+                <p>To set a default overhead:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Labour &gt; Labour Rates</strong>.</li>
+                    <li>Enter the <strong>Default Overhead</strong>.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p class="Infotip">Please ensure you consult your financial advisor before setting or adjusting the default overhead. You can adjust the default overhead at any time and this will update any quotes / jobs created in the future. For quotes / jobs that have already been created when the default overhead is changed, you will need to change the overhead manually on the quote / job as well.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a labour rate</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/Labour rates - create.png" alt="A screenshot of the Create Labour Rate page." class="border" />
+                </p>
+                <p>To create a labour rate:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Labour &gt; Labour Rates</strong>.</li>
+                    <li>Click <strong>Create Labour Rate</strong>.</li>
+                    <li>Enter the <strong>Labour Name</strong>.<ul><li>This may appear on customer quotes and invoices.</li></ul></li>
+                    <li>Enter the <strong>Cost Rate</strong> excluding tax.<ul><li>This includes, per hour, the total of three rates: the amount you pay your employee, their employment costs such as superannuation and annual leave, and your company overheads.</li></ul></li>
+                    <li>If you are excluding overhead, the cost rate includes the employee's pay rate and other employment costs.</li>
+                    <li>Enter the <strong>Markup </strong>/ <strong>Sell Rate</strong>. The other will calculate automatically.</li>
+                    <li MadCap:conditions="Default.Phase 1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Enter a <strong>Multiplier </strong>if necessary.<ul><li MadCap:conditions="Default.Phase 1">Use multipliers to account for technicians who take additional time to complete work. For example, a labour rate with a 1.5x multiplier means that an estimated time of 1 hour will be increased to 1.5 hours.</li></ul></li>
+                    <li MadCap:conditions="Default.Enterprise">Enter a <strong>Multiplier </strong>if necessary.<ul><li MadCap:conditions="Default.Enterprise">Use multipliers to account for technicians who take additional time to complete work. For example, a labour rate with a 1.5x multiplier means that an estimated time of 1 hour will be increased to 1.5 hours.</li></ul></li>
+                    <li>Select the <strong>Sales Tax Code</strong>.</li>
+                    <li>Select or clear the <strong>Cost Rate</strong> including overhead check box as applicable.</li>
+                    <li>Select <strong>Add to all customers</strong> to add the labour rate to all existing customer card files.</li>
+                    <li> If this is the labour rate you use most often, select <strong>Set as default labour rate</strong> to automatically apply the labour rate to all quotes and jobs.<ul><li>You can override the default at the customer and job level.</li></ul></li>
+                    <li>Click <strong>Create</strong>.</li>
+                </ol>
+                <p class="Infotip">You can only set one labour rate as the default. This default will be used as a basis for the labour component of catalogue items and standard price pre-builds if the pre-builds are based on defaults.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit a labour rate</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="Default.Phase 1">You can click a labour rate in the table to adjust it. Please ensure when you adjust a labour rate that it is consistent across the applicable employee, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor, and customer card files.</p>
+                <p MadCap:conditions="Default.Enterprise">You can click a labour rate in the table to adjust it. Please ensure when you adjust a labour rate that it is consistent across the applicable employee,  contractor, and customer card files.</p>
+                <p MadCap:conditions="Default.Service">You can click a labour rate in the table to adjust it. Please ensure when you adjust a labour rate that it is consistent across the applicable employee and customer card files.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/Labour rates - edit.png" alt="A screenshot of the Edit Labour Rate page." class="border" />
+                </p>
+                <p>To edit a labour rate:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Labour &gt; Labour Rates</strong>.</li>
+                    <li>Click the labour rate you wish to edit.</li>
+                    <li>Adjust the labour rate as desired, then select <strong>Update changes to all applicable customers</strong>.<ul><li>This will ensure that your changes are carried over to all customers with this labour rate assigned in their card file.</li></ul></li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p class="Infotip">If you have customers with special rates, selecting <strong>Update changes to all applicable customers</strong> will override their rates. To avoid this, you may wish to create and add a customer tag to the applicable customers so that you can filter your customers by rate and update your pricing manually.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign labour rates to customers</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The default labour rate defined in <strong>System Setup</strong> can be overridden for specific customers. You can also add and remove labour rates for specific customers.</p>
+                <p class="Infotip">If you want a specific customer to have a different cost price, it is recommended to use a different labour rate instead of changing the cost price on an existing labour rate.</p>
+                <p class="WarningTip">If no labour rates are assigned to a customer, you will not be able to select labour rates when creating a job or quote for that customer.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set pay rates and associate schedule rates for employees and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When setting pay rates for your employees, make sure these are consistent with your labour rates so that your estimated costs are accurate.</p>
+                <p>You can associate labour rates with schedule rates for employees and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors. This is useful for calculating accurate overtime costs for specific roles in your business.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set pay rates and associate schedule rates for employees and  contractors</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When setting pay rates for your employees, make sure these are consistent with your labour rates so that your estimated costs are accurate.</p>
+                <p>You can associate labour rates with schedule rates for employees and  contractors. This is useful for calculating accurate overtime costs for specific roles in your business.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Service">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set pay rates and associate schedule rates for employees</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When setting pay rates for your employees, make sure these are consistent with your labour rates so that your estimated costs are accurate.</p>
+                <p>You can associate labour rates with schedule rates for employees. This is useful for calculating accurate overtime costs for specific roles in your business.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Add labour rates to quotes and jobs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="Default.Phase 1">If you select a labour rate as the default at the system, customer, or job level, this labour rate will automatically be added to jobs and quotes when you create them. You can add labour rates to service quotes, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> project quotes, service jobs and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> project jobs.</p>
+                <p MadCap:conditions="Default.Enterprise">If you select a labour rate as the default at the system, customer, or job level, this labour rate will automatically be added to jobs and quotes when you create them. You can add labour rates to service quotes, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> project quotes, service jobs and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> project jobs.</p>
+                <p MadCap:conditions="Default.Service">If you select a labour rate as the default at the system, customer, or job level, this labour rate will automatically be added to jobs and quotes when you create them. You can add labour rates to service quotes, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> project quotes, service jobs and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> project jobs.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

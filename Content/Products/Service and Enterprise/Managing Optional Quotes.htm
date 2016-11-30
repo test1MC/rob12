@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3669" MadCap:lastWidth="1734" MadCap:conditions="Default.Phase 1">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Managing Optional Quotes</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <h2>Overview</h2>
+        <p>Use optional cost centres in a quote to provide your customer with options. You can add optional cost centres as an alternative or in addition to your primary, billable cost centres. Only primary cost centres will be included on the job once the quote is converted.</p>
+        <p>For example, you may wish to offer a customer a choice between a cheaper option and more expensive option for the same requested works. In this case, you may wish to add <b>only</b> optional cost centres to the quote. You can then email the quote form to the customer and they can select their desired quote, which you can then make billable in simPRO and convert to the job.</p>
+        <p>You can also use optional cost centres as an upsell opportunity to offer customers an extra product or service in addition to the requested works. For example, a customer may request a quote for an installation, which you would add as a primary cost centre. However, you may also wish to offer them a quote for an additional installation, which you could then add as an optional cost centre. Then, if the upsell is successful, you can make the optional cost centre billable and convert the entire quote to a job.</p>
+        <h2><a name="Add"></a>Add optional cost centres to a quote</h2>
+        <p>You can add optional cost centres to both project quotes and service quotes with multiple cost centres in simPRO Enterprise.</p>
+        <p>
+            <img src="../../Resources/Images/Images/Managing Optional Quotes - sections.png" title="Go to Cost Centre List &gt; Options to add optional sections, cost centres, and items to a quote." alt="A screenshot of the Optional Cost Centre List tab in a project or service quote." class="border" />
+        </p>
+        <p>To add optional cost centres to a quote:</p>
+        <ol>
+            <li>Access or create the quote as normal.</li>
+            <li>Go to <b>Cost Centre List &gt; Options</b>.</li>
+            <li>For project quotes, enter the section <b>Name</b> and <b>Description</b> as desired.</li>
+            <li>Select the desired <b>Cost Centres</b>, then click <b>Add</b>.</li>
+            <li>Repeat as necessary for each cost centre.</li>
+            <li>Click each cost centre to <MadCap:xref href="Service Quotes.htm#Manage-parts-and-labour">Manage parts and labour in a service quote</MadCap:xref> / <MadCap:xref href="Project Quotes.htm#add-parts-and-labour">Add parts and labour</MadCap:xref> to a project quote as normal.</li>
+        </ol>
+        <p>After you have finalised the applicable cost centres for the quote, you can then email the quote form to the customer for them to choose the quoted cost centres they wish to proceed with.</p>
+        <h2>Set up quote forms with optional cost centres</h2>
+        <p>You can adjust how your optional cost centres appear on the quote forms you send to customers. </p>
+        <p>You may wish to test how different settings appear by accessing a quote with optional cost centres, then going to <b>Details &gt; Forms</b>, selecting <b>Quote - Itemised / Quote - Itemised w/Prices</b>, then clicking <b>View</b>. When you make a change to the form setup, click <b>Save</b>, then refresh the page in which the form is open.</p>
+        <p>
+            <img src="../../Resources/Images/Images/Managing Optional Quotes - forms setup.png" title="Select Same For Options, or clear the check box to select different display options for optional cost centres." alt="A screenshot of the Optional cost centre form options in Forms Setup." class="border" />
+        </p>
+        <p>To set up display options for optional cost centres on standard quote forms:</p>
+        <ol>
+            <li>Go to <b>System &gt; Setup &gt; Forms Setup &gt; Quote &gt; Display Options &gt; General</b>.</li>
+            <li>Select <b>On</b> under <b>Show Optional Summary</b> if desired.<ul><li>You also need to select <b>On</b> under <b>Show Summary</b> for the optional summary to appear on the form.</li></ul></li>
+            <li>Under <b>Sections / Cost Centres / Materials/Labour</b>, select <b>Same For Options</b> to use the same settings for both primary and optional cost centres on the form.<ul><li>Alternatively, clear the check box to select different settings as desired.</li></ul></li>
+            <li>Adjust other display options as desired.</li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/Images/Managing Optional Quotes - itemised form 3.png" title="Customers can view optional cost centres on quote forms." alt="A screenshot of a customer quote form showing optional cost centre details." class="border" />
+        </p>
+        <p>To display optional cost centres on the <b>Quote Detail Form</b>, create or access a detail form template as desired, then add the <b>Optional Cost Centre Item Lists</b> block.</p>
+        <p>You can then email the customers the desired quote form from a service quote or project quote as normal.  You can then <MadCap:xref href="#Mark">Mark optional cost centres as billable</MadCap:xref> if the customer has chosen to proceed with them before converting the quote to a job.</p>
+        <h2><a name="Mark"></a>Mark optional cost centres as billable</h2>
+        <p>To make optional cost centres billable on a quote to include them in the converted job, go to <b>Cost Centre List &gt; Options</b>, then click <b>Options &gt; Mark as Billable</b> on the desired cost centre. Alternatively, you can access the desired optional cost centre, then go to <b>Details &gt; Settings &gt; Cost Centre Type</b> and select <b>Chargeable</b>.</p>
+        <p>
+            <img src="../../Resources/Images/Images/Managing Optional Quotes - mark as billable.png" title="Click Mark as Billable to include the optional cost centre in the converted job." alt="A screenshot of the Mark as Billable option on the cost centre options drop-down list." class="border" />
+        </p>
+        <p>The cost centre will then appear in the <b>Primary</b> sub-tab, and will be included when you convert the quote to a job.</p>
+        <p>To mark a billable cost centre as optional, go to <b>Cost Centre List &gt; Primary</b>, then click <b>Options &gt; Mark as Optional</b> on the desired cost centre, or access the desired primary cost centre, then go to <b>Details &gt; Settings &gt; Cost Centre Type</b> and select <b>Optional</b>.</p>
+        <p class="WarningTip">You need to mark optional cost centres as billable before converting the applicable quote to a job. Optional cost centres are not accessible at the job level.</p>
+    </body>
+</html>

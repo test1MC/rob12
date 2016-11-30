@@ -1,0 +1,1060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="29737" MadCap:lastWidth="1784">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <map id="map1">
+        <area shape="rectangle" coords="65,72,239,108" dragDirection="0" href="#standard-invoice" />
+        <area shape="rectangle" coords="245,73,418,108" dragDirection="0" href="#consolidated-invoice" />
+        <area shape="rectangle" coords="427,73,599,107" dragDirection="0" href="#invoice-per-item" />
+        <area shape="rectangle" coords="623,71,801,108" dragDirection="0" href="#deposit-invoice" />
+        <area shape="rectangle" coords="822,68,1000,110" dragDirection="0" href="#request-for-claim" />
+        <area shape="rectangle" coords="1020,70,1201,110" dragDirection="0" href="#progress-claim" />
+        <area shape="rectangle" coords="1207,68,1379,109" dragDirection="0" href="#claim-per-item" />
+        <area shape="rectangle" coords="1386,68,1564,110" dragDirection="0" href="#final-claim" />
+        <area shape="rectangle" coords="1584,69,1766,109" dragDirection="0" href="#retention-claim" />
+    </map>
+    <body>
+        <h1>Invoicing</h1>
+        <h2>Overview</h2>
+        <p MadCap:conditions="Default.Phase 1">In simPRO, an invoice is a list of goods sent or services provided and the sum due for these from your customer. After you have <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> approved, emailed, and received payment for an invoice, you can apply the payment to the invoice in simPRO.</p>
+        <p MadCap:conditions="Default.Enterprise">In simPRO, an invoice is a list of goods sent or services provided and the sum due for these from your customer. After you have approved, emailed, and received payment for an invoice, you can apply the payment to the invoice in simPRO.</p>
+        <p MadCap:conditions="Default.Service">In simPRO, an invoice is a list of goods sent or services provided and the sum due for these from your customer. After you have  emailed, and received payment for an invoice, you can apply the payment to the invoice in simPRO.</p>
+        <p>Use the <strong>Invoice Types</strong> diagram below to learn which invoice is applicable for your different projects.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/invoice types.bmp" alt="A table displaying the different invoice types." class="border" usemap="#map1" />
+        </p>
+        <p class="WarningTip">Please ensure your job values are accurate and up to date prior to invoicing. Once you have created an invoice, you can only adjust values by beginning the audit process and voiding the invoice.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create an invoice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>There are several ways you can create an invoice for a job:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" style="width: 821px;" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Update and invoice the job</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Once you have finished updating a job that is ready to invoice, click <strong>Finish &gt; Invoice Job</strong>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Invoice an individual job</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Go to <strong>Jobs &gt; Pending</strong> / <strong>Progress </strong>/ <strong>Complete</strong>, then click <strong>Options &gt; Create Invoice </strong>on the job you wish to invoice. If you have already raised a progress claim against the job, click<strong> Options &gt; Create Progress Claim</strong>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Invoice multiple jobs at once</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Go to<strong> Jobs &gt; Complete</strong> to create individual invoices for multiple jobs with different customers at once.</p>
+                                <p MadCap:conditions="Default.Phase 1">
+                                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Alternatively, go to <strong>Jobs &gt; Pending</strong> / <strong>Progress </strong>/ <strong>Complete </strong>to create one consolidated invoice for jobs that share the same customer and exchange rate.                                </p>
+                                <p MadCap:conditions="Default.Enterprise">Alternatively, go to <strong>Jobs &gt; Pending</strong> / <strong>Progress </strong>/ <strong>Complete </strong>to create one consolidated invoice for jobs that share the same customer and exchange rate.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Invoice multiple jobs at once</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can invoice several jobs at the same time to create multiple invoices for different customers.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/serviceinvoice-multiple.png" alt="A screenshot of multiple jobs being invoiced at once." class="border" />
+                        </p>
+                        <p>To create an invoice for multiple jobs with different customers:</p>
+                        <ol>
+                            <li>Go to <strong>Jobs &gt; Complete Jobs</strong>.</li>
+                            <li>Select the jobs you wish to invoice.</li>
+                            <li MadCap:conditions="Default.Phase 1">Click <img src="../../Resources/Images/Icons/icon-service-only-sm.png" title="This feature is only available in simPRO Service." alt="simPRO Service only." /> <strong>Invoice </strong>/ <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> <strong>Invoice Separately &gt; OK</strong>.</li>
+                            <li MadCap:conditions="Default.Enterprise">Click <strong>Invoice Separately &gt; OK</strong>.</li>
+                            <li MadCap:conditions="Default.Service">Click <strong>Invoice</strong><strong> &gt; OK</strong>.</li>
+                        </ol>
+                        <p>Each invoice will individually appear in<strong> Invoices &gt; Unpaid</strong> where you can continue creating the invoice.</p>
+                        <p class="Infotip">You can only invoice multiple jobs with different customers when they are in the <strong>Complete </strong>stage.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><a name="consolidated-invoice"></a> Create a consolidated invoice</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can create one consolidated invoice for multiple jobs that share the same customer and exchange rate.</p>
+                        <p>To create a consolidated invoice:</p>
+                        <ol>
+                            <li>Go to <strong>Jobs &gt; Pending</strong> / <strong>Progress </strong>/ <strong>Complete Jobs</strong>.</li>
+                            <li>Select the check boxes for each job you would like to invoice.</li>
+                            <li>Click <strong>Invoice</strong>.</li>
+                            <li>Continue creating the invoice.</li>
+                        </ol>
+                        <p>The selected jobs will be invoiced under the same invoice in <strong>Invoices &gt; Unpaid</strong>. The <strong>Job No.</strong> column will display all jobs on the invoice.</p>
+                        <p class="Infotip">When you email a consolidated invoice to the customer, select the <strong>Consolidated Invoice</strong> form in the <strong>Forms </strong>tab. This form is designed to show multiple jobs on one invoice and can be customised in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Consolidated Invoice</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="consolidated-invoice"></a>Create a consolidated invoice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can create one consolidated invoice for multiple jobs that share the same customer and exchange rate.</p>
+                <p>To create a consolidated invoice:</p>
+                <ol>
+                    <li>Go to <strong>Jobs &gt; Pending</strong> / <strong>Progress </strong>/ <strong>Complete Jobs</strong>.</li>
+                    <li>Select the check boxes for each job you would like to invoice.</li>
+                    <li>Click <strong>Invoice</strong>.</li>
+                    <li>Continue creating the invoice.</li>
+                </ol>
+                <p>The selected jobs will be invoiced under the same invoice in <strong>Invoices &gt; Unpaid</strong>. The <strong>Job No.</strong> column will display all jobs on the invoice.</p>
+                <p class="Infotip">When you email a consolidated invoice to the customer, select the <strong>Consolidated Invoice</strong> form in the <strong>Forms </strong>tab. This form is designed to show multiple jobs on one invoice and can be customised in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Consolidated Invoice</strong>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="standard-invoice"></a>Create a tax invoice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="Default.Phase 1">Create a tax invoice to claim all items, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> cost centres, and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> sections on a job.</p>
+                <p MadCap:conditions="Default.Enterprise">Create a tax invoice to claim all items, cost centres, and sections on a job.</p>
+                <p MadCap:conditions="Default.Service">Create a tax invoice to claim all items on a job.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/serviceinvoice-create.png" alt="A screenshot of a tax invoice." class="border" />
+                </p>
+                <p>To create a tax invoice:</p>
+                <ol>
+                    <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                    <li>Ensure the <strong>Invoice Type</strong> is a <strong>Tax Invoice</strong>.</li>
+                    <li>Select the <strong>Date Issued</strong>.<ul><li>This defaults to the current date.</li></ul></li>
+                    <li>Under <strong>Payment Due</strong>, select the number of <strong>Days from invoice date</strong> or <strong>Days after EOM</strong> (end of month) that the payment is due.<ul><li>This will automatically populate with the default set in<strong> System &gt; Setup &gt; Defaults &gt; Financial</strong>, or in the customer card file.</li></ul></li>
+                    <li MadCap:conditions="Default.Phase 1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li MadCap:conditions="Default.Enterprise">Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li>Enter an<strong> Invoice Comment </strong>or select a script if desired.</li>
+                    <li>Enter a <strong>Footnote </strong>or select a script if desired.<ul><li>This field is automatically populated with the footnote set in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Display Options &gt; Footnote</strong>.</li></ul></li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>The invoice will appear under <strong>Invoices &gt; Unpaid Invoices</strong>.</p>
+                <p MadCap:conditions="Default.Phase 1">To exit the invoice, click <strong>Finish</strong>. Alternatively, click <strong>Payments </strong>to view all payments and credit notes applied to the invoice, or to create a new payment or credit note. You can also click <strong>Log </strong>to view a history of all activity on the invoice, including when it was created, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> approved, and sent to the customer, or click <strong>Notes </strong>to view and create notes on the invoice.</p>
+                <p MadCap:conditions="Default.Enterprise">To exit the invoice, click <strong>Finish</strong>. Alternatively, click <strong>Payments </strong>to view all payments and credit notes applied to the invoice, or to create a new payment or credit note. You can also click <strong>Log </strong>to view a history of all activity on the invoice, including when it was created, approved, and sent to the customer, or click <strong>Notes </strong>to view and create notes on the invoice.</p>
+                <p MadCap:conditions="Default.Service">To exit the invoice, click <strong>Finish</strong>. Alternatively, click <strong>Payments </strong>to view all payments and credit notes applied to the invoice, or to create a new payment or credit note. You can also click <strong>Log </strong>to view a history of all activity on the invoice, including when it was created and sent to the customer, or click <strong>Notes </strong>to view and create notes on the invoice.</p>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><a name="invoice-per-item"></a> Invoice per item</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Invoice a job per item to keep the cost centre/s unlocked and add additional billable items to the job. This is useful for 'do and charge' jobs that you need to continuously bill to your customers.</p>
+                        <p>For example, you may wish to collect payments up front for your call out fees and other expenses, and then add billable items to the job once your technician is on site, or alternatively, you may be completing a 'do and charge' project job and you wish to bill for the items you have completed in the project.</p>
+                        <p>If you choose to invoice per item for the first job invoice, all subsequent invoices will be invoiced per item.</p>
+                        <p>When the job is complete and ready to be fully invoiced, you can invoice all items and lock the job.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/serviceinvoice-peritem.png" alt="A screenshot of the Invoice Per Item drop-down." class="border" />
+                        </p>
+                        <p>To invoice a job per item:</p>
+                        <ol>
+                            <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                            <li>Ensure the<strong> Invoice Type </strong>is a <strong>Tax Invoice</strong>.</li>
+                            <li>Select the <strong>Date Issued</strong>.</li>
+                            <li>Under <strong>Payment Due</strong>, select the number of <strong>Days from invoice date</strong> or <strong>Days after EOM </strong>(end of month) that the payment is due.<ul><li>This will automatically populate with the default set in <strong>System &gt; Setup &gt; Defaults &gt; Financial</strong>, or in the customer card file.</li></ul></li>
+                            <li>Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                            <li>Under <strong>Invoice Per Item</strong>, select <strong>Yes</strong>.</li>
+                            <li>Enter the <strong>Quantity Invoiced </strong>for each item as applicable.</li>
+                            <li>Enter an<strong> Invoice Comment </strong>and / or <strong>Footnote </strong>as desired.<ul><li>Alternatively, select a script, or use the default <strong>Footnote </strong>defined in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Footnote</strong>.</li></ul></li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>When you next access the job and go to <strong>Parts &amp; Labour &gt; Billable &gt; Parts</strong> in the cost centres that have been invoiced, times, prices, and markup will be locked for items that have been invoiced to prevent price adjustments. You can still adjust item quantities, however they cannot be less than the quantity that has already been invoiced.</p>
+                        <p>If you add items that have already been added and invoiced on the job, the additional items will appear in a new line in the Parts table.</p>
+                        <p>Invoicing per item is not available for jobs with an adjusted price or with retention enabled. If you are completing a job in Connect that has previously been invoiced per item, you can invoice and apply payment to the remaining amount with the pricing and billable items restricted.</p>
+                        <h4>Invoice all items and lock the job</h4>
+                        <p>You need to ensure jobs are placed in the appropriate Jobs stage when invoicing per item:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Pending / Progress</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The job is unlocked and you can continue adding items and invoicing per item.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Complete</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The job is unlocked and you can continue adding items and invoicing per item. This stage is applicable for jobs that have been manually marked as <strong>Complete </strong>in Enterprise or Connect, but have not had all items invoiced.</p>
+                                        <p>If you invoice all items in Enterprise and / or Connect at this stage, the job will be locked and will move to Invoiced Jobs.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Invoiced</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The job is locked after being marked as <strong>Complete </strong>and having all items invoiced in Enterprise and / or Connect.</p>
+                                        <p>If you unlock the job and add billable items, the job will move back to <strong>Complete Jobs</strong> where you can invoice the remaining items. You can also go to <strong>Jobs &gt; Invoiced Jobs</strong>, then click <strong>Options &gt; Job Stage &gt; Pending</strong> / <strong>Progress </strong>on the desired job to move it to a different stage, unlock the cost centre, and continue adding and invoicing items.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Archived</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>The job is locked with all items invoiced and all payments applied in Enterprise and / or Connect.</p>
+                                        <p>For best practice, please ensure you move a job back to an active stage such as <strong>Pending </strong>/ <strong>Progress </strong>/ <strong>Complete </strong>before adding more items to an invoice.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>To invoice all items and lock the job:</p>
+                        <ol>
+                            <li>Access the desired job, then go to <strong>Details &gt; Settings</strong>.</li>
+                            <li>Under <strong>Stage</strong>, select <strong>Complete</strong>.</li>
+                            <li>Click <strong>Finish &gt; Invoice Job</strong>.</li>
+                            <li>Click<strong> Invoice All </strong>for each cost centre.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>The job will then be locked and you will not be able to create further invoices. This will also occur if you invoice all items on the job, then set the job stage to <strong>Complete </strong>at a different time, for example, when you click <strong>Options &gt; Job Stage &gt; Complete</strong> on a job in the <strong>Jobs </strong>table in Enterprise, or when you submit the job in Connect.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="invoice-per-item"></a>Invoice per item</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Invoice a job per item to keep the cost centre/s unlocked and add additional billable items to the job. This is useful for 'do and charge' jobs that you need to continuously bill to your customers.</p>
+                <p>For example, you may wish to collect payments up front for your call out fees and other expenses, and then add billable items to the job once your technician is on site, or alternatively, you may be completing a 'do and charge' project job and you wish to bill for the items you have completed in the project.</p>
+                <p>If you choose to invoice per item for the first job invoice, all subsequent invoices will be invoiced per item.</p>
+                <p>When the job is complete and ready to be fully invoiced, you can invoice all items and lock the job.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/serviceinvoice-peritem.png" alt="A screenshot of the Invoice Per Item drop-down." class="border" />
+                </p>
+                <p>To invoice a job per item:</p>
+                <ol>
+                    <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                    <li>Ensure the<strong> Invoice Type </strong>is a <strong>Tax Invoice</strong>.</li>
+                    <li>Select the <strong>Date Issued</strong>.</li>
+                    <li>Under <strong>Payment Due</strong>, select the number of <strong>Days from invoice date</strong> or <strong>Days after EOM </strong>(end of month) that the payment is due.<ul><li>This will automatically populate with the default set in <strong>System &gt; Setup &gt; Defaults &gt; Financial</strong>, or in the customer card file.</li></ul></li>
+                    <li>Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li>Under <strong>Invoice Per Item</strong>, select <strong>Yes</strong>.</li>
+                    <li>Enter the <strong>Quantity Invoiced </strong>for each item as applicable.</li>
+                    <li>Enter an<strong> Invoice Comment </strong>and / or <strong>Footnote </strong>as desired.<ul><li>Alternatively, select a script, or use the default <strong>Footnote </strong>defined in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Footnote</strong>.</li></ul></li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>When you next access the job and go to <strong>Parts &amp; Labour &gt; Billable &gt; Parts</strong> in the cost centres that have been invoiced, times, prices, and markup will be locked for items that have been invoiced to prevent price adjustments. You can still adjust item quantities, however they cannot be less than the quantity that has already been invoiced.</p>
+                <p>If you add items that have already been added and invoiced on the job, the additional items will appear in a new line in the Parts table.</p>
+                <p>Invoicing per item is not available for jobs with an adjusted price or with retention enabled. If you are completing a job in Connect that has previously been invoiced per item, you can invoice and apply payment to the remaining amount with the pricing and billable items restricted.</p>
+                <h4>Invoice all items and lock the job</h4>
+                <p>You need to ensure jobs are placed in the appropriate Jobs stage when invoicing per item:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Pending / Progress</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>The job is unlocked and you can continue adding items and invoicing per item.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Complete</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>The job is unlocked and you can continue adding items and invoicing per item. This stage is applicable for jobs that have been manually marked as <strong>Complete </strong>in Enterprise or Connect, but have not had all items invoiced.</p>
+                                <p>If you invoice all items in Enterprise and / or Connect at this stage, the job will be locked and will move to Invoiced Jobs.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Invoiced</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>The job is locked after being marked as <strong>Complete </strong>and having all items invoiced in Enterprise and / or Connect.</p>
+                                <p>If you unlock the job and add billable items, the job will move back to <strong>Complete Jobs</strong> where you can invoice the remaining items. You can also go to <strong>Jobs &gt; Invoiced Jobs</strong>, then click <strong>Options &gt; Job Stage &gt; Pending</strong> / <strong>Progress </strong>on the desired job to move it to a different stage, unlock the cost centre, and continue adding and invoicing items.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Archived</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>The job is locked with all items invoiced and all payments applied in Enterprise and / or Connect.</p>
+                                <p>For best practice, please ensure you move a job back to an active stage such as <strong>Pending </strong>/ <strong>Progress </strong>/ <strong>Complete </strong>before adding more items to an invoice.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>To invoice all items and lock the job:</p>
+                <ol>
+                    <li>Access the desired job, then go to <strong>Details &gt; Settings</strong>.</li>
+                    <li>Under <strong>Stage</strong>, select <strong>Complete</strong>.</li>
+                    <li>Click <strong>Finish &gt; Invoice Job</strong>.</li>
+                    <li>Click<strong> Invoice All </strong>for each cost centre.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>The job will then be locked and you will not be able to create further invoices. This will also occur if you invoice all items on the job, then set the job stage to <strong>Complete </strong>at a different time, for example, when you click <strong>Options &gt; Job Stage &gt; Complete</strong> on a job in the <strong>Jobs </strong>table in Enterprise, or when you submit the job in Connect.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="deposit-invoice"></a>Create a deposit invoice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you need to create an invoice for a partial payment on a job, such as a down payment before the work begins, raise a deposit invoice. Once created, a deposit invoice functions much like a tax invoice.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/serviceinvoice-deposit.png" alt="A screenshot of the Invoice Type drop-down." class="border" />
+                </p>
+                <p>To create the invoice:</p>
+                <ol>
+                    <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                    <li>Select <strong>Deposit </strong>as the <strong>Invoice Type</strong>.</li>
+                    <li>Select the <strong>Date Issued</strong>.<ul><li>This defaults to the current date.</li></ul></li>
+                    <li>Under <strong>Payment Due</strong>, select the number of<strong> Days from invoice date</strong> or <strong>Days after EOM</strong> (end of month) that the payment is due.<ul><li>This will automatically populate with the default set in <strong>System &gt; Setup &gt; Defaults &gt; Financial</strong>, or in the customer card file.</li></ul></li>
+                    <li MadCap:conditions="Default.Phase 1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Select if the<strong> Invoice Stage </strong>is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li MadCap:conditions="Default.Enterprise">Select if the<strong> Invoice Stage </strong>is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li>Enter an<strong> Invoice Comment</strong> or select a script if desired.</li>
+                    <li>Enter the <strong>Deposit Amount</strong> either as a percentage or as a figure. Alternatively, click<strong> Deposit All</strong> to invoice for the full amount.<ul><li MadCap:conditions="Default.Phase 1">You can enter deposit amounts at the cost centre and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> section level, with the graph on the left will displaying how much of the total is left to invoice.</li><li MadCap:conditions="Default.Enterprise">You can enter deposit amounts at the cost centre and section level, with the graph on the left will displaying how much of the total is left to invoice.</li></ul></li>
+                    <li>Enter a <strong>Footnote </strong>or select a script if desired.<ul><li>This field is automatically populated with the footnote set in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Display Options &gt; Footnote</strong>.</li></ul></li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> <a name="request-for-claim"></a>Create a request for claim</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you want to send a customer a progress claim for a job, but first want to obtain their approval before posting invoice details to your accounting package, you can create a request for claim.</p>
+                <p>A request for claim is almost identical to a progress claim, but unlike a progress claim it does not post any information to your accounting package. This means you will not have to void a progress claim if your customer rejects your claim (providing only the percentage or value of the claim needs to change, and not the value of the project).</p>
+                <p>If a customer approves your request for claim, you can then easily convert it to a deposit or progress claim for payment.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/requestclaim-create.png" alt="A screenshot of the Request for Claim option in the Invoice Type drop-down." class="border" />
+                </p>
+                <p>To create a request for claim:</p>
+                <ol>
+                    <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                    <li>Select <strong>Request for Claim</strong> as the <strong>Invoice Type</strong>.</li>
+                    <li>Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li>Next to <strong>Claim Amount</strong>, enter the percentage or amount you wish to request to claim.</li>
+                    <li>Select and enter additional options and details as required.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>If the request for claim has been marked as internally <strong>Approved</strong>, click <strong>Forms </strong>to email the request for claim to the customer.</p>
+                <p>When emailing a request for claim to a customer, you can use a unique form known as a <strong>Payment Schedule </strong>form. It displays project information such as total contract value, claims to date, and the claim value remaining. It also shows a payment schedule table including project progress, and the claim amount for customer approval.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Convert a request for claim to progress claim</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>After a customer approves your request for claim, you can convert it to a deposit or progress claim to send to the customer.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/requestclaim-convert.png" alt="A screenshot of a request for claim being converted to a progress claim." class="border" />
+                        </p>
+                        <p>To convert a request for claim approved by a customer:</p>
+                        <ol>
+                            <li>Locate the relevant job.</li>
+                            <li>Click  next to <strong>Options </strong>on the job you wish to approve a claim for.</li>
+                            <li>Under <strong>Unpaid Invoices</strong>, click the desired request for claim.<ul><li>Alternatively, on the request for claim, click <strong>Options &gt; View Invoice</strong>.</li></ul></li>
+                            <li>Click Unlock in the top right corner.</li>
+                            <li>Select <strong>Progress Claim</strong> as the<strong> Invoice Type</strong>.</li>
+                            <li>Make additional changes to the progress claim as desired.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>If the <strong>Invoice Stage</strong> of the new progress claim is marked as <strong>Approved</strong>, click the <strong>Forms </strong>tab to email the new invoice as normal.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="request-for-claim"></a>Create a request for claim</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you want to send a customer a progress claim for a job, but first want to obtain their approval before posting invoice details to your accounting package, you can create a request for claim.</p>
+                <p>A request for claim is almost identical to a progress claim, but unlike a progress claim it does not post any information to your accounting package. This means you will not have to void a progress claim if your customer rejects your claim (providing only the percentage or value of the claim needs to change, and not the value of the project).</p>
+                <p>If a customer approves your request for claim, you can then easily convert it to a deposit or progress claim for payment.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/requestclaim-create.png" alt="A screenshot of the Request for Claim option in the Invoice Type drop-down." class="border" />
+                </p>
+                <p>To create a request for claim:</p>
+                <ol>
+                    <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                    <li>Select <strong>Request for Claim</strong> as the <strong>Invoice Type</strong>.</li>
+                    <li>Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li>Next to <strong>Claim Amount</strong>, enter the percentage or amount you wish to request to claim.</li>
+                    <li>Select and enter additional options and details as required.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>If the request for claim has been marked as internally <strong>Approved</strong>, click <strong>Forms </strong>to email the request for claim to the customer.</p>
+                <p>When emailing a request for claim to a customer, you can use a unique form known as a <strong>Payment Schedule </strong>form. It displays project information such as total contract value, claims to date, and the claim value remaining. It also shows a payment schedule table including project progress, and the claim amount for customer approval.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Convert a request for claim to progress claim</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>After a customer approves your request for claim, you can convert it to a deposit or progress claim to send to the customer.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/requestclaim-convert.png" alt="A screenshot of a request for claim being converted to a progress claim." class="border" />
+                        </p>
+                        <p>To convert a request for claim approved by a customer:</p>
+                        <ol>
+                            <li>Locate the relevant job.</li>
+                            <li>Click  next to <strong>Options </strong>on the job you wish to approve a claim for.</li>
+                            <li>Under <strong>Unpaid Invoices</strong>, click the desired request for claim.<ul><li>Alternatively, on the request for claim, click <strong>Options &gt; View Invoice</strong>.</li></ul></li>
+                            <li>Click Unlock in the top right corner.</li>
+                            <li>Select <strong>Progress Claim</strong> as the<strong> Invoice Type</strong>.</li>
+                            <li>Make additional changes to the progress claim as desired.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>If the <strong>Invoice Stage</strong> of the new progress claim is marked as <strong>Approved</strong>, click the <strong>Forms </strong>tab to email the new invoice as normal.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> <a name="progress-claim"></a>Create a progress claim</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Raise progress claims to invoice for part of a job, such as when one stage of a project has been completed. When creating a claim, you can enter a percentage of the total value to claim, or manually enter a claim amount. Progress claims are numbered in order of issue, so the first claim you raise will be named <strong>Progress Claim #1</strong> and subsequent claims will be labelled as <strong>#2</strong>, <strong>#3 </strong>etc, while the final progress claim will be labelled as<strong> Final Claim</strong>. Progress claims may be associated with retentions.</p>
+                <p>You can create a progress claim for a pending, progress or completed job and claim per item or enter the decided <strong>Claim Amount</strong> value as a percentage or an absolute figure. This amount can be claimed at section level or cost centre level. If you choose to claim by value, the <strong>Claim Per Item </strong>option will not be available for any subsequent progress claims for that job.</p>
+                <p>There are several tools you can use in simPRO to assist in calculating your claim amounts so that you maintain positive cash flow:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Jobs Work In Progress (WIP) Report</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Generate the report to view a total summary of costs and current billing for a job.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Financial View</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>When creating a progress claim for a project job, access the desired job, then go to <strong>Project Overview &gt; Projected </strong>and select <strong>Financial View</strong> to view the current budget and actual margin in a breakdown of costs incurred and claims to date.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Claim Report</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>When creating a progress claim, generate the <strong>Claim Report</strong> to view the recommended minimum claim based on the costs incurred up to a specified date.</p>
+                                <p>To generate the report, create a progress claim as normal, then select when you wish to<strong> Include Costs To</strong> and click <strong>View Report</strong> above the claimable sections of the job. If you select to<strong> Include Costs To</strong> a future date, any costs not currently incurred but are due for receipt prior to that date will be included in the report.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/progclaim-create.png" alt="A screenshot of the Create Progress Claim option." class="border" />
+                </p>
+                <p>To create a progress claim:​</p>
+                <ol>
+                    <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                    <li>Select <strong>Progress Claim</strong> as the <strong>Invoice Type</strong>.</li>
+                    <li>Select the <strong>Date Issued</strong>.</li>
+                    <li>Under <strong>Payment Due</strong>, select the number of<strong> Days from invoice date</strong> or <strong>Days after EOM </strong>(end of month) that the payment is due.<ul><li>This will automatically populate with the default set in <strong>System &gt; Setup &gt; Defaults &gt; Financial</strong>, or in the customer card file.</li></ul></li>
+                    <li>Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li>Enter the desired <strong>Claim Amount </strong>for each cost centre as a percentage or absolute figure, or alternatively, click <strong>Claim All</strong>.<ul><li>To claim a percentage of an entire section, enter the <strong>Claim </strong>percentage in the grey bar below the section name.</li></ul></li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>You can then email the progress claim to the customer from the <strong>Forms </strong>tab. You can adjust how the progress claim appears in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Display Options &gt; Claims</strong>.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="claim-per-item"></a>Claim per item</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>A progress claim can be raised with reference to the number of billable items or deliverables. Unlike a tax invoice or a regular progress claim, the invoice value and cost centre remain unlocked so you can adjust quantities and add items that are not yet claimed.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/progclaim-peritem.png" alt="A screenshot of the Claim Per Item drop-down." class="border" />
+                        </p>
+                        <p>Select <strong>Yes </strong>from the <strong>Claim Per Item </strong>drop-down list.</p>
+                        <p>To claim per item:</p>
+                        <ol>
+                            <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                            <li>Select <strong>Progress Claim</strong> as the <strong>Invoice Type</strong>.</li>
+                            <li>Select the <strong>Date Issued</strong>.</li>
+                            <li>Under <strong>Payment Due</strong>, select the number of <strong>Days from invoice date</strong> or <strong>Days after EOM </strong>(end of month) that the payment is due.<ul><li>This will automatically populate with the default set in<strong> System &gt; Setup &gt; Defaults &gt; Financial</strong>, or in the customer card file.</li></ul></li>
+                            <li>Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                            <li>Under <strong>Claim Per Item</strong>, select <strong>Yes</strong>.</li>
+                            <li>Enter the <strong>Quantity Claimed</strong> for the applicable items.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>You can then email the progress claim to the customer from the <strong>Forms </strong>tab.</p>
+                        <p>View the amount already claimed in green in the graph on the right, as well as the amount outstanding in red. You can add more items to a job after creating the invoice and then claim those items. The items that you have already invoiced will be locked.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/progclaim-graph.png" alt="A screenshot of the graph in a progress claim." class="border" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="final-claim"></a>Raise the final progress claim</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>On the final claim of the project, click <strong>Finalise Claim</strong> to ensure all remaining cost centres are claimed, then click <strong>Finish</strong>. The retention amount will be added to the final invoice.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="view-claim-summary"></a>View the claim summary</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The progress claim summary provides an overview of the cost centres and sections claimed to date, the progress claims created and paid off, and the remaining claim balance.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/Invoicing - claim breakdown.png" alt="A screenshot of the Claim Breakdown on an invoice." class="border" />
+                        </p>
+                        <p>To view the claim summary, you need to enable it in your invoice form display options. You can then generate the desired progress claim, go to <strong>Details &gt; Forms</strong>, select the desired <strong>Form</strong>, then click <strong>View</strong>.</p>
+                        <p>You can then view the following below the <strong>Balance Due</strong>:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Original Contract</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The <strong>Description </strong>and <strong>Total Value</strong> for each project section, as well as the percentage or value claimed for each section in the <strong>Current </strong>claim and <strong>To Date</strong>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Claim Breakdown</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The <strong>Date</strong>, <strong>Invoice No.</strong>, <strong>Claimed </strong>and <strong>Paid </strong>amounts, and the <strong>Amount Outstanding</strong> for every progress claim raised against the job.</p>
+                                        <p>If a credit note has been raised against a previous progress claim, it will apply in the <strong>Paid </strong>column.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Contract Summary</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>The <strong>Gross Claim to Date </strong>and the <strong>Remaining Claim Balance</strong> for the job.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Infotip">Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Display Options &gt; Claims</strong> to adjust how the claim summary displays, including whether to include cost centres with a zero value sell price.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="retention-claim"></a>Create a retention / retainage claim</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Retention, also known as retainage in the United States, is the percentage of payment held from you by the customer to safeguard against defects in workmanship and ensure the job is completed to specific standards. Retention / retainage settings are usually defined at the beginning of a project to ensure amounts are calculated correctly for each progress claim.</p>
+                        <p>After the project has been completed, all cost centres have been claimed, and the defined retention / retainage period, also known as a defects liability period, has passed, you will receive an alert in simPRO to claim the outstanding retention / retainage. You can then can create a retention / retainage claim to receive your defined final claim rebate.</p>
+                        <p>To create a retention / retainage claim:</p>
+                        <ol>
+                            <li>Go to <strong>Invoices &gt; Retentions / Retainages</strong>.</li>
+                            <li>Click<strong> Options &gt; Create Retention </strong>/ <strong>Retainage Claim</strong> on the desired outstanding retention / retainage.</li>
+                            <li>Adjust the<strong> Date Issued</strong>, <strong>Payment Due</strong> terms and<strong> Invoice Comment</strong> as necessary.</li>
+                            <li>View all retentions / retainages held or rebated in the <strong>Retentions </strong>/ <strong>Retainages Held</strong> table, then adjust the <strong>Retention </strong>/ <strong>Retainage Claimed</strong> amount as necessary.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>You can then email the retention / retainage claim to the customer from the <strong>Forms </strong>tab.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="progress-claim"></a>Create a progress claim</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Raise progress claims to invoice for part of a job, such as when one stage of a project has been completed. When creating a claim, you can enter a percentage of the total value to claim, or manually enter a claim amount. Progress claims are numbered in order of issue, so the first claim you raise will be named <strong>Progress Claim #1</strong> and subsequent claims will be labelled as <strong>#2</strong>, <strong>#3 </strong>etc, while the final progress claim will be labelled as<strong> Final Claim</strong>. Progress claims may be associated with retentions.</p>
+                <p>You can create a progress claim for a pending, progress or completed job and claim per item or enter the decided <strong>Claim Amount</strong> value as a percentage or an absolute figure. This amount can be claimed at section level or cost centre level. If you choose to claim by value, the <strong>Claim Per Item </strong>option will not be available for any subsequent progress claims for that job.</p>
+                <p>There are several tools you can use in simPRO to assist in calculating your claim amounts so that you maintain positive cash flow:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Jobs Work In Progress (WIP) Report</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Generate the report to view a total summary of costs and current billing for a job.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Financial View</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>When creating a progress claim for a project job, access the desired job, then go to <strong>Project Overview &gt; Projected </strong>and select <strong>Financial View</strong> to view the current budget and actual margin in a breakdown of costs incurred and claims to date.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Claim Report</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>When creating a progress claim, generate the <strong>Claim Report</strong> to view the recommended minimum claim based on the costs incurred up to a specified date.</p>
+                                <p>To generate the report, create a progress claim as normal, then select when you wish to<strong> Include Costs To</strong> and click <strong>View Report</strong> above the claimable sections of the job. If you select to<strong> Include Costs To</strong> a future date, any costs not currently incurred but are due for receipt prior to that date will be included in the report.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/progclaim-create.png" alt="A screenshot of the Create Progress Claim option." class="border" />
+                </p>
+                <p>To create a progress claim:​</p>
+                <ol>
+                    <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                    <li>Select <strong>Progress Claim</strong> as the <strong>Invoice Type</strong>.</li>
+                    <li>Select the <strong>Date Issued</strong>.</li>
+                    <li>Under <strong>Payment Due</strong>, select the number of<strong> Days from invoice date</strong> or <strong>Days after EOM </strong>(end of month) that the payment is due.<ul><li>This will automatically populate with the default set in <strong>System &gt; Setup &gt; Defaults &gt; Financial</strong>, or in the customer card file.</li></ul></li>
+                    <li>Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                    <li>Enter the desired <strong>Claim Amount </strong>for each cost centre as a percentage or absolute figure, or alternatively, click <strong>Claim All</strong>.<ul><li>To claim a percentage of an entire section, enter the <strong>Claim </strong>percentage in the grey bar below the section name.</li></ul></li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>You can then email the progress claim to the customer from the <strong>Forms </strong>tab. You can adjust how the progress claim appears in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Display Options &gt; Claims</strong>.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="claim-per-item"></a>Claim per item</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>A progress claim can be raised with reference to the number of billable items or deliverables. Unlike a tax invoice or a regular progress claim, the invoice value and cost centre remain unlocked so you can adjust quantities and add items that are not yet claimed.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/progclaim-peritem.png" alt="A screenshot of the Claim Per Item drop-down." class="border" />
+                        </p>
+                        <p>Select <strong>Yes </strong>from the <strong>Claim Per Item </strong>drop-down list.</p>
+                        <p>To claim per item:</p>
+                        <ol>
+                            <li>Ensure all job details are updated, then follow the invoice creation process as above.</li>
+                            <li>Select <strong>Progress Claim</strong> as the <strong>Invoice Type</strong>.</li>
+                            <li>Select the <strong>Date Issued</strong>.</li>
+                            <li>Under <strong>Payment Due</strong>, select the number of <strong>Days from invoice date</strong> or <strong>Days after EOM </strong>(end of month) that the payment is due.<ul><li>This will automatically populate with the default set in<strong> System &gt; Setup &gt; Defaults &gt; Financial</strong>, or in the customer card file.</li></ul></li>
+                            <li>Select if the <strong>Invoice Stage</strong> is <strong>Pending </strong>or <strong>Approved</strong>.<ul><li>This indicates your business's internal approval, not the customer's approval, and will depend on your security group permissions.</li></ul></li>
+                            <li>Under <strong>Claim Per Item</strong>, select <strong>Yes</strong>.</li>
+                            <li>Enter the <strong>Quantity Claimed</strong> for the applicable items.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>You can then email the progress claim to the customer from the <strong>Forms </strong>tab.</p>
+                        <p>View the amount already claimed in green in the graph on the right, as well as the amount outstanding in red. You can add more items to a job after creating the invoice and then claim those items. The items that you have already invoiced will be locked.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/progclaim-graph.png" alt="A screenshot of the graph in a progress claim." class="border" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="final-claim"></a>Raise the final progress claim</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>On the final claim of the project, click <strong>Finalise Claim</strong> to ensure all remaining cost centres are claimed, then click <strong>Finish</strong>. The retention amount will be added to the final invoice.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>View the claim summary</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The progress claim summary provides an overview of the cost centres and sections claimed to date, the progress claims created and paid off, and the remaining claim balance.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/Invoicing - claim breakdown.png" alt="A screenshot of the Claim Breakdown on an invoice." class="border" />
+                        </p>
+                        <p>To view the claim summary, you need to enable it in your invoice form display options. You can then generate the desired progress claim, go to <strong>Details &gt; Forms</strong>, select the desired <strong>Form</strong>, then click <strong>View</strong>.</p>
+                        <p>You can then view the following below the <strong>Balance Due</strong>:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Original Contract</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The <strong>Description </strong>and <strong>Total Value</strong> for each project section, as well as the percentage or value claimed for each section in the <strong>Current </strong>claim and <strong>To Date</strong>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Claim Breakdown</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The <strong>Date</strong>, <strong>Invoice No.</strong>, <strong>Claimed </strong>and <strong>Paid </strong>amounts, and the <strong>Amount Outstanding</strong> for every progress claim raised against the job.</p>
+                                        <p>If a credit note has been raised against a previous progress claim, it will apply in the <strong>Paid </strong>column.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Contract Summary</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>The <strong>Gross Claim to Date </strong>and the <strong>Remaining Claim Balance</strong> for the job.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Infotip">Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Display Options &gt; Claims</strong> to adjust how the claim summary displays, including whether to include cost centres with a zero value sell price.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="retention-claim"></a> Create a retention / retainage claim</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Retention, also known as retainage in the United States, is the percentage of payment held from you by the customer to safeguard against defects in workmanship and ensure the job is completed to specific standards. Retention / retainage settings are usually defined at the beginning of a project to ensure amounts are calculated correctly for each progress claim.</p>
+                        <p>After the project has been completed, all cost centres have been claimed, and the defined retention / retainage period, also known as a defects liability period, has passed, you will receive an alert in simPRO to claim the outstanding retention / retainage. You can then can create a retention / retainage claim to receive your defined final claim rebate.</p>
+                        <p>To create a retention / retainage claim:</p>
+                        <ol>
+                            <li>Go to <strong>Invoices &gt; Retentions / Retainages</strong>.</li>
+                            <li>Click<strong> Options &gt; Create Retention </strong>/ <strong>Retainage Claim</strong> on the desired outstanding retention / retainage.</li>
+                            <li>Adjust the<strong> Date Issued</strong>, <strong>Payment Due</strong> terms and<strong> Invoice Comment</strong> as necessary.</li>
+                            <li>View all retentions / retainages held or rebated in the <strong>Retentions </strong>/ <strong>Retainages Held</strong> table, then adjust the <strong>Retention </strong>/ <strong>Retainage Claimed</strong> amount as necessary.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>You can then email the retention / retainage claim to the customer from the <strong>Forms </strong>tab.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Approve an invoice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>An invoice must be in the <strong>Approved </strong>stage before it can be sent to the customer.</p>
+                <p>To automatically approve invoices upon creation, go to <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Invoices &gt; Invoice Stage</strong> and select <strong>Approved</strong>. Alternatively, select <strong>Pending </strong>to require invoices to be manually approved by an employee with the correct security group permissions.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Approve an invoice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>An invoice must be in the <strong>Approved </strong>stage before it can be sent to the customer.</p>
+                <p>To automatically approve invoices upon creation, go to <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Invoices &gt; Invoice Stage</strong> and select <strong>Approved</strong>. Alternatively, select <strong>Pending </strong>to require invoices to be manually approved by an employee with the correct security group permissions.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Email an invoice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/serviceinvoice-email.png" alt="A screenshot of the Forms tab in an invoice." class="border" />
+                </p>
+                <p>To email an invoice:</p>
+                <ol>
+                    <li>Access the desired invoice, then click <strong>Forms</strong>.</li>
+                    <li>Select the invoice <strong>Form </strong>you wish to send.<ul><li>Only the forms you have assigned in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Forms</strong> will be available to select.</li></ul></li>
+                    <li>Under <strong>To</strong>, enter the recipient's email address, or alternatively, select a different <strong>Primary Contact</strong>, or click to add additional <strong>Contacts</strong>.</li>
+                    <li>The primary contact for invoicing as defined in the customer card file will automatically populate this field.</li>
+                    <li>Adjust the default <strong>Subject </strong>and <strong>Body </strong>if desired. The default is set up in <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice</strong> / <strong>Request for Claim</strong>.<ul><li>Alternatively, click <strong>Clear Email</strong> to enter a new <strong>Subject </strong>and <strong>Body</strong>.</li></ul></li>
+                    <li>Click <strong>View </strong>to preview your invoice before you send it.</li>
+                    <li>Click <strong>Send &gt; OK &gt; OK</strong>.</li>
+                </ol>
+                <p class="Infotip">If you need to send multiple invoices, use the Aged Receivables report. Select the customers you want to email a statement to and click <strong>Email </strong>in the footer options.</p>
+                <p class="WarningTip">It recommended that you do not generate .docx when you click View as it allows you to alter the invoice outside of simPRO. This can cause errors within your accounting system and impact reporting.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Adjust your default email template and available forms</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To adjust the default email <strong>Subject </strong>and <strong>Body </strong>that appears when emailing an invoice to a customer, go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice</strong> / <strong>Request For Claim &gt; Email</strong>.</p>
+                        <p>You can also assign and manage the forms that are available to select from the <strong>Form </strong>drop-down list.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Invoices/Invoicing - forms setup.png" alt="A screenshot of the Forms tab in Invoices Forms Setup." class="border" />
+                        </p>
+                        <p>To assign forms:</p>
+                        <ol>
+                            <li>Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice</strong> / <strong>Request For Claim &gt; Forms</strong>.</li>
+                            <li>Select the form you wish to assign from the <strong>Forms Assigned</strong> drop-down list, then click <strong>Add Form</strong>.</li>
+                            <li>If desired, enter a new <strong>Form Name</strong> to appear when the form is available in the <strong>Form </strong>drop-down list.<ul><li>The adjusted <strong>Form Name </strong>is for your reference only and will not appear on the invoice form itself.</li></ul></li>
+                            <li>Select <strong>Email Logging</strong> to keep a record of all email activity regarding the form in the <strong>Log </strong>tab of an invoice.</li>
+                            <li>Click <strong>Save</strong>.</li>
+                        </ol>
+                        <p>To remove a form from being available to select from the <strong>Form </strong>drop-down list, click the red delete icon. The form will still be available to select and add from the <strong>Forms Assigned</strong> drop-down list.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Warnings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You will receive an alert if you create an invoice a progress claim for a job with adjusted pricing. Ensure the adjusted figure is correct, then proceed creating the invoice as normal.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/progclaim-warning2.png" alt="A screenshot of a warning for adjusted pricing." class="border" />
+                </p>
+                <p MadCap:conditions="Default.Phase 1">
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> You will also receive an alert if you raise a progress claim for a job that already has partially paid or unpaid invoices. Click the invoice number to view the outstanding invoice.</p>
+                <p MadCap:conditions="Default.Enterprise">You will also receive an alert if you raise a progress claim for a job that already has partially paid or unpaid invoices. Click the invoice number to view the outstanding invoice.</p>
+                <p MadCap:conditions="Default.Phase 1">
+                    <img src="../../Resources/Images/Screenshots/Invoices/progclaim-warning1.png" alt="A screenshot of a warning for a job that has already been invoiced." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p MadCap:conditions="Default.Enterprise">
+            <img src="../../Resources/Images/Screenshots/Invoices/progclaim-warning1.png" alt="A screenshot of a warning for a job that has already been invoiced." class="border" />
+        </p>
+        <h2>Advanced</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Adjust display options for invoice forms</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="Default.Phase 1">You can customise how information is displayed on your in your invoice <strong>Forms Setup</strong>, including  the form title, what the form total shows, the claim summary details, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> section, cost centre, and materials and labour information, the footnote, as well as the fields included in the header.</p>
+                <p MadCap:conditions="Default.Enterprise">You can customise how information is displayed on your in your invoice <strong>Forms Setup</strong>, including  the form title, what the form total shows, the claim summary details, section, cost centre, and materials and labour information, the footnote, as well as the fields included in the header.</p>
+                <p MadCap:conditions="Default.Service">You can customise how information is displayed on your in your invoice <strong>Forms Setup</strong>, including  the form title, what the form total shows, the claim summary details, cost centre, and materials and labour information, the footnote, as well as the fields included in the header.</p>
+                <p MadCap:conditions="Default.Phase 1">To adjust display options for tax invoices, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> progress claims, and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> retention claims, go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoices &gt; Display Options</strong>, adjust options as desired, then click <strong>Save</strong>.</p>
+                <p MadCap:conditions="Default.Enterprise">To adjust display options for tax invoices, progress claims, and retention claims, go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoices &gt; Display Options</strong>, adjust options as desired, then click <strong>Save</strong>.</p>
+                <p MadCap:conditions="Default.Service">To adjust display options for tax invoices, go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoices &gt; Display Options</strong>, adjust options as desired, then click <strong>Save</strong>.</p>
+                <p MadCap:conditions="Default.Phase 1">
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> To adjust display options for requests for claim, go to <strong>System &gt; Setup &gt; Forms Setup &gt; Request for Claim &gt; Display Options</strong>, adjust options as desired, then click <strong>Save</strong>.</p>
+                <p MadCap:conditions="Default.Enterprise">To adjust display options for requests for claim, go to <strong>System &gt; Setup &gt; Forms Setup &gt; Request for Claim &gt; Display Options</strong>, adjust options as desired, then click <strong>Save</strong>.</p>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><a name="adjust-claim-display-options"></a> Adjust progress claim display options</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Display Options &gt; Claim</strong> to specify how claimed values are displayed on progress claim forms.</p>
+                        <p>You may wish to generate a preview of a progress claim in the <strong>Forms </strong>tab to view how your settings apply. Each time you make a change, click <strong>Save</strong>, then refresh the browser tab containing the progress claim form.</p>
+                        <p>You can then adjust the following display options:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Progress Claim Shows</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select to show <strong>All Cost Centres</strong>, <strong>All Cost Centres Excluding $0</strong> / <strong>£0 Values</strong>, <strong>Only Cost Centres Claimed on Current Invoice</strong>, or <strong>Only Cost Centres Claimed To Date</strong>.</p>
+                                        <p>You may wish to select to display <strong>All Cost Centres Excluding $0 </strong>/ <strong>£0 Values</strong> if you are using a cost centre or section with a zero value sell price to manage labour and perform other internal tasks for the job that are not relevant to the customer.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Show Contract Table Summary for Claims</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>Off </strong>to display only the invoice body. Select <strong>On </strong>to include the claim summary below the invoice body, or select <strong>Always Show On New Page</strong> to include the claim summary below the invoice body on a new page.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Claim Summary Lists By</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select to display claim summary values by <strong>Section </strong>or <strong>Cost Centre</strong>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Variation Summary Lists By</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select to display variation summary values by <strong>Section </strong>or <strong>Cost Centre</strong>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Claim / Variation Summary Shows</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>All Cost Centres</strong> to display a breakdown of all cost centres on the invoiced job.</p>
+                                        <p>Select <strong>All Cost Centres Excluding $0 </strong>/ <strong>£0 Values </strong>to display a breakdown of all cost centres on the invoiced job with a value of more than zero. This is useful if you are using a cost centre or section with a zero value sell price to manage labour and perform other internal tasks for the job that are not relevant to the customer.</p>
+                                        <p>Select <strong>Only Cost Centres Claimed On Current Invoice </strong>to display a breakdown of only the cost centres currently being claimed.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Claim Summary Shows</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select to display claim summary values <strong>Inc. Tax</strong>, <strong>Ex. Tax</strong> or according to the <strong>System Default </strong>in <strong>System &gt; Setup &gt; Defaults &gt; Financial &gt; Invoicing &gt; Show Sell &amp; Cost Prices</strong>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Claim Breakdwon Table</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>Select <strong>On </strong>to display the <strong>Claim Breakdown</strong> of all progress claims raised against the job. Select <strong>Off </strong>to only display the <strong>Original Contract </strong>and <strong>Contract Summary</strong> tables.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Infotip">Please note that allocating all resource management to one cost centre may affect how profitability is calculated for the individual cost centre, but not for the job overall. If the cost centre does not contain any materials allocated to the job, technicians scheduled to the cost centre will not be able to access them</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown> <![CDATA[ ]]></MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Adjust progress claim display options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoice &gt; Display Options &gt; Claim</strong> to specify how claimed values are displayed on progress claim forms.</p>
+                <p>You may wish to generate a preview of a progress claim in the <strong>Forms </strong>tab to view how your settings apply. Each time you make a change, click <strong>Save</strong>, then refresh the browser tab containing the progress claim form.</p>
+                <p>You can then adjust the following display options:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Progress Claim Shows</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select to show <strong>All Cost Centres</strong>, <strong>All Cost Centres Excluding $0</strong> / <strong>£0 Values</strong>, <strong>Only Cost Centres Claimed on Current Invoice</strong>, or <strong>Only Cost Centres Claimed To Date</strong>.</p>
+                                <p>You may wish to select to display <strong>All Cost Centres Excluding $0 </strong>/ <strong>£0 Values</strong> if you are using a cost centre or section with a zero value sell price to manage labour and perform other internal tasks for the job that are not relevant to the customer.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Show Contract Table Summary for Claims</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <strong>Off </strong>to display only the invoice body. Select <strong>On </strong>to include the claim summary below the invoice body, or select <strong>Always Show On New Page</strong> to include the claim summary below the invoice body on a new page.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Claim Summary Lists By</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select to display claim summary values by <strong>Section </strong>or <strong>Cost Centre</strong>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Variation Summary Lists By</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select to display variation summary values by <strong>Section </strong>or <strong>Cost Centre</strong>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Claim / Variation Summary Shows</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <strong>All Cost Centres</strong> to display a breakdown of all cost centres on the invoiced job.</p>
+                                <p>Select <strong>All Cost Centres Excluding $0 </strong>/ <strong>£0 Values </strong>to display a breakdown of all cost centres on the invoiced job with a value of more than zero. This is useful if you are using a cost centre or section with a zero value sell price to manage labour and perform other internal tasks for the job that are not relevant to the customer.</p>
+                                <p>Select <strong>Only Cost Centres Claimed On Current Invoice </strong>to display a breakdown of only the cost centres currently being claimed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Claim Summary Shows</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select to display claim summary values <strong>Inc. Tax</strong>, <strong>Ex. Tax</strong> or according to the <strong>System Default </strong>in <strong>System &gt; Setup &gt; Defaults &gt; Financial &gt; Invoicing &gt; Show Sell &amp; Cost Prices</strong>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Claim Breakdwon Table</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Select <strong>On </strong>to display the <strong>Claim Breakdown</strong> of all progress claims raised against the job. Select <strong>Off </strong>to only display the <strong>Original Contract </strong>and <strong>Contract Summary</strong> tables.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="Infotip">Please note that allocating all resource management to one cost centre may affect how profitability is calculated for the individual cost centre, but not for the job overall. If the cost centre does not contain any materials allocated to the job, technicians scheduled to the cost centre will not be able to access them.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Adjust the How to Pay section</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can customise how the <strong>How To Pay</strong> section appears on a customer invoice in your invoice <strong>Forms Setup</strong>, including which payment options are available and how they are formatted.</p>
+                <p>To view how your changes apply, access any invoice, then go to the <strong>Forms </strong>tab and click <strong>View </strong>to open a preview of the invoice in a new tab. As you make adjustments in the <strong>How To Pay</strong> settings, click <strong>Save</strong>, then refresh the tab with your invoice preview to view your changes.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/Invoicing - how to pay setup.png" alt="A screenshot of the How To Pay section in Forms Setup." class="border" />
+                </p>
+                <p>To adjust the <strong>How To Pay</strong> section:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Invoices &gt; How To Pay</strong>.</li>
+                    <li>Under <strong>How To Pay</strong>:<ul><li>Adjust the <strong>How To Pay Section Height</strong>, and select whether to include a <strong>How To Pay Separator</strong>, <strong>Title</strong>, and <strong>Invoice No.</strong></li><li>Enter a <strong>Payment Claim Message</strong> if desired.</li><li>AU and NZ only: Enter your <strong>BPay Biller Code</strong> and select whether your <strong>BPay Accepts Credit Card</strong>.</li></ul></li>
+                    <li>Select the desired payment methods and details you wish to show from the <strong>Options Assigned</strong> drop-down list, then click <strong>Add Fields</strong>.<ul><li>Click and drag the grey drag handle to reposition the payment methods and details.</li></ul></li>
+                    <li>If applicable, adjust options as desired to customise how the <strong>Credit Card</strong>, <strong>Mail</strong>, and <strong>Direct Deposit </strong>payment methods appear.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/Invoicing - how to pay2.png" alt="A screenshot of the How To Pay section on an invoice." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Create and set up a claim statement for requests for claim</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you wish to add information such as legal disclaimers on your request for claim, you can add a claim statement field in <strong>Forms Setup</strong>.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/requestclaim-statement.png" alt="A screenshot of the Claim Statement tab in the Request For Claim Forms Setup." class="border" />
+                </p>
+                <p>To create and set up a claim statement for requests for claim:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Request For Claim &gt; Claim Statement</strong>.</li>
+                    <li>Enter the desired <strong>Statement Section Height</strong>.</li>
+                    <li>If desired, select whether the <strong>Statement Separator</strong> is <strong>On </strong>or <strong>Off</strong>. This adds a dotted line to separate the statement from the form content.</li>
+                    <li>Enter your statement in the <strong>Payment Claim Statement</strong> field.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create and set up a claim statement for requests for claim</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you wish to add information such as legal disclaimers on your request for claim, you can add a claim statement field in <strong>Forms Setup</strong>.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/requestclaim-statement.png" alt="A screenshot of the Claim Statement tab in the Request For Claim Forms Setup." class="border" />
+                </p>
+                <p>To create and set up a claim statement for requests for claim:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Request For Claim &gt; Claim Statement</strong>.</li>
+                    <li>Enter the desired <strong>Statement Section Height</strong>.</li>
+                    <li>If desired, select whether the <strong>Statement Separator</strong> is <strong>On </strong>or <strong>Off</strong>. This adds a dotted line to separate the statement from the form content.</li>
+                    <li>Enter your statement in the <strong>Payment Claim Statement</strong> field.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

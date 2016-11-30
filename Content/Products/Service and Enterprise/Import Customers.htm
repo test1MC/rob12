@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="4175" MadCap:lastWidth="1214">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Import Customers</h1>
+        <h2>Overview</h2>
+        <p>In simPRO, you can manually add customers to the system through <strong>People &gt; Create New Customer</strong>, or save time and reduce data entry errors by importing a customer list.</p>
+        <p>You may wish to test the import process with one or two customers before importing an entire list.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Prepare to import a customer list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To prepare to import customers into simPRO:</p>
+                <ol>
+                    <li>
+                        <MadCap:conditionalText MadCap:conditions="Default.AU">Download and add data to simPRO's<strong><a href="../../Resources/Downloadable/Customer Import Template - AU.csv"><strong>Customer Import Template</strong></a></strong>.</MadCap:conditionalText>
+                    </li>
+                    <li>
+                        <MadCap:conditionalText MadCap:conditions="Default.NZ">Download and add data to simPRO's<strong><a href="../../Resources/Downloadable/Customer Import Template - NZ.csv">Customer Import Template</a></strong>.</MadCap:conditionalText>
+                    </li>
+                    <li>
+                        <MadCap:conditionalText MadCap:conditions="Default.UK">Download and add data to simPRO's<strong><a href="../../Resources/Downloadable/Customer Import Template - UK.csv"><strong>Customer Import Template</strong></a></strong>.</MadCap:conditionalText>
+                    </li>
+                    <li>
+                        <MadCap:conditionalText MadCap:conditions="Default.US">Download and add data to simPRO's<strong><a href="../../Resources/Downloadable/Customer Import Template - US.csv"><strong>Customer Import Template</strong></a></strong>.</MadCap:conditionalText>
+                    </li>
+                    <li MadCap:conditions="Default.Phase 1">Download and add data to simPRO's<strong> Customer Import Template</strong> for:<ul><li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Customer Import Template - AU.csv">Australia</a></li><li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Customer Import Template - NZ.csv">New Zealand</a></li><li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Customer Import Template - UK.csv">United Kingdom</a></li><li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Customer Import Template - US.csv">United States</a></li></ul></li>
+                    <li>Alternatively, you can create your own import list and leave out any fields that do not apply to your customers.</li>
+                    <li>Save your file in your system as a compatible file type: CSV (.csv), text (.txt) or a ZIP file (.zip). Consult your spreadsheet software for file saving instructions if required.</li>
+                    <li>Separate your data using the same or similar headings as the <strong>Customer Import Template</strong>.<ul><li>If applicable, data for customers' physical addresses and mailing addresses must be separate and clearly mapped, as this information is important for importing customer sites.</li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+                    </li>
+                </ol>
+                <p>simPRO can recognise and import all the headings and information listed in the <strong>Customer Import Template</strong>.</p>
+                <p>You may choose to include a <strong>Notes </strong>column containing details about a customer to upload to the <strong>Notes </strong>text box in <strong>Profile &gt; Settings </strong>in the customer card file. Alternatively, you can import customer notes to be viewed in the <strong>Notes </strong>tab of the customer card file.</p>
+                <p class="Infotip">If customers were created during an initial accounting package import, adjust your<strong> If Customer Already Exists </strong>import settings accordingly so as to not create duplicate customer card files.</p>
+                <p class="Infotip" MadCap:conditions="Default.Not Ready for Publish">
+                    <MadCap:annotation MadCap:createDate="2016-10-18T10:19:32.6773309+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Awaiting Numeric-only Custom Field feature" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T10:19:40.6007588+10:00">If a customer has a numeric-only custom field in simPRO but there is non-numeric data entered in the field in the customer list, you will receive an error warning and the import will fail. Numbers must be formatted as specified in<strong> System &gt; Setup &gt; Defaults &gt; System &gt; Number Thousands Separator</strong> / <strong>Negative Number Format</strong> to import successfully.</MadCap:annotation>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import a customer list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After preparing your customer list, work through the following steps to import your list into simPRO.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Adjust import settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Customers-settings.png" alt="A screenshot of the Customer Import Settings page." class="border" />
+                        </p>
+                        <p>To adjust customer import settings, go to<strong> Utilities &gt; Import &gt; Customers &gt; Customers</strong>.</p>
+                        <p>The options available include:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 120px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>First Record Is</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>Header Record</strong> if your list's first row contains column titles, or select <strong>Data Record </strong>if your list's first row contains specific data.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>If Customer Already Exists</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>In case simPRO finds duplicated customers (customers with the same name), select whether you want to <strong>Do Nothing</strong> or <strong>Update Customer Details</strong> for the existing site in simPRO, or alternatively,<strong> Always Create</strong> to upload all customers in the file to simPRO.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Create New Site</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>Yes </strong>if you want to create new site card files to be associated with the applicable customers. Select <strong>No </strong>if you do not wish to create new sites.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>If Custom List Value Not Found</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>If any of the entries are a drop-down list in simPRO (for instance, in <strong>Custom Fields</strong> or the <strong>State </strong>drop-down list in the <strong>Details </strong>tab of the customer card file), and your file contains any additional values (or 'custom list values') not available in the relevant list, select <strong>Create New List Option</strong> to add the additional value to the drop-down list in your customer card files. Select <strong>Reject and Warn </strong>to ignore the field and receive a warning when the customer list has been uploaded that the field was not created.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>
+                                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Customer Status</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select whether the upload file is a <strong>Customer </strong>or <strong>Lead </strong>list.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Enterprise">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Customer Status</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>Select whether the upload file is a <strong>Customer </strong>or <strong>Lead </strong>list.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Infotip" MadCap:conditions="Default.Phase 1">
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Leads are not transferred to your accounting package when exporting data through your accounting link.</p>
+                        <p class="Infotip" MadCap:conditions="Default.Enterprise">Leads are not transferred to your accounting package when exporting data through your accounting link.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Select an import file</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To select an import file:</p>
+                        <ol>
+                            <li>Go to <strong>Utilities &gt; Import &gt; Customers &gt; Customers</strong>.</li>
+                            <li>Adjust customer import settings, then click <strong>Choose File</strong> / <strong>Browse</strong>.</li>
+                            <li>Locate your customer import file and click <strong>Open</strong>.</li>
+                            <li>Click <strong>Next</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Match import columns</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Customers- columns.png" alt="A screenshot of the Customer Import Columns page." class="border" />
+                        </p>
+                        <p>After selecting a customer import file, manually match or review your list columns with the fields available in simPRO. You may wish to have both simPRO and your list open at the same time.</p>
+                        <p>To match import columns:</p>
+                        <ol>
+                            <li>Select your import file as above.</li>
+                            <li>On the <strong>Customer Import Columns</strong> page, the column headings from your imported list will appear in brackets, such as <strong>(Company Name)</strong>. Use the drop-down list under each heading to select the matching field in simPRO.</li>
+                            <li>If you wish to leave a column out of the import entirely, select <strong>Ignore</strong>.</li>
+                            <li>Click<strong> Import Customers</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Check import success</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/import customers - summary.png" alt="A screenshot of the Import Customer Summary page." class="border" />
+                        </p>
+                        <p>After uploading an import file, the<strong> Import Customer Summary</strong> page will display a breakdown of your import, including <strong>Customers Added </strong>/ <strong>Updated</strong> / <strong>Ignored </strong>and<strong> Sites Created</strong>.</p>
+                        <p>Click <strong>Customers imported successfully</strong> to download a CSV file of imported customers for your records, with each customer line containing their new simPRO-assigned <strong>Customer ID</strong>.</p>
+                        <p>After a successful import, it is recommended you manually check customer card files to ensure customer data has imported correctly. To do this, go to <strong>People &gt; Customers</strong>, click an imported customer, and check <strong>Profile &gt; Details</strong> for errors. Manually amend if required.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Amend import errors</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If your customer import file does not contain a <strong>First &amp; Last Name</strong> for individual customers or a <strong>Company Name f</strong>or companies, the import will fail and you will receive an error message.</p>
+                <p>To amend the error, click <strong>OK</strong>, then enter details in the required fields in your import list and restart the import process.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Customers- incorrectly assigned fields.png" alt="A screenshot of the Customer Fields incorrectly assigned pop-up window." class="border" />
+                </p>
+                <p>If your file contains other errors, an error message will display on the<strong> Import Customer Summary </strong>page, and the table will display the number of errors found.</p>
+                <p>Click<strong> click here </strong>to download a CSV file of import errors. The <strong>Error Text</strong> column will explain why entries failed. Amend your customer import list accordingly and restart the import process.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Customers - error file.png" alt="A screenshot of an error on the Import Customer Summary page." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

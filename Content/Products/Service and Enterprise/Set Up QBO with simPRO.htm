@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4584" MadCap:lastWidth="1168">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Set Up QBO with simPRO</h1>
+        <h2>Overview</h2>
+        <p>Before you begin posting your simPRO transactions to QuickBooks Online, you need to enable the accounting link in simPRO and QuickBooks Online.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Launch simPRO in QuickBooks Apps</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Launch simPRO in QuickBooks Apps to access your simPRO system from the accounting package and link both systems.</p>
+                <p>To launch simPRO in QuickBooks Apps for the first time:</p>
+                <ol>
+                    <li>Access QuickBooks Apps as normal, then go to <strong>My Apps</strong>.</li>
+                    <li>Locate the simPRO app.</li>
+                    <li>If the simPRO app is not available in <strong>My Apps</strong>, enter <strong>simPRO </strong>in the search bar, then click <strong>simPRO &gt; Get App Now</strong>, and authorise as necessary.</li>
+                    <li>Under the simPRO app, click <strong>Launch &gt; Authorize</strong>.</li>
+                    <li>Enter your simPRO <strong>Company Identifier</strong>, <strong>Username </strong>and <strong>Password </strong>as normal.</li>
+                    <li>Click <strong>Login</strong>.</li>
+                </ol>
+                <p>This will link your QuickBooks Apps login credentials with those of your simPRO account so that you can access simPRO directly from QuickBooks Online.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Accounting/QBO Setup - authorise simPRO.png" alt="A screenshot of the Authorize button." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable the QuickBooks Online accounting link</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Accounting/QBO Setup - choose package.png" alt="A screenshot of available accounting packages in simPRO." class="border" />
+                </p>
+                <p>To enable the QuickBooks Online accounting link in simPRO:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; Accounts Integration</strong>.</li>
+                    <li>Click <strong>QuickBooks Online</strong>.</li>
+                    <li>Adjust settings and export options as desired.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p>To access the accounting link, click <strong>Dashboard </strong>in the top left corner, then go to <strong>Utilities &gt; QuickBooks Online</strong>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Adjust QuickBooks Online settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You need to adjust the following settings to enable the QuickBooks Online accounting link in simPRO:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Accounts Receivable / Debtors Account Name</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Enter as defined in the <strong>Name </strong>field of your Accounts Receivable / Debtors account from your chart of accounts in QuickBooks.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Accounts Payable / Creditors Account Name</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Enter as defined in the <strong>Name </strong>field of your Accounts Payable / Creditors account from your chart of accounts in QuickBooks.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="WarningTip">You need to enter the Name of your accounts receivable and accounts payable accounts, not the account numbers, to enable the accounting link.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Adjust QuickBooks Online export options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can export the following types of transactions to QuickBooks Online:</p>
+                <ul>
+                    <li>Customers</li>
+                    <li>Invoices (includes invoice credits)</li>
+                    <li>Payments</li>
+                    <li>Suppliers</li>
+                    <li>
+                        <MadCap:conditionalText MadCap:conditions="Default.Phase 1">Supplier invoices (includes supplier credits and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor invoices).</MadCap:conditionalText>
+                    </li>
+                    <li MadCap:conditions="Default.Enterprise">Supplier invoices (includes supplier credits and contractor invoices).</li>
+                    <li MadCap:conditions="Default.Service">Supplier invoices (includes supplier credits).</li>
+                </ul>
+                <p>To enable a transaction type to be transferred, select <strong>On</strong>. To prevent it from being transferred, select <strong>Off</strong>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>AU: Set up tax codes for purchase items</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In QuickBooks Online, the <strong>GST </strong>and <strong>FRE </strong>tax codes can only be applied to sales transactions, while purchase transactions have <strong>GST on capital / on non-capital</strong> and <strong>GST-free capital / GST-free non-capital</strong> tax codes applied. These tax codes are only generated after you have set up GST.</p>
+                <p>To successfully export purchase transactions that have had GST or GST-free tax rates applied from simPRO to QuickBooks Online, you need to create <MadCap:xref href="Tax Codes.htm">Tax Codes</MadCap:xref> specific to purchase transactions in simPRO that match the available QBO tax codes exactly.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Accounting/QBO Setup - tax codes 1.png" alt="A screenshot of tax codes in QBO." class="border" />
+                </p>
+                <p>If you have been using simPRO with another accounting package and you are now moving to QuickBooks Online, you will need to reset all of your tax codes.</p>
+                <p class="WarningTip">It is recommended to create tax codes in simPRO that match with the tax codes that are already available in QuickBooks Online. Any new tax codes you create in QuickBooks Online will match to simPRO tax codes with the exact same name and rate, but may not appear on your QBO Business Activity Statement (BAS) report. If you do need to use an additional tax code created in QuickBooks Online, please consult your accountant and test it thoroughly to see if you can report on it in QuickBooks Online.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.AU">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set up tax codes for purchase items</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In QuickBooks Online, the <strong>GST </strong>and <strong>FRE </strong>tax codes can only be applied to sales transactions, while purchase transactions have <strong>GST on capital / on non-capital</strong> and <strong>GST-free capital / GST-free non-capital</strong> tax codes applied. These tax codes are only generated after you have set up GST.</p>
+                <p>To successfully export purchase transactions that have had GST or GST-free tax rates applied from simPRO to QuickBooks Online, you need to create <MadCap:xref href="Tax Codes.htm">Tax Codes</MadCap:xref> specific to purchase transactions in simPRO that match the available QBO tax codes exactly.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Accounting/QBO Setup - tax codes 1.png" alt="A screenshot of tax codes in QBO." class="border" />
+                </p>
+                <p>If you have been using simPRO with another accounting package and you are now moving to QuickBooks Online, you will need to reset all of your tax codes.</p>
+                <p class="WarningTip">It is recommended to create tax codes in simPRO that match with the tax codes that are already available in QuickBooks Online. Any new tax codes you create in QuickBooks Online will match to simPRO tax codes with the exact same name and rate, but may not appear on your QBO Business Activity Statement (BAS) report. If you do need to use an additional tax code created in QuickBooks Online, please consult your accountant and test it thoroughly to see if you can report on it in QuickBooks Online.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Enable category and business group tracking</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To track simPRO accounting categories (known as <strong>Locations </strong>in QuickBooks Online) or business groups (known as <strong>Classes </strong>in QuickBooks Online), you need to enable tracking in <strong>System &gt; Setup &gt; Defaults &gt; Financial &gt; Invoice &gt; Tracking in simPRO</strong> as well as in QBO. You cannot track both accounting categories or business groups.</p>
+                <p>To enable category or business group tracking in QuickBooks Online:</p>
+                <ol>
+                    <li>Access your QuickBooks Online account as normal.</li>
+                    <li>Go to your company menu, then go to <strong>Company Settings &gt; Company &gt; Categories</strong>.</li>
+                    <li>Click the <strong>edit </strong>icon in the <strong>Categories </strong>section.</li>
+                    <li>Select to <strong>Track classes</strong> / <strong>Track locations</strong> as desired.</li>
+                    <li>If you have selected <strong>Track classes</strong>, select to receive a warning when a transaction isn't assigned a class if desired. You can also select how you wish to <strong>Assign classes</strong>.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable category and business group tracking</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To track simPRO accounting categories (known as <strong>Locations </strong>in QuickBooks Online) or business groups (known as <strong>Classes </strong>in QuickBooks Online), you need to enable tracking in <strong>System &gt; Setup &gt; Defaults &gt; Financial &gt; Invoice &gt; Tracking in simPRO</strong> as well as in QBO. You cannot track both accounting categories or business groups.</p>
+                <p>To enable category or business group tracking in QuickBooks Online:</p>
+                <ol>
+                    <li>Access your QuickBooks Online account as normal.</li>
+                    <li>Go to your company menu, then go to <strong>Company Settings &gt; Company &gt; Categories</strong>.</li>
+                    <li>Click the <strong>edit </strong>icon in the <strong>Categories </strong>section.</li>
+                    <li>Select to <strong>Track classes</strong> / <strong>Track locations</strong> as desired.</li>
+                    <li>If you have selected <strong>Track classes</strong>, select to receive a warning when a transaction isn't assigned a class if desired. You can also select how you wish to <strong>Assign classes</strong>.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

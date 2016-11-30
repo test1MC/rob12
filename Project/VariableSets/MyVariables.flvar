@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName"
+    EvaluatedDefinition="simPRO Software">simPRO Software</Variable>
+  <Variable
+    Comment=""
+    Name="PhoneNumber">858 123 4567</Variable>
+  <Variable
+    Name="ProductA"
+    Comment=""
+    Definition="Some text">Product A</Variable>
+  <Variable
+    Name="Year"
+    Comment=""
+    Type="DateTime"
+    LastUpdated="2015-12-31T09:27:22.4850702-08:00"
+    EvaluatedDefinition="yyyy">yyyy</Variable>
+  <Variable
+    Name="Terminology"
+    Comment=""
+    EvaluatedDefinition="supplier">supplier</Variable>
+  <Variable
+    Name="Terminology"
+    Comment=""
+    EvaluatedDefinition="vendor">vendor</Variable>
+  <Variable
+    Name="Retainage"
+    Comment=""
+    EvaluatedDefinition="Retainage">Retainage</Variable>
+  <Variable
+    Name="Retainage"
+    Comment=""
+    EvaluatedDefinition="Retention">Retention</Variable>
+  <Variable
+    Name="itemised"
+    Comment=""
+    EvaluatedDefinition="itemised">itemised</Variable>
+  <Variable
+    Name="itemised"
+    Comment=""
+    EvaluatedDefinition="itemized">itemized</Variable>
+</CatapultVariableSet>

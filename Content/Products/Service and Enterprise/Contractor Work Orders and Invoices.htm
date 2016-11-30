@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="9844" MadCap:lastWidth="1781" MadCap:conditions="Default.Phase 1">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Contractor Work Orders and Invoices</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <h2>Overview</h2>
+        <p>Create contractor work orders to define the products or services to be provided by a contractor. You can create work orders manually in a job, or automatically when you schedule a contractor within a job or in the schedule <strong>Day </strong>/ <strong>Week View</strong>.</p>
+        <p>When the work is complete and the contractor has sent you their invoice or agreed to have you create an RCTI, you can record the invoice in simPRO to put actual costs against jobs and send the invoice to your accounting package to apply payment. When the invoice has been paid in your accounting package, you can then mark it as paid in simPRO.</p>
+        <p>You can also set up and invoice retention / retainage for a contractor work order to withhold a percentage of the contract value from the contractor until the project is completed to your satisfaction.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a contractor work order</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can create contractor work orders in two ways:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');margin-left: auto;margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 164px;" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>In Details &gt; Contractors in a job</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Create a contractor work order in<strong> Details &gt; Contractors</strong> in a job. This is useful if the contractor has agreed to complete the work based on a quote value and / or the date and time to complete the work has not yet been determined.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>In the schedule</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Schedule a contractor in <strong>Schedule &gt; Day</strong> / <strong>Week View</strong> or in the <strong>Schedule </strong>tab of a job to automatically create a contractor work order. This is useful if you know the exact date and time you wish to have the contractor complete works.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/People/workorder-create.png" class="border" alt="A screenshot of the Contractor sub-tab in a job." />
+                </p>
+                <p>To create a contractor work order:</p>
+                <ol>
+                    <li>Create a job as normal, then go to <strong>Details &gt; Contractors</strong>.</li>
+                    <li>Click <strong>New Work Order</strong>.</li>
+                    <li>Select the <strong>Contractor </strong>and <strong>Employee</strong>.</li>
+                    <li>Select the <strong>Date</strong>.</li>
+                    <li>Select<strong> Applying Retention?</strong> if applicable, then enter the <strong>Retention Amount</strong>, <strong>Amount Per Claim</strong> and <strong>Retention Period</strong>.</li>
+                    <li>Enter a <strong>Description</strong>.<ul><li>Alternatively, select a script.</li></ul></li>
+                    <li>Select <strong>Contractor to Supply Materials?</strong> if the contractor is supplying all or some of the parts needed for the job, then enter the <strong>Qty Assigned </strong>for the desired parts.</li>
+                    <li>Enter the cost of <strong>Labour </strong>manually or select <strong>Schedule Based</strong> to automatically calculate it based on the scheduled time.<ul><li><p>Schedule based labour will only calculate if you have added labour rates to the contractor card file.</p></li></ul></li>
+                    <li>Select the applicable <strong>Tax Code</strong>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+                    </li>
+                </ol>
+                <p>Work orders will then appear under <strong>Jobs &gt; Contractor Jobs</strong>. <strong>Contractors </strong>can also view their work orders through the <MadCap:xref href="Contractor Portal.htm">Contractor Portal</MadCap:xref>, as well as create their own schedules. Alternatively, you can schedule contractors to automatically create work orders, which you can then access and adjust if the work order labour is based on an agreed fee with the contractor, and not on the schedule.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Set up retention / retainage for a work order</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you have retention / retainage withheld from you by customers on certain jobs, you may wish to pass all or part of that retention / retainage on to your contractors. To do this, you need to enter the applicable Retention Liability Account code or name in <strong>System &gt; Setup &gt; Defaults &gt; Financial &gt; Accounts</strong> to ensure the transaction posts to the correct account in your accounting package.</p>
+                        <p>Select <strong>Applying Retention / Retainage? </strong>when creating a work order to set up and invoice retention / retainage and withhold a percentage of the contract value from the contractor until the project is completed to your satisfaction.</p>
+                        <p>You can then enter the following information:</p>
+                        <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 185px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Retention / Retainage Amount (%)</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The maximum percentage of the contract value you withhold from the contractor. The standard retention / retainage amount is five percent, however this may vary depending on contract terms.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Amount Per Claim (%)</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The maximum percentage per contractor invoice withheld by your business until the the entire contract value has been claimed. The standard amount per claim is 10 percent, however this may vary depending on contract terms.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Retention / Retainage Period</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>Also known as a defects liability period, this is the number of months after practical completion of the project that the contractor can claim their withheld retention. The standard retention / retainage period is 12 months, however this may vary depending on contract terms.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/People/contractors-retentions.png" alt="A screenshot of a work order retention." class="border" />
+                        </p>
+                        <p>When you invoice a contractor work order with retention / retainage applied, you will need to invoice the retention / retainage amount separately.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Schedule a contractor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Scheduling a contractor to a job will automatically create a new work order in the job if none have been created for that contractor. You can schedule a contractor before or after creating a work order either from the <strong>Schedule </strong>tab in a job or <strong>Day View</strong> / <strong>Week View</strong>.</p>
+                <p>You can then access the work order in <strong>Jobs &gt; Contractor Jobs</strong> to adjust details.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/People/workorder-schedule.png" alt="A screenshot of a contractor being scheduled." class="border" />
+                </p>
+                <p>To schedule a contractor from the <strong>Schedule </strong>tab within a job:</p>
+                <ol>
+                    <li>Open the desired job.</li>
+                    <li>Click the <strong>Schedule </strong>tab.</li>
+                    <li>Click the schedule icon next to the contractor's name.</li>
+                    <li>Click and drag the schedule block to the desired day and time.<ul><li>To extend or shorten a schedule block, hover over the top or bottom edge, then click and drag the white arrows.</li></ul></li>
+                    <li>Click the close icon in the top right corner.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+                    </li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/People/workorder-weekview.png" alt="A screenshot of a contractor being scheduled in Week View." class="border" />
+                </p>
+                <p>To schedule a contractor in <strong>Day View / Week View</strong>:</p>
+                <ol>
+                    <li>Hover over <strong>Schedules</strong>, then click <strong>Day View / Week View</strong>.</li>
+                    <li>Search and select the desired job.</li>
+                    <li>Select a cost centre if necessary.</li>
+                    <li>If in <strong>Week View</strong>, select the contractor under <strong>Employee</strong>.</li>
+                    <li>Click and drag the schedule block as desired.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Email a contractor work order</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To email a work order to the contractor:</p>
+                <ol>
+                    <li>Go to <strong>Jobs &gt; Contractor Jobs</strong>, then access the desired job.</li>
+                    <li>Click <strong>Forms</strong>.</li>
+                    <li>Under <strong>Form</strong>, select either <strong>Work Order</strong> or <strong>Work Order w/ Prices</strong>.<ul><li>Click <strong>View </strong>to preview the work order.</li></ul></li>
+                    <li>Enter the contractor's email address.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Send Email.flsnp" />
+                        <ul>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SN Send Email2.flsnp" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Click <strong>Send &gt; OK</strong>.</li>
+                </ol>
+                <p>Go to <strong>System &gt; Setup &gt; <MadCap:xref href="Forms Setup.htm">Forms Setup</MadCap:xref> &gt; Contractor &gt; Job &gt; Display Options &gt; Form Title</strong> to enter a new form title to display on the printable form document. The form will still retain its simPRO default title when you select it from the Form drop-down list.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Invoice a contractor work order</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After a contractor work order has been raised, you can invoice it in two ways:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 174px;" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Standard invoice</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Apply the invoice received from the contractor to the work order.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Recipient-Created Tax Invoice (RCTI)</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Create invoices for work orders on behalf of your contractors if permitted. Contractors can then view their relevant RCTIs in the contractor portal and approve or reject them.</p>
+                                <p>Before using RCTIs, please ensure you are eligible with the <a href="http://law.ato.gov.au/atolaw/view.htm?docid=GST/GSTR200010/NAT/ATO/00001">Australian Tax Office</a>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Work orders must be fully invoiced before they are marked as <strong>Complete</strong>. If the work order is complete but you are not invoicing the full amount, go to <strong>Jobs &gt; Contractor Jobs &gt; Complete</strong>, then click <strong>Options &gt; Move Back to Pending</strong> on the work order before invoicing the remaining amount.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/People/work order - invoice.png" alt="A screenshot of the Invoice Work Order option." class="border" />
+                </p>
+                <p>To invoice a contractor work order:</p>
+                <ol>
+                    <li>Go to <strong>Jobs &gt; Contractor Jobs &gt; Pending</strong> / <strong>Approved</strong>.</li>
+                    <li>Click <strong>Options &gt; Invoice Work Order</strong> on the desired work order.</li>
+                    <li>Select to include or exclude tax in the <strong>Invoice Values</strong>.</li>
+                    <li>Select the <strong>Invoice Type</strong>.</li>
+                    <li>Enter the <strong>Contractor Invoice No.</strong> and select the<strong> Invoice Date</strong>.<ul><li>The invoice will not post to your accounting link unless it has a <strong>Contractor Invoice No.</strong></li></ul></li>
+                    <li>Select the <strong>Invoice Paid?</strong> check box if the invoice has been paid in your accounting package, then select the <strong>Date Paid</strong>.</li>
+                    <li>Select a different <strong>Cost Centre</strong> and <strong>Tax Code</strong> for the work order if required.</li>
+                    <li>Select the <strong>Complete?</strong> check box if the works have been completed and you are invoicing the full amount.</li>
+                    <li>Adjust the <strong>Applied </strong>amount if required.</li>
+                    <li>Click <strong>Add Variance</strong> to add a variance if required.</li>
+                    <li>Enter <strong>Notes </strong>as desired.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>RCTIs will then appear under <strong>Invoices &gt; Contractor Unpaid Invoices</strong>. If you have the <strong>RCTI </strong>column enabled in <strong>Modify Table View</strong>, standard contractor invoices will be marked <strong>No </strong>and RCTIs will be marked <strong>Yes</strong>.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Add a variance</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Add a variance to a work order when you need to create a positive or negative invoice without creating another work order, such as when a contractor loses stock that needs a deduction from their invoice.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/People/work order - variance.png" alt="A screenshot of a variance on a work order." class="border" />
+                        </p>
+                        <p>To add a variance to a contractor invoice:</p>
+                        <ol>
+                            <li>Create a contractor invoice as normal.</li>
+                            <li>Click <strong>Add Variance</strong>.</li>
+                            <li>Select the <strong>Contractor </strong>and <strong>Cost Centre</strong>.</li>
+                            <li>Select the employee / contractor the variance was <strong>Approved By</strong>.</li>
+                            <li>Enter the variance <strong>Amount</strong>.<ul><li>For a positive variance, enter the figure as normal. For a negative variance, enter the minus sign immediately before the figure.</li></ul></li>
+                            <li>Select the <strong>Date</strong>.</li>
+                            <li>Enter a <strong>Description </strong>of the variance.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                            <li>Ensure<strong> Include?</strong> is selected to invoice the variance amount along with the work order.<ul><li>If you clear the <strong>Include?</strong> check box, the variance will remain in<strong> Invoices &gt; Contractor Variances</strong> until you re-invoice the work order.</li></ul></li>
+                            <li>Finalise the invoice as desired, then click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/People/contractor-variances.png" alt="A screenshot of the Create Variance button." class="border" />
+                        </p>
+                        <p>To create a variance separately from a contractor invoice:</p>
+                        <ol>
+                            <li>Go to <strong>Invoices &gt; Contractor Variances</strong>.</li>
+                            <li>Click <strong>Create Variance</strong>.</li>
+                            <li>Select the <strong>Contractor </strong>and <strong>Cost Centre</strong>.</li>
+                            <li>Select the employee / contractor the variance was <strong>Approved By</strong>.</li>
+                            <li>Enter the variance <strong>Amount</strong>.<ul><li>For a positive variance, enter the figure as normal. For a negative variance, enter the minus sign immediately before the figure.</li></ul></li>
+                            <li>Select the <strong>Date</strong>.</li>
+                            <li>Enter a <strong>Description </strong>of the variance.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>Then when you create a contractor invoice for the same contractor, you can select <strong>Include?</strong> to receipt the variance along with it.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/People/contractor-variance-include.png" alt="A screenshot of the Include check box." class="border" />
+                        </p>
+                        <p class="Infotip">You cannot add variances to saved invoices. This includes when you create an invoice and click <strong>Save </strong>to continue working in the invoice.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Approved and rejected RCTIs</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When a contractor has approved an RCTI in the <MadCap:xref href="Contractor Portal.htm">Contractor Portal</MadCap:xref>, the work order will automatically move to <strong>Approved</strong>. You can then export the invoice to your accounting package to record your payment, mark the invoice as paid, then mark the work order as complete as applicable.</p>
+                        <p>If an RCTI is rejected by a contractor through the contractor portal, you will receive an alert with a rejection <strong>Reason</strong>.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/People/rcti - rejected.png" alt="A screenshot of a rejected RCTI." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Mark a contractor invoice as paid</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can mark a contractor invoice as paid as you create it, or after you have created it and exported it to your accounting package for payment.</p>
+                <p>To mark a contractor invoice as paid, go to <strong>Invoices &gt; Contractor Unpaid Invoices</strong>, then click <strong>Options &gt; Mark as Paid</strong> on the desired invoice.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Mark a work order as complete</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Mark a work order as complete once the contractor has completed the work and the work order has been invoiced. Contractors using the <MadCap:xref href="Contractor Portal.htm">Contractor Portal</MadCap:xref> can also mark work orders as complete.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/People/workorder-complete.png" alt="A screenshot of the Mark as Complete option." class="border" />
+                </p>
+                <p>To mark a work order as complete:</p>
+                <ol>
+                    <li>Go to <strong>Jobs &gt; Contractor Jobs</strong>.</li>
+                    <li>Click <strong>Options</strong>, or right-click the desired work order.</li>
+                    <li>Click <strong>Mark as Complete</strong>.</li>
+                </ol>
+                <p>The work order will then be moved to <strong>Complete Contractor Jobs</strong>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Invoice contractor retentions / retainages</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you invoice a work order with a retention / retainage applied, the retention / retainage will need to be invoiced separately. You can invoice them individually, or invoice multiple retentions / retainages for one contractor in one invoice.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/People/workorder-retention.png" alt="A screenshot of a contractor invoice with retention." class="border" />
+                </p>
+                <p>To invoice a retention:</p>
+                <ol>
+                    <li>Go to<strong> Invoices &gt; Contractor Retentions</strong>.</li>
+                    <li>Click <strong>Options &gt; Invoice Retention</strong> on the desired retention.</li>
+                    <li>Enter the <strong>Contractor Invoice No.</strong><ul><li><p>The invoice will not post to your accounting link unless it has a <strong>Contractor Invoice No.</strong></p></li></ul></li>
+                    <li>Select<strong> Invoice Date</strong>.</li>
+                    <li>Select the <strong>Invoice Paid?</strong> check box if the invoice has been paid, then select the <strong>Date Paid</strong>.</li>
+                    <li>Select a <strong>Tax Code</strong>.</li>
+                    <li>Select the <strong>Complete?</strong> check box if the works have been completed.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+                    </li>
+                </ol>
+                <p>The retention invoice will then appear under <strong>Contractor Invoices</strong>, separate from the work order invoice.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

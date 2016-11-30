@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[&quot;Default.AUS Enterprise&quot;] exclude[&quot;Default.AUS Service&quot; or Default.Connect or Default.UK or Default.US] ">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="MyVariables/Retainage">Retention</Variable>
+  </Variables>
+</CatapultTarget>

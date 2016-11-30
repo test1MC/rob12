@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="8823" MadCap:lastWidth="1532">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Import Employees and Contractors</h1>
+        <h2>Overview</h2>
+        <p>In simPRO, you can manually add employees to the system through <strong>People &gt; Create New Employee</strong>, or save time and reduce data entry error by importing an employee list.</p>
+        <p MadCap:conditions="Default.Phase 1">You can also perform the import process with <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors.</p>
+        <p MadCap:conditions="Default.Phase 1">You may wish to test the import process with one or two employees / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors before importing an entire list.</p>
+        <p MadCap:conditions="Default.Phase 1,Default.Service">You may wish to test the import process with one or two employees before importing an entire list.</p>
+        <p MadCap:conditions="Default.Enterprise">You can also perform the import process with  contractors.</p>
+        <p MadCap:conditions="Default.Enterprise">You may wish to test the import process with one or two employees / contractors before importing an entire list.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Prepare to import an employee / contractor list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create an employee list</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="Default.Phase 1">To prepare to import employees into simPRO, you can download and add data to simPRO's <strong>Employee Import Template</strong> for:</p>
+                        <ul>
+                            <li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Employee Import Template- AU.csv">Australia</a>
+                            </li>
+                            <li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Employee Import Template - NZ.csv">New Zealand</a>
+                            </li>
+                            <li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Employee Import Template - UK.csv">United Kingdom</a>
+                            </li>
+                            <li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Employee Import Template US.csv">United States</a>
+                            </li>
+                        </ul>
+                        <p>
+                            <MadCap:conditionalText MadCap:conditions="Default.AU">To prepare to import employees into simPRO, you can download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Employee Import Template- AU.csv">Employee Import Template</a></strong>.</MadCap:conditionalText>
+                        </p>
+                        <p>
+                            <MadCap:conditionalText MadCap:conditions="Default.NZ">To prepare to import employees into simPRO, you can download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Employee Import Template - NZ.csv"><strong>Employee Import Template</strong></a></strong>.</MadCap:conditionalText>
+                        </p>
+                        <p>
+                            <MadCap:conditionalText MadCap:conditions="Default.UK">To prepare to import employees into simPRO, you can download and add data to simPRO's <a href="../../Resources/Downloadable/Employee Import Template - UK.csv"><strong>Employee Import Template</strong></a>.</MadCap:conditionalText>
+                        </p>
+                        <p MadCap:conditions="Default.US">To prepare to import employees into simPRO, you can download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Employee Import Template US.csv">Employee Import Template</a></strong>.</p>
+                        <p>Alternatively, you can create your own import list and leave out any fields that do not apply to your employees.</p>
+                        <p>To import your employee list successfully into simPRO, the<strong> Employee Name</strong> field must be specified for each employee. If this field is not specified, the employee and their information will not upload to simPRO.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Create a contractor list</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To prepare to import <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors into simPRO, you can download and add data to simPRO's <strong>Contractor Import Template</strong> for:</p>
+                        <ul>
+                            <li><a href="../../Resources/Downloadable/Contractor Import Template  AU.csv">Australia</a>
+                            </li>
+                            <li><a href="../../Resources/Downloadable/Contractor Import Template - NZ.csv">New Zealand</a>
+                            </li>
+                            <li><a href="../../Resources/Downloadable/Contractor Import Template - UK.csv">United Kingdom</a>
+                            </li>
+                            <li><a href="../../Resources/Downloadable/Contractor Import Template - US.csv">United States</a>
+                            </li>
+                        </ul>
+                        <p>Alternatively, you can create your own import list and leave out any fields that do not apply to your contractors.</p>
+                        <p>To import your contractor list successfully into simPRO, the <strong>Contractor Name </strong>field must be specified for each contractor. If this field is not specified, the contractor and their information will not upload to simPRO.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Create a contractor list</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="Default.AU">To prepare to import  contractors into simPRO, you can download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Contractor Import Template  AU.csv">Contractor Import Template</a></strong>.</p>
+                        <p MadCap:conditions="Default.NZ">To prepare to import  contractors into simPRO, you can download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Contractor Import Template - NZ.csv">Contractor Import Template</a></strong>.</p>
+                        <p MadCap:conditions="Default.UK">To prepare to import  contractors into simPRO, you can download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Contractor Import Template - UK.csv">Contractor Import Template</a></strong>.</p>
+                        <p MadCap:conditions="Default.US">To prepare to import  contractors into simPRO, you can download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Contractor Import Template - US.csv">Contractor Import Template</a></strong>.</p>
+                        <p>Alternatively, you can create your own import list and leave out any fields that do not apply to your contractors.</p>
+                        <p>To import your contractor list successfully into simPRO, the <strong>Contractor Name </strong>field must be specified for each contractor. If this field is not specified, the contractor and their information will not upload to simPRO.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Prepare the list for import</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Once your import list has been created, you can prepare your list for import with the following steps:</p>
+                        <ol>
+                            <li>Save your file in your system as a compatible file type: CSV (.csv), text (.txt) or a ZIP file (.zip). Consult your spreadsheet software for file saving instructions if required.</li>
+                            <li>Separate your data using the same or similar headings as the import template.</li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+                            </li>
+                            <li>
+                                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+                            </li>
+                        </ol>
+                        <p class="Infotip" MadCap:conditions="Default.Not Ready for Publish">
+                            <MadCap:annotation MadCap:createDate="2016-10-18T11:09:27.3267026+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Awaiting Numeric-only Custom Field feature." MadCap:editor="Zoe" MadCap:editDate="2016-10-18T11:09:35.8973919+10:00">If an employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor has a numeric-only custom field in simPRO but there is non-numeric data entered in the field in the employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor list, you will receive an error warning and the import will fail. Numbers must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Number Thousands Separator</strong> / <strong>Negative Number Format </strong>to import successfully.</MadCap:annotation>
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import an employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    After preparing your employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor list, work through the following steps to import your list into simPRO.
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Adjust import settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - settings.png" alt="A screenshot of the Employee Import Settings page." class="border" />
+                        </p>
+                        <p>
+                    To adjust employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor import settings, go to <strong>Utilities &gt; Import &gt;</strong><img src="../../Resources/Images/Icons/icon-service-only-sm.png" title="This feature is only available in simPRO Service." alt="simPRO Service only." /><strong> Employees </strong>or <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><strong> Employees </strong>/ <strong>Contractors</strong>.
+                </p>
+                        <p>The import options include:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 107px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>First Record Is</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>Header Record</strong> if your list's first row contains column titles, or select <strong>Data Record</strong> if your list's first row contains specific data.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>If Employee Already Exists</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>In case simPRO finds duplicated employees / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors (employees / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors with the same name), select whether you want to<strong> Do Nothing </strong>or <strong>Update Employees Details</strong> for the existing employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor in simPRO.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>If Custom List Value Not Found</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>If any columns in the import file represent drop-down lists in simPRO (for example any custom fields), and your file contains any additional values (or 'custom list values') not available in the relevant list, select <strong>Create New List Option </strong>to add the additional value to the applicable drop-down list. Select <strong>Reject and Warn</strong> to ignore the field and receive a warning that the field was not created.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>
+                                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Employee Status</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>Select whether the upload file is an <strong>Employee </strong>or <strong>Contractor </strong>list.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - status.png" alt="A screenshot of the Employee Status drop-down." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Select an import file</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To select an import file:</p>
+                        <ol>
+                            <li>
+                        Go to <strong>Utilities &gt; Import &gt;</strong><img src="../../Resources/Images/Icons/icon-service-only-sm.png" title="This feature is only available in simPRO Service." alt="simPRO Service only." /><strong>Employees</strong>, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><strong>Employees </strong>/ <strong>Contractors</strong>.
+                    </li>
+                            <li>Adjust import settings, then click <strong>Choose File</strong> / <strong>Browse</strong>.</li>
+                            <li>
+                       Locate your employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor import file and click <strong>Open</strong>.                    </li>
+                            <li>Click <strong>Next</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Match import columns</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - map fields.png" alt="A screenshot of the Employee Import Columns page." class="border" />
+                        </p>
+                        <p>
+                    After selecting an employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor import file, manually match or review your list columns with the fields available in simPRO. You may wish to have both simPRO and your list open at the same time.
+                </p>
+                        <p>To match import columns:</p>
+                        <ol>
+                            <li>Select your import file as above.</li>
+                            <li>On the <strong>Employee Import Columns</strong> page, use the drop-down lists under each heading to select the matching field in simPRO.</li>
+                            <li>If you wish to leave a column out of the import entirely, select <strong>Ignore</strong>.</li>
+                            <li>Click <strong>Import Employees</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Check import success</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - summary.png" alt="A screenshot of the Import Employee Summary page." class="border" />
+                        </p>
+                        <p>After uploading an import file, the <strong>Import Employee Summary</strong> page will display a breakdown of your import, including <strong>Employees Added</strong> / <strong>Updated </strong>/ <strong>Ignored</strong>.</p>
+                        <p>If the import was successful, click <strong>Employees </strong>imported successfully to download a CSV file of imported employees / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors for your records, with each line containing a simPRO-assigned <strong>Employee </strong>/ <strong>Contractor ID</strong>.</p>
+                        <p>After a successful import, it is recommended you manually check employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor card files to ensure data has imported correctly. To do this, go to <strong>People &gt; Employees</strong> / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><strong>Contractors</strong>, click an imported employee / <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor, and check <strong>Profile &gt; Details</strong> for errors. Manually amend if required.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import an employee / contractor list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    After preparing your employee / contractor list, work through the following steps to import your list into simPRO.
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Adjust import settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - settings.png" alt="A screenshot of the Employee Import Settings page." class="border" />
+                        </p>
+                        <p>
+                    To adjust employee / contractor import settings, go to <strong>Utilities &gt; Import &gt;</strong> <strong>Employees </strong>/ <strong>Contractors</strong>.
+                </p>
+                        <p>The import options include:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 107px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>First Record Is</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>Header Record</strong> if your list's first row contains column titles, or select <strong>Data Record</strong> if your list's first row contains specific data.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>If Employee Already Exists</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>In case simPRO finds duplicated employees /  contractors (employees /  contractors with the same name), select whether you want to<strong> Do Nothing </strong>or <strong>Update Employees Details</strong> for the existing employee /  contractor in simPRO.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>If Custom List Value Not Found</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>If any columns in the import file represent drop-down lists in simPRO (for example any custom fields), and your file contains any additional values (or 'custom list values') not available in the relevant list, select <strong>Create New List Option </strong>to add the additional value to the applicable drop-down list. Select <strong>Reject and Warn</strong> to ignore the field and receive a warning that the field was not created.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Employee Status</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>Select whether the upload file is an <strong>Employee </strong>or <strong>Contractor </strong>list.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - status.png" alt="A screenshot of the Employee Status drop-down." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Select an import file</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To select an import file:</p>
+                        <ol>
+                            <li>
+                        Go to <strong>Utilities &gt; Import &gt; </strong><strong>Employees </strong>/ <strong>Contractors</strong>.
+                    </li>
+                            <li>Adjust import settings, then click <strong>Choose File</strong> / <strong>Browse</strong>.</li>
+                            <li>
+                       Locate your employee /  contractor import file and click <strong>Open</strong>.                    </li>
+                            <li>Click <strong>Next</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Match import columns</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - map fields.png" alt="A screenshot of the Employee Import Columns page." class="border" />
+                        </p>
+                        <p>
+                    After selecting an employee /  contractor import file, manually match or review your list columns with the fields available in simPRO. You may wish to have both simPRO and your list open at the same time.
+                </p>
+                        <p>To match import columns:</p>
+                        <ol>
+                            <li>Select your import file as above.</li>
+                            <li>On the <strong>Employee Import Columns</strong> page, use the drop-down lists under each heading to select the matching field in simPRO.</li>
+                            <li>If you wish to leave a column out of the import entirely, select <strong>Ignore</strong>.</li>
+                            <li>Click <strong>Import Employees</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Check import success</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - summary.png" alt="A screenshot of the Import Employee Summary page." class="border" />
+                        </p>
+                        <p>After uploading an import file, the <strong>Import Employee Summary</strong> page will display a breakdown of your import, including <strong>Employees Added</strong> / <strong>Updated </strong>/ <strong>Ignored</strong>.</p>
+                        <p>If the import was successful, click <strong>Employees </strong>imported successfully to download a CSV file of imported employees /  contractors for your records, with each line containing a simPRO-assigned <strong>Employee </strong>/ <strong>Contractor ID</strong>.</p>
+                        <p>After a successful import, it is recommended you manually check employee / contractor card files to ensure data has imported correctly. To do this, go to <strong>People &gt; Employees</strong> / <strong>Contractors</strong>, click an imported employee / contractor, and check <strong>Profile &gt; Details</strong> for errors. Manually amend if required.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Service">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import an employee list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    After preparing your employee  list, work through the following steps to import your list into simPRO.
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Adjust import settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - settings.png" alt="A screenshot of the Employee Import Settings page." class="border" />
+                        </p>
+                        <p>
+                    To adjust employee  import settings, go to <strong>Utilities &gt; Import &gt;</strong> <strong>Employees</strong>.
+                </p>
+                        <p>The import options include:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 107px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>First Record Is</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>Header Record</strong> if your list's first row contains column titles, or select <strong>Data Record</strong> if your list's first row contains specific data.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>If Employee Already Exists</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>In case simPRO finds duplicated employees  (employees  with the same name), select whether you want to<strong> Do Nothing </strong>or <strong>Update Employees Details</strong> for the existing employee  in simPRO.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>If Custom List Value Not Found</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>If any columns in the import file represent drop-down lists in simPRO (for example any custom fields), and your file contains any additional values (or 'custom list values') not available in the relevant list, select <strong>Create New List Option </strong>to add the additional value to the applicable drop-down list. Select <strong>Reject and Warn</strong> to ignore the field and receive a warning that the field was not created.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - status.png" alt="A screenshot of the Employee Status drop-down." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Select an import file</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To select an import file:</p>
+                        <ol>
+                            <li>
+                        Go to <strong>Utilities &gt; Import &gt;</strong> <strong>Employees</strong>.
+                    </li>
+                            <li>Adjust import settings, then click <strong>Choose File</strong> / <strong>Browse</strong>.</li>
+                            <li>
+                       Locate your employee import file and click <strong>Open</strong>.                    </li>
+                            <li>Click <strong>Next</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Match import columns</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - map fields.png" alt="A screenshot of the Employee Import Columns page." class="border" />
+                        </p>
+                        <p>
+                    After selecting an employee  import file, manually match or review your list columns with the fields available in simPRO. You may wish to have both simPRO and your list open at the same time.                </p>
+                        <p>To match import columns:</p>
+                        <ol>
+                            <li>Select your import file as above.</li>
+                            <li>On the <strong>Employee Import Columns</strong> page, use the drop-down lists under each heading to select the matching field in simPRO.</li>
+                            <li>If you wish to leave a column out of the import entirely, select <strong>Ignore</strong>.</li>
+                            <li>Click <strong>Import Employees</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Check import success</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Import Employees - summary.png" alt="A screenshot of the Import Employee Summary page." class="border" />
+                        </p>
+                        <p>After uploading an import file, the <strong>Import Employee Summary</strong> page will display a breakdown of your import, including <strong>Employees Added</strong> / <strong>Updated </strong>/ <strong>Ignored</strong>.</p>
+                        <p>If the import was successful, click <strong>Employees </strong>imported successfully to download a CSV file of imported employees  for your records, with each line containing a simPRO-assigned <strong>Employee</strong><strong> ID</strong>.</p>
+                        <p>After a successful import, it is recommended you manually check employee card files to ensure data has imported correctly. To do this, go to <strong>People &gt; Employees</strong>, click an imported employee, and check <strong>Profile &gt; Details</strong> for errors. Manually amend if required.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

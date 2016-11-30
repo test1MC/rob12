@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="9128" MadCap:lastWidth="1791">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create a Pre-Build</h1>
+        <h2>Overview</h2>
+        <p>Pre-builds combine materials and labour as a single billable item to appear on jobs, quotes and invoices. The two main types are standard price pre-builds and set price pre-builds, and you can adapt these as desired.  You can use pre-builds for many functions, including:</p>
+        <ul>
+            <li MadCap:conditions="Default.Phase 1">
+                <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Maintenance Planner</li>
+            <li MadCap:conditions="Default.Enterprise">Maintenance Planner</li>
+            <li>assemblies</li>
+            <li>schedules of rates</li>
+            <li>renewable energy</li>
+            <li>contractors.</li>
+        </ul>
+        <p>Pre-builds can also be a useful feature for your customers who use the customer portal. You can set up your portal so that if customers request a quote or book a job through the portal, they can select the work they need done from a list of pre-builds (such as 'Install double powerpoint').</p>
+        <p>Before creating pre-builds you will need to <MadCap:xref href="Create a Pre-Build Group.htm">Create a Pre-Build Group</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a standard price pre-build</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Create a standard price pre-build if you want your pre-build's sell price to accurately reflect all costs involved, including materials, labour and associated markup.</p>
+                <p>A pre-build's <strong>Pricing Type</strong> cannot be changed after the pre-build is first used.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-builds-standard.png" alt="A screenshot of a standard price pre-build." class="border" />
+                </p>
+                <p>To create a standard price pre-build:</p>
+                <ol>
+                    <li>Go to<strong> Materials &gt; Pre-Builds</strong>.</li>
+                    <li>Create or open the group or subgroup you want your new pre-build to go in.</li>
+                    <li>Click <strong>Create Pre-Build</strong>.</li>
+                    <li>Enter the pre-build <strong>Name</strong>.</li>
+                    <li>If required, enter a<strong> Part No.</strong> and select a <strong>Sales Tax Code</strong>. See below for important notes about pre-build tax codes.</li>
+                    <li>Under <strong>Pricing Type</strong>, select<strong> Standard Price</strong>.</li>
+                    <li>Under <strong>Material</strong>:<ol><li>Select whether the pre-build's <strong>Cost </strong>price is <strong>Based on Build</strong>, or manually enter the <strong>Cost</strong>.</li><li>Select whether the pre-build's <strong>Sell </strong>markup is <strong>Based on Defaults</strong>, <strong>Based on Build</strong>, or manually enter a percentage or <strong>Sell </strong>price.</li></ol></li>
+                    <li>Under <strong>Labour</strong>:<ol><li>Select whether the pre-build's <strong>Time </strong>is <strong>Based on Defaults</strong>, or manually enter the <strong>Minutes</strong>.</li><li>Select whether the pre-build's <strong>Rates </strong>are <strong>Based on Defaults</strong>, or manually enter the labour rate information.</li></ol></li>
+                    <li>If desired, enter <strong>Notes</strong>.</li>
+                    <li>Click the <strong>Catalogue </strong>tab to continue.</li>
+                </ol>
+                <p><strong>Sales Tax Code</strong>: If you are working in countries with differing tax codes, such as the US, you may wish to select certain tax codes on your pre-build:</p>
+                <ul>
+                    <li>For materials-only pre-builds, select <strong>Use default part tax code</strong> or a specific materials tax code</li>
+                    <li>For labour-only pre-builds, select <strong>Use default labour tax code</strong> or a specific labour tax code</li>
+                    <li>If your pre-build has both materials and labour, select any tax code but ensure you check and update line item tax codes in each quote or job as required.</li>
+                </ul>
+                <p>Notes about material and labour prices:</p>
+                <ul>
+                    <li>If the <strong>Material Cost</strong> is <strong>Based on Build</strong>, the<strong> Material Cost </strong>in the <strong>Break Down</strong> will be the total cost of items in the <strong>Build </strong>tab. This allows catalogue price updates to reflect in the pre-build.</li>
+                    <li>If the <strong>Material Sell </strong>markup is <strong>Based on Build</strong>, pricing tiers will be applied to individual items in the <strong>Build </strong>tab to determine the pre-build's markup and sell value.</li>
+                    <li>If the <strong>Material Sell</strong> price is <strong>Based on Defaults</strong>, the pre-build's material markup will be based on system defaults. If the pre-build is then used in a quote or job where the customer has a different material markup, that markup will reflect in the pre-build.</li>
+                    <li>If the <strong>Labour Time</strong> is <strong>Based on Defaults</strong>, the pre-build's time will be a total of estimated fit time associated with the individual items added to the <strong>Build </strong>tab.</li>
+                    <li>If the <strong>Labour Rates</strong> are <strong>Based on Defaults</strong>, the pre-build's labour will be charged according your system's default labour rates. If the pre-build is then used in a quote or job where the customer has different labour rates, those rates will reflect in the pre-build.</li>
+                </ul>
+                <h3>Add catalogue items to your pre-build through the Catalogue tab</h3>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-builds-catalogue.png" alt="A screenshot of items being added to a catalogue." class="border" />
+                </p>
+                <p>To add catalogue items to your pre-build through the <strong>Catalogue </strong>tab:</p>
+                <ol>
+                    <li>Use the <strong>Search </strong>bar to find the desired item, or open the relevant groups and subgroups.</li>
+                    <li>Locate the desired item, then enter the number required and click <strong>Add Items</strong>.</li>
+                    <li>Repeat as necessary.</li>
+                    <li>Click the <strong>Build </strong>tab to continue.</li>
+                </ol>
+                <h3>Confirm prices and build time through the Build tab</h3>
+                <p>You can view and edit items added through the <strong>Catalogue </strong>tab on the <strong>Build </strong>tab.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-builds-build.png" alt="A screenshot of the Build tab." class="border" />
+                </p>
+                <p>To confirm items and build time through the <strong>Build </strong>tab:</p>
+                <ol>
+                    <li>Review and edit the <strong>Qty </strong>for each time as required. To remove an item, click the <strong>red delete</strong> icon.</li>
+                    <li>If you selected the <strong>Cost </strong>or <strong>Sell </strong>prices to be <strong>Based on Build</strong> in the <strong>Details </strong>tab, check the prices in this tab are accurate.</li>
+                    <li>Check the <strong>Time (Mins)</strong> is accurate. To edit or add time for an item, click the item, enter an <strong>Estimated Time</strong>, then click <strong>Finish </strong>to close the pop-up window.</li>
+                    <li>Select a <strong>Fit Time</strong> from the drop-down list to suit your pre-build as required.</li>
+                    <li MadCap:conditions="Default.Phase 1">To continue, go to the <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><strong> STCs </strong>tab or <strong>Attachments </strong>tab, or click <strong>Finish</strong>.</li>
+                    <li MadCap:conditions="Default.Enterprise">To continue, go to the <strong>STCs </strong>tab or <strong>Attachments </strong>tab, or click <strong>Finish</strong>.</li>
+                    <li MadCap:conditions="Default.Service">Go to the <strong>Attachments </strong>tab to add any attachments.</li>
+                    <li MadCap:conditions="Default.Service">Click <strong>Finish</strong>.</li>
+                </ol>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Optional: <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> STCs and Attachments tabs</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If STCs are enabled in your system, use the STCs tab to turn them <strong>On </strong>or <strong>Off </strong>for this pre-build, and fill out details in your <strong>STCs List</strong> and / or <strong>VEECs List</strong> as required.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Materials/pre-builds-optional.png" alt="A screenshot of the STCs tab in a pre-build." class="border" />
+                        </p>
+                        <p>For more information about STCs, read our article about Solar Industry Set-up.</p>
+                        <p>If you would like to add attachments to your pre-build, such as a product image, use the <strong>Attachments </strong>tab.</p>
+                        <p>When you have adjusted your pre-build as required, click <strong>Finish</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Optional:  STCs and Attachments tabs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If STCs are enabled in your system, use the STCs tab to turn them <strong>On </strong>or <strong>Off </strong>for this pre-build, and fill out details in your <strong>STCs List</strong> and / or <strong>VEECs List</strong> as required.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-builds-optional.png" alt="A screenshot of the STCs tab in a pre-build." class="border" />
+                </p>
+                <p>For more information about STCs, read our article about Solar Industry Set-up.</p>
+                <p>If you would like to add attachments to your pre-build, such as a product image, use the <strong>Attachments </strong>tab.</p>
+                <p>When you have adjusted your pre-build as required, click <strong>Finish</strong>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a set price pre-build</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Create a set price pre-build if you want a pre-determined sell price for your pre-build, regardless of the costs involved. These pre-builds are commonly used for creating a schedule of rates, and are necessary for maintenance-related pre-builds if you are using simPRO Enterprise with Maintenance Planner purchased and enabled.</p>
+                <p>A pre-build's <strong>Pricing Type</strong> cannot be changed after the pre-build is first used.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-build-set.png" alt="A screenshot of a set price pre-build." class="border" />
+                </p>
+                <p>To create a set price pre-build:</p>
+                <ol>
+                    <li>Go to <strong>Materials &gt; Pre-Builds</strong>.</li>
+                    <li>Create or open the group or subgroup you want your new pre-build to go in.</li>
+                    <li>Click <strong>Create Pre-Build</strong>.</li>
+                    <li>Enter the pre-build <strong>Name</strong>.</li>
+                    <li>If required, enter a <strong>Part No.</strong> and select a <strong>Sales Tax Code</strong>. Read important notes about pre-build tax codes.</li>
+                    <li>Under <strong>Pricing Type</strong>, select <strong>Set Price</strong>.</li>
+                    <li>Select whether you want the <strong>Time </strong>to be <strong>Based on Build</strong>, or enter the number of <strong>Minutes </strong>the pre-build will take to complete.</li>
+                    <li>Enter the <strong>Price </strong>you want this pre-build to cost.</li>
+                    <li>If desired, enter <strong>Notes</strong>.</li>
+                    <li>Click the <strong>Catalogue </strong>tab to continue.</li>
+                </ol>
+                <p><strong>Sales Tax Code</strong>: If you are working in countries with differing tax codes, such as the US, you may wish to select certain tax codes on your pre-build:</p>
+                <ul>
+                    <li>For materials-only pre-builds, select <strong>Use default part tax code</strong> or a specific materials tax code</li>
+                    <li>For labour-only pre-builds, select <strong>Use default labour tax code</strong> or a specific labour tax code</li>
+                    <li>If your pre-build has both materials and labour, select any tax code but ensure you check and update line item tax codes in each quote or job as required.</li>
+                </ul>
+                <h3>Add catalogue items to your pre-build through the Catalogue tab</h3>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-build-addparts.png" alt="A screenshot of items being added to a pre-build." class="border" />
+                </p>
+                <p>To add catalogue items to your pre-build through the <strong>Catalogue </strong>tab:</p>
+                <ol>
+                    <li>Use the <strong>Search </strong>bar to find the desired item, or open the relevant groups and subgroups.</li>
+                    <li>Locate the desired item, then enter the number required and click <strong>Add Items</strong>.</li>
+                    <li>Repeat as necessary.</li>
+                    <li>Click the <strong>Build </strong>tab to continue.</li>
+                </ol>
+                <h3>Confirm items and build time through the Build tab</h3>
+                <p>You can view and edit items added through the <strong>Catalogue </strong>tab on the <strong>Build </strong>tab.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-builds-build.png" alt="A screenshot of the Build tab in a pre-build." class="border" />
+                </p>
+                <p>To confirm items and build time through the Build tab:</p>
+                <ol>
+                    <li>Review and edit the <strong>Qty </strong>for each time as required. To remove an item, click the red delete icon.</li>
+                    <li>If you selected the <strong>Time </strong>to be <strong>Based on Build</strong> in the <strong>Details </strong>tab, check the <strong>Time (Mins)</strong> in this tab is accurate.</li>
+                    <li>To edit or add time for an item, click the item, enter an <strong>Estimated Time</strong>, then click <strong>Finish </strong>to close the pop-up window.</li>
+                    <li>Select a<strong> Fit Time</strong> from the drop-down list to suit your pre-build as required.</li>
+                    <li>To continue, go to the (Enterprise only) <strong>STCs </strong>tab or <strong>Attachments </strong>tab, or click <strong>Finish</strong>.</li>
+                </ol>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Optional: <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> STCs and Attachments tabs</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If STCs are enabled in your system, use the STCs tab to turn them <strong>On </strong>or <strong>Off </strong>for this pre-build, and fill out details in your <strong>STCs List</strong> and / or <strong>VEECs List</strong> as required.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Materials/pre-builds-optional.png" alt="A screenshot of the STCs tab in a pre-build." class="border" />
+                        </p>
+                        <p>For more information about STCs, read our article about Solar Industry Set-up.</p>
+                        <p>If you would like to add attachments to your pre-build, such as a product image, use the <strong>Attachments </strong>tab.</p>
+                        <p>When you have adjusted your pre-build as required, click <strong>Finish</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Optional:  STCs and Attachments tabs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If STCs are enabled in your system, use the STCs tab to turn them <strong>On </strong>or <strong>Off </strong>for this pre-build, and fill out details in your <strong>STCs List</strong> and / or <strong>VEECs List</strong> as required.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-builds-optional.png" alt="A screenshot of the STCs tab in a pre-build." class="border" />
+                </p>
+                <p>For more information about STCs, read our article about Solar Industry Set-up.</p>
+                <p>If you would like to add attachments to your pre-build, such as a product image, use the <strong>Attachments </strong>tab.</p>
+                <p>When you have adjusted your pre-build as required, click <strong>Finish</strong>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit a pre-build</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-build-edit.png" alt="A screenshot of a pre-build." class="border" />
+                </p>
+                <p>To edit a pre-build:</p>
+                <ol>
+                    <li>Go to <strong>Materials &gt; Pre-Builds</strong>.</li>
+                    <li>Locate and open the desired pre-build.</li>
+                    <li>Make changes as desired.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>If you need to edit a pre-build with history, it is recommended to make a copy of it first by clicking <strong>Options &gt; Copy Pre-Build</strong>, and edit the copy as needed. Alternatively, if you need to make a once-off change for a specific quote or job, add the pre-build to the quote or job then edit it from there.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Archive or delete a pre-build</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you archive or delete a pre-build, it will still appear in any existing jobs or quotes that it has been added to, but will not be available to add to new jobs and quotes. If a catalogue item that has been included in a pre-build is deleted, it will be removed from the pre-build.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/pre-build-archive.png" alt="A screenshot of a pre-build being archived." class="border" />
+                </p>
+                <p>To archive or delete a pre-build:</p>
+                <ol>
+                    <li>Go to <strong>Materials &gt; Pre-Builds</strong>.</li>
+                    <li>On the desired pre-build, click <strong>Options &gt; Archive</strong> / <strong>Delete Pre-build</strong>.</li>
+                    <li>Click <strong>OK </strong>to confirm.</li>
+                </ol>
+                <p>To archive or delete multiple pre-builds at once:</p>
+                <ol>
+                    <li>Go to <strong>Materials &gt; Pre-Builds</strong>.</li>
+                    <li>Select the check boxes of the pre-builds you wish to delete, or click <strong>Select All</strong>.</li>
+                    <li>At the bottom of the page, click <strong>Archive </strong>or <strong>Delete</strong>.</li>
+                    <li>Click <strong>OK </strong>to confirm.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

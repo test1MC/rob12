@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="7299" MadCap:lastWidth="1815">
+    <head>
+    </head>
+    <body>
+        <h1>simPRO Integration</h1>
+        <h2>Overview</h2>
+        <p>When you integrate simPRO with simTRAC, you can send jobs directly to vehicles from simPRO. You can also map data from simPRO onto simTRAC maps.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate simPRO and simTRAC</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You will need to enable integration in both simPRO and simTRAC.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-integrate.png" alt="A screenshot of the Extensions tab in simPRO." class="border" />
+                </p>
+                <p>To enable simTRAC integration in simPRO:</p>
+                <ol>
+                    <li>Log in to simPRO.</li>
+                    <li>Go to <strong>System Setup &gt;Defaults &gt; Extensions</strong>.</li>
+                    <li>Under <strong>Tracking Extensions &gt; simTRAC</strong>, select <strong>On</strong>.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-simprointegration.png" alt="A screenshot of the simPRO Integration check box." class="border" />
+                </p>
+                <p>To enable simPRO integration in simTRAC:</p>
+                <ol>
+                    <li>Log in to simTRAC.</li>
+                    <li>Go to <strong>Settings &gt; Manage Company Details</strong>.</li>
+                    <li>Select the <strong>simPRO Integration</strong> check box.</li>
+                    <li>Enter your simPRO company URL.</li>
+                    <li>Click <strong>Update </strong>to save your settings.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Messaging integration</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>By integrating simPRO with simTRAC, you can send job details directly to vehicles from simPRO.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Set up messaging</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="Default.Phase 1">You will need to assign each vehicle to the relevant employee or <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor using your employee cards in simPRO.</p>
+                        <p MadCap:conditions="Default.Enterprise">You will need to assign each vehicle to the relevant employee or contractor using your employee cards in simPRO.</p>
+                        <p MadCap:conditions="Default.Service">You will need to assign each vehicle to the relevant employee  using your employee cards in simPRO.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-registervehicle.png" alt="A screenshot of the Connect to simTRAC button." class="border" />
+                        </p>
+                        <p MadCap:conditions="Default.Phase 1">To assign a vehicle to an employee or <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor:</p>
+                        <p MadCap:conditions="Default.Enterprise">To assign a vehicle to an employee or contractor:</p>
+                        <p MadCap:conditions="Default.Service">To assign a vehicle to an employee:</p>
+                        <ol>
+                            <li>Go to <strong>People &gt; Employees</strong> / <strong>Contractors </strong>and click the name of an employee / contractor.</li>
+                            <li>Under <strong>Profile &gt; Details &gt; Vehicle Registration</strong>, click <strong>Connect to simTRAC</strong>.</li>
+                            <li>Log in to simTRAC.</li>
+                            <li>Under <strong>Vehicle Registration</strong>, select the vehicle you want to assign.</li>
+                            <li>Click <strong>Save</strong>.</li>
+                        </ol>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-assignvehicle.png" alt="A screenshot of the Vehicle Registration drop-down." class="border" />
+                        </p>
+                        <p>To send job details to vehicles, you will need access to the correct security group.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-permissions.png" alt="A screenshot of the Send Vehicle permission in a security group." class="border" />
+                        </p>
+                        <p>To allow a security group to send job details:</p>
+                        <ol>
+                            <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups</strong>.</li>
+                            <li>Click the security group you want to have access.</li>
+                            <li>Under <strong>Permissions</strong>, click the <strong>Schedules </strong>tab.</li>
+                            <li>Select the <strong>Send Vehicle</strong> check box.</li>
+                            <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Send a message from simPRO</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-message.png" alt="A screenshot of the Send &gt; Vehicle option on a schedule block." class="border" />
+                        </p>
+                        <p>To send a message from simPRO:</p>
+                        <ol>
+                            <li>Go to <strong>Schedules &gt; Day</strong> / <strong>Week View</strong>.</li>
+                            <li>Right-click a schedule for an employee / contractor who has a vehicle assigned.</li>
+                            <li>Hover over <strong>Send </strong>and click <strong>Vehicle</strong>.</li>
+                        </ol>
+                        <p>The driver's navigator will receive all job details as a message.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Load simPRO data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>By integrating simPRO and simTRAC, you can load quotes, jobs and sites from simPRO directly onto simTRAC and view them on the map.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-loaddata.png" alt="A screenshot of the Connect to simPRO button." class="border" />
+                </p>
+                <p>To connect to your simPRO database:</p>
+                <ol>
+                    <li>Click the <strong>Work </strong>tab.</li>
+                    <li>Click <strong>Connect to simPRO</strong>.</li>
+                    <li>Click <strong>Authorise</strong>.</li>
+                </ol>
+                <p>Once you have connected to your simPRO database, you will then see your company name at the top of the page in the <strong>Work </strong>tab. If you have a multi-company simPRO database, you can change the company by clicking the company name and selecting another company from the list.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Load quotes and jobs</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-work.png" alt="A screenshot of the Work tab in simTRAC." class="border" />
+                        </p>
+                        <p>To load quotes or jobs from your simPRO database:</p>
+                        <ol>
+                            <li>Click the <strong>Work </strong>tab.</li>
+                            <li>Select <strong>Quotes </strong>or <strong>Jobs </strong>as desired.</li>
+                            <li>Select <strong>Scheduled </strong>or <strong>Not Scheduled</strong> as desired.</li>
+                            <li>Choose your date range and relevant cost centres.</li>
+                            <li>Click <strong>Search</strong>.</li>
+                        </ol>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-sitesearch.png" alt="A screenshot of job search results in simTRAC." class="border" />
+                        </p>
+                        <p>simTRAC will now connect with simPRO and load all of the jobs or quotes within the specified date range. View job details by clicking a job in the list or by clicking the pin on the map.</p>
+                        <p>Click the arrow under your company name to change the search filter.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Load sites</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-loadsites.png" alt="A screenshot of sites loaded in simTRAC." class="border" />
+                        </p>
+                        <p>To load sites from your simPRO database:</p>
+                        <ol>
+                            <li>Click the <strong>Work </strong>tab.</li>
+                            <li>Select <strong>Sites</strong>.</li>
+                            <li>Click <strong>Search</strong>.</li>
+                            <li>Select the size and site type from the drop-down lists at the bottom of the <strong>Work </strong>tab and click <strong>Save Sites</strong> to create the sites on the map.</li>
+                        </ol>
+                        <p>These sites will remain on the map even when simTRAC is not connected to simPRO.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Incorrect addresses</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/simTRAC/simtrac-incorrect.png" alt="A screenshot of an incorrect address in simTRAC." class="border" />
+                </p>
+                <p>If there is a line through a site name in the results list, this means that Google has been unable to find that specific address. Hover over the site name to find any close matches. You can select another address to pin the job in the correct place. Sometimes the correct address cannot be found because the wrong address has been entered into simPRO.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

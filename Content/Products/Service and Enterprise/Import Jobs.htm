@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1881" MadCap:lastWidth="1422">
+    <head>
+    </head>
+    <body>
+        <h1>Import Jobs</h1>
+        <h2>Overview</h2>
+        <p MadCap:conditions="Default.Phase 1">In simPRO you can import a jobs list to create multiple <MadCap:glossaryTerm glossTerm="NewGlossary.Term23">service jobs</MadCap:glossaryTerm>, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> <MadCap:glossaryTerm glossTerm="NewGlossary.Term22">project jobs</MadCap:glossaryTerm> and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> prepaid jobs in the system with one upload.</p>
+        <p MadCap:conditions="Default.Enterprise">In simPRO you can import a jobs list to create multiple <MadCap:glossaryTerm glossTerm="NewGlossary.Term23">service jobs</MadCap:glossaryTerm>, <MadCap:glossaryTerm glossTerm="NewGlossary.Term22">project jobs</MadCap:glossaryTerm> and prepaid jobs in the system with one upload.</p>
+        <p MadCap:conditions="Default.Service">In simPRO you can import a jobs list to create multiple  jobs in the system with one upload.</p>
+        <p>When a job list has been successfully imported, access your newly created jobs using the <strong>Jobs </strong>menu.</p>
+        <p class="Infotip">You may wish to test the import process with one or two jobs before importing an entire list.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Prepare to import a job list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To prepare to import jobs into simPRO:</p>
+                <ol>
+                    <li MadCap:conditions="Default.Phase 1">Download and add data to simPRO's <strong>Job Import Template</strong> for:<ul><li><a href="../../Resources/Downloadable/Job Import Template AU NZ UK.csv">Australia, New Zealand and United Kingdom</a></li><li><a href="../../Resources/Downloadable/Job Import Template US.csv">United States</a></li></ul></li>
+                    <li MadCap:conditions="Default.UK,Default.AU,Default.NZ">Download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Job Import Template AU NZ UK.csv">Job Import Template</a></strong>.</li>
+                    <li MadCap:conditions="Default.US">Download and add data to simPRO's <strong><a href="../../Resources/Downloadable/Job Import Template US.csv">Job Import Template</a></strong>.</li>
+                    <li>Alternatively, you can create your own import list and leave out any fields that do not apply to your jobs.</li>
+                    <li>Save your file in your system as a compatible file type: CSV (.csv), text (.txt) or ZIP (.zip). Consult your spreadsheet software documentation for file saving instructions if required.</li>
+                    <li>Separate your data using the same or similar headings as specified in the <strong>Job Import Template</strong> and field requirements.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+                    </li>
+                </ol>
+                <h3>Field requirements</h3>
+                <p>When you create a job import list or add data to the <strong>Job Import Template</strong>, you need to alter your data to suit the following field requirements:</p>
+                <ul>
+                    <li>The <strong>Customer ID</strong> / <strong>Customer Name</strong> are mandatory columns but do not both need to be present to import successfully. If these fields are left blank on any line, the line will be ignored and the job will not be created in simPRO.<ul><li>The <strong>Customer Name</strong> must be identical to how it is defined in simPRO. It is recommended to copy and paste the names from simPRO to reduce error and import successfully.</li><li>The<strong> Customer ID</strong> is available in the customer card file in simPRO and must be a numerical value.</li></ul></li>
+                    <li>The <strong>Site ID</strong> / <strong>Site Name</strong> are mandatory columns but do not both need to be present to import successfully. If these fields are left blank on any line, the line will be ignored and the job will not be created in simPRO.<ul><li>The <strong>Site Name</strong> must be identical to how it is defined in simPRO. It is recommended to copy and paste the names from simPRO to reduce error and import successfully.</li><li>The <strong>Site ID</strong> is available in the customer / site card file in simPRO and must be a numerical value.</li></ul></li>
+                    <li><strong>Multiple Project Tags</strong> can be specified by separating each one with a comma. Therefore the specific tags cannot contain commas in their names or they will import incorrectly.</li>
+                    <li><strong>Customer Contact</strong> and <strong>Supplier Contact</strong> names must be in '<strong>{First Name} {Last Name}</strong>' format, for example, '<strong>John Smith</strong>' instead of <strong>'Smith, John</strong>'.</li>
+                    <li>If jobs in the list have a specific <strong>Due Date</strong>, the format must be as defined in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Date Format</strong>.</li>
+                    <li MadCap:conditions="Default.Phase 1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> The <strong>Job Type</strong> field for each line must be specified as <strong>Service</strong>, <strong>Project </strong>or <strong>Prepaid </strong>as applicable. If not specified, the job will default to the <strong>Service </strong>job type.</li>
+                    <li MadCap:conditions="Default.Enterprise">The <strong>Job Type</strong> field for each line must be specified as <strong>Service</strong>, <strong>Project </strong>or <strong>Prepaid </strong>as applicable. If not specified, the job will default to the <strong>Service </strong>job type.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import a jobs list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/importjobs-mapping.png" alt="A screenshot of the Job Import Column Mapping page." class="border" />
+                </p>
+                <p>To import a jobs list into simPRO:</p>
+                <ol>
+                    <li>Go to <strong>Utilities &gt; Import &gt; Jobs</strong>.</li>
+                    <li>Click <strong>Browse </strong>/ <strong>Choose File</strong> to locate and open your jobs list file.</li>
+                    <li>When the file name appears, click <strong>Next</strong>.</li>
+                    <li>On the <strong>Job Import Column Mapping</strong> page, use the drop-down lists to map your column headings against those available in simPRO.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>If the import is successful, you will be taken to the <strong>Job Import Summary</strong> where you can view jobs created and any import errors.</p>
+                <p>To amend import errors, you may need to access the relevant jobs in simPRO individually and manually make changes as desired.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/importjobs-summary.png" alt="A screenshot of the Job Import Summary page." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

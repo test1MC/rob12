@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term0"
+    Stem="True"
+    IgnoreCase="true"
+    conditions="Default.Enterprise">
+    <Terms>
+      <Term>Lead</Term>
+    </Terms>
+    <Definition
+      Link="">A potential customer that is not yet associated with a quote, job or invoice.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term1"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Customer</Term>
+    </Terms>
+    <Definition
+      Link="">The individual or entity who receives the invoice for work provided. A customer may be associated with multiple sites, for example, if they are a franchise.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term2"
+    Stem="True"
+    IgnoreCase="true"
+    conditions="Default.AUS Enterprise">
+    <Terms>
+      <Term>STC</Term>
+    </Terms>
+    <Definition
+      Link="">An acronym for Small-scale Technology Certificates, an Australian Government rebate used in conjunction with the renewable energy sector.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term3"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Set Price Pre-build</Term>
+    </Terms>
+    <Definition
+      Link="">A pre-build that does not calculate the price based on material and labour costs. The price is set.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term4"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Standard Price Pre-build</Term>
+    </Terms>
+    <Definition
+      Link="">A pre-build that calculates the price based on materials and labour. The price of individual components can be changed to affect the total price.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term5"
+    Stem="True"
+    IgnoreCase="true"
+    conditions="Default.Service">
+    <Terms>
+      <Term>Material Default</Term>
+    </Terms>
+    <Definition
+      Link="">A way to apply a universal markup to items. This can be overriden on individual items, for individual customers, or for individual jobs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term6"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Labour Cost Rate</Term>
+    </Terms>
+    <Definition
+      Link="">The sum of an employee's hourly rate, employment cost and company overhead. For example, if an employee is paid $25 / hr, the cost of their employment is $20 / hr and the overhead is $30 / hr, the Labour Cost Rate should be $75 / hr.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term7"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Asset</Term>
+    </Terms>
+    <Definition
+      Link="">An item or piece of equipment you service or maintain on behalf of your customer. Customer assets could include items such as fire equipment, air conditioners, security equipment.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term8"
+    Stem=""
+    IgnoreCase="false"
+    conditions="Default.UK">
+    <Terms>
+      <Term>CIS</Term>
+    </Terms>
+    <Definition
+      Link="">An acronym for Construction Industsry Tax Scheme, a scheme that contractors in the UK must register for.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term9"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Catalogue</Term>
+    </Terms>
+    <Definition
+      Link="">A list of items used and / or sold by your business, provided by suppliers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term10"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Activity</Term>
+    </Terms>
+    <Definition
+      Link="">Non-job related billable and non-billable hours. Anything associated with running your business that has an associated labour cost and can’t be charged to jobs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term11"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Recurring Job</Term>
+    </Terms>
+    <Definition
+      Link="">A template for a job that will be used multiple times. The frequency of the job is set up when the recurring job is created you will receive an alert when the next job date is approaching.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term12"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Purchase Order</Term>
+    </Terms>
+    <Definition
+      Link="">A formal request to a site to provide an item or service. A purchase order can be created across multiple cost centres.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term14"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Storage Device</Term>
+    </Terms>
+    <Definition
+      Link="">A location / vehicle / building where business stock is stored.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term15"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Site</Term>
+    </Terms>
+    <Definition
+      Link="">The physical location where a job is performed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term16"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Service Fee</Term>
+    </Terms>
+    <Definition
+      Link="">An additional charge added to a job.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term17"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>simPRO Payments</Term>
+    </Terms>
+    <Definition
+      Link="">An extension that allows simPRO and Connect users to process credit card payments online.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term18"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Failure Point</Term>
+    </Terms>
+    <Definition
+      Link="">A criteria for failing a customer asset when recording test results.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term19"
+    TermClass="Popup"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Maintenance Planner</Term>
+    </Terms>
+    <Definition
+      Link="">An add-on for Enterprise that keeps track of customer assets and alerts you when they are due to be serviced.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term20"
+    Stem="True"
+    SortAs="Plant item"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Plant and Equipment</Term>
+    </Terms>
+    <Definition
+      Link="">Equipment that your business owns and maintains, such as vehicles, mobile devices, tools for the job, etc.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term21"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Stock</Term>
+    </Terms>
+    <Definition
+      Link="">Items that you currently have in storage. Not to be confused with the Catalogue.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term22"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Project Job</Term>
+    </Terms>
+    <Definition
+      Link="">A medium to large job with multiple stages. At the end of each stage you can create a progress claim to invoice the customer for the work performed so far.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term23"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Service Job</Term>
+    </Terms>
+    <Definition
+      Link="">A standard do-and-charge job.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term24"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Recurring Invoice</Term>
+    </Terms>
+    <Definition
+      Link="">A regular financial record that is not associated with any jobs in your database. This is typically used for a regular billable service provided to your customer, such as security monitoring, or planned maintenance.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term25"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Deposit Invoice</Term>
+    </Terms>
+    <Definition
+      Link="">A partial payment for a job, such as a down payment before the work begins.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term26"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Request for Claim</Term>
+    </Terms>
+    <Definition
+      Link="">A progress claim that requires approval from your customer. This is not posted to your accounting package, so that if your customer rejects the request you do not need to void the claim.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term27"
+    Stem="True"
+    SortAs="Retainage"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Retention</Term>
+    </Terms>
+    <Definition
+      Link="">A portion of your payment to a contractor that is witheld until the project is complete.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term28"
+    Stem="True"
+    SortAs="Variance"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Variation</Term>
+    </Terms>
+    <Definition
+      Link="">An add-on or extra work requested by the customer that falls outsidse of the scope of estimation. This creates a separate cost centre that is invoiced with the job.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term29"
+    Stem="True"
+    SortAs="Linked Variance"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Linked Variation</Term>
+    </Terms>
+    <Definition
+      Link="">An add-on or extra work requested by the customer that falls outside of the scope of estimation. This creates an entirely separate job or quote that is invoiced separately from the original job.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term30"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Take Off Template</Term>
+    </Terms>
+    <Definition
+      Link="">Similar to a pre-build, this combines materials and labour commonly used together. Take off templates can combine catalogue items, pre-builds, service fees, labour rates, one off items and other take off templates. The individual components are displayed separate items on the job or quote.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term31"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Task</Term>
+    </Terms>
+    <Definition
+      Link="">An interactive to-do list assigned to an employee, related to a specific customer.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term32"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Xero</Term>
+    </Terms>
+    <Definition
+      Link="">A cloud-based accounting package. This is available to integrate with simPRO in Australia, New Zealand, the United Kingdom and the United States.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term33"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Quickbooks Online</Term>
+    </Terms>
+    <Definition
+      Link="">A cloud-based accounting package. This is available to integrate with simPRO in Australia, New Zealand, the United Kingdom and the United States.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term34"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>MYOB AccountRight Live</Term>
+    </Terms>
+    <Definition
+      Link="">A cloud-based accounting package. This is available to integrate with simPRO in Australia and New Zealand.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term35"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Cost Centre</Term>
+    </Terms>
+    <Definition
+      Link="">A method for separating operational costs of the business. Cost centres are used for reporting and financial management.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term36"
+    Stem=""
+    IgnoreCase="true">
+    <Terms>
+      <Term>Margin</Term>
+    </Terms>
+    <Definition
+      Link="">The percentage difference between sell price and profit.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term37"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Markup</Term>
+    </Terms>
+    <Definition
+      Link="">The percentage difference between sell price and actual cost.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term38"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Tags</Term>
+    </Terms>
+    <Definition
+      Link="">A method for categorising jobs, quotes and customers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term39"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Tax Code Member</Term>
+    </Terms>
+    <Definition
+      Link="">(US only) A tax code that has been added to another tax code.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term40"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Team</Term>
+    </Terms>
+    <Definition
+      Link="">A group of employees, contractors and / or plant items that can be scheduled as one unit.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term41"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Trade Price</Term>
+    </Terms>
+    <Definition
+      Link="">The standard sell price of a supplier. This amount does not include trade or account discounts with a supplier.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term42"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>VEECs</Term>
+    </Terms>
+    <Definition
+      Link="">Victorian Energy Efficiency Certificates, a Victorian state government scheme for the renewable energy sector.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term43"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Script</Term>
+    </Terms>
+    <Definition
+      Link="">Pre-set text that can be selected and automatically added to any communications sent from the business such as quotes, jobs, etc.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term44"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Zone</Term>
+    </Terms>
+    <Definition
+      Link="">A designated area or territory that can assist in scheduling and reporting.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term45"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Archive Reason</Term>
+    </Terms>
+    <Definition
+      Link="">A tag applied to archived data to help track causes for loss of business.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="NewGlossary.Term46"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Pre-Build</Term>
+    </Terms>
+    <Definition
+      Link="">An assembly of materials and / labour that is added to a quote or job as a single line item.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term0"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Description Order</Term>
+    </Terms>
+    <Definition
+      Link="">A type catalogue purchase order where you specify the item in the Description rather than adding items from the catalogue.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term1"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Item Entry Order</Term>
+    </Terms>
+    <Definition
+      Link="">A type of catalogue purchase order for items that have never been purchased before or are unlikely to be purchased again.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term2"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>PO Number</Term>
+    </Terms>
+    <Definition
+      Link="">An empty catalogue purchase order that you create for technicians to purchase from a supplier. Items are then added before receipting the supplier invoice.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term3"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Stock Adjustment</Term>
+    </Terms>
+    <Definition
+      Link="">A correction made to your stock count if an error is found.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term4"
+    Stem="True"
+    IgnoreCase="true"
+    SortAs="stocktake">
+    <Terms>
+      <Term>Stock Take</Term>
+    </Terms>
+    <Definition
+      Link="">A routine count of your stock currently in storage.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term5"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Payment Method</Term>
+    </Terms>
+    <Definition
+      Link="">A type of payment that your business accepts, such as cash, credit card or even vouchers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term6"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Overhead</Term>
+    </Terms>
+    <Definition
+      Link="">The costs required to run a business, including rent, computers, vehicles, utilities, etc.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term7"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>One Off Item</Term>
+    </Terms>
+    <Definition
+      Link="">Billable or non-billable items, not necessarily added to your catalogue. These could be travel costs or specialised tools engineered for a specific situation.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term8"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Units of Measurement</Term>
+    </Terms>
+    <Definition
+      Link="">A way of defining what quantities items are sold in, such as metres, and if they can be sold as fractions of a whole quantity.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term9"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>User Licence</Term>
+    </Terms>
+    <Definition
+      Link="">The type of licence needed to be able to log into simPRO.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term10"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Geostamping</Term>
+    </Terms>
+    <Definition
+      Link="">A method of finding a mobile user's whereabouts.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term11"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Minimum Level</Term>
+    </Terms>
+    <Definition
+      Link="">When an item in stock falls below this level, you will receive an alert to restock it.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term12"
+    Stem="True"
+    IgnoreCase="true">
+    <Terms>
+      <Term>Restock Level</Term>
+    </Terms>
+    <Definition
+      Link="">When you receive an alert to restock an item, this is the number that you will be asked to order.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="simPRO Glossary.Term13"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Glossary Term</Term>
+    </Terms>
+    <Definition
+      Link="">Glossary terms provide quick information on topics that you might not be familiar with.</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="2"
+  SkinType="Component"
+  Comment="HTML5 Search Bar skin"
+  ComponentType="SearchBar"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Search Bar">
+        <Properties>
+          <Property
+            Name="Width">81%</Property>
+          <Property
+            Name="MarginLeft">0px</Property>
+          <Property
+            Name="MarginTop">0px</Property>
+          <Property
+            Name="BorderTop">solid 1pt #000000</Property>
+          <Property
+            Name="BorderRight">solid 1px #000000</Property>
+          <Property
+            Name="BorderBottom">solid 1px #000000</Property>
+          <Property
+            Name="BorderLeft">solid 1px #000000</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Submit Button">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#265076</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter">
+        <Properties>
+          <Property
+            Name="BorderTop">solid 1pt #000000</Property>
+        </Properties>
+      </Style>
+    </Styles>
+  </Stylesheet>
+  <Strings />
+</CatapultSkin>

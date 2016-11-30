@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="279" MadCap:lastWidth="1474">
+    <head>
+    </head>
+    <body>
+        <p>You can download the information in the report as a spreadsheet in CSV format, viewable in Microsoft Excel and other spreadsheet software.</p>
+        <p>
+            <img src="../Images/Screenshots/Reports/csvdownload.png" alt="A screenshot of the CSV option." class="border">
+            </img>
+        </p>
+        <p>To download the report:</p>
+        <ol>
+            <li>Generate the report as desired.</li>
+            <li>Click the <strong>download </strong>icon in the top right, then click <strong>CSV</strong>.</li>
+            <li>View, print or save the CSV as required.</li>
+        </ol>
+    </body>
+</html>

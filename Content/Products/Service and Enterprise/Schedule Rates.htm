@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="6701" MadCap:lastWidth="1259">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Schedule Rates</h1>
+        <h2>Overview</h2>
+        <p>Create schedule rates in simPRO to keep track of actual costs. You may wish to create schedule rates for various levels of overtime, leave, and various activities.</p>
+        <p MadCap:conditions="Default.Phase 1">Labour rates can then be associated with schedule rates on activities and employee and  <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor card files; used for scheduling; viewed in timesheets, specific forms and reports; and selected in Connect.</p>
+        <p MadCap:conditions="Default.Enterprise">Labour rates can then be associated with schedule rates on activities and employee and   contractor card files; used for scheduling; viewed in timesheets, specific forms and reports; and selected in Connect.</p>
+        <p MadCap:conditions="Default.Service">Labour rates can then be associated with schedule rates on activities and employee  card files; used for scheduling; viewed in timesheets, specific forms and reports; and selected in Connect.</p>
+        <p>Users' security group settings may restrict access to creating, editing, archiving and deleting schedule rates.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a schedule rate</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-create.png" alt="A screenshot of the Create Schedule Rate page." class="border" />
+                </p>
+                <p>To create a schedule rate:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Labour &gt; Schedule Rates</strong>.</li>
+                    <li>Click <strong>Create Schedule Rate</strong>.</li>
+                    <li>Enter a <strong>Schedule Rate Name</strong>.</li>
+                    <li>Enter the desired <strong>Multiplier </strong>up to two decimal places. This cannot be changed after creation and must be a positive value.</li>
+                    <li>Select the <strong>Schedule Text Colour</strong> as <strong>Default </strong>or <strong>Custom</strong>. If custom, use the slider to select a colour.</li>
+                    <li>Select <strong>Options </strong>as desired.</li>
+                    <li>Click <strong>Create</strong>.</li>
+                </ol>
+                <p>The <strong>Options </strong>available to select include:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 156px;" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Show in Connect</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select if you want Connect users to be able to view and select this schedule rate.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Includes Overhead</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select whether or not your schedule rate includes an overhead cost, depending on your business needs.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Activity Only</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Select if your schedule rate only applies to a non-billable activity.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="Infotip">You can create schedule rate multipliers 0x and above, however negative multipliers are not supported.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Calculate resource costs using schedule multipliers</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The following examples will demonstrate how schedule multipliers multiply your resource costs on a job.</p>
+                        <p>The following rates will apply to the employee for all examples:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 156px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Pay Rate (PR)</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>$20 per hour. This value will be multiplied by the <strong>Multiplier </strong>value of the schedule rate.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Employee Cost (EC)</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>$5 per hour. This value is <strong>never </strong>multiplied by the schedule rate.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Overhead (O)</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>$10 per hour. This value is <strong>never </strong>multiplied by the schedule rate.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>If the employee works three hours of double time (2x) on a job, and the schedule rate has not been selected to<strong> Include Overhead </strong>as above:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 155px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Resource Cost</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>(<strong>Pay Rate</strong> x <strong>Hours</strong>) x <strong>Multiplier</strong>, or with the values applied, (<strong>20</strong> x <strong>3</strong>) x <strong>2</strong></p>
+                                        <p>60 x 2 = <strong>$120</strong></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>If the employee works three hours of double time (2x) on a job, and the schedule rate has been selected to<strong> Include Overhead</strong> as above:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Resource Cost</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>(<strong>Pay Rate</strong> x <strong>Hours</strong>) x <strong>Multiplier </strong>+ (<strong>Employment Cost</strong> x <strong>Hours</strong>) + (<strong>Overhead</strong> x <strong>Hours</strong>), or with the values applied, (<strong>20</strong> x <strong>3</strong>) x <strong>2</strong> + (<strong>5</strong> x <strong>3</strong>) + (<strong>10</strong> x <strong>3</strong>)</p>
+                                        <p>60 x 2 + 15 + 30 = <strong>$165</strong></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit a schedule rate</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-edit.png" alt="A screenshot of the Edit Schedule Rate page." class="border" />
+                </p>
+                <p>To edit a schedule rate:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Labour &gt; Schedule Rates</strong>.</li>
+                    <li>Click the schedule rate you wish to edit.</li>
+                    <li>Make changes as desired.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p>To prevent changes to existing costs, the <strong>Multiplier </strong>cannot be edited after creation.</p>
+                <p class="WarningTip">If you select or clear the<strong> Includes Overhead</strong> check box when editing an existing schedule rate, this may change costs for any schedules this rate applied to.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Archive a schedule rate</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-archive.png" alt="A screenshot of a schedule rate being archived." class="border" />
+                </p>
+                <p>To archive a schedule rate:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Labour &gt; Schedule Rates</strong>.</li>
+                    <li>On the schedule rate you wish to delete, click the <strong>red delete </strong>icon.</li>
+                    <li>Click <strong>OK</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Restore an archived schedule rate</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To view archived schedule rates, select <strong>Show Archived</strong>.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-viewarchived.png" alt="A screenshot of the Show Archived? check box selected." class="border" />
+                </p>
+                <p>To restore an archived schedule rate:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Labour &gt; Schedule Rates</strong>.</li>
+                    <li>Select the <strong>Show Archived?</strong> check box.</li>
+                    <li>On the schedule rate you wish to restore, click the <strong>green plus</strong> icon.</li>
+                    <li>Click <strong>OK</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign a schedule rate to an activity</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Assign schedule rates to activities to track your costs effectively. When creating a schedule rate, select <strong>Activity Only</strong> to make a rate unavailable to select when scheduling quotes and jobs.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-viewarchived.png" alt="A screenshot of the Schedule Rate drop-down in an activity." class="border" />
+                </p>
+                <p>To assign a schedule rate to an activity:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Activities</strong>.</li>
+                    <li>Open an activity or create a new one.</li>
+                    <li>Select a<strong> Schedule Rate</strong> from the drop-down menu.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p>The activity will then be associated with that schedule rate when scheduling.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Associate labour rates with schedule rates for an employee or contractor</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="Default.Phase 1">You can associate labour rates with schedule rates for an employee or <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor. This is useful for calculating accurate overtime costs for specific roles in your business.</p>
+                <p MadCap:conditions="Default.Enterprise">You can associate labour rates with schedule rates for an employee or  contractor. This is useful for calculating accurate overtime costs for specific roles in your business.</p>
+                <p MadCap:conditions="Default.Service">You can associate labour rates with schedule rates for an employee. This is useful for calculating accurate overtime costs for specific roles in your business.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-labourrate.png" alt="A screenshot of labour rates associated with schedule rates." class="border" />
+                </p>
+                <p MadCap:conditions="Default.Phase 1">To assign a schedule rate to an employee or  <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor:</p>
+                <p MadCap:conditions="Default.Enterprise">To assign a schedule rate to an employee or   contractor:</p>
+                <p MadCap:conditions="Default.Service">To assign a schedule rate to an employee:</p>
+                <ol>
+                    <li MadCap:conditions="Default.Phase 1">Open the employee or  <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor's card file.</li>
+                    <li MadCap:conditions="Default.Enterprise">Open the employee or   contractor's card file.</li>
+                    <li MadCap:conditions="Default.Service">Open the employee's card file.</li>
+                    <li>Click the <strong>Rates </strong>tab.</li>
+                    <li>Under <strong>Bill Rates</strong>, for each listed <strong>Schedule Rate</strong>, assign the desired <strong>Labour Rate</strong>.</li>
+                    <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Select a schedule rate when scheduling</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-schedule.png" alt="A screenshot of the schedule rate drop-down in the schedule." class="border" />
+                </p>
+                <p>To select a schedule rate when scheduling a quote or job:</p>
+                <ol>
+                    <li>Go to <strong>Schedules &gt; Day View or Week View</strong>.</li>
+                    <li>Under <strong>Schedule</strong>, search and select the job or quote to schedule.</li>
+                    <li>On the right above the schedule view, select a schedule rate from the drop-down list.</li>
+                    <li>Schedule as usual.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>It is best practice to assign schedule rates when creating activities. When you are scheduling an activity, the schedule rate will default to the linked schedule rate. However, you are able to manually select another rate.</p>
+                <p>To select a schedule rate when scheduling an activity:</p>
+                <ol>
+                    <li>Go to <strong>Schedules &gt; Day View</strong> or<strong> Week View</strong>.</li>
+                    <li>Under <strong>Schedule</strong>, search and select the activity to schedule.</li>
+                    <li>If a schedule rate is assigned to that activity, it will default in the schedule rate drop-down list.</li>
+                    <li>If you wish to manually select a schedule rate, select one from the drop-down list.</li>
+                    <li>Schedule as usual.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-block.png" alt="A screenshot of coloured text in a schedule block." class="border" />
+                </p>
+                <p>If a custom schedule text colour was selected when creating the schedule rate, the text of the schedule will display in that colour.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Manually update a schedule rate on a quote or job card</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/schedulerate-manual.png" alt="A screenshot of the Schedule Rate drop-down in a job card." class="border" />
+                </p>
+                <p>To manually update a schedule rate on a quote or job card:</p>
+                <ol>
+                    <li>Within an existing quote or job, go to the <strong>Schedule </strong>tab.</li>
+                    <li>Ensure someone is scheduled to the quote or job.</li>
+                    <li>Right-click the schedule or click <strong>Options</strong>.</li>
+                    <li>Click <strong>Quote </strong>/ <strong>Job Card &gt; Open Quote</strong> / <strong>Job Card</strong>.</li>
+                    <li>Click the <strong>Actual </strong>tab.</li>
+                    <li>Select a schedule rate from the<strong> Schedule Rate</strong> drop-down list.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>View schedule rates on a timesheet</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/System/schedulerate-timesheet.png" alt="A screenshot of schedule rates in a timesheet." class="border" />
+                        </p>
+                        <p MadCap:conditions="Default.Phase 1">When viewing a timesheet, at the bottom of each day, you can view the scheduled <strong>Time </strong>for the employee or <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractor by each schedule rate multiplier.</p>
+                        <p MadCap:conditions="Default.Enterprise">When viewing a timesheet, at the bottom of each day, you can view the scheduled <strong>Time </strong>for the employee or  contractor by each schedule rate multiplier.</p>
+                        <p MadCap:conditions="Default.Service">When viewing a timesheet, at the bottom of each day, you can view the scheduled <strong>Time </strong>for the employee  by each schedule rate multiplier.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>View schedule rates in forms</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Schedule rates display in the <strong>Allocated Schedule Overview </strong>and <strong>Schedule Timetable </strong>forms for quotes and jobs. This is particularly useful for large projects.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/System/schedulerate-forms.png" alt="A screenshot of the Schedule Timetable option in the Forms drop-down." class="border" />
+                        </p>
+                        <p>To generate these forms:</p>
+                        <ol>
+                            <li>Open the desired quote or job and go to the <strong>Forms </strong>tab.</li>
+                            <li>Select<strong> Allocated Schedule Overview </strong>or <strong>Schedule Timetable</strong> from the <strong>Form </strong>drop-down list.</li>
+                            <li>View or send the form as desired.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>View schedule rates in the Employee Activity report</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Schedule rates can be viewed in the <strong>Employee Activity</strong> report, under<strong> Reports &gt; View Reports &gt; Employees &gt; Activity</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

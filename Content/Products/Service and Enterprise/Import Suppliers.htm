@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Default.Not Ready for Publish" MadCap:lastBlockDepth="6" MadCap:lastHeight="2422" MadCap:lastWidth="964" MadCap:snippetVariables="MyVariables.Terminology:Vendor,">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Import Suppliers</h1>
+        <h2>Overview</h2>
+        <p>In simPRO, you can manually add suppliers to the system through <b>People &gt; Create New Supplier</b>, or save time and reduce data entry errors by importing a supplier list.</p>
+        <p class="Infotip">You may wish to test the import process with one or two suppliers before importing an entire list.</p>
+        <h2>Prepare to import suppliers</h2>
+        <p>To prepare to import suppliers into simPRO:</p>
+        <ol>
+            <li>
+                <p MadCap:conditions="Default.Phase 1">Download and enter data into the <strong>Supplier Import Template</strong> for:</p>
+                <ul>
+                    <li>
+                        <p MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Supplier Import Template AU.csv">Australia</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Supplier Import Template NZ.csv">New Zealand</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Supplier Import Template UK.csv">United Kingdom</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Supplier Import Template US.csv">United States</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p MadCap:conditions="Default.AU">
+                   Download and enter data into the <strong><a href="../../Resources/Downloadable/Supplier Import Template AU.csv">Supplier Import Template</a>.</strong></p>
+            </li>
+            <li MadCap:conditions="Default.NZ">
+                Download and enter data into the <a href="../../Resources/Downloadable/Supplier Import Template NZ.csv"><strong>Supplier Import Template</strong></a><strong>.</strong></li>
+            <li MadCap:conditions="Default.UK">
+               Download and enter data into the <strong><a href="../../Resources/Downloadable/Supplier Import Template UK.csv">Supplier Import Template</a>.</strong></li>
+            <li MadCap:conditions="Default.US">
+                Download and enter data into the <strong><a href="../../Resources/Downloadable/Supplier Import Template US.csv">Supplier Import Template</a>.</strong></li>
+            <li>Alternatively, create your own import list and leave out any fields that do not apply to your suppliers.</li>
+            <li>Save your file in your system as a compatible file type: CSV, .txt, or .zip. Consult your spreadsheet software for file saving instructions if required.</li>
+            <li>Separate your data using the same or similar headings as the Supplier Import Template.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+            </li>
+        </ol>
+        <p class="Infotip">
+            <MadCap:annotation MadCap:createDate="2016-10-18T13:51:47.7262097+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Awaiting Numeric-only Custom Fields feature." MadCap:editor="Zoe" MadCap:editDate="2016-10-18T13:51:56.1926144+10:00">If a supplier has a numeric-only custom field in simPRO but there is non-numeric data entered in the field in the supplier list, you will receive an error warning and the import will fail. Numbers must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Number Thousands Separator</strong> /<strong> Negative Number Format</strong> to import successfully.</MadCap:annotation>
+        </p>
+        <h2>Import a supplier list</h2>
+        <p>After preparing your supplier list, work through the following steps to import your list into simPRO.</p>
+        <p>
+            <h3>Adjust supplier import settings</h3>
+        </p>
+        <p>To adjust supplier import settings, go to <b>Utilities &gt; Import &gt; Suppliers</b>.</p>
+        <p>The options available include:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 174px;" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p><b>First Record Is</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>: Select <b>Header Record</b> if your list's first row contains column titles, or select <b>Data Record</b> if your list's first row contains specific supplier details.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">If supplier Already Exists</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p> In case simPRO finds duplicated suppliers (supplier with the same name), select whether you want to <b>Do Nothing</b> or to <b>Update Supplier Details</b> for the existing supplier in simPRO.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">If Custom List Value Not Found</td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                        <p> If any of the entries are a drop-down list in simPRO (for instance, the <b>State </b>field is a drop-down list), and your file contains any additional values (or 'custom list values') not available in simPRO's list, select <b>Create New List Option</b> to add the additional value to the drop-down list in your supplier card file. Otherwise, select <b>Reject and Warn</b> to ignore the field and receive a warning.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <h3>Select an import file</h3>
+        </p>
+        <p>To select an import file:</p>
+        <ol>
+            <li>Go to <b>Utilities &gt; Import &gt; Supplier</b>.</li>
+            <li>Adjust supplier import settings, then click <b>Choose File / Browse</b>.</li>
+            <li>Locate your supplier import file and click <b>Open</b>.</li>
+            <li>Click <b>Next</b>.</li>
+        </ol>
+        <p>
+            <h3>Match supplier import columns</h3>
+        </p>
+        <p>After selecting an import file, manually match or check your list columns with the fields available in simPRO. You may wish to have both simPRO and your list open at the same time.</p>
+        <p>To match supplier import columns:</p>
+        <ol>
+            <li>Select your import file as above.</li>
+            <li>On the <b>Supplier Import Columns</b> page, the column headings from your imported list will appear in brackets, such as (<b>Supplier Name</b>). Use the drop-down list under each heading to select the matching field in simPRO.</li>
+            <li>If you wish to leave a column out of the import entirely, select <b>Ignore</b> from its drop-down list.</li>
+            <li>Click<b> Import Supplier</b>.</li>
+        </ol>
+        <p>To add additional supplier contacts, continue to select the <b>Secondary Contact</b> options for each additional contact.</p>
+        <p>
+            <h3>Check supplier import success</h3>
+        </p>
+        <p>After uploading an import file, the <b>Import Supplier Summary</b> page will display a breakdown of your import, including <b>Suppliers Added / Updated / Ignored and Customers Created</b>.</p>
+        <p>If the import was not successful, an error message will appear.</p>
+        <p>If the import was successful, click <b>supplier imported successfully</b> to download a CSV file of imported supplier for your records.</p>
+        <p>After a successful import, it is recommended you manually check imported supplier to ensure data has imported correctly. To do this, go to <b>People &gt; Suppliers</b>, click an imported supplier, and check <b>Profile &gt; Details</b> for errors. Manually amend if required.</p>
+        <h2>Troubleshooting</h2>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Tables.css');margin-left: auto;margin-right: auto;" class="TableStyle-simPRO-Tables" cellspacing="0">
+            <col class="TableStyle-simPRO-Tables-Column-Column1" />
+            <col class="TableStyle-simPRO-Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-simPRO-Tables-Head-Header1">
+                    <th class="TableStyle-simPRO-Tables-HeadE-Column1-Header1"><strong>Issue</strong>
+                    </th>
+                    <th class="TableStyle-simPRO-Tables-HeadD-Column1-Header1"><strong>Solution</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-simPRO-Tables-Body-Body2">
+                    <td class="TableStyle-simPRO-Tables-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-simPRO-Tables-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-simPRO-Tables-Body-Body1">
+                    <td class="TableStyle-simPRO-Tables-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-simPRO-Tables-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-simPRO-Tables-Body-Body2">
+                    <td class="TableStyle-simPRO-Tables-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-simPRO-Tables-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-simPRO-Tables-Body-Body1">
+                    <td class="TableStyle-simPRO-Tables-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-simPRO-Tables-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

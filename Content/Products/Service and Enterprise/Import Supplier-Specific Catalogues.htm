@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="5944" MadCap:lastWidth="1142">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Import Supplier-Specific Catalogues</h1>
+        <h2>Overview</h2>
+        <p>Upload supplier catalogues and price files that have been specifically formatted for your simPRO system.</p>
+        <p>Catalogues are usually contained in a CSV or ZIP file. To obtain these files, you need to contact suppliers directly at your local branch or log in to their website. If the supplier is not aware of the simPRO format required they should contact their internal IT department for support.</p>
+        <p>There are three types of imports you can perform with a supplier-specific catalogue:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col class="TableStyle-Definition_List_table-Column-Column1" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Complete</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Imports all items from the price file as arranged in the groups and subgroups defined in the file. Select when performing an initial import.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Update and Create New Part</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Compares the part numbers of items from the price file with those in the existing catalogue. If a part number in the new price file is not found in the catalogue, a new item entry will be created in the catalogue in a group and subgroup defined by the new price file.</p>
+                        <p>If you are updating your catalogue with your default supplier, trade prices will also be updated. This option is useful if you wish to build up your catalogue to include all products from additional suppliers.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                        <p>Update Only</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                        <p>Compares the part numbers of items from the price file with those in the existing catalogue but ignores additional items in the new price file. If you are updating your catalogue with your default supplier, trade prices will also be updated.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>If you are updating your catalogue using the <strong>Update </strong>and <strong>Create New Part </strong>or <strong>Update Only </strong>options and matching part numbers are found between the catalogue and the new price file, the import will merge those items into one catalogue item with multiple suppliers. This is useful for comparing prices between different suppliers when raising a purchase order.</p>
+        <p class="Infotip">If you are unable to obtain a simPRO formatted price file from your supplier, you may wish to import the supplier catalogue as a generic price file or manually enter your most commonly used catalogue items.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import a supplier-specific catalogue</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Before you import a supplier-specific catalogue, you need to <MadCap:xref href="Import Suppliers.htm">Import Suppliers</MadCap:xref>, or alternatively, create <MadCap:xref href="Suppliers.htm">Suppliers</MadCap:xref>.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/importcatalogue-specific.png" alt="A screenshot of a supplier-specific import." class="border" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Perform an initial import</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When performing an initial import of a supplier-specific catalogue, it is recommended to import the catalogue of your primary supplier, or alternatively, a major supplier with a well-structured catalogue.</p>
+                        <p>To perform an initial import of a supplier-specific catalogue:</p>
+                        <ol>
+                            <li>Go to <strong>Utilities &gt; Import</strong>.</li>
+                            <li>In the left column, hover over <strong>Catalogue</strong>, then select the supplier whose catalogue you wish to import.</li>
+                            <li>Select <strong>Set as Default Supplier</strong> if desired.</li>
+                            <li>Under <strong>Import Options</strong>, click <strong>Complete</strong>.</li>
+                            <li>Click <strong>Browse</strong>.</li>
+                            <li>Find and click the desired supplied file, then click <strong>Open</strong>.</li>
+                            <li>Under <strong>Attached File</strong>, a <strong>green tick</strong> icon will indicate the file has uploaded successfully. Verify the name and size of the file.</li>
+                            <li>Click <strong>Next</strong>.</li>
+                        </ol>
+                        <p>When the catalogue has finished importing, an <strong>Import Catalogue Summary</strong> will show the number of<strong> Line Items Loaded</strong>, <strong>Catalogue Items Created </strong>and <strong>Catalogue Items Updated</strong>.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importcatalogue-summary.png" alt="A screenshot of an Import Catalogue Summary." class="border" />
+                        </p>
+                        <p class="Infotip">It is recommended that you check the catalogue to ensure the import has been successful prior to importing additional supplier catalogues.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Update the catalogue</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Update your existing catalogue to import additional items from any supplier, update items with additional supplier part numbers and prices, or simply update trade prices.</p>
+                        <p>If you are updating the catalogue with item details from MMEM, you can check for a new price file and perform an automatic sync.</p>
+                        <p>To update the catalogue:</p>
+                        <ol>
+                            <li>Go to <strong>Utilities &gt; Import</strong>.</li>
+                            <li>In the left column, hover over <strong>Catalogue</strong>, then select the supplier whose catalogue you wish to import.</li>
+                            <li>Select <strong>Update Trade Prices</strong> if desired when updating the catalogue for your default supplier.</li>
+                            <li>Under <strong>Import Options</strong>:</li>
+                            <li>Click <strong>Update Only</strong> to update existing items with supplier part numbers and prices.</li>
+                            <li>​​Click <strong>Update and Create New Part</strong> to update existing items with supplier part numbers and prices, and to add additional items.</li>
+                            <li>Click <strong>Browse</strong>.</li>
+                            <li>Find and click the desired supplied file, then click <strong>Open</strong>.</li>
+                            <li>Under <strong>Attached File</strong>, a <strong>green tick</strong> icon will indicate the file has uploaded successfully. Verify that the correct file has been loaded.</li>
+                            <li>Click <strong>Next</strong>.</li>
+                        </ol>
+                        <p>When the catalogue has finished importing,  an<strong> Import Catalogue Summary</strong> will show the number of<strong> Line Items Loaded</strong>, <strong>Catalogue Items Created </strong>and <strong>Catalogue Items Updated</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Available suppliers to import: AU</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Download and import a simPRO-formatted price file from the following suppliers:</p>
+                <ul>
+                    <li><a href="http://www.cetnaj.com.au/" target="_blank">Cetnaj</a>
+                    </li>
+                    <li><a href="http://cnw.com.au/" target="_blank">CNW</a>
+                    </li>
+                    <li><a href="http://www.das.com.au/" target="_blank">DAS</a>
+                    </li>
+                    <li><a href="http://electricaldistributors.com.au/" target="_blank">Electrical Distributors</a>
+                    </li>
+                    <li>Espro - see supplier requirements below</li>
+                    <li><a href="http://goelectrical.com.au/" target="_blank">Go Electrical</a>
+                    </li>
+                    <li><a href="http://idealelectrical.com.au/" target="_blank">Ideal Electrical</a>
+                    </li>
+                    <li><a href="http://jrt.com.au/" target="_blank">John R. Turk</a>
+                    </li>
+                    <li><a href="http://lh.com.au/" target="_blank">Lawrence &amp; Hanson</a>
+                    </li>
+                    <li><a href="http://middys.com.au/" target="_blank">Middy's -</a> see supplier requirements below</li>
+                    <li><a href="http://mmem.com.au/" target="_blank">MM Electrical Merchandising</a> (MMEM) - to have your MMEM catalogue updated automatically by MMEM, you can enable automatic syncing.</li>
+                    <li><a href="http://www.nhp.com.au/" target="_blank">NHP</a>
+                    </li>
+                    <li><a href="http://reece.com.au/" target="_blank">Reece</a>
+                    </li>
+                    <li><a href="http://rexel.com.au/" target="_blank">Rexel</a>
+                    </li>
+                    <li><a href="http://samios.net.au/" target="_blank">Samios</a>
+                    </li>
+                    <li><a href="http://sherriff.com.au/" target="_blank">Sherriff</a>
+                    </li>
+                    <li><a href="http://sparkydirect.com.au/" target="_blank">Sparky Direct</a>
+                    </li>
+                    <li><a href="http://tradelink.com.au/" target="_blank">Tradelink</a>
+                    </li>
+                    <li><a href="https://www.tradezone.com.au/" target="_blank">TradeZone</a>
+                    </li>
+                </ul>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Supplier requirements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you wish to import from Espro, a database of electrical contracting pre-builds, you can import a sample of 200 items. To import the full database, you need to purchase it from Spearhead, then provide proof of purchase to simPRO Support, and simPRO will load the database to your system.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importcatalogue-espro.png" alt="A screenshot of the Espro import." class="border" />
+                        </p>
+                        <p>To import the Middy's price file directly from the Middy's website into simPRO, adjust import options, enter your <strong>Middys User Name</strong> and <strong>Middys Password</strong>, then click <strong>Next</strong>.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importcatalogue-middys.png" alt="A screenshot of the Middys User Name and Middys Password fields." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Enable automatic syncing for MMEM</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If you import MMEM supplier catalogues into your simPRO system and you have an <a href="http://www.mmem.com.au/customer/accountRequest/create/" target="_blank">online MMEM account</a>, you can enable automatic syncing so that your prices will update in simPRO when MMEM updates their price files.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importcatalogue-mmem.png" alt="A screenshot of the MMEM import." class="border" />
+                        </p>
+                        <p>To enable automatic syncing for the MMEM catalogue:</p>
+                        <ol>
+                            <li>Go to <strong>Utilities &gt; Import</strong>.</li>
+                            <li>In the left column, hover over <strong>Catalogue</strong>, then select <strong>MMEM</strong>.</li>
+                            <li>Enter your <strong>MMEM Username</strong> and <strong>Password</strong>.</li>
+                            <li>Click <strong>Validate</strong>.</li>
+                            <li>Adjust import settings as normal.<ul><li>If you wish to have different import settings for future updates, return to <strong>Utilities &gt; Import &gt; Catalogue &gt; MMEM &gt; Import Options</strong>, select options as desired, then click <strong>Update</strong>.</li></ul></li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p>Your simPRO system will then check for a new MMEM price file every seven days and will update in the system regardless of whether the price file has changed. To disable automatic syncing, click <strong>Deactivate</strong>.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importcatalogue-automated.png" alt="A screenshot of an active automated import for MMEM." class="border" />
+                        </p>
+                        <p class="Infotip">Go to <strong>Utilities &gt; Import &gt; MMEM &gt; File Import</strong>, to import an MMEM supplier catalogue manually.</p>
+                        <h4>Do you have an invalid MMEM username or password?</h4>
+                        <p>If you have an invalid MMEM username or password, a <strong>Catalogue Automated Import Error </strong>message will appear. Go to the <a href="http://www.mmem.com.au/" target="_blank">MMEM website</a> to reset your password, or alternatively, contact your local MMEM to rectify the issue if required.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importcatalogue-invalidusername.png" alt="A screenshot of the Catalogue Automated Import Error pop-up." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Available suppliers to import: NZ</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following suppliers have simPRO-formatted price files available to import:</p>
+                <ul>
+                    <li><a href="http://www.cetnaj.com.au/" target="_blank">Cetnaj</a>
+                    </li>
+                    <li><a href="http://www.chesters.co.nz/" target="_blank">Chesters</a>
+                    </li>
+                    <li><a href="http://corys.co.nz/" target="_blank">Corys Electrical</a>
+                    </li>
+                    <li><a href="http://www.das.com.au/" target="_blank">DAS</a>
+                    </li>
+                    <li><a href="http://electroquip.co.nz/" target="_blank">Electroquip</a>
+                    </li>
+                    <li>Franklin</li>
+                    <li><a href="http://ideal.co.nz/" target="_blank">Ideal Electrical</a>
+                    </li>
+                    <li><a href="http://jarussell.co.nz/" target="_blank">J.A. Russell</a>
+                    </li>
+                    <li><a href="http://www.ksimpson.co.nz/" target="_blank">K Simpson Electrical</a>
+                    </li>
+                    <li>MasterTrade</li>
+                    <li><a href="http://micobathrooms.co.nz/" target="_blank">Mico</a>
+                    </li>
+                    <li><a href="http://www.placemakers.co.nz/" target="_blank">PlaceMakers</a>
+                    </li>
+                    <li><a href="http://plumbingworld.co.nz/" target="_blank">Plumbing World</a>
+                    </li>
+                    <li><a href="http://reece.co.nz/" target="_blank">Reece</a>
+                    </li>
+                    <li><a href="http://stewartsgroup.co.nz/" target="_blank">Stewarts</a>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Available suppliers to import: UK</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The following suppliers have simPRO-formatted price files available to import:</p>
+                <ul>
+                    <li><a href="https://www.yesss.co.uk/" target="_blank">Yesss Electrical</a>
+                    </li>
+                    <li><a href="http://www.plumbase.co.uk/" target="_blank">Plumbase</a>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

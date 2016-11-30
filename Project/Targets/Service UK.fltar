@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[Default.ScreenOnly or Default.Service or Default.UK or &quot;Default.UK Service&quot;] exclude[Default.AU or &quot;Default.AUS Enterprise&quot; or Default.Enterprise or &quot;Default.Not Ready for Publish&quot; or Default.NZ or &quot;Default.Phase 1&quot; or Default.US or &quot;Default.US Enterprise&quot; or &quot;Default.US Service&quot;] "
+  DefaultUrl="/Content/Welcome.htm"
+  GetLatestBeforeCompile="true"
+  MasterPage="/Content/Resources/MasterPages/KB_Master_Page.flmsp">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="MyVariables/Retainage">Retention</Variable>
+  </Variables>
+</CatapultTarget>

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="7147" MadCap:lastWidth="1743" MadCap:conditions="Default.Phase 1">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Making Sense of Multi-company</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <h2>Overview</h2>
+        <p>Multi-company is a paid add-on that lets you to set up one simPRO Enterprise build for separate business entities (companies, franchises, branches, divisions, etc) that share some, but not necessarily all types of information.</p>
+        <p>Below are answers to our clients' top questions about Multi-company builds: what it is, how it works, how to set up a build, and what you need to know before setting up a Multi-company build. For this article, we will refer to entities within a multi-company build as <strong>companies</strong>.</p>
+        <p>A business with multiple companies may benefit from a Multi-company build if facing these challenges:</p>
+        <ul>
+            <li>Your different companies require separate accounting files, for example, for reporting or regional regulatory purposes.</li>
+            <li>Your companies’ profiles differ in that they have different business numbers or corporate branding.</li>
+            <li>Your workflows vary greatly between the different companies and require a different set of job statuses.</li>
+            <li>In the event you have any third-party integration with simPRO, we recommend your development team reviews the API Documentation.</li>
+        </ul>
+        <p class="Infotip">A simPRO consultant may also recommend a Multi-company build for alternative reasons.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What is a template company and how does it relate to my companies?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When your single Enterprise build is converted to a Multi-company build, all the data and settings for the single company are transferred to what is known as a template company. This contains all the foundation data to be copied across when you create a new company within the Multi-company build. The first company within the build is created at the same time, and is identical to both the template company and your original single company.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/FAQs/multi-company-template.png" alt="A screenshot of a template company." class="border" />
+                </p>
+                <p>For features you choose to share, the individual companies will refer to the template company for information. For example, if you share customers between companies, all customers and sites are managed in the template company.</p>
+                <p>Each company will reference the template company when you look up a customer or site. Additionally, any changes you make to a customer or site within one company will update the template company data, making it available to all the companies within your build.</p>
+                <p>The information you have elected not to share is managed separately within the individual companies. New companies are still built from the template company, but changes you make in non-template companies are not reflected across other companies.</p>
+                <p class="Infotip">Some features are <strong>always </strong>shared while some are never shared between companies. For example, each company has its own logo and/or PDF background, which can be uploaded in <strong>System &gt; Setup &gt; Company</strong>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What settings and information are shared between my companies?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you switch to a Multi-company Enterprise build, a simPRO staff member will switch on sharing for the feature collections you choose to share between companies. This sharing applies to all features within the collection, so if there is one feature in a collection that you do not wish to share, you will not be able to share any of the features within the collection (though new companies you create will still copy this information from the template company).</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/FAQs/multicompany-sharing.png" alt="A screenshot of the sharing options in a multi-company build." class="border" />
+                </p>
+                <p>In addition, certain features are always shared in a Multi-company build, and others are never shared. See below for a full list of shared features.</p>
+                <p>Your decision to share feature collections should be based on the need to achieve ongoing consistency between the different entities. This might be because they follow the same workflows, use the same cost structures, or share stock allocations from a central distribution centre. Do not be tempted to switch on sharing just because it is easier to set up—the template company will be copied to any new companies anyway, which you can then edit.</p>
+                <p class="Infotip">If you are uncertain whether one company will have settings or information modified differently from other companies, it is better to <strong>not </strong>share.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Shared features within each collection</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table style="mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');margin-left: auto;margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Always Shared</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Employees</p>
+                                <p>Employee custom fields</p>
+                                <p>Contractors</p>
+                                <p>Contractor custom fields</p>
+                                <p>Teams</p>
+                                <p>Tax codes</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Shared Defaults</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Labour rates</p>
+                                <p>Fit times</p>
+                                <p>Service fees</p>
+                                <p>Prepaid labour</p>
+                                <p>Prepaid blocks</p>
+                                <p>Payment methods</p>
+                                <p>Task templates</p>
+                                <p>Task categories</p>
+                                <p>Security groups</p>
+                                <p>Forms setup</p>
+                                <p>Activities</p>
+                                <p>Payroll categories</p>
+                                <p>Accounting categories</p>
+                                <p>Status codes</p>
+                                <p>Automatic triggers</p>
+                                <p>Scripts</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Shared Setup</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Cost centres</p>
+                                <p>Business groups</p>
+                                <p>Response times</p>
+                                <p>Plant builder</p>
+                                <p>Archive reasons</p>
+                                <p>Project tags</p>
+                                <p>Project custom fields</p>
+                                <p>Customer tags</p>
+                                <p>Customer groups</p>
+                                <p>Customer profiles</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Shared Customers</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Customers</p>
+                                <p>Customer custom fields</p>
+                                <p>Sites</p>
+                                <p>Site custom fields</p>
+                                <p>Zones</p>
+                                <p>Service levels</p>
+                                <p>Asset builder</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Shared Catalogues</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Catalogue</p>
+                                <p>Take Off Templates</p>
+                                <p>Pre-builds</p>
+                                <p>Suppliers</p>
+                                <p>Purchasing stages</p>
+                                <p>Pricing tiers</p>
+                                <p>Units of measurement</p>
+                                <p>Supplier custom fields</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Shared Stock</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Inventory tracking</p>
+                                <p>Storage devices</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Shared Accounts Integration</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Accounts integration settings are shared across all companies</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Never Shared</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Company information (including PDF background and time zone)</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Shared accounts integration</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When accounts integration is shared, the Accounts Integration tab in System &gt; Setup &gt; Accounts Integration will only be available in the template company. When it is not shared, the Accounts Integration tab will be available in each company.</p>
+                <p>You may wish to activate Shared Setup if you run a franchise business and wish to control the setup. You still have the option to either share or not share the accounting integration as above.</p>
+                <p class="Infotip">This sharing option must be turned on or off by simPRO staff as it may have financial implications and our development team will need to check these on individual basis.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Can I undo any of the sharing options?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The sharing options, except for Shared Accounts Integration, cannot be undone. It is critical that you and your trainer discuss the best sharing options prior to activating Multi-company.</p>
+                <p>What if I have a business in multiple countries?</p>
+                <p>You can set up a company-specific currency in your company details. For example, if you have a business in Australia and another one in New Zealand, you are able to run those as a Multi-company set-up with two different base currencies.</p>
+                <p>Three steps are required to set up:</p>
+                <ol>
+                    <li>Enable multiple currencies: go to <strong>System &gt; Setup &gt; Defaults &gt; Financial &gt; Invoicing &gt; Multiple Currencies &gt; On</strong>.</li>
+                    <li>Ensure your different currencies are set up: go to <strong>System &gt; Setup &gt; System Setup &gt; Currencies</strong>.</li>
+                    <li>Set your company currency: go to <strong>System &gt; Setup &gt; Company &gt; Currency</strong>.</li>
+                </ol>
+                <p class="Infotip">If you have recently changed your security group settings to allow access to the currencies setup, you may need to log out and log back in to obtain access to currencies in your template company.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Does Multi-company affect how I schedule employees and contractors?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>As noted in the table above, employees and contractors are always shared within a Multi-company build, and their access to individual companies is set in their card files. An employee or contractor working for two (or more) companies can be scheduled in either company, which means both schedules are visible to both companies to avoid scheduling conflicts.</p>
+                <p>For example, Jordan is an electrician working for two divisions of ProTec Services - Air and Electrical. The junior scheduler working for ProTec Services - Air has access only to the Air schedule, so he can schedule Jordan for Air jobs, and view Jordan’s schedule for Electrical jobs to ensure there is no conflict. The senior scheduler working for ProTec Services—Electrical has access to both companies, so she can adjust Jordan’s jobs for both Air and Electrical from the Electrical schedule (without needing to change companies).</p>
+                <p class="Infotip">Each employee or contractor has only one security group, so their access is consistent across each company.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How does automatic numbering work in Multi-company?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Regardless of which feature categories you choose to share, automatic numbering is always applied sequentially across all companies, rather than on a per-company basis. This applies to (but is not limited to): purchase orders, leads, quotes, jobs, invoices and reports (where relevant).</p>
+                <p>For example, if a ProTec Service’s Multi-company build consists of Air and Electrical divisions, and Air creates purchase order number 35, the next purchase order created by either Air or Electrical will be purchase order 36. This ensures numbering will not overlap and cause confusion.</p>
+                <p class="Infotip">There is one exception to this rule for clients using Maintenance Planner. The <strong>Annual System Condition Report</strong>, available in <strong>Reports &gt; View Reports &gt; Maintenance Planner</strong>, is automatically numbered on a per-company basis.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How does Multi-company work with the accounting link?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Many of our clients have chosen to use Multi-company so they can push transactions from different companies to separate accounting files or even different accounting software packages. However, it is also possible to consolidate the data for all companies within your build to a single set of books.</p>
+                <p>Both scenarios require consideration of a specific technical aspects of the accounting links to ensure your Multi-company setup meets your accounting requirements.</p>
+                <p>If you wish to keep different companies’ accounting data files separate, we strongly recommend that you do not share customers or catalogues, as Enterprise flags updated or new records in your customer and catalogue card files to be pushed to accounting package. It then removes the flag once the information is sent to an accounting file, so the same information will not be sent again, which is a problem if you also have another accounting file that needs to be updated.</p>
+                <p>Finally, if you are using QuickBooks or Xero, you need to ensure the correct accounting file is open when you post data across from Enterprise. Otherwise, the data may be sent to the wrong company file, or errors may be received.</p>
+                <p class="Infotip">When you are running multiple business and legal entities within a Multi-company setup in Enterprise and those integrate with multiple accounting packages or databases, there should be <strong>no </strong>sharing options selected.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How will Multi-company affect my reports?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>As reporting is often centrally controlled in a head office, most Enterprise reports offer a filter to report by one or more of the companies within your Multi-company build. If you are a user with access to several companies, you will be able to filter reports according to any of these companies, regardless of the company you are currently using.</p>
+                <p>Can I transfer a job from one company to another within my Multi-company build?</p>
+                <p>Generally, no, you cannot transfer a job from one company to another within a Multi-company build. We can imagine some cases where this functionality would appeal to our clients, for example, when the data has been incorrectly entered against the wrong company, or if you would like the workflow to move to another company. Unfortunately, the complexity of data associated with any job and the differences between your individual companies make it unfeasible to perform such a transfer without significant and costly customisations.</p>
+                <p>However, if you are sharing all collections and you have not yet invoiced the job, you can move a job to a different company. Simply open the job, then go to <strong>Details &gt; Settings &gt; Options &gt; Job Setup &gt; Optional </strong>and select the required <strong>Company </strong>from the drop-down list.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Will Multi-company affect how I manage stock?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Yes. The way you handle material management, stock reporting and supplier invoices will depend upon how you set up sharing in your Multi-company build.</p>
+                <p>Here are some of the common situations that arise:</p>
+                <ul>
+                    <li><strong>I have a Multi-company build with one company for each state branch. I received a supplier invoice for items ordered by several different branches. How do I import the invoice?</strong>
+                        <ul>
+                            <li>​If you receive one supplier invoice import file with purchase orders from multiple companies within your Enterprise build, you will need to import the file under each company. The import will reject the invoices with no purchase order reference within that company file. Repeat the same process in each company.</li>
+                        </ul>
+                    </li>
+                    <li><strong>How does material management or inventory control work in a Multi-company build?</strong>
+                        <ul>
+                            <li>​If you have elected to share stock between companies, then each storage device is shared, and stock movement is tracked across all companies. If you have elected to not share stock, then each company has its own storage devices and stock movement will be internal within the company.</li>
+                        </ul>
+                    </li>
+                    <li><strong>My companies are separate legal entities but I store stock centrally. How does this affect my stock reports?</strong>
+                        <ul>
+                            <li>​In this scenario you should not share stock, particularly when inventory tracking is turned on.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>How do I set up my Multi-company build?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In a Multi-company build, each individual company has its own company information, as well as a label and an assigned colour that displays in the company selector tab.</p>
+                <p>To create a new company, go to <strong>System &gt; Setup &gt; Company</strong>, then click <strong>Create New Company</strong>. You can then enter details as required, as well as upload a company logo, assign employees to companies, and restrict who can create and assign companies using security groups.</p>
+                <h3>​Add your company logo</h3>
+                <p>You can upload a unique logo to each company.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/FAQs/multicompany-logo.png" alt="A screenshot of the logo in a company." class="border" />
+                </p>
+                <p>To upload a logo:</p>
+                <ol>
+                    <li>Click <strong>Choose File</strong>.</li>
+                    <li>Choose your company logo from your system files.</li>
+                    <li>Click <strong>Open</strong>.</li>
+                    <li>Select <strong>Save </strong>and refresh your browser.</li>
+                </ol>
+                <h3>Assign employees to individual companies</h3>
+                <p>After setting up your companies, you need to assign each of your employees to one or more companies as applicable.</p>
+                <p>You also need to select a default company. This is the company that will open when the employee logs in if they have access to multiple companies.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/FAQs/multicompany-assign.png" alt="A screenshot of an employee assigned to different companies." class="border" />
+                </p>
+                <p>To assign employees to companies:</p>
+                <ol>
+                    <li>Go to <strong>People &gt; Employee</strong>.</li>
+                    <li>Click the desired employee.</li>
+                    <li>Click <strong>Companies</strong>.</li>
+                    <li>To assign companies, click the company name under <strong>Available Companies</strong>.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                    <li>Select the <strong>Default </strong>company from the drop-down list.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <h3>Restrict company management permissions</h3>
+                <p>You can restrict who can create new companies and assign companies to employees by using security groups.</p>
+                <p>To restrict company management permissions:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; Security Groups</strong>.</li>
+                    <li>Click the appropriate security group.</li>
+                    <li>Go to <strong>Setup &gt; System</strong>.</li>
+                    <li>To restrict company assignment within an employee card, clear the <strong>Company Management</strong> check box.</li>
+                    <li>To restrict creating new companies, clear the <strong>Update Company</strong> Information check box.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3191" MadCap:lastWidth="1168">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Set up Security Groups</h1>
+        <h2>Overview</h2>
+        <p>The purpose of a security group is to restrict or limit access to various functions within simPRO based on a user's role in your organisation. For example, your accounts department might not necessarily require access to quotes or pre-builds, or you might wish to limit the value of quotes or purchase orders issued by a particular user or user group.</p>
+        <p>Security groups are defined in <strong>System &gt; System Setup</strong>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a security group</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To create a security group:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups</strong>.</li>
+                    <li>Click <strong>Create Security Group</strong>.</li>
+                    <li>Enter a descriptive <strong>Name</strong>.</li>
+                    <li>Enterprise only: Select a <strong>Business Group</strong> from the drop-down list (this will only appear if you have already set up business groups).</li>
+                    <li>Enterprise only: Select a dashboard view from the <strong>Dashboard </strong>drop-down list.</li>
+                    <li>Use tabs in the <strong>Permissions </strong>section to allow or restrict access to various functions.</li>
+                    <li>Click <strong>Tick All</strong> to grant access to all areas of simPRO.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p class="Infotip">On the <strong>System Setup &gt; Security Group</strong> page, leave the <strong>All </strong>security group intact as you need at least one group with access to all areas.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Enable hierarchy</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If the <strong>Enable Hierarchy </strong>check box is selected in security group settings, you can rearrange security groups as per the hierarchy followed in your organisation.</p>
+                <p>This means the users can only assign a security group to an employee or a contractor card who is at or below the same security group level as theirs. They can view but not edit (it will be greyed out) the <strong>Settings &gt; Account Setup</strong> section of an employee or a contractor card with a higher security group level than theirs. The edit option is only available when a user has access to edit employees and/or contractors.</p>
+                <p class="Infotip">Users will be able to apply a higher security group to another user if access to edit security groups is selected.</p>
+                <p>To enable hierarchy:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups</strong>.</li>
+                    <li>Select the <strong>Enable Hierarchy</strong> check box.</li>
+                    <li>Use the drag handles to rearrange security groups into the desired order.</li>
+                </ol>
+                <p class="Infotip">If the <strong>Enable Hierarchy</strong> check box is cleared, security groups will be arranged in alphabetical order.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable hierarchy</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If the <strong>Enable Hierarchy </strong>check box is selected in security group settings, you can rearrange security groups as per the hierarchy followed in your organisation.</p>
+                <p>This means the users can only assign a security group to an employee or a contractor card who is at or below the same security group level as theirs. They can view but not edit (it will be greyed out) the <strong>Settings &gt; Account Setup</strong> section of an employee or a contractor card with a higher security group level than theirs. The edit option is only available when a user has access to edit employees and/or contractors.</p>
+                <p class="Infotip">Users will be able to apply a higher security group to another user if access to edit security groups is selected.</p>
+                <p>To enable hierarchy:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups</strong>.</li>
+                    <li>Select the <strong>Enable Hierarchy</strong> check box.</li>
+                    <li>Use the drag handles to rearrange security groups into the desired order.</li>
+                </ol>
+                <p class="Infotip">If the <strong>Enable Hierarchy</strong> check box is cleared, security groups will be arranged in alphabetical order.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign a security group</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p MadCap:conditions="Default.Phase 1">You can assign a security group to an <strong>Employee </strong>or a  <strong><img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Contractor</strong>.</p>
+                <p MadCap:conditions="Default.Enterprise">You can assign a security group to an <strong>Employee </strong>or a <strong>Contractor</strong>.</p>
+                <p style="font-weight: normal;" MadCap:conditions="Default.Service">You can assign a security group to <strong>Employees</strong>.</p>
+                <p>To assign a security group:</p>
+                <ol>
+                    <li>Go to<strong> People &gt; Employees or Contractors</strong>.</li>
+                    <li>Click an employee or contractor.</li>
+                    <li>On the <strong>Profile </strong>tab, click <strong>Settings</strong>.</li>
+                    <li>Select a security group from the <strong>Security Group</strong> drop-down list.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>
+                    <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Dashboard views</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The dashboard is the home screen of simPRO. If you use simPRO Enterprise, the information the dashboard displays will depend on your security group settings. The different views available are:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Service</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Displays a map with quotes and jobs markers to show site locations. You can also view a list of schedules for the day and current mobile activity.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Project</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Displays an activity graph with the <strong>Cost of Active Jobs </strong>and <strong>Invoiced </strong>amounts. You can also view a list of <strong>Jobs </strong>and <strong>Tasks </strong>for the current day.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Accounts</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Displays a graphical representation of the current amount due on customer or site invoices with their payment terms. You can also view a list of <strong>Overdue</strong> invoices, invoices<strong> Due Today </strong>and <strong>Notes</strong>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Alerts</strong>, <strong>Announcements </strong>and <strong>Reminders </strong>appear on every dashboard view, but information displayed in these sections will depend on security group settings.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Dashboard views</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The information the dashboard displays will depend on your security group settings. The different views available are:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Service</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Displays a map with quotes and jobs markers to show site locations. You can also view a list of schedules for the day and current mobile activity.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Project</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Displays an activity graph with the <strong>Cost of Active Jobs </strong>and <strong>Invoiced </strong>amounts. You can also view a list of <strong>Jobs </strong>and <strong>Tasks </strong>for the current day.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Accounts</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Displays a graphical representation of the current amount due on customer or site invoices with their payment terms. You can also view a list of <strong>Overdue</strong> invoices, invoices<strong> Due Today </strong>and <strong>Notes</strong>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>Alerts</strong>, <strong>Announcements </strong>and <strong>Reminders </strong>appear on every dashboard view, but information displayed in these sections will depend on security group settings.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Advanced</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Separate archive and delete options</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Users can be given access to the <strong>Archive Only </strong>option to prevent an accidental permanent deletion of data.</p>
+                        <p>To set this up, go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups &gt; Permissions</strong> and select the <strong>Archive Only</strong> option as needed.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Modify table view</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If users have security group permission to access the <strong>Modify Table View</strong> option on most tables, they can change the table view of leads, quotes, jobs, orders, etc.</p>
+                        <p>As these changes will modify the table view for every user, it is recommended to restrict most users from having <strong>Modify Table View</strong> access.</p>
+                        <p>To change access, go to<strong> System &gt; Setup &gt; System Setup &gt; Security Groups &gt; Permissions</strong> and select or clear the <strong>Modify Table View</strong> option as needed.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>View employee pay rates</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The <strong>View Employee Pay Rates</strong> option enables access to the <strong>Pay Rates</strong> section in the <strong>Rates </strong>tab of an employee card, a contractor card, and <strong>My Account</strong>.</p>
+                        <p>To enable:</p>
+                        <ol>
+                            <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups</strong>.</li>
+                            <li>Select the security group you wish to edit.</li>
+                            <li>Click the <strong>Setup </strong>tab.</li>
+                            <li>Select the <strong>View Employee Pay Rates </strong>check box ​in the <strong>Admin </strong>tab.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Manage employee account setup</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The <strong>Manage Employee Account Setup</strong> option enables access to the <strong>Account Setup </strong>section in the <strong>Settings </strong>tab of an employee card, a contractor card, and <strong>My Account</strong>.</p>
+                        <p>To enable:</p>
+                        <ol>
+                            <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups</strong>.</li>
+                            <li>Select the security group you wish to edit.</li>
+                            <li>Click the <strong>Setup </strong>tab.</li>
+                            <li>Select the <strong>Manage Employee Account Setup</strong> check box in the <strong>Admin </strong>tab.</li>
+                            <li>Click <strong>Finish</strong>.</li>
+                        </ol>
+                        <p class="Infotip">Users can view but not edit the <strong>Employee Account Setup</strong> section if they have no access to this option.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Change username and password</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When <strong>Manage Employee Account Setup</strong> is disabled, users can only change their username and password through <strong>Banner Menu &gt; User's Name &gt; My Account</strong>, and not through the employee card.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

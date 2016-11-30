@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4258" MadCap:lastWidth="1518">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Notifications</h1>
+        <h2>Overview</h2>
+        <p>Set up notifications to issue email and / or SMS messages regularly, or when certain workflow requirements have been met. Notifications can be used to:</p>
+        <ul>
+            <li>remind a salesperson to follow up on a lead</li>
+            <li>send customers a courtesy reminder before their invoices are due</li>
+            <li>send a text message to a contractor to confirm job details</li>
+            <li>email all staff to remind them to submit their timesheets</li>
+        </ul>
+        <p class="Infotip">Ensure the contact details in your customer, employee, and contractor card files are correct before setting up notifications.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a notification</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can create notifications to be sent regularly, or at particular stages in a workflow. Notifications can be sent to customers, contractors, groups of employees or individual employees.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/Notifications - create.png" alt="A screenshot of a notification being created." class="border" />
+                </p>
+                <p>To create a notification:</p>
+                <ol>
+                    <li>Go to<strong> System &gt; Setup &gt; System Setup &gt; Notifications</strong>.</li>
+                    <li>Click<strong> Create Notification</strong>.</li>
+                    <li>Enter the notification <strong>Name</strong>.</li>
+                    <li>Select the <strong>Condition Type</strong>.</li>
+                    <li>Select the <strong>Recipient</strong>.</li>
+                    <li>If the condition type is <strong>Date Driven</strong>, select the <strong>Frequency</strong>, <strong>Start Date</strong>,<strong> End Date</strong> and <strong>Send Time</strong>.<ul><li>If another condition type is selected, select the <strong>Trigger</strong>.</li></ul></li>
+                    <li>Select the <strong>Delivery Method</strong>.</li>
+                    <li>Enter the notification message.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <h3>Recipients</h3>
+                <p>Different recipients are available for each condition type:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Date Driven</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <strong>All Employees</strong>, <strong>All Contractors</strong>, <strong>All Salespersons</strong>, <strong>All Project Managers</strong>, or select <strong>Employee/Contractor Selection</strong> to choose individual employees / contractors.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Jobs (Service / Project / Recurring) / Quotes / Leads</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <strong>Scheduled Employees</strong>, <strong>Scheduled Contractors</strong>, <strong>Salesperson</strong>, <strong>Project Manager</strong>, <strong>Customer</strong>, <strong>Site Contact</strong>, or select <strong>Employee/Contractor Selection</strong> to choose individual employees / contractors.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Invoices / Invoices (Recurring)</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <strong>Salesperson</strong>, <strong>Project Manager</strong>, <strong>Customer</strong>, <strong>Site Contact</strong>, or select <strong>Employee/Contractor Selection</strong> to choose individual employees / contractors.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Assets</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <strong>Customer</strong>, <strong>Site Contact</strong>, or select <strong>Employee/Contractor Selection</strong> to choose individual employees / contractors.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Tasks</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Select <strong>Assigned Employees</strong>, <strong>Assigned Contractors</strong>, <strong>Stakeholders</strong>, <strong>Customer</strong>, <strong>Site Contact</strong>, or select <strong>Employee/Contractor Selection </strong>to choose individual employees / contractors.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>If you select<strong> Employee / Contractor Selection</strong>, click employees or contractors under <strong>Available Resources</strong> to assign them to the notification. Click an employee or contractor under <strong>Assigned Resources</strong> to remove them from the notification.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/notifications-selectemployees.png" alt="A screenshot of Available Resources assigned in a notification." class="border" />
+                </p>
+                <h3>Triggers</h3>
+                <p>Different Triggers are available when different condition types are selected. You do not need to select a <strong>Trigger </strong>for a <strong>Date Driven</strong> notification. The trigger options are:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Status Change</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select a <strong>Status </strong>from the drop-down list to send the notification when the status is updated.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Days Before Expiry</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select the<strong> Number of Days </strong>and<strong> Send Time </strong>to send a notification at a certain time before a quote expires.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Days After Expiry</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select the <strong>Number of Days</strong> and<strong> Send Time</strong> to send a notification at a certain time after a quote expires.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Days Before First Scheduled Date</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select the <strong>Number of Days </strong>and <strong>Send Time </strong>to send the notification at a certain time before the scheduled date.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Days After Last Scheduled Date</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select the <strong>Number of Days </strong>and <strong>Send Time </strong>to send the notification at a certain time after the scheduled date.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Days Before Start</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select the <strong>Number of Days</strong> and <strong>Send Time </strong>to send a notification at a certain time before a task is due to start.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Days Before Due Date</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select the <strong>Number of Days</strong> and <strong>Send Time</strong> to send the notification at a certain time before the due date.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Days Before Service Level Due</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select the <strong>Number of Days</strong> and <strong>Send Time </strong>to send an asset notification at a certain time before a service level is due.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Days After Paid</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Select the <strong>Number of Days</strong> and <strong>Send Time</strong> to send a notification at a certain time after an invoice has been paid.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Delivery options</h3>
+                <p>The <strong>Delivery Method</strong> options are:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>​User Card Defined</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Use the <strong>Preferred Notification Method</strong> in the recipients' card files. Enter both an email and SMS message, along with the <strong>From Address</strong> and<strong> Email Subject</strong> for the email. If no <strong>Preferred Notification Method</strong> is set in the recipient card file, the notification will default to email.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Email</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Send the notification to the email address specified in the recipients' card files. Enter the<strong> From Address</strong>, <strong>Email Subject </strong>and <strong>Email Body</strong>.</p>
+                                <p>Click fields under <strong>Insert Field</strong> to use system data in the message.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>SMS</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Send the notification to the mobile phone number specified in the recipients' card files. Enter the message under <strong>Text</strong>.</p>
+                                <p>Click fields under <strong>Insert Field</strong> to use system data in the email.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>Email and SMS</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Send the notification both by email and SMS. Enter both an email and SMS message, along with the <strong>From Address </strong>and<strong> Email Subject</strong> for the email.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Click the options under<strong> Insert Fields</strong> to add them in the <strong>Email Body</strong> and <strong>Text </strong>fields.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Disable a notification</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To disable a notification without deleting it:</p>
+                <ol>
+                    <li>Access the desired notification.</li>
+                    <li>Go to <strong>Delivery Options &gt; Enabled</strong>.</li>
+                    <li>Select <strong>No</strong>.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p>To enable the notification again, select <strong>Yes </strong>and click <strong>Save </strong>to update your changes.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

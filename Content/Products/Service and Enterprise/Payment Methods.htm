@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2734" MadCap:lastWidth="1062">
+    <head>
+    </head>
+    <body>
+        <h1>Payment Methods</h1>
+        <h2>Overview</h2>
+        <p>Payment methods are the various ways in which your customers pay for the goods and services you provide, such as credit cards, cash, direct deposits, cheques, and even vouchers. A number of default payment methods are preset in simPRO and can be edited or deleted as required.</p>
+        <p>When you define an <b>Account No.</b> for a payment method, this <b>Account No.</b> will fill in automatically each time a payment of this type is processed. The default deposit account number is set up in <strong>System &gt; Setup &gt; Defaults &gt; Financial</strong>.</p>
+        <p class="Infotip">You may wish to define a separate cheque clearing account, or create a payment method to handle industry specific vouchers or finance payments.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a payment method</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/Payment methods - create.png" alt="A screenshot of a payment method being created." class="border" />
+                </p>
+                <p>To create a payment method:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Accounts &gt; Payment Methods</strong>.</li>
+                    <li>Click <strong>Create Payment Method</strong>.</li>
+                    <li>Enter the payment method <strong>Name</strong>.</li>
+                    <li>Select the payment method <strong>Type</strong>.</li>
+                    <li>Enter the applicable <strong>Account No.</strong></li>
+                    <li>Enter a finance charge if applicable.</li>
+                    <li>Click <strong>Create</strong>.</li>
+                </ol>
+                <h3>Enter a finance charge</h3>
+                <p>For each payment method you set up in simPRO, you can set a different finance charge as a percentage of the transaction. You can use this to pass onto your customers any additional charges associated with certain payment methods, such as bank fees for cheque deposits or credit card merchant fees.</p>
+                <p>As this will appear on invoices, you can go to <strong>System &gt; Setup &gt; Defaults &gt; Financial &gt; Invoicing &gt; Finance Charge Label</strong> to give this charge a different name, such as 'convenience fee' or 'credit card surcharge'.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable payment methods for Connect</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To allow technicians to process payments with Connect, you need to enable the applicable payment methods.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/payment methods - mobile billing.png" alt="A screenshot of Payment Methods in the Mobile settings page." class="border" />
+                </p>
+                <p>To enable payment methods in Connect:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; System Setup &gt; Mobile &gt; General &gt; Billing Settings</strong>.</li>
+                    <li>Select <strong>Enable </strong>to allow mobile billing.</li>
+                    <li>Under <strong>Payment Methods</strong>, select <strong>Enable for Connect</strong> for each payment method you wish to be available to select to process payments in Connect.</li>
+                    <li>Click <strong>Save </strong>to update your changes.</li>
+                </ol>
+                <p>Your technicians can now process payments in Connect’s billing workflow.</p>
+                <p class="Infotip">When selecting a simPRO Payments method in Connect, users will see the <strong>Card Type</strong> rather than the associated payment method, while reports and invoices will show the full payment method, not just the card type.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>simPRO Payments</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you have activated <MadCap:xref href="simPRO Payments.htm">simPRO Payments</MadCap:xref>, your available credit card types will be listed below your payment methods.  View your country's setup instructions to associate simPRO Payments credit card types with your existing payment methods.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/setuppayments-methods.png" alt="A screenshot of simPRO Payments associated payment methods." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="58" MadCap:lastWidth="1500">
+    <head>
+    </head>
+    <body>
+        <p>Remove any special characters (such as <strong>? # $ % @ !</strong>) as these may not import correctly.</p>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="386" MadCap:lastWidth="1474">
+    <body>
+        <p>You can nominate specific employees or  contractors as preferred technicians, depending on various factors such as job type, skills required or customer preference. When you create a site within a customer, the technician will be automatically selected in <b>Profile &gt; Preferred Technician</b> in the site card file.</p>
+        <p>When scheduling in <b>Schedules &gt; Day View</b> or within a quote or job, preferred technicians will be highlighted yellow in the <b>Available Resources</b> section. Hover over a technician's name to see their preference ranking as defined in the card file.</p>
+        <p>To assign preferred technicians:</p>
+        <ol>
+            <li>Create or access the card file as normal.</li>
+            <li>Go to<b> Profile &gt; Preferred Technician</b>.</li>
+            <li>Search and select the desired technician from the drop-down list.</li>
+            <li>Click <b>Add</b>.</li>
+            <li>Click <b>Save</b> or <b>Finish</b>.</li>
+        </ol>
+        <p>Click the <b>red delete</b> icon to remove a preferred technician from the card file.</p>
+    </body>
+</html>

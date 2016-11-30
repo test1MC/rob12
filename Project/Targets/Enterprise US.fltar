@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[Default.Enterprise or Default.ScreenOnly or Default.US] exclude[Default.AU or &quot;Default.AUS Enterprise&quot; or &quot;Default.AUS Service&quot; or Default.NZ or &quot;Default.Phase 1&quot; or Default.Service or Default.UK] "
+  GetLatestBeforeCompile="true"
+  DefaultUrl="/Content/Welcome.htm"
+  MasterPage="/Content/Resources/MasterPages/KB_Master_Page.flmsp"
+  TargetLanguage="en-au"
+  SyncLingoProject="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="MyVariables/Terminology">vendor</Variable>
+  </Variables>
+</CatapultTarget>

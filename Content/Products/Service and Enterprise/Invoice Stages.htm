@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="3929" MadCap:lastWidth="975">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Invoice Stages</h1>
+        <h2>Overview</h2>
+        <p>Many businesses require an invoice to be approved internally before it is sent to customers, to ensure quality and accuracy of billing. To assist with this process, invoices in simPRO can be set to have two approval stages: <strong>Pending </strong>and <strong>Approved</strong>. You can also restrict unapproved invoices so only approved invoices can be emailed to a customer.</p>
+        <p>Pending invoices have no impact on your accounting package, while approved invoices are sent through when exporting data to the accounting package.</p>
+        <p>Invoice stages can be adjusted for all invoice types: deposits, requests for claim, progress claims, and tax invoices.</p>
+        <p>Adjust security group settings to control which users can approve invoices. You can also set up invoice value approval limits so users can only approve invoices below specified values.</p>
+        <p>These stages are optional, and if your workflow does not require invoice approval you can adjust default settings accordingly.</p>
+        <h2>Set up invoice approval security group settings</h2>
+        <p>Use security groups to restrict users' ability to approve invoices. You can either:</p>
+        <ul>
+            <li>Grant access to approve all invoices.</li>
+            <li>Allow approval of invoices below a specified value limit.</li>
+            <li>Restrict approval of invoices altogether.</li>
+        </ul>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/stages-permissions.png" alt="A screenshot of the Approve Invoices permission." class="border" />
+        </p>
+        <p>To set up invoice approval security group settings:</p>
+        <ol>
+            <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Security Groups &gt; Actions &gt; Invoices</strong>.</li>
+            <li>Select the <strong>Approve Invoices</strong> check box as desired.</li>
+            <li>If you select <strong>Approve Invoices</strong>, choose whether to allow approval for <strong>All invoices</strong> or whether to set a <strong>Limit</strong>. Enter a <strong>Limit </strong>as applicable.</li>
+            <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+        </ol>
+        <p>Next you need to set a default invoice stage.</p>
+        <h2>Set a default invoice stage</h2>
+        <p>Set whether every new invoice's stage starts as <strong>Pending </strong>or <strong>Approved</strong>.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/stages-default.png" alt="A screenshot of the Invoice Stage drop-down in System Defaults." class="border" />
+        </p>
+        <p>To set a default invoice stage:</p>
+        <ol>
+            <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Defaults &gt; System</strong>.</li>
+            <li>Select <strong>Approved </strong>or <strong>Pending </strong>from the <strong>Invoice Stage</strong> drop-down list.</li>
+            <li>If applicable, select <strong>the Restrict Unapproved Invoices </strong>check box (see below for details).</li>
+            <li>Click <strong>Save</strong>.</li>
+        </ol>
+        <p>If your business requires an invoice approval process, set the default stage to <strong>Pending </strong>and select the <strong>Restrict Unapproved Invoices</strong> check box.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/stages-warning.png" alt="A screenshot of an approval warning in an invoice." class="border" />
+        </p>
+        <p>Then when an employee without approval permission creates an invoice, they will not be able to select the <strong>Approved </strong>invoice stage, and will not be able to view the <strong>Forms </strong>tab to email the invoice. A warning will also appear stating the invoice needs to be approved.</p>
+        <p>The <strong>Forms </strong>tab will only appear after the invoice stage is changed to <strong>Approved</strong>.</p>
+        <p>If your business does not require an invoice approval process, set the default stage to <strong>Approved</strong>.</p>
+        <h2>Select an invoice stage</h2>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/stages-select.png" alt="A screenshot of the Invoice Stage drop-down in an invoice." class="border" />
+        </p>
+        <p>To select an invoice stage, if your security group settings allow:</p>
+        <ol>
+            <li>Invoice a job as usual.</li>
+            <li>Select an <strong>Invoice Stage</strong> from the drop-down list.</li>
+            <li>Make other changes as desired.</li>
+            <li>Click <strong>Finish</strong>.</li>
+        </ol>
+        <h2>Approve and email a pending invoice</h2>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/stages-email.png" alt="A screenshot of the Forms tab." class="border" />
+        </p>
+        <p>To approve and email a pending invoice (if your security group settings allow):</p>
+        <ol>
+            <li>Open the pending invoice.</li>
+            <li>Click <strong>Unlock</strong>.</li>
+            <li>Select <strong>Approved </strong>from the <strong>Invoice Stage</strong> drop-down list.</li>
+            <li>Click <strong>Finish</strong>.</li>
+            <li>Click the <strong>Forms </strong>tab and email the invoice as usual.</li>
+            <li>Click <strong>Finish</strong>.</li>
+        </ol>
+        <h2>Reject a pending invoice and change details</h2>
+        <p>If a pending invoice is rejected because details need to be adjusted, there are two options.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/stages-reject.png" alt="A screenshot of a claim amount being adjusted." class="border" />
+        </p>
+        <p>To change the amount claimed on a pending progress claim or request for claim:</p>
+        <ol>
+            <li>Open the pending progress claim or request for claim.</li>
+            <li>Click <strong>Unlock</strong>.</li>
+            <li>Adjust the <strong>Claim Amount</strong> as desired.</li>
+            <li>If applicable, change the<strong> Invoice Stage</strong> to <strong>Approved</strong>.</li>
+            <li>Click <strong>Finish</strong>.</li>
+        </ol>
+        <p>If you want to change the total value on a progress claim or request for claim, you will need to delete the invoice and any other invoices associated with the cost centre for that job, and start again.</p>
+        <p class="WarningTip">Before deleting an invoice, check that it is a pending invoice and not approved, as approved invoices have already been sent to your accounting package.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/stages-delete.png" alt="A screenshot of an invoice being deleted." class="border" />
+        </p>
+        <p>To change the total value on a pending invoice:</p>
+        <ol>
+            <li>Delete the pending invoice, and any other invoices associated with the cost centre for that job, by clicking<strong> Options &gt; Delete Invoice &gt; OK</strong>.</li>
+            <li>Open the job, click <strong>Unlock </strong>and make changes as desired.</li>
+            <li>Create a new invoice for the job.</li>
+        </ol>
+        <h2>Advanced</h2>
+        <h3>How invoice stages affect reporting</h3>
+        <p>In the <strong>Sales Invoices</strong> report, you can filter by <strong>Invoice Stage</strong>.</p>
+        <p>In these reports, invoice dates and amounts billed only include information from approved invoices:</p>
+        <ul>
+            <li>Aged Receivable report</li>
+            <li>Items Sold report</li>
+            <li>Contract Profitability report</li>
+            <li>Profit and Loss Summary report</li>
+            <li>Transactions Ready for Export report.</li>
+        </ul>
+    </body>
+</html>

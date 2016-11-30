@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1672" MadCap:lastWidth="1215" MadCap:conditions="Default.Phase 1">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Failure Points and Recommendations (Maintenance Planner only)</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <h2>Overview</h2>
+        <p>Use failure points as specific test points for your technicians to use when performing maintenance on customer assets. You can also add recommendations so that you can choose what to do next if an asset fails a test.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Add failure points</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You will need to add failure points to each service level on an asset. You can also add a recommendation for each failure point.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/failurepoints.png" alt="A screenshot of failure points in a service level." class="border" />
+                </p>
+                <p>To add failure points:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Asset Builder</strong>.</li>
+                    <li>Click the desired asset.</li>
+                    <li>Click <strong>Service Levels</strong>.</li>
+                    <li>Click <strong>Options &gt; Edit Failure Points</strong> on the desired service level.</li>
+                    <li>Click <strong>New</strong>.</li>
+                    <li>Enter the name and <strong>Standard ID</strong> of the failure point.</li>
+                    <li>Select <strong>Critical?</strong> if applicable.<ul><li>This will create a more prominent alert if the failure point is selected for an asset.</li></ul></li>
+                    <li>Select a set-price <strong>Pre-Build</strong>.<ul><li>If this failure point is selected when the asset is failed and you create a quote for it, this pre-build will automatically be added.</li></ul></li>
+                    <li>To add a recommendation, click the arrow in the left-most column, then click <strong>New</strong>.<ul><li>Enter the recommendation <strong>Name</strong>.</li><li>Select a <strong>Pre-Build </strong>that will be automatically added to the quote if the technician selects this recommendation.</li><li>Enter the <strong>Charge Rate</strong>. Alternatively, leave this blank to use the default price.</li></ul></li>
+                    <li>Continue adding failure points / recommendations as desired.<ul><li>Technicians will be able to select a recommendation after an asset fails testing.</li></ul></li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View failed assets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You will receive an alert if an asset fails a test. You can then view the failure points that were selected and decide how to proceed.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

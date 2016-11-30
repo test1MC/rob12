@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4246" MadCap:lastWidth="1529">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Import Supplier Invoices</h1>
+        <h2>Overview</h2>
+        <p>Upload supplier invoices to add items to and fully receipt purchase orders. These items will then appear as billable items against the relevant unlocked jobs.</p>
+        <p>You can create and format these lists in CSV (.csv), text (.txt) or ZIP (.zip) files using a generic format or you can obtain files from your suppliers that have been specifically formatted for simPRO if your business is in Australia or New Zealand.</p>
+        <p>If the supplier invoice list contains items against a job that is locked in simPRO, the items will appear as non-billable against the job. It is recommended you manually review relevant jobs with pre-defined billable items after importing supplier invoices to ensure quantities and costs are consistent.</p>
+        <p class="Infotip">Suppliers must be created in simPRO prior to importing. You may wish to test the import process with one or two supplier invoices before importing an entire list.</p>
+        <h2>Prepare to import supplier invoices</h2>
+        <p>To prepare to import supplier invoices into simPRO:</p>
+        <ol>
+            <li>If you are importing a supplier invoice file in a generic format, download and add data to simPRO's <a href="../../Resources/Downloadable/Supplier Invoice Import Template.csv">Supplier Invoice Import Template</a>.</li>
+            <li>This template separates data with mandatory fields including <strong>Date</strong>, <strong>Order No.</strong>, <strong>Invoice No.</strong>, <strong>Part No.</strong>, <strong>Description</strong>, <strong>Quantity Received</strong>, <strong>Unit Price Ex Tax </strong>/ <strong>Line Price Ex Tax</strong>, and <strong>Unit Price Inc Tax</strong> / <strong>Line Price Inc Tax</strong>. You may also wish to include <strong>Packing Slip No.</strong> as a field.</li>
+            <li>Save your file as a compatible file type: CSV (.csv), text (.txt) or a ZIP file (.zip). Consult your spreadsheet software documentation for file saving instructions if required.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+            </li>
+        </ol>
+        <p>simPRO can recognise and import all headings and information listed in the <strong>Supplier Invoice Import Template</strong>.</p>
+        <p class="Infotip">Both generic and supplier-specific import files must contain purchase order numbers as defined in simPRO in the Order No. field.</p>
+        <p class="Infotip">
+            <MadCap:annotation MadCap:createDate="2016-10-14T14:22:49.1583108+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Awaiting Numeric-only Custom Field feature" MadCap:editor="Zoe" MadCap:editDate="2016-10-14T14:22:57.1428621+10:00">If a supplier invoice has a numeric-only custom field in simPRO but there is non-numeric data entered in the field in the supplier invoice list, you will receive an error warning and the import will fail. Numbers must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Number Thousands Separator</strong> /<strong> Negative Number Format </strong>to import successfully.</MadCap:annotation>
+        </p>
+        <h2>Import supplier invoices in a generic format</h2>
+        <p>After preparing your supplier invoice list, work through the following steps to import your list into simPRO.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Utilities/Import Supplier Invoices - generic import page.png" alt="A screenshot of the Import Supplier Invoices - Generic page." class="border" />
+        </p>
+        <h3>Adjust supplier invoice import settings</h3>
+        <p>To adjust supplier invoice import settings for a generic file, go to <strong>Utilities &gt; Import &gt; Supplier Invoices &gt; Generic</strong> and search and select the supplier you wish to import invoices for in <strong>Select Supplier</strong>.</p>
+        <p>The available import options include:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col class="TableStyle-Definition_List_table-Column-Column1" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>First Record is:</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Select <strong>Header Record </strong>if the first row of your list contains column titles, or select <strong>Data Record</strong> if the first row contains specific data.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                        <p>If Part Not Found:</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                        <p>The import will compare the part numbers of items in the list file with those in the relevant purchase order. Select <strong>Create New Part</strong> to add and receipt new items not yet included in the relevant purchase order.</p>
+                        <p>Select <strong>Reject and Warn</strong> to ignore additional items and receive warning in the<strong> Invoice Import Summary</strong> that the item was not added.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>​Select an import file and match import columns</h3>
+        <p>To import your supplier invoice list into simPRO:</p>
+        <ol>
+            <li>Go to <strong>Utilities &gt; Import &gt; Supplier Invoices &gt; Generic</strong> and select the supplier you wish to import invoices for.</li>
+            <li>Adjust import settings as desired.</li>
+            <li>Click <strong>Browse </strong>/ <strong>Choose File</strong> to locate and open the desired supplier invoice list.</li>
+            <li>When the list file name appears, click <strong>Next</strong>.</li>
+            <li>Use the drop-down lists to map your list file headings to match those in simPRO.<ul><li>If you wish to leave a column out of the import entirely, select <strong>Ignore </strong>from its drop-down list.</li></ul></li>
+            <li>Click <strong>Next</strong>.</li>
+        </ol>
+        <p>If the import is successful, you will be taken to the <strong>Import Invoice Summary</strong>.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Utilities/Import Supplier Invoices - summary.png" alt="A screenshot of the Import Invoice Summary page." class="border" />
+        </p>
+        <p>To amend import file errors, refer to the <strong>Purchase Order</strong> and <strong>Problem </strong>list, make changes to the list file as desired, then repeat the import process.</p>
+        <p>To manually amend invoices that have imported successfully into simPRO, go to <strong>Invoices &gt; Supplier Invoices &gt; Receipts</strong>, click the relevant invoice and make changes as desired.</p>
+        <h2>Import supplier-specific invoices</h2>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Utilities/Import Supplier invoices - specific.png" alt="A screenshot of the Import Supplier Invoice - Cetnaj page." class="border" />
+        </p>
+        <p>To import a supplier invoice list specifically formatted for simPRO in Australia or New Zealand:</p>
+        <ol>
+            <li>Go to <strong>Utilities &gt; Import &gt; Supplier Invoices</strong> and select the desired supplier from the drop-down list.</li>
+            <li>Under <strong>Import Options - If Part Not Found:</strong>, select:<ul><li><strong>Create New Part</strong> to add and receipt new items in the file not yet included in the relevant purchase order.</li><li><strong>Reject and Warn</strong> to ignore additional items and receive warning in the <strong>Invoice Import Summary</strong> that the item was not added.</li></ul></li>
+            <li>Click <strong>Browse </strong>/ <strong>Choose File</strong> to locate and open the relevant supplier invoice list.</li>
+            <li>When the list file name appears, click <strong>Next</strong>.</li>
+        </ol>
+        <p>If the import is successful, you will be taken to the <strong>Import Invoice Summary</strong>. To amend any import file errors, refer to the <strong>Purchase Order </strong>and <strong>Problem </strong>list, make changes to the list file as desired, then repeat the import process.</p>
+        <p>To manually amend invoices that have imported into simPRO, go to<strong> Invoices &gt; Supplier Invoices &gt; Receipts</strong>, click the relevant invoice and make changes as desired.</p>
+        <h2>Available suppliers to import invoices from: AU</h2>
+        <p>You can obtain and import a simPRO-formatted supplier invoice file from the following suppliers in Australia:</p>
+        <ul>
+            <li>Cetnaj</li>
+            <li>CNW</li>
+            <li>Electrical Distributors</li>
+            <li>Go Electrical</li>
+            <li>Ideal Electrical</li>
+            <li>John R Turks</li>
+            <li>Lawrence &amp; Hanson</li>
+            <li>Middy's</li>
+            <li>MMEM</li>
+            <li>Reece</li>
+            <li>Rexel</li>
+            <li>Samios</li>
+            <li>Sherriff</li>
+            <li>Tradelink</li>
+        </ul>
+        <h2>Available suppliers to import invoices from: NZ</h2>
+        <p>You can obtain and import a simPRO-formatted supplier invoice file from the following suppliers in New Zealand:</p>
+        <ul>
+            <li>CEF</li>
+            <li>Cetnaj</li>
+            <li>Corys</li>
+            <li>DAS</li>
+            <li>Franklins Group</li>
+            <li>J.A. Russell</li>
+            <li>Ideal Electrical</li>
+            <li>MasterTrade</li>
+            <li>Mico</li>
+            <li>Stewarts</li>
+            <li>PlaceMakers</li>
+            <li>Plumbing World</li>
+            <li>Reece</li>
+            <li>Chesters</li>
+            <li>Lentune​</li>
+        </ul>
+    </body>
+</html>

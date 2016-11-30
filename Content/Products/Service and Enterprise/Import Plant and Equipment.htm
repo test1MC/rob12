@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2708" MadCap:lastWidth="1194">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Import Plant and Equipment</h1>
+        <h2>Overview</h2>
+        <p> You can manually <MadCap:xref href="Create Plant Items.htm">Create Plant Items</MadCap:xref> individually, or you can import a <MadCap:glossaryTerm glossTerm="NewGlossary.Term20">plant item</MadCap:glossaryTerm> list.</p>
+        <p>You will need to have the correct security group permissions to import a plant list.</p>
+        <p class="Infotip">You may wish to test the import process with a short list before importing all of your plant items.</p>
+        <h2>Prepare to import</h2>
+        <p>To prepare to import plant items into simPRO:</p>
+        <p class="WarningTip">You will need to create a separate import file for each of your plant types.</p>
+        <ol>
+            <li>Download the simPRO <strong>Plant Import Template</strong>:<ul><li>​​<a href="../../Resources/Downloadable/Plant Import Template - Service.csv">Plant Import Template - Service</a></li><li><a href="../../Resources/Downloadable/Plant Import Template - Enterprise.csv">Plant Import Template - Enterprise</a></li></ul></li>
+            <li>Add any custom fields for the particular plant type as additional columns. Ensure that the headings of your columns match the spelling of your custom fields in simPRO.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+            </li>
+            <li>Save your file in your system as a compatible file type: Comma Separated Values (.csv like the <strong>Plant Import Template</strong> above), Tab Delimited, also known as a text file (.txt), or a ZIP file (.zip). Consult your spreadsheet software for file saving instructions if required.</li>
+        </ol>
+        <p>simPRO can recognise and import all the headings and information listed in the template.</p>
+        <h3>Field requirements</h3>
+        <p>You can import the following fields of information when uploading plant lists to simPRO:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');margin-left: 0;margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 133px;" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Plant ID</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>If you are using the import to update your plant items, the <strong>Plant ID</strong> must be identical to how it is defined in simPRO. When you open a plant item, the plant ID is the number at the end of the URL.</p>
+                        <p>To create a new plant item, leave this column blank.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Name</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>The name of the plant item. This is a mandatory field and must be completed to ensure the creation and updating of plant items.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Servicing</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Enter <strong>TRUE </strong>if you wish to service the item, or <strong>FALSE </strong>if not.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Billing</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Enter <strong>TRUE </strong>if you wish to invoice customers for use of the item, or <strong>FALSE </strong>if not.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Service Start</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>This field is based on the plant type settings and is applicable if the item requires regular servicing. If the plant type is serviced based on <strong>Date</strong>, dates must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Date Format </strong>to import successfully.. If the plant type is serviced based on <strong>Hours</strong>, then this must be a value between 0 and 999.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Service Frequency</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>This field is based on the plant type settings and is applicable if the item requires regular servicing. If the plant type is serviced based on <strong>Hours</strong>, then this must be a value between 0 and 999.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Service Frequency Period</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>This field is applicable if the item needs regular servicing and if the plant type is serviced based on <strong>Date</strong>. This can be either 'week', 'month' or 'year'. If the plant type is serviced based on Hours, this column can be ignored.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Cost Rate</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>This field is only applicable if the item is marked as billable and is the hourly cost of the plant item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Overhead Rate</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>This field is only applicable if the item is marked as billable and should be the same overhead used with your labour rates.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Sell Rate</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>This field is only applicable if the item is marked as billable and is the hourly rate of the plant item when billing customers.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                        <p>Sales Tax Code</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                        <p>This field is only applicable if the item is marked as billable and is the tax code used when invoicing the plant item. Tax codes must be created in simPRO prior to importing.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>If your plant type has custom fields, you can include information defined by custom fields specific to the plant type.</p>
+        <p>To apply custom field information to your plant list:</p>
+        <ol>
+            <li>Locate and open your plant list.</li>
+            <li>In simPRO, go to <strong>System &gt; Setup &gt; System Setup &gt; Plant Builder</strong>.</li>
+            <li>Click the relevant plant type as defined in the list.</li>
+            <li>Click the <strong>Custom Fields</strong> tab.</li>
+            <li>For each custom field, add a new column to the plant list, heading each column with the relevant <strong>Field Name</strong>.</li>
+            <li>The <strong>Field Name</strong> headers must be identical to how they are formatted in simPRO. It is recommended to copy and paste field names to ensure a successful import.</li>
+            <li>Enter data in the columns as required.</li>
+            <li>Similar to the <strong>Field Name</strong>, custom field data in the form of list options must be identical to how it is formatted in simPRO. If you have entered new list options in your import list, select <strong>Create New List Option</strong> when importing.</li>
+            <li>When you have finished entering custom field data for that plant type and list, save your file and repeat the process with your other plant lists.</li>
+        </ol>
+        <h2>Import a plant item list</h2>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Utilities/importplant.png" alt="A screenshot of the Plant &amp; Equipment Import Settings." class="border" />
+        </p>
+        <p>To import a plant item list:</p>
+        <ol>
+            <li>Go to <strong>Utilities &gt; Import &gt; Plant &amp; Equipment</strong>.</li>
+            <li>Under <strong>First Record Is</strong>:<ul><li>Select <strong>Header Record</strong> if the first row of your file is column headings.</li><li>Select <strong>Data Record </strong>if the first row of your file is data.</li></ul></li>
+            <li>Under <strong>If Custom List Value Not Found</strong>:<ul><li>Select <strong>Create New List Option</strong> to include custom list values in the import that do not exist in simPRO, such as a list option in a custom field.</li><li>Select <strong>Reject and Warn</strong> to exclude new custom list values from the import.</li></ul></li>
+            <li>Select <strong>Plant Type</strong> as applicable.</li>
+            <li>Click <strong>Choose File</strong> / <strong>Browse</strong>.</li>
+            <li>Locate your plant item import file and click <strong>Open</strong>.</li>
+            <li>Click <strong>Next</strong>.</li>
+            <li>Match your plant item list fields to the fields in simPRO using the drop-down lists.<ul><li>To exclude a field from the import, select <strong>Ignore</strong>.</li></ul></li>
+            <li>Click <strong>Finish</strong>.</li>
+        </ol>
+        <p>If the import is successful, you will be taken to the<strong> Import Plant &amp; Equipment Summary</strong> page. It is recommended to review your imported plant items to check for errors by going to <strong>Utilities &gt; Plant &amp; Equipment</strong>.</p>
+        <p>To amend import errors, access the relevant plant items in simPRO individually and manually make changes as desired. Alternatively, adjust your import list as required, then re-import the plant items with their newly-created plant IDs.</p>
+    </body>
+</html>

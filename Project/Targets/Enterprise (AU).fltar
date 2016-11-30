@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[&quot;Default.AUS Enterprise&quot; or Default.Enterprise] exclude[Default.AU or &quot;Default.AUS Service&quot; or Default.Connect or Default.NZ or &quot;Default.Phase 1&quot; or Default.UK or Default.US] "
+  MasterToc="/Project/TOCs/Table of Conents (Enterprise and Service).fltoc"
+  DefaultUrl="/Content/Welcome.htm"
+  GetLatestBeforeCompile="false"
+  MasterPage="/Content/Resources/MasterPages/KB_Master_Page.flmsp"
+  SyncLingoProject="true"
+  TargetLanguage="en-au"
+  MasterStylesheet="/Content/Resources/Stylesheets/simPROStyles.css">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="MyVariables/Retainage">Retention</Variable>
+  </Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/Production.fldes" />
+  </Destinations>
+</CatapultTarget>

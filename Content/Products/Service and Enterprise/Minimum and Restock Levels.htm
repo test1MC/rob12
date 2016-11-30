@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2395" MadCap:lastWidth="1448">
+    <head>
+    </head>
+    <body>
+        <h1>Minimum and Restock Levels</h1>
+        <h2>Overview</h2>
+        <p>Set minimum and restock levels to routinely maintain your inventory and increase efficiency in stock purchasing. When the quantity of a stock item has decreased to below its <strong>Minimum Level</strong> in a storage device, you will receive an alert to restock the item with either a purchase order or stock transfer so that it returns to its <strong>Restock Level</strong>.</p>
+        <p>You may wish to set your restock level at the maximum quantity that you wish to keep of that item at any one time. This can also increase efficiency by purchasing required stock in bulk.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set minimum and restock levels</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can set minimum and restock levels for stock items within the applicable storage device. You can also add and set levels for catalogue items not currently contained in the storage device.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Stock/minlevel-set.png" alt="A screenshot of minimum and restock levels in a storage device." class="border" />
+                </p>
+                <p>To set minimum and restock levels:</p>
+                <ol>
+                    <li>Go to <strong>Materials &gt; Stock</strong>.</li>
+                    <li>Click<strong> Options &gt; Stock Levels </strong>on the desired storage device.</li>
+                    <li>Enter a <strong>Minimum Level</strong> and <strong>Restock Level</strong> for each stock item.</li>
+                    <li>Only quantities currently in stock or on order will be visible here.</li>
+                    <li>Click <strong>Catalogue </strong>to add stock items not currently in the storage device.</li>
+                    <li>Locate the required items, then enter quantities and click <strong>Add Items</strong>.</li>
+                    <li>Click <strong>Min Levels</strong>, then adjust the <strong>Minimum Level</strong> / <strong>Restock Level</strong> for each added item.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                    <li>To reset minimum and restock levels for an item, click the red delete icon.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>Any items with quantities less than the minimum levels you have set will then activate an alert in your simPRO system.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Restock a storage device using minimum levels</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When a stock item decreases to below its minimum level, you will receive an alert. To access your alerts, click the <strong>red circle</strong> icon in the <strong>System </strong>menu in the far top right, then go to <strong>Stock</strong>. The alert will display the <strong>Stock Name</strong> for an item, as well as the relevant storage device and required quantity.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Stock/minlevels-restock.png" alt="A screenshot of minimum level alerts." class="border" />
+                </p>
+                <p MadCap:conditions="Default.Phase 1">Click the storage device to restock an item, then select whether you wish to restock through a <strong>Purchase Order</strong>, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><strong> Supplier Quote</strong>, or a stock transfer from another storage device, and click <strong>Restock</strong>.</p>
+                <p MadCap:conditions="Default.Enterprise">Click the storage device to restock an item, then select whether you wish to restock through a <strong>Purchase Order</strong>, <strong>Supplier Quote</strong>, or a stock transfer from another storage device, and click <strong>Restock</strong>.</p>
+                <p MadCap:conditions="Default.Service">Click the storage device to restock an item, then select whether you wish to restock through a <strong>Purchase Order</strong> or a stock transfer from another storage device, and click <strong>Restock</strong>.</p>
+                <p MadCap:conditions="Default.Phase 1">The required items will then be pre-allocated with the necessary quantities. You can add and adjust items if required and continue creating the purchase order, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> supplier quote, or stock transfer as normal.</p>
+                <p MadCap:conditions="Default.Enterprise">The required items will then be pre-allocated with the necessary quantities. You can add and adjust items if required and continue creating the purchase order, supplier quote, or stock transfer as normal.</p>
+                <p MadCap:conditions="Default.Service">The required items will then be pre-allocated with the necessary quantities. You can add and adjust items if required and continue creating the purchase order or stock transfer as normal.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Stock/minlevels-restock.png" alt="A screenshot of a storage device being restocked from a purchase order." class="border" />
+                </p>
+                <p class="Infotip">When restocking a storage device through a purchase order, the <strong>PO Type</strong> needs to remain as<strong> From Catalogue</strong> to ensure the required items are ordered.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Restock items with minimum pack quantities</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If a required stock item has a <strong>Minimum Pack Quantity</strong> specified in the item card file, that is, the minimum number of the item that can be purchased, this will affect the number of items ordered for restocking.</p>
+                        <p>For example, you may have two items with a <strong>Minimum Level</strong> of eight and a <strong>Restock Level</strong> of 15. When you use two of each of these items on a job, their quantity will decrease to six and you receive an alert to restock the items. One of the items does not have a <strong>Minimum Pack Quantity</strong> specified, and therefore only needs to have nine items to return to its <strong>Restock Level</strong>.</p>
+                        <p>The other item has a <strong>Minimum Pack Quantity</strong> of six, which means that it must be purchased in quantities of six when restocking. Therefore, you need to purchase 12 items instead of nine to both meet the<strong> Restock Level</strong> and comply with the <strong>Minimum Pack Quantity</strong>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

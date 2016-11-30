@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="4161" MadCap:lastWidth="1432" MadCap:conditions="Default.Phase 1">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Import Assets</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <h2>Overview</h2>
+        <p>Create assets in simPRO by importing asset lists into sites according to their asset type. When an asset list has been successfully imported, you can view the newly created assets in their relevant sites in <strong>Utilities &gt; Customer Assets</strong>.</p>
+        <p>You can create and maintain asset lists according to their asset type in spreadsheets saved as CSV (.csv), text (.txt) or ZIP (.zip) files. You can also separate these files by site and service start date if desired.</p>
+        <p class="Infotip">Asset types, including their custom fields and relevant contracts, as well as sites must first be created in simPRO prior to importing the relevant assets.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Prepare an asset import list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To prepare to import assets into simPRO:</p>
+                <ol>
+                    <li>Download the simPRO <a href="../../Resources/Downloadable/Asset Import Template.csv">Asset Import Template</a>.</li>
+                    <li>Alternatively, create your own import list, leaving out any fields that do not apply to your customer assets.</li>
+                    <li>Divide your asset lists according to their asset type as defined in the system, as different asset types are set up with different custom fields.<ul><li>You may also wish to divide asset lists by site and service start date, depending on how you adjust your import settings.</li></ul></li>
+                    <li>Save your files as compatible spreadsheet file types: CSV (.csv), text (.txt) or ZIP (.zip). Consult your spreadsheet software documentation for file saving instructions if required.</li>
+                    <li>Separate your data using headings as specified in the field requirements.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+                    </li>
+                </ol>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Field requirements</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When importing an asset list, you can include information defined by custom fields specific to the asset type. To apply custom field information to your asset list:</p>
+                        <ol>
+                            <li>Locate and open your asset list.</li>
+                            <li>In simPRO, go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Asset Builder</strong>.</li>
+                            <li>Click the relevant asset type as defined in the list.</li>
+                            <li>Click the <strong>Custom Fields</strong> tab.</li>
+                            <li>For each custom field, add a new column to the asset list, heading each column with the relevant <strong>Field Name</strong>.<ul><li>The <strong>Field Name</strong> headers must be identical to how they are formatted in simPRO. It is recommended to copy and paste field names to ensure a successful import.</li></ul></li>
+                            <li>Enter data in the columns as required.<ul><li>Similar to the <strong>Field Name</strong>, custom field data in the form of list options must be identical to how it is formatted in simPRO. If entering new list options, be sure to select <strong>Create New List Option</strong> in your import settings.</li></ul></li>
+                            <li>When you have finished entering custom field data for that asset type and list, save your file and repeat the process with your other asset lists.</li>
+                        </ol>
+                        <p>In addition to custom fields, you can import the following fields of information when uploading asset lists to simPRO:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 93px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Site ID</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The <strong>Site ID</strong> / <strong>Site Name</strong> are mandatory columns but do not both need to be present to import successfully. The <strong>Site ID</strong> is available in the site card in simPRO and must be a numerical value. If left blank on any line, the line will be ignored and the asset will not be created in simPRO.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Site Name</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The <strong>Site ID</strong> / <strong>Site Name</strong> are mandatory columns but do not both need to be present to import successfully. The <strong>Site Name</strong> must be identical to how it is defined in simPRO. It is recommended to copy and paste the names from simPRO to reduce error and import successfully. If left blank on any line, the line will be ignored and the asset will not be created in simPRO.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Service Start Date</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>This will be the date of the most recent inspection and will be used to calculate future service dates in simPRO. Dates must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Date Format</strong> to import successfully.</p>
+                                        <p>Alternatively, you can set a service start date for every asset in your list using your import settings, or for individual assets in simPRO after importing.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Walk Order</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>The order in which a technician expects to service assets on a site, if applicable. This is useful when servicing a large number of customer assets per site.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Contract Number</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>A contract number links an asset to a predefined customer contract in simPRO to track profitability of a contract or to provide a customer with specific pricing. This is recommended for <MadCap:glossaryTerm glossTerm="NewGlossary.Term19">Maintenance Planner</MadCap:glossaryTerm> users.</p>
+                                        <p>Alternatively, you can enter contract numbers for assets in simPRO afer importing.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Contract Name</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>A contract name links an asset to a predefined customer contract in simPRO to track profitability of a contract or to provide a customer with specific pricing. This is recommended for Maintenance Planner users.</p>
+                                        <p>Alternatively, you can enter contract numbers for assets in simPRO afer importing.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Infotip">
+                            <MadCap:annotation MadCap:createDate="2016-10-07T12:53:45.0162120+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Awaiting Numeric Custom Fields feature" MadCap:editor="Zoe" MadCap:editDate="2016-10-07T12:53:56.1973429+10:00">If an asset has a numeric-only custom field in simPRO but there is non-numeric data entered in the field in the asset list, you will receive an error warning and the import will fail. Numbers must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Number Thousands Separator</strong> / <strong>Negative Number Format</strong> to import successfully.</MadCap:annotation>
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import an asset list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After preparing your asset list, work through the following steps to import your list to simPRO.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Adjust import settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importassets-options.png" alt="A screenshot of the Asset Import Settings page." class="border" />
+                        </p>
+                        <p>To adjust asset import settings, go to <strong>Utilities &gt; Import &gt; Sites</strong>.</p>
+                        <p>The options available are:</p>
+                        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Site Match</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>By File</strong> to import assets to sites defined in the asset list import file. This is recommended when uploading a single import file containing multiple sites, however the site names in the file must be identical to those in simPRO.</p>
+                                        <p>Select <strong>Manually Select</strong> if you are uploading an asset list specific to one site.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Service Start Date</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select<strong> By File</strong> to set service start dates for assets as defined in the asset list import file. This is recommended when uploading a single import file containing different service start dates.</p>
+                                        <p>Select <strong>Manually Select</strong> if you are uploading assets with the same service start date.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>First Record Is</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <strong>Header Record</strong> if your list's first row contains column titles, or select <strong>Data Record</strong> if your list's first row contains specific asset data.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>If List Value Not Found</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>If any assets contain a custom field list value that is not available in the list in simPRO, select <strong>Create New List Option</strong> to add the value to the drop-down list in the custom field for that asset.</p>
+                                        <p>Select <strong>Reject and Warn</strong> to ignore the field and receive a warning.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Select Asset Type</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>Select the type of asset in the list you are importing.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Infotip">You may wish to test the import process with one or two assets before importing an entire list.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Select an import file</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To select an import file:</p>
+                        <ol>
+                            <li>Adjust asset import settings, then click <strong>Choose File</strong> / <strong>Browse</strong>.</li>
+                            <li>Locate and open your customer import file.</li>
+                            <li>Click <strong>Next</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Upload an asset list and match import columns</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importassets-map.png" alt="A screenshot of the Asset Import Columns page." class="border" />
+                        </p>
+                        <p>To upload an asset list and match import columns:</p>
+                        <ol>
+                            <li>Go to <strong>Utilities &gt; Import &gt; Assets</strong> and adjust import settings as desired.</li>
+                            <li>Click <strong>Browse </strong>/ <strong>Choose File</strong> to locate and open the desired asset list.</li>
+                            <li>Click <strong>Next</strong>.</li>
+                            <li>Use the drop-down lists to match your import columns with the fields available in simPRO.<ul><li>If you wish to leave a column out of the import entirely, select <strong>Ignore</strong>.</li></ul></li>
+                            <li>Click <strong>Import Assets</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Check import success</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If the import is successful, you will be taken to the Import Asset Summary.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importassets-summary.png" alt="A screenshot of the Import Asset Summary page." class="border" />
+                        </p>
+                        <p>Click <strong>Assets imported successfully</strong> to download a CSV of imported assets for your records.</p>
+                        <p>If your asset list contains errors, an error message will display on the<strong> Import Asset Summary </strong>page, and the table will indicate how many errors were found. Click <strong>click here</strong> to download a CSV file of import errors. The <strong>Error Text</strong> column will explain why entries failed. Amend your asset import list accordingly and restart the import process.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

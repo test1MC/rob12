@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="4101" MadCap:lastWidth="1785">
+    <head>
+    </head>
+    <body>
+        <h1>Create Plant Items</h1>
+        <h2>Overview</h2>
+        <p>Plant items are equipment that your company uses and needs to keep track of. You can schedule plant items in the same way you schedule employees, so that you know when the equipment is available. You can create plant items manually in simPRO, or you can <MadCap:xref href="Import Plant and Equipment.htm">Import Plant and Equipment</MadCap:xref>.</p>
+        <p MadCap:conditions="Default.Phase 1">
+            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> You can also check out plant items to employees when needed, then check them back in when they are finished using them, so that you always know who is using what equipment. You can also track when plant items are due to be serviced for maintenance.</p>
+        <p MadCap:conditions="Default.Enterprise">You can also check out plant items to employees when needed, then check them back in when they are finished using them, so that you always know who is using what equipment. You can also track when plant items are due to be serviced for maintenance.</p>
+        <p>Before creating individual plant items, you will need to <MadCap:xref href="Create Plant types.htm">Create Plant Types</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a plant item</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/plantitem-create.png" alt="A screenshot of a new plant item." class="border" />
+                </p>
+                <p>To create a plant item:</p>
+                <ol>
+                    <li>Go to <strong>Utilities &gt; Plant &amp; Equipment</strong>, then click the desired plant type.</li>
+                    <li>Click <strong>Create Plant Item</strong>.</li>
+                    <li>Enter the <strong>Name</strong>.</li>
+                    <li>Select a <strong>Service Fee</strong> if desired. This service fee will automatically be applied to any job that you schedule this plant item to.</li>
+                    <li MadCap:conditions="Default.Phase 1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> If this plant item needs to be serviced regularly, select<strong> I wish to service this item</strong> and:<ul><li>If&#160;the <strong>Service Frequency Period</strong> is <strong>Hours</strong>, enter the <strong>Service Start</strong> point as a value.</li><li>If&#160;the <strong>Service Frequency Period</strong> is <strong>Date</strong>, select the <strong>Service Start</strong> from the date-picker.<ul><li>You will receive an alert when the plant item is due to be serviced. Service frequency is determined by the plant type.</li></ul></li></ul></li>
+                    <li MadCap:conditions="Default.Enterprise">If this plant item needs to be serviced regularly, select<strong> I wish to service this item</strong> and:<ul><li>If&#160;the <strong>Service Frequency Period</strong> is <strong>Hours</strong>, enter the <strong>Service Start</strong> point as a value.</li><li>If&#160;the <strong>Service Frequency Period</strong> is <strong>Date</strong>, select the <strong>Service Start</strong> from the date-picker.<ul><li>You will receive an alert when the plant item is due to be serviced. Service frequency is determined by the plant type.</li></ul></li></ul></li>
+                    <li>Select<strong> I wish to bill this item</strong> if this plant item is billable when used on jobs, then enter the <strong>Cost Rate</strong>, <strong>Overhead Rate</strong> / <strong>Sell Rate</strong>, and select the <strong>Sales Tax Code</strong>.<ul><li>Once you have entered a sell rate, you will now see this as an optional labour rate that can be added onto quotes / jobs and also seen on customer card labour rates.</li></ul></li>
+                    <li>Enter custom information as required.</li>
+                    <li>Select <strong>Enable Scheduling</strong> above <strong>Name</strong>, then click the <strong>Schedule </strong>tab to be able to schedule this plant item in the same way as employees. If you do not select this, proceed to step 9.<ul><li>Select the <strong>Shift Start</strong> and <strong>Shift End </strong>times, either for all weekdays or for specific days and click <strong>Add</strong>.</li><li>Select <strong>Cost Centres</strong> and <strong>Zones </strong>to assign them as desired.</li></ul></li>
+                    <li>Click <strong>Attachments </strong>to upload and manage internal attachments, such as photos of the plant item.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+                <p>After you have saved the plant item, the <strong>Jobs</strong>, <strong>Service</strong>, and <strong>History </strong>tabs will appear.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>View scheduled jobs</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Click <strong>Jobs </strong>to view all jobs that the plant item has been previously scheduled to. You can select a <strong>Start Date</strong> and <strong>Finish Date</strong> to search for jobs within a certain date range.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/plantitem-jobs.png" alt="A screenshot of the Jobs tab in a plant item." class="border" />
+                        </p> <![CDATA[ ]]></MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> View the plant item history</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Click <strong>History </strong>to view who has checked out the plant item in the past and when. Select an <strong>Employee </strong>to view all the times they have checked out the plant item, as well as a <strong>Start Date</strong> and <strong>Finish Date</strong> to view who checked out the plant item within a certain date range.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/plantitem-history.png" alt="A screenshot of the History tab in a plant item." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>View the plant item history</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Click <strong>History </strong>to view who has checked out the plant item in the past and when. Select an <strong>Employee </strong>to view all the times they have checked out the plant item, as well as a <strong>Start Date</strong> and <strong>Finish Date</strong> to view who checked out the plant item within a certain date range.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/plantitem-history.png" alt="A screenshot of the History tab in a plant item." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> View previous and future services</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Click <strong>Service </strong>to view previous services for the plant item, as well as add new ones. You do not need to have regular servicing enabled to view the tab and add services.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/plantitem-service.png" alt="A screenshot of the Service tab in a plant item." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View previous and future services</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Click <strong>Service </strong>to view previous services for the plant item, as well as add new ones. You do not need to have regular servicing enabled to view the tab and add services.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/plantitem-service.png" alt="A screenshot of the Service tab in a plant item." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

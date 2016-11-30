@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="465" MadCap:lastWidth="975">
+    <head>
+    </head>
+    <body>
+        <p>simPRO manages the sell price of materials using markup, and when parts are used on a quote or job you can see the margin. A material percentage markup is the default for the entire system, but can be overridden on individual catalogue items, or for particular customers or jobs.</p>
+        <p>
+            <img src="../Images/Screenshots/System/material defaults.png" alt="A screenshot of the Material Defaults page." class="border" />
+        </p>
+        <p>To set the material default:</p>
+        <ol>
+            <li>Go to <strong>System &gt; System Setup &gt; Materials &gt; Material Defaults</strong>.</li>
+            <li>Select whether to base the markup percentage on <strong>Trade Price</strong> or <strong>Cost Price</strong>.</li>
+            <li>Enter the <strong>Default Markup</strong>.</li>
+            <li>Click <strong>Save</strong> to update your changes.</li>
+        </ol>
+        <p>This default can be overriden on individual catalogue items and at the customer or job level.</p>
+        <p>Read more about these terms in <MadCap:xref href="../../Products/Service and Enterprise/Create a Catalogue Item.htm">Create a Catalogue Item</MadCap:xref>.</p>
+    </body>
+</html>

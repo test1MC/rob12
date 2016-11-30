@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Comment=""
+    Name="ScreenOnly"
+    BackgroundColor="Blue" />
+  <ConditionTag
+    Comment=""
+    Name="PrintOnly"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Not Ready for Publish"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#014f97"
+    Name="Enterprise"
+    Comment=""
+    OriginalName="Enterprise" />
+  <ConditionTag
+    BackgroundColor="#1cb5ef"
+    Name="Service"
+    Comment=""
+    OriginalName="Service" />
+  <ConditionTag
+    Name="US"
+    Comment=""
+    BackgroundColor="#eb7070" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="UK"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="AUS Enterprise"
+    Comment=""
+    OriginalName="AUS Enterprise" />
+  <ConditionTag
+    BackgroundColor="#bbae0d"
+    Name="AUS Service"
+    Comment=""
+    OriginalName="AUS Service" />
+  <ConditionTag
+    BackgroundColor="#a9bcf5"
+    Name="Connect"
+    Comment=""
+    OriginalName="Maintenance Planner" />
+  <ConditionTag
+    BackgroundColor="#a9a9a9"
+    Name="Phase 1"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#dcf12a"
+    Name="AU"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#b2f1db"
+    Name="NZ"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff00b4"
+    Name="US Enterprise"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#cd78ef"
+    Name="US Service"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#6b9d55"
+    Name="UK Enterprise"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#056a40"
+    Name="UK Service"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#18c3b6"
+    Name="NZ Enterprise"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0af1c2"
+    Name="NZ Service"
+    Comment="" />
+</CatapultConditionTagSet>

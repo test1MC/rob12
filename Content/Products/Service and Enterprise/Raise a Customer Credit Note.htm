@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2609" MadCap:lastWidth="1734">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Raise a Customer Credit Note</h1>
+        <h2>Overview</h2>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Invoices/credit note - note type.png" alt="A screenshot of the Credit Note Type drop-down." class="border" />
+        </p>
+        <p>Raise customer credit notes in simPRO to record credited and voided customer invoices. There are two types of credit notes you can create in simPRO:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: auto; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 107px;" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Credit Note</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>This is considered a sales returned for accounting purposes and offers customers a discount off the original invoice raised against a job. You can raise a credit note for a partial or full amount of the invoice, but you cannot unlock and modify the job once the credit note is raised.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                        <p>Void Invoice</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                        <p>This option voids the full amount of the invoice if, for example, the invoice has been raised incorrectly. When the invoice has been voided, the invoice status will be set to <strong>Fully-paid</strong> to prevent any payments being applied, and the relevant job will be moved from <strong>Invoiced </strong>to <strong>Complete</strong>. You can then access and modify the job as desired and create a new invoice.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Infotip">It is recommended you consult your accountant on the best practice for crediting and voiding invoices for your business.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Raise a customer credit note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To create a customer credit note:</p>
+                <ol>
+                    <li>Go to<strong> Invoices &gt; Unpaid</strong> /<strong> Paid Invoices</strong>.</li>
+                    <li>Locate the desired invoice, then click <strong>Options &gt; Create Credit Note</strong>.</li>
+                    <li>If you are crediting a paid invoice, click the invoice, then click <strong>Payments &gt; Add Credit Note</strong>.</li>
+                    <li MadCap:conditions="Default.Phase 1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Select whether your want the <strong>Invoice Values </strong>to include or exclude tax.</li>
+                    <li MadCap:conditions="Default.Enterprise">Select whether your want the <strong>Invoice Values </strong>to include or exclude tax.</li>
+                    <li>Select <strong>Credit Note </strong>as the <strong>Credit Note Type</strong>.</li>
+                    <li>Enter the <strong>Date Issued </strong>and <strong>Order No. </strong>as applicable.</li>
+                    <li>Select the <strong>Cost Centre Account</strong>. To use the same cost centre as the invoice, select <strong>Original Invoice</strong>.</li>
+                    <li>Enter a <strong>Credit Note Comment </strong>if desired.</li>
+                    <li MadCap:conditions="Default.Phase 1">Review and update the <strong>Credit Amount </strong>and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><strong>Retention </strong>if desired.</li>
+                    <li MadCap:conditions="Default.Enterprise">Review and update the <strong>Credit Amount </strong>and <strong>Retention </strong>if desired.</li>
+                    <li MadCap:conditions="Default.Service">Review and update the <strong>Credit Amount</strong><strong>  <![CDATA[ ]]></strong>if desired.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Void an invoice</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To void an invoice:</p>
+                <ol>
+                    <li>Go to <strong>Invoices &gt; Unpaid </strong>/ <strong>Paid Invoices</strong>.</li>
+                    <li>Locate the desired invoice, then click <strong>Options &gt; Create Credit Note</strong>.</li>
+                    <li>If you are voiding a paid invoice, click the invoice, then click <strong>Payments &gt; Add Credit Note</strong>.</li>
+                    <li MadCap:conditions="Default.Phase 1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Select whether your want the <strong>Invoice Values </strong>to include or exclude tax.</li>
+                    <li MadCap:conditions="Default.Enterprise">Select whether your want the <strong>Invoice Values </strong>to include or exclude tax.</li>
+                    <li>Select <strong>Void Invoice </strong> as the <strong>Credit Note Type</strong>.</li>
+                    <li>Enter the <strong>Date Issued </strong>and <strong>Order No.</strong> as applicable.</li>
+                    <li>Select the <strong>Cost Centre Account</strong>. To use the same cost centre as the invoice, select <strong>Original Invoice</strong>.</li>
+                    <li>Enter a <strong>Void Invoice Comment </strong>if desired.</li>
+                    <li MadCap:conditions="Default.Phase 1">Review the <strong>Void Amount </strong>and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /><strong>Retention</strong>.</li>
+                    <li MadCap:conditions="Default.Enterprise">Review the <strong>Void Amount </strong>and <strong>Retention</strong>.</li>
+                    <li MadCap:conditions="Default.Service">Review the <strong>Void Amount</strong>.</li>
+                    <li>This will be restricted to the full invoice amount.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Email a credit note</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Invoices/credit note - email.png" alt="A screenshot of a credit note being emailed." class="border" />
+                </p>
+                <p>To email a credit note:</p>
+                <ol>
+                    <li>Go to <strong>Invoices &gt; Credits</strong>, then click the desired credit note.</li>
+                    <li>Alternatively, raise a credit note / void an invoice as normal, then click <strong>Finish</strong>.</li>
+                    <li>Click the <strong>Forms </strong>tab.</li>
+                    <li>Under <strong>Form</strong>, ensure <strong>Credit Note </strong>is selected.</li>
+                    <li>Alternatively, select <strong>Email Only </strong>to send an email with no form.</li>
+                    <li>Click <strong>View </strong>​to preview the form.</li>
+                    <li>Select <strong>Show as Copy </strong>to add a <strong>Copy </strong>watermark to the form if desired.</li>
+                    <li>Select the <strong>Primary Contact </strong>to address the email to, then click to add additional <strong>Contacts </strong>as desired.</li>
+                    <li>Alternatively, you can manually enter email addresses and separate them with a comma.</li>
+                    <li>Adjust the default <strong>Subject </strong>and <strong>Body </strong>if desired. The default is set up in <strong>System &gt; Setup &gt; Forms Setup &gt; Credit &gt; Email</strong>.</li>
+                    <li>Alternatively, click <strong>Clear Email </strong>to enter a new <strong>Subject </strong>and <strong>Body</strong>.</li>
+                    <li>Click <strong>Send &gt; OK </strong>to confirm.</li>
+                </ol>
+                <p>Go to <strong>System &gt; Setup &gt; <MadCap:xref href="Forms Setup.htm">Forms Setup</MadCap:xref> &gt; Credit Note &gt; Display Options &gt; Form Title </strong>to enter a new form title to display on the printable form document. The form will still retain its simPRO default title when you select it from the <strong>Form </strong>drop-down list.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

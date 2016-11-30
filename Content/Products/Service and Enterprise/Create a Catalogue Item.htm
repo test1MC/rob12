@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="8849" MadCap:lastWidth="1771">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Create a Catalogue Item</h1>
+        <h2>Overview</h2>
+        <p>Create and manage catalogue items in simPRO. You can specify an item's unit of measurement, estimated installation time, pricing, and minimum pack quantity, as well as add suppliers to assist in price comparisons. You can also enter custom information, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> apply pricing tiers, and link catalogue items.</p>
+        <p>Alternatively, you can <MadCap:xref href="Import Generic Supplier Catalogues.htm">Import Generic Supplier Catalogues</MadCap:xref> or <MadCap:xref href="Import Supplier-Specific Catalogues.htm">Import Supplier-Specific Catalogues</MadCap:xref>.</p>
+        <h2>Create a catalogue item</h2>
+        <p>When you create or open a catalogue item, you are taken to the <strong>Details </strong>tab, where you can enter or update the item description, part number, pricing, tax codes, search terms and purchasing quantities.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue Item- details tab.png" alt="A screenshot of the Details tab in a catalogue item." class="border" />
+        </p>
+        <p>To create a catalogue item:</p>
+        <ol>
+            <li>Hover over <strong>Materials</strong>, then click <strong>Catalogue</strong>.</li>
+            <li>Locate and click the applicable group / subgroup you wish to allocate the item to.<ul><li>Alternatively, create a new group / subgroup.</li></ul></li>
+            <li>Click <strong>Create Item</strong>.</li>
+            <li>Enter <strong>New Item Details</strong> as specified below.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+            </li>
+        </ol>
+        <h3>Enter item details</h3>
+        <p>When you create or update a catalogue item, you can enter the following details:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definitions" cellspacing="0">
+            <col class="TableStyle-Definitions-Column-DarkShade" style="width: 131px;" />
+            <col class="TableStyle-Definitions-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Item Name</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Enter a name for the item to appear on itemised quotes, jobs and invoices, and to search for in the catalogue local search. This is a mandatory field and populates the Description column in the <strong>Catalogue </strong>group / subgroup table view.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Attributes</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Select <strong>Favourite </strong>if the item is commonly-used and you wish to allocate it to the <strong>Favourites </strong>group for quick access.</p>
+                        <p>Select <strong>Inventory </strong>to include the item as stock when purchasing. Leave the check box clear to exclude the item from stock.</p>
+                        <p>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> Select <strong>Asset </strong>to add the item as an asset. You will then need to click <strong>Asset </strong>to identify the <strong>Asset Type</strong>. Then when you add the item to a job, you will be alerted to create the asset for the job site.</p>
+                        <p>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> Select <strong>Multi Currency</strong> to enter <strong>Trade </strong>and <strong>Split Prices </strong>for an item in multiple currencies if applicable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Part No.</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Enter the supplier part number for the item to appear on itemised quotes, jobs and invoices, and to match items when updating your catalogue in a supplier-specific or generic import. You can also locate the item in the catalogue using this number in a local search.</p>
+                        <p>You may wish to enter your own part number for the item, then enter supplier-specific part numbers in the <strong>Suppliers </strong>tab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">UPC</td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">Enter the Universal Product Code.</td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Manufacturer</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Enter the manufacturer of the item to use as a search term for performing a local search.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">Country of Origin</td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">Enter the country the item was manufactured in.</td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Unit of Measurement</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Select the unit the item is sold in as created in <strong>System &gt; Setup &gt; System Setup &gt; Materials &gt; Units of Measurement</strong> if applicable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Estimated Time</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Enter the estimated installation time to assist in calculating labour in pre-builds, quotes, and jobs if desired.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Trade Price</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Enter the non-discounted price per unit. The discounted price, or <strong>Nett </strong>/ <strong>Net Price </strong>associated with specific suppliers can be entered in the <strong>Suppliers </strong>tab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>
+                            <img src="../../Resources/Images/Icons/icon-service-only-sm.png" title="This feature is only available in simPRO Service." alt="Service only" /> Markup</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Select the check box to override the default markup and enter a different percentage. This will automatically reflect in the <strong>Sell Price</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>
+                            <img src="../../Resources/Images/Icons/icon-service-only-sm.png" title="This feature is only available in simPRO Service." alt="Service only" /> Sell Price</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Select the check box to enter a different price. This will automatically reflect in the <strong>Markup</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Split Price</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Enter the trade price you pay per unit when purchasing below the <strong>Trade Split Quantity</strong>. See the example below.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Trade Split Quantity</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Enter the required quantity you need to purchase to pay the <strong>Nett </strong>/ <strong>Net Price</strong> as negotiated with the supplier. When you purchase below this quantity, you will pay the <strong>Split Price</strong>. See the example below.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Minimum Pack Quantity</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Enter the minimum quantity of the item that can be purchased from the supplier. This is useful if you can only purchase the item from the supplier in specific quantities, for example, in boxes of 12 units, or one hundred metres of cable sold in individual rolls. Alternatively, you can set a minimum pack quantity specific to your business. You may wish to instead set restock quantities for this purpose.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> Purchasing Stage</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Select as defined in <strong>System &gt; Setup &gt; System Setup &gt; Materials &gt; <MadCap:xref href="Purchasing Stages.htm">Purchasing Stages</MadCap:xref></strong> to differentiate the various stages of ordering, especially when managing project based purchases.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Storage Location</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Enter the exact location of the item within its storage device if applicable to assist in performing stocktakes, for example, 'Bay 5, Shelf 3'. The storage location entered for one item will then be available to select as a list option when entering the storage location for another catalogue item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Purchase Tax Code</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Select as required if the item is purchased using a different tax code to the default specified in the supplier card file or in <strong>System &gt; Setup &gt; System Setup &gt; Accounts &gt; <MadCap:xref href="Tax Codes.htm">Tax Codes</MadCap:xref></strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Sales Tax Code</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Select as required if the item is sold using a different tax code to the default specified in <strong>System &gt; Setup &gt; System Setup &gt; Accounts &gt; <MadCap:xref href="Tax Codes.htm">Tax Codes</MadCap:xref></strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Group</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Select if desired to change which group the item is located in within the catalogue. You can also do this at the group and subgroup level using the <strong>Move </strong>option.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Subgroup</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Select if desired to change which subgroup the item is located in within the catalogue. You can also do this at the group and subgroup level using the <strong>Move </strong>option.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Display Order</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Enter a number to designate in what order the item is arranged within its group / subgroup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Search Terms</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Enter alternative part numbers or names, extra descriptions, or enter or scan barcodes to assist in locating items more quickly when performing a local catalogue search.</p>
+                        <p>You may wish to easily search for items that have different descriptions but a similar use, for example, a powerpoint can also be described as a search terms can also be used to bring items together with different descriptions but similar use, for example, a powerpoint can also be referred to as a GPO or outlet.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyB-DarkShade-LightRows">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyA-Regular-LightRows">
+                        <p>Enter additional details about an item for reference only.​</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Add suppliers</h2>
+        <p>Enter a supplier description and quantity for a catalogue item. This will then change how the item appears on your purchase orders to ensure your order is correct.</p>
+        <p>You can then add suppliers to view nett / net price and discount comparisons for an item, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> which is useful when creating purchase orders. The <strong>Nett </strong>/ <strong>Net Price</strong>, also known as the cost or buy price, is the trade price of an item with the supplier discount applied.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/catalogue item - add a supplier.png" alt="A screenshot of the Suppliers tab in a catalogue item." class="border" />
+        </p>
+        <p>To add a supplier to an item:</p>
+        <ol>
+            <li>Access the desired item, then go to <strong>Suppliers &gt; Existing Suppliers</strong>.</li>
+            <li>Search and select the desired supplier.</li>
+            <li>Enter a <strong>Supplier Part No. </strong>if applicable.<ul><li>This will appear on purchase orders for the item associated with this supplier.</li></ul></li>
+            <li>If the supplier offers a discounted <strong>Trade </strong>and / or <strong>Split </strong>price for the item, enter the <strong>Discount </strong>as applicable.<ul><li>Alternatively, enter the <strong>Trade </strong>and / or<strong> Split Nett</strong> / <strong>Net Price</strong> for the item and to automatically calculate the <strong>Discount</strong>.</li></ul></li>
+            <li>Click the tick icon to nominate the supplier as the default supplier of this item.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+            </li>
+        </ol>
+        <p>To remove a supplier from an item, click the <strong>red delete</strong> icon.</p>
+        <p>Check the <strong>Updated </strong>column to view when the supplier pricing was last updated, either manually or from a catalogue import.</p>
+        <p class="Infotip">You can only enter a <strong>Split Discount</strong> or <strong>Split Nett</strong> / <strong>Net Price</strong> if the <strong>Split Price</strong> in the <strong>Details </strong>tab is more than zero.</p>
+        <h3>Enter a supplier description and quantity</h3>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue Item - supplier quantity and description.png" alt="A screenshot of the Supplier Description and the Supplier Quantity fields." class="border" />
+        </p>
+        <p>Go to the <strong>Suppliers </strong>tab in a catalogue item to enter a <strong>Supplier Description</strong> and <strong>Supplier Quantity</strong> to assist in creating accurate purchase orders for suppliers. This is useful if you can only purchase items from suppliers in specific quantities or if suppliers refer to an item by a different name.</p>
+        <p>For example, you may sell cable by the metre, but order it in 100 metre rolls. Your <strong>Trade Price</strong> and <strong>Nett </strong>/ <strong>Net Price</strong> are per metre.</p>
+        <p>When you order 100 metres of cable from the supplier, you need to ensure they supply 100 metres of cable, and not 100 rolls. To do this, you need to enter a <strong>Supplier Quantity </strong>that divides your order of 100 metres into the supplier's unit of purchase, that is, one roll.</p>
+        <p>To ensure that your supplier receives a purchase order with accurate quantities of cable:</p>
+        <ol>
+            <li>Go to <strong>Materials &gt; Catalogue</strong>.</li>
+            <li>Access the desired cable item, then go to <strong>Details</strong>.</li>
+            <li>Under <strong>Minimum Pack Quantity</strong>, enter 100.<ul><li>This is the smallest quantity of cable you purchase from the supplier, as one roll contains 100 metres.</li></ul></li>
+            <li>Click <strong>Suppliers</strong>.</li>
+            <li>In the <strong>Supplier Description</strong>, enter the item name as entered in the <strong>Details </strong>tab, then enter / 100m after it.<ul><li>This defines the supplier's unit of purchase for cable, that is, a roll of 100 metres.</li></ul></li>
+            <li>In <strong>Supplier Quantity</strong>, enter 100.<ul><li>This figure divides the purchase order (ordered in metres) into the supplier's unit of purchase (100 metre rolls).</li></ul></li>
+            <li>Click <strong>Finish</strong>.</li>
+        </ol>
+        <p>When you order 100 metres of cable, the purchase order will divide this by the <strong>Supplier Quantity </strong>(100) to convert it into one roll of cable.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue Item - supplier quantity PO 1.png" alt="A screenshot of a purchase order with a Supplier Quantity." class="border" />
+        </p>
+        <p>Then when you receipt the purchase order, you can view both the ordered part quantity of 100, and the supplier pack quantity of one.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue Item - supplier PO receipt.png" alt="A screenshot of a supplier purchase order with a supplier pack quantity being receipted." class="border" />
+        </p>
+        <h3>
+            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> Enter nett / net prices in multiple currencies</h3>
+        <p>If you have set up multiple currencies for overseas suppliers who require invoices in their own currency, and you have added such a supplier to an item, you can enter trade and split nett prices in their specific currency.</p>
+        <p>You can enter the price in the foreign currency, or alternatively, enter the value in your default currency to convert it to the foreign currency.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/catalogue item- multi-currency.png" alt="A screenshot of a suppliers with foreign currencies added to a catalogue item." class="border" />
+        </p>
+        <h2>Enter custom information</h2>
+        <p>Click <strong>Custom </strong>to enter custom field information for catalogue items as defined in <strong>System &gt; Setup &gt; System Setup &gt; Custom Fields &gt; Stock Items</strong>. If these have not been set up, the <strong>Custom </strong>tab will not appear in the catalogue item.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue item - custom fields.png" alt="A screenshot of the Custom tab in a catalogue item." class="border" />
+        </p>
+        <p>To enter custom information for a catalogue item:</p>
+        <ol>
+            <li>Create or access the item as normal.</li>
+            <li>Click the <strong>Custom </strong>tab.</li>
+            <li>Enter information or select options as required.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+            </li>
+        </ol>
+        <h2>
+            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> Apply pricing tiers</h2>
+        <p>Apply pricing tiers to a catalogue item in the <strong>Pricing </strong>tab to define the markup and sell price for specific quantities of the item.</p>
+        <h2>Add item attachments</h2>
+        <p>Click the <strong>Attachments </strong>tab to attach files to a catalogue item card file, such as item assembly information, a brochure, or a user manual. You can also attach an image to display as a thumbnail in the catalogue. These attachments are for internal reference only, and will not be available in other areas of simPRO unless you have a customised build.</p>
+        <h2>Link catalogue items</h2>
+        <p>Use the <strong>Linked Items</strong> tab to link an item with another item it is frequently used with. Then when you add an item with a linked item to a quote, job or order, an alert will inform you of the linked items.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue item - Linked Items tab.png" alt="A screenshot of the Linked Items Found pop-up window." class="border" />
+        </p>
+        <p>Click <strong>Show Linked Items</strong> to view and add linked items, or click <strong>Cancel </strong>to proceed without adding linked items.</p>
+        <p>To link a catalogue item to another item:</p>
+        <ol>
+            <li>Create or access the desired catalogue item.</li>
+            <li>Click <strong>Linked Items</strong>.</li>
+            <li>Search and select the item you wish to link in the <strong>Add a linked item</strong> field.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+            </li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue item - Add a linked item.png" alt="A screenshot of the Linked Items tab in a catalogue item." class="border" />
+        </p>
+        <p>Click the<strong> red delete</strong> icon to delete a linked item from a catalogue item.</p>
+        <p class="Infotip">Items are only linked one way. If you wish to link items both ways, you will need to link them from within each item.</p>
+        <h2>View the item history</h2>
+        <p>Click the <strong>History </strong>tab to view a breakdown of an item's history, such as when it was purchased or when a stock take was performed. You can also select a <strong>Date Range</strong> to view all activity within a specified time.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/catalogue item- history.png" alt="A screenshot of the History tab in a catalogue item." class="border" />
+        </p>
+        <p>The columns displayed are:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definitions" cellspacing="0">
+            <col class="TableStyle-Definitions-Column-DarkShade" />
+            <col class="TableStyle-Definitions-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Date</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Displays the date each action took place.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Quantity</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Displays the quantity of stock added or removed. Stock removed is marked with a minus sign.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Amount</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Displays the value of stock added or removed. The value of stock removed is marked with a minus sign.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Quantity In Stock</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Displays the total item quantity available in stock.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Stock Value Balance</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Displays the value of stock available.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Source</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Displays the type of action performed, such as receipt of a purchase order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Destination</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Displays where the item was assigned to, such as a job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyB-DarkShade-DarkerRows">
+                        <p>Supplier / Customer</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyA-Regular-DarkerRows">
+                        <p>Displays the item's site and / or the customer the item was used for.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To generate a CSV file of item history, click the <strong>Export </strong>icon in the top right corner above the table.</p>
+        <h2>Advanced</h2>
+        <h3>Enter accurate split pricing and quantities</h3>
+        <p>If you have negotiated a discounted price with a supplier that will only apply when you purchase a specified quantity of an item, you need to enter the accurate <strong>Trade Split Quantity</strong> and <strong>Split Price</strong>.</p>
+        <p>For example, you may purchase powerpoints that cost $15.00 / £15.00 each. However, you have negotiated with a supplier to pay a discounted price of $11.70 / £11.70 per powerpoint when you purchase a box a 12. As a box of 12 is the supplier's preferred method of packaging, they will make you pay a higher price of $14.30 / £14.30 if you purchase less than 12 powerpoints.</p>
+        <p>In this example, you would enter the following details for the powerpoint item:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definitions" cellspacing="0">
+            <col class="TableStyle-Definitions-Column-DarkShade" />
+            <col class="TableStyle-Definitions-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Trade Price</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>$15.00 / £15.00</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Nett / Net Price</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>$11.70 / £11.70. Enter this price next to the applicable supplier in the Suppliers tab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Trade Split Quantity</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>12</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyB-DarkShade-DarkerRows">
+                        <p>Split Price</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyA-Regular-DarkerRows">
+                        <p>$14.30 / £14.30</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>
+            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> Enter trade and split prices in multiple currencies</h3>
+        <p>If you have set up multiple currencies for overseas suppliers who require purchase orders in their own currency, you can enter trade and split prices accordingly.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/catalogue item - trade and split.png" alt="A screenshot of the Currencies table." class="border" />
+        </p>
+        <p>To enter trade and split prices in multiple currencies for an item:</p>
+        <ol>
+            <li>Create or access the desired item.</li>
+            <li>Go to <strong>Details &gt; Attributes</strong> and select<strong> Multi Currency</strong>.</li>
+            <li>Under <strong>Currencies</strong>, search and select the desired foreign currency in the <strong>Add a currency</strong> text box.</li>
+            <li>Enter a <strong>Trade Price</strong> /<strong> Split Price</strong> in foreign currency.<ul><li>Alternatively, enter a value in your default currency to convert it to the foreign currency.</li></ul></li>
+            <li>Repeat as required.</li>
+            <li>Click the <strong>tick </strong>icon to select a currency as the <strong>Default</strong>.<ul><li>If the <strong>Default </strong>is a foreign currency and your pricing tier is based on <strong>Trade Price</strong>, your pricing will be calculated from the default currency value.</li></ul></li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+            </li>
+        </ol>
+        <p>Click the <strong>red delete</strong> icon to remove an assigned currency.</p>
+        <p class="Infotip">Remember to regularly refresh your exchange rates in<strong> System &gt; Setup &gt; Currencies</strong> to maintain accuracy.</p>
+    </body>
+</html>

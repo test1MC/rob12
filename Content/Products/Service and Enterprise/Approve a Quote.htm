@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1674" MadCap:lastWidth="1164" MadCap:conditions="Default.Phase 1">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="LinksLists" />
+            <MadCap:keyword term="Lists" />Approve a Quote</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <h2>Overview</h2>
+        <p>To approve a quote, access the quote as normal, then go to <b>Details &gt; Settings &gt; Stage</b>, then select <b>Approved</b>. Project quotes and service quotes with multiple cost centres can only be approved at the overview level.</p>
+        <h2>Set up a quote approval workflow</h2>
+        <p>Quote approval workflows vary between different businesses. If you have a specific quote approval workflow that involves different roles in your business, you can control who can approve quotes using security groups, or alternatively, allow employees to only approve quotes up to a set value.</p>
+        <p>To restrict quote approval permissions using security groups:</p>
+        <ol>
+            <li>Go to <b>System &gt; Setup &gt; System Setup &gt; Security Groups</b>.</li>
+            <li>Click the applicable security group.</li>
+            <li>Go to <b>Permissions &gt; Actions &gt; Quotes</b>.</li>
+            <li>To restrict employees assigned to the security group from approving any quotes, clear the <b>Approve Quotes</b> check box.</li>
+            <li>Alternatively, to restrict the security group to only approving quotes up to a certain value, select <b>Approve Quotes</b>, then select <b>Limit</b>, and enter the value as desired.</li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/Images/Managing Existing Quotes - security groups.png" title="Clear or select the Approve Quotes check box as applicable for your approval workflow." alt="A screenshot of the Quotes security group permissions." class="border" />
+        </p>
+        <p>To adjust your quote approval workflow at the system-wide level:</p>
+        <ol>
+            <li>Go to <b>System &gt; Setup &gt; Defaults &gt; System &gt; Quotes</b>.</li>
+            <li>Under <b>Quote Stage</b>, select:<ul><li><b>In-Progress</b> to locate created quotes in <b>Quotes &gt; Progress Quotes</b>. This is useful if the majority of your quotes require considerable detail and time to be compiled.</li><li><b>Complete</b> to locate created quotes in <b>Quotes &gt; Complete Quotes</b>. This is useful for quoting workflows where one employee creates and builds the quote, and another employee, such as a sales manager, needs to review and approve it before sending it to the customer.</li><li><b>Approved</b> to locate created quotes in <b>Quotes &gt; Approved Quotes</b>. This is useful for quoting workflows where the quote is created, built, finalised and sent to the customer by the one user from start to finish.</li></ul></li>
+            <li>If desired, select <b>Restrict Unapproved Quotes</b> to restrict the <b>Forms</b> tab from appearing in <b>Progress / Complete Quotes</b> to prevent sending or printing unapproved quote forms.​</li>
+            <li>Adjust other quote defaults as desired.</li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+    </body>
+</html>

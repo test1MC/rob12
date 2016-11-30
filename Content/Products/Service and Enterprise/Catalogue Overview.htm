@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4765" MadCap:lastWidth="1739">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Catalogue Overview</h1>
+        <h2>Overview</h2>
+        <p>Your simPRO catalogue functions as a price file that forms the basis for developing stock inventory. When you add catalogue items to a job, they provide <strong>Estimated </strong>costs in the job breakdown, and do not represent <strong>Actual </strong>costs until they have been receipted to the job from a purchase order or allocated from stock.</p>
+        <p>In simPRO, you can organise and maintain your catalogue structure by manually creating groups, subgroups, and items, or alternatively, <MadCap:xref href="Import Generic Supplier Catalogues.htm">Import Generic Supplier Catalogues</MadCap:xref> or <MadCap:xref href="Import Supplier-Specific Catalogues.htm">Import Supplier-Specific Catalogues</MadCap:xref>.</p>
+        <p>Once you have created or imported your catalogue items, you can then search and adjust them.</p>
+        <h2>Types of catalogue structures</h2>
+        <p>Your catalogue structure may significantly differ from other businesses, and may be a combination of the following two types:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definitions" cellspacing="0">
+            <col class="TableStyle-Definitions-Column-DarkShade" />
+            <col class="TableStyle-Definitions-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Function-based</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Supplier-specific catalogue imports are based on this format, which groups catalogue items together according to their product line or functional type. You can then add multiple suppliers against the same item and view price comparisons against the item in its group / subgroup, as well as when <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> creating purchase orders.</p>
+                        <p>This structure is particularly effective for industries where part numbering is driven by manufacturers across all suppliers.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyB-DarkShade-DarkerRows">
+                        <p>Supplier-based</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyA-Regular-DarkerRows">
+                        <p>Group catalogue items together according to supplier. Although this structure may be the simplest to set up, it does not allow for supplier price comparisons. Furthermore, in order to search for products with the same function, you will need to enter the same search terms or descriptions for each item within each group.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Create a catalogue</h2>
+        <p>Manually create a catalogue by creating groups and subgroups so you can organise your catalogue items according to your current price files and business workflow.</p>
+        <p>You may wish to structure your catalogue according to manufacturer, supplier, or by function categories, for example, cable, lighting, circuit protection etc.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/catalogue-list.png" alt="A screenshot of the Create Group button." class="border" />
+        </p>
+        <p>To create a catalogue:</p>
+        <ol>
+            <li>Hover over <strong>Materials</strong>, then click <strong>Catalogue</strong>.</li>
+            <li>Click <strong>Create Group</strong>.</li>
+            <li>Enter the <strong>Group Name</strong>, then click <strong>Save</strong>.</li>
+            <li>Click the newly created group.</li>
+            <li>Click <strong>Create Subgroup</strong>.</li>
+            <li>Enter the <strong>Subgroup Name</strong>, then click <strong>Save</strong>.</li>
+            <li>Click the newly created subgroup.</li>
+            <li>Click <strong>Create Item</strong>, then create a catalogue item as normal.</li>
+            <li>Enter the item details, then click <strong>Finish</strong>.</li>
+        </ol>
+        <p>You can then repeat this process to create items as required for all relevant groups and subgroups.</p>
+        <h3>Delete a catalogue group / subgroup</h3>
+        <p>When you delete a catalogue group / subgroup, you also delete any items it contains, both in the catalogue and in pre-builds they have been allocated to. If an item within a deleted group / subgroup has a history of use in the system with purchase orders, jobs, or quotes, it will be archived.</p>
+        <p>To delete a catalogue group / subgroup, go to <strong>Materials &gt; Catalogue</strong>, locate the desired group / subgroup, then click<strong> Options &gt; Delete Group</strong> / <strong>Subgroup</strong>. Alternatively, select multiple groups and click <strong>Delete </strong>in the footer options below the <strong>Groups </strong>table to delete multiple groups at once.​</p>
+        <p class="WarningTip">If you have deleted catalogue items that are part of one or multiple pre-builds in your system, you will need to manually access and adjust your pre-builds accordingly to ensure accurate pricing on jobs and quotes. Feel free to contact <a href="http://helpdesk.simpro.co/" target="_blank">simPRO Support</a> or your trainer to assist in updating and managing your catalogue.</p>
+        <h2>Import a catalogue</h2>
+        <p>You can create multiple catalogue items at once in your simPRO system by preparing and importing supplier catalogues in a generic format, or alternatively, obtaining simPRO-formatted supplier-specific price files to import.</p>
+        <p>Supplier-specific price files are created in collaboration with your suppliers in a function-based file format that automatically conforms with simPRO's import functionality.</p>
+        <p>Generic catalogues are created by your business using the simPRO Catalogue Import Template, and must include the following fields for each item: <strong>Group</strong>, <strong>Subgroup</strong>, <strong>Part Number</strong>, <strong>Description</strong>, <strong>Cost Price</strong> and <strong>Trade Price</strong>.</p>
+        <h2>Search the catalogue</h2>
+        <p>To view the catalogue, hover over <strong>Materials </strong>in the main menu, then click <strong>Catalogue</strong>.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue - menu.png" alt="A screenshot of the Catalogue option in the Materials menu." class="border" />
+        </p>
+        <p>To quickly locate a catalogue item, enter the name / description, search terms, part number, or supplier part number if applicable in the local search bar and click <strong>Search</strong>. You can also select <strong>Favourites Only</strong> to only view catalogue items marked as <strong>Favourite </strong>in their card files and located in the <strong>Favourites </strong>group. This is useful for locating your most commonly used items more efficiently.</p>
+        <p>Alternatively, click <strong>Advanced </strong>and select from the drop-down lists to filter catalogue items according to <strong>Supplier</strong>,<strong> Item Status</strong> (<strong>Archived </strong>or <strong>Active &amp; Archived</strong>), <strong>Manufacturer</strong>, <strong>Storage Location</strong> as defined in the item card file, <strong>Group</strong>, or <strong>Subgroup</strong>.</p>
+        <p>Select <strong>Exact Match</strong> to display only search results that match the entire part number, name / description or search term entered in the local search bar, rather than a partial match.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue-advanced options.png" alt="A screenshot of the Advanced search options." class="border" />
+        </p>
+        <p>You can then save these filter options as a saved search to access a catalogue item or group of catalogue items more quickly.</p>
+        <p>Alternatively, perform a global search to locate a catalogue item from anywhere in simPRO. Learn more about saved searches and the global search in <MadCap:xref href="Navigation and Data Management Tools.htm">Navigation and Data Management Tools</MadCap:xref>.</p>
+        <h3>Access catalogue group / subgroup options</h3>
+        <p>You can access the following options when you right-click or click <strong>Options </strong>on a catalogue group / subgroup:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definitions" cellspacing="0">
+            <col class="TableStyle-Definitions-Column-DarkShade" />
+            <col class="TableStyle-Definitions-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>View Group / Subgroup</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Access the group / subgroup and the catalogue items it contains. You can also do this by clicking the group / subgroup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Edit Group / Subgroup Details</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Edit the <strong>Group </strong>/ <strong>Subgroup Name</strong>. When you have finished making changes, click <strong>Save</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Set Group / Subgroup Markup</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Select a <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> <strong>Pricing Tier</strong> and enter a specific <strong>Markup </strong>to apply to all catalogue items contained in the group / subgroup. Alternatively, select<strong> Use Default</strong> to apply the default markup percentage to all catalogue items in the group / subgroup. When you have finished making changes, click <strong>Save</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Group / Subgroup Suppliers</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Select and <strong>Add </strong>additional suppliers for all items contained in the group / subgroup. You can also apply a suppler-specific discount. When you have finished making changes, click <strong>Save</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyB-DarkShade-LightRows">
+                        <p>Delete Group / Subgroup</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyA-Regular-LightRows">
+                        <p>Delete the group / subgroup and any unused catalogue items it contains. Catalogue items that have a history of use in the system will be archived. To delete multiple groups, select the check boxes of the groups you wish to delete, or click <strong>Select All</strong>, then click <strong>Delete &gt; OK</strong> in the footer options.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Access catalogue item options</h3>
+        <p>You can access the following options when you right-click or click <strong>Options </strong>on a catalogue item:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definitions" cellspacing="0">
+            <col class="TableStyle-Definitions-Column-DarkShade" />
+            <col class="TableStyle-Definitions-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Edit Item Details</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Access and edit the catalogue item. When you have finished making changes, click <strong>Finish</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Print Barcode</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Print a simPRO-generated barcode based on the item part number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Add to Barcode List</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Add to a barcodes list to print multiple item barcodes using the footer options.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Move Item</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Select a different <strong>Group </strong>and <strong>Subgroup </strong>to move the take off template to, then click <strong>Move</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                        <p>Merge Item</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                        <p>Merge a catalogue item into another item and replace all pricing and suppliers. This is recommended if you have duplicated items in your catalogue.</p>
+                        <p>It is recommended to only perform this task if you have a solid understanding of the catalogue items in your system, as this process is irreversible.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                        <p>Archive Item</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                        <p>Archive a catalogue item. You can view archived items by going to <strong>Materials &gt; Catalogue &gt; Advanced &gt; Item Status</strong>, then selecting <strong>Archived </strong>or <strong>Active &amp; Archived</strong>. To make an item active in your system again, click <strong>Options &gt; Activate Item</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definitions-Body-LightRows">
+                    <td class="TableStyle-Definitions-BodyB-DarkShade-LightRows">
+                        <p>Delete Item</p>
+                    </td>
+                    <td class="TableStyle-Definitions-BodyA-Regular-LightRows">
+                        <p>Permanently delete a catalogue item. If an item has history in your system it will be archived.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Alternatively, select the item check boxes on the left, or alternatively, <strong>Select All</strong>, and use the footer options to print barcodes, add to, clear, or print a barcodes list, and move, merge, archive, and delete multiple catalogue items at once.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Materials/Catalogue-item options.png" alt="A screenshot of the footer options for catalogue items." class="border" />
+        </p>
+        <p>To mark multiple catalogue items as <strong>Favourite </strong>in their card files and allocate them to the <strong>Favourites </strong>group for quick access, select the desired items, then click <strong>Set as Favourite</strong>.</p>
+        <p>To categorise multiple catalogue items by their <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" title="This feature is only available in simPRO Enterprise." alt="Enterprise only." /> purchasing stage as defined in<strong> System &gt; Setup &gt; System Setup &gt; Materials &gt; <MadCap:xref href="Purchasing Stages.htm">Purchasing Stages</MadCap:xref></strong>, select the desired items, click <strong>Set Purchase Stage</strong>, select the desired stage, then click <strong>Save</strong>.</p>
+        <p class="WarningTip">Please use caution when merging catalogue items as you cannot split them again.</p>
+    </body>
+</html>

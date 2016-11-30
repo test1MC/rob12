@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="6262" MadCap:lastWidth="1266" MadCap:conditions="Default.Phase 1">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Asset Service Levels</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <h2>Overview</h2>
+        <p>A service level details the service and testing frequency for a customer asset. You can assign a service level to an asset type, create failure points (often called 'testing points'), and optionally define recommendations for rectifying any asset failures.</p>
+        <p>When you add a new asset to a site, all service levels set up under the asset type will be added to the asset. You can add or remove service levels per site to suit the service levels required by your contracts.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a service level</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>A service level must be set up before you can assign it to an asset type.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/assetservicelevel-create.png" alt="A screenshot of the Create Service Level page." class="border" />
+                </p>
+                <p>To create a service level:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Service Levels</strong>.</li>
+                    <li>Click <strong>Create Service Level</strong>.</li>
+                    <li>Enter a <strong>Service Level Name</strong>.</li>
+                    <li>Enter the desired frequency from the <strong>Years</strong>, <strong>Months</strong>, and <strong>Days </strong>fields.</li>
+                    <li>Click <strong>Create</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit a service level</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/sesrvicelevel-edit.png" alt="A screenshot of the Edit Service Level page." class="border" />
+                </p>
+                <p>To edit a service level:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Service Levels</strong>.</li>
+                    <li>Click the service level you wish to edit.</li>
+                    <li>Make changes as desired.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Archive a service level</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If a service level has history, it can be archived rather than deleted. Users without the relevant security group settings will not be able to perform this function.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-archive.png" alt="A screenshot of the Delete Service Level pop-up window." class="border" />
+                </p>
+                <p>To archive a service level:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Service Levels</strong>.</li>
+                    <li>On the service level you wish to archive, click the <strong>red delete</strong> icon.</li>
+                    <li>Select removal options as desired. These options will bulk-remove service levels from assets and asset types.</li>
+                    <li>Click <strong>OK</strong>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-removed.png" alt="A screenshot of a service level displaying as removed." class="border" />
+                </p>
+                <p>If a service level has been archived but not removed from asset types, it will display as <strong>(removed)</strong>.</p>
+                <p class="WarningTip">While archiving a service level is reversible, removing service levels from asset types and assets cannot be undone. If you use this function to remove a service level from many assets or asset types at once, then want to re-assign it, you will have to do it manually for each asset or asset type, as well as re-link set price pre-builds.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View archived service levels</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-archived.png" alt="A screenshot of the Show Archived? check box selected." class="border" />
+                </p>
+                <p>To view archived service levels:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Service Levels</strong>.</li>
+                    <li>To the right of <strong>Service Level Name</strong>, select <strong>Show Archived?</strong>.</li>
+                </ol>
+                <p>Archived service levels display a green add icon, while non-archived service levels display a red delete icon.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Un-archive a service level</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Users without the relevant security group settings will not be able to perform this function.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevels-unarchive.png" alt="A screenshot of a service level being restored." class="border" />
+                </p>
+                <p>To un-archive a service level:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Service Levels</strong>.</li>
+                    <li>Select <strong>Show Archived?</strong>.</li>
+                    <li>On the service level you wish to un-archive, click the <strong>green add</strong> icon.</li>
+                    <li>Click <strong>OK</strong>.</li>
+                </ol>
+                <p>​Repeat the process to restore multiple service levels.</p>
+                <p class="WarningTip">Un-archiving a service level will not re-assign it to any asset types or assets it was previously assigned to.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Bulk-remove service levels from assets</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If a service level ever becomes defunct, there are a number of ways to remove a service level from many assets at once.</p>
+                <p class="Infotip">We recommend carefully restricting security group access to archiving assets.</p>
+                <p class="WarningTip">Removing service levels from asset types and assets cannot be undone. If you remove a service level from many assets or asset types at once, then want to re-assign it, you will have to do it manually for each asset or asset type, as well as re-link set price pre-builds. As this is not reversible, we recommend taking a snapshot of your database before removing service levels from many assets.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Remove a service level from all assets not associated with contracts</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-notcontracts.png" alt="A screenshot of the 'Remove Service Level from all Assets not associated with Contracts' option." class="border" />
+                        </p>
+                        <p>To remove a service level from all assets not associated with contracts:</p>
+                        <ol>
+                            <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Service Levels</strong>.</li>
+                            <li>On the service level you wish to remove, click the <strong>red delete</strong> icon.</li>
+                            <li>Select <strong>Remove Service Level from all Assets not associated with Contracts</strong>.</li>
+                            <li>Click <strong>OK</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Remove a service level from all assets</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-allassets.png" alt="A screenshot of the 'Remove Service Level from all Assets' option." class="border" />
+                        </p>
+                        <p>To remove a service level from all assets in your system:</p>
+                        <ol>
+                            <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Service Levels</strong>.</li>
+                            <li>On the service level you wish to remove, click the <strong>red delete</strong> icon.</li>
+                            <li>Select <strong>Remove Service Level from all Assets </strong>(this will also remove it from all assets not associated with contracts).</li>
+                            <li>Click <strong>OK</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Remove a service level from all asset types</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-allassettypes.png" alt="A screenshot of the 'Remove Service Level from all Asset Types' option." class="border" />
+                        </p>
+                        <p>To remove a service level from all asset types:</p>
+                        <ol>
+                            <li>Go to<strong> System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Service Levels</strong>.</li>
+                            <li>On the service level you wish to remove, click the <strong>red delete</strong> icon.</li>
+                            <li>Select <strong>Remove Service Level from all Asset Types</strong>.</li>
+                            <li>Click <strong>OK</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Remove a service level from all assets of an asset type</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-thistype.png" alt="A screenshot of the 'Remove from all assets of this type' option." class="border" />
+                        </p>
+                        <p>To remove a service level from all assets of a certain asset type:</p>
+                        <ol>
+                            <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Asset Types</strong>.</li>
+                            <li>Open the asset type you wish to remove a service level from.</li>
+                            <li>Click the <strong>Service Levels</strong> sub-tab.</li>
+                            <li>Click <strong>Options &gt; Delete Service Level</strong>.</li>
+                            <li>Select <strong>Remove from all Assets of this type not associated with Contracts </strong>or <strong>Remove from all Assets of this type</strong>, as applicable.</li>
+                            <li>Click <strong>OK</strong>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Remove a service level from a site's assets</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-siteassets.png" alt="A screenshot of a service level being removed from a site's assets." class="border" />
+                        </p>
+                        <p>To remove a service level from assets listed under a specific site:</p>
+                        <ol>
+                            <li>Go to <strong>People &gt; Sites</strong>.</li>
+                            <li>Click the relevant site.</li>
+                            <li>Click the<strong> Customer Assets</strong> tab.</li>
+                            <li>Select the assets you wish to remove a service level from, or click <strong>Select All</strong> from the bottom of the page.</li>
+                            <li>At the bottom of the page, click <strong>Remove Service Levels</strong>.</li>
+                            <li>Select the service levels you wish to remove.</li>
+                            <li>If desired, select <strong>Exclude Assets </strong>selected associated with a contract.</li>
+                            <li>Click <strong>OK</strong>.</li>
+                        </ol>
+                        <p class="Infotip">To include contracts in the table view of a site's <strong>Customer Assets</strong> tab, go to <strong>Utilities &gt; Customer Assets</strong>, click an asset type, click <strong>Modify Table View</strong>, select <strong>Contract </strong>and click <strong>Finish</strong>. Users without the relevant security group settings will not be able to perform this function.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign a service level to an asset type</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After setting up service levels, you can assign them to asset types.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-assign.png" alt="A screenshot of a service level being added to an asset type." class="border" />
+                </p>
+                <p>To assign an existing service level to an asset type:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Customer Assets &gt; Asset Builder</strong>.</li>
+                    <li>Click the asset type you wish to assign a service level to.</li>
+                    <li>Click the <strong>Service Levels</strong> tab.</li>
+                    <li>Select a service level from the <strong>Service Level Name</strong> drop-down list and click <strong>Add</strong>.</li>
+                    <li>Repeat as desired.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Pre-build charge rates</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Maintenance Planner/servicelevel-prebuild.png" alt="A screenshot of a service level charge rate." class="border" />
+                </p>
+                <p>As you add a service level to an asset type, you can select a default charge rate to bill your customers. This charge rate will appear as a billable item in any jobs raised for that asset type and service level through the Maintenance Planner, and will appear on itemised invoices.</p>
+                <p>Create charge rates by creating set price pre-builds. You can structure pre-builds to charge each customer the same amount for the same service level.</p>
+                <p>If the price differs by customer, set a generic value of $0 and use customer contracts to manage customer-specific pricing, under <strong>People &gt; Customers &gt; a customer &gt; Rates &gt; Contracts</strong>. These prices can also be modified manually on a job, which is best when you bill customers per asset, per site, per visit.</p>
+                <p>After setting up pre-builds, you can link them to the service level of an asset type by selecting them in the <strong>Charge Rate</strong> field when assigning a service level.</p>
+                <p>Set price pre-builds can also be applied to <MadCap:xref href="Failure Points and Recommendations.htm">Failure Points and Recommendations</MadCap:xref>, which will be used for rectification quotes.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

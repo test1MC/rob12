@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="18285" MadCap:lastWidth="1746" MadCap:conditionTagExpression="include[&quot;Connect Projects.Quote&quot;] exclude[&quot;Connect Projects.Jobs&quot;] ">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Connect Quotes</h1>
+        <h2>Overview</h2>
+        <p>Use Connect to view, create, update, and email quotes in the field. Once a quote is completed and approved by the customer, you can then convert the quote to a job in Connect.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Create-a-quote-in-Connect"></a>Create a quote in Connect</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Create a quote in the field and generate quote details by selecting from customers, sites, cost centres and service fees created in simPRO. You can also create a new customer, site, or, in simPRO Enterprise, lead.</p>
+                <p>Once you have created a quote, customer, site, or lead, you can then <MadCap:xref href="Connect Tools.htm#Sync-Connect-with-simPRO" target="_blank">Sync Connect with simPRO</MadCap:xref> so you can manage and update quote information as normal in your simPRO system.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect quotes - create a quote.png" alt="A screenshot of the quote creation page in Connect." class="border" />
+                </p>
+                <p>To create a quote in Connect:</p>
+                <ol>
+                    <li>Go to the dashboard, then, if you are working with simPRO Service, tap <strong>Quote</strong>. If you are working with simPRO Enterprise, tap <b>Project</b>.</li>
+                    <li>If you are working with simPRO Enterprise and operating in a multi-company build, select the desired <b>Company</b>.</li>
+                    <li>Under <b>Type</b>, tap <strong>Quote</strong>.</li>
+                    <li>Select a <b>Customer</b> by tapping <b>Select customer</b>, then entering and tapping the desired customer name from the drop-down list.<ul><li>If you are working with simPRO Enterprise, use the filter options to view <b>Customers</b>, <b>Leads</b>, or <b>All</b>.</li><li>Alternatively, you can Create a customer or lead in a quote.</li></ul></li>
+                    <li>Tap <b>Select site</b> to select the desired site from the drop-down list.<ul><li>Use the filter options to view <b>Customer</b> sites or <b>All</b> sites.</li><li>Alternatively, you can create a <b>New Site</b>. Enter the <b>Site Name</b> and address details, then tap <b>Finished</b>.</li></ul></li>
+                    <li>Select a <b>Cost Centre</b>.​</li>
+                    <li>Assign a <b>Technician</b>.<ul><li>​​Only field technicians with the same cost centre and / or zone applied to their card file in simPRO will be available to select. The current Connect user will be assigned by default.</li></ul></li>
+                    <li>Enter the <b>Due Date</b> for the quote to be completed.</li>
+                    <li>Select a <b>Salesperson</b> if desired.</li>
+                    <li>Apply a <b>Service Fee</b> if desired.</li>
+                    <li>Enter an <b>Order No</b>, <b>Request No</b>, and <b>Description</b> of the <strong>Quote </strong>or <b>Cost Centre</b> if desired.</li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p>You will then be taken to the <b>Details</b> page to begin your quote workflow. To advance through the workflow, use the jump menu in the top left or the navigation arrows at the bottom of the page.</p>
+                <p>To return to the dashboard, tap the <b>Connect</b> logo in the top left.</p>
+                <p class="Infotip">To create quotes in Connect, you need to enable your project creation user permissions enabled in your <MadCap:xref href="Set Up Connect.htm#General-settings" target="_blank">General settings</MadCap:xref> in simPRO and your device needs to be connected to the internet.</p>
+                <p>To create a new customer or, when working with simPRO Enterprise, lead in a quote:</p>
+                <ol>
+                    <li>
+                        <MadCap:xref href="#Create-a-quote-in-Connect">Create a quote in Connect</MadCap:xref> as normal.</li>
+                    <li>Tap  <b>New Customer</b>.</li>
+                    <li>Tap <b>Individual</b> / <b>Company</b> to define the customer type.</li>
+                    <li>Enter the <b>First Name</b> and <b>Last Name </b>/<b> Company Name</b>.</li>
+                    <li>If you are working with simPRO Enterprise, select the <b>Customer Type</b>.</li>
+                    <li>Enter the customer's <b>Individual Phone / Company Phone</b> number, <b>Email</b>, and address details.</li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Images/Create a new project - create a customer.png" class="border" alt="A screenshot of the details to enter to create a customer in Connect." />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="View-quote-details"></a>View quote details</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you access a quote in Connect, you will be taken to the <b>Details</b> page. As the first page of the workflow, the <b>Details</b> page is the first page where you can <MadCap:xref href="#Adjust-the-mobile-status-of-a-quote">Adjust the mobile status of a quote</MadCap:xref>. You can also <MadCap:xref href="#View-schedule-and-site-details">View schedule and site details</MadCap:xref>, and <MadCap:xref href="#View-descriptions-materials-and-notes">View descriptions, materials and notes</MadCap:xref>.</p>
+                <h3><a name="Adjust-the-mobile-status-of-a-quote"></a>Adjust the mobile status of a quote</h3>
+                <p>At the top of every page in the Connect workflow is the status bar. This displays the customer, quote number and the status of the quote. If you have not yet started work on a quote, the <b>Start Travel</b> and <b>Start Work</b> status options will appear. These options create timestamps that record actual times spent working on a quote.</p>
+                <p>Tap <b>Start Travel</b> to update the mobile quote status to <b>Travelling</b>. This will activate geostamping of the status location if you have enabled it in your <MadCap:xref href="Set Up Connect.htm#Geostamping-settings" target="_blank">Geostamping settings</MadCap:xref>, as well as record the timestamp. If you have set up automatic triggers, the status of the quote will update in simPRO accordingly. Alternatively, if you wish to make travel time non-billable, you can <MadCap:xref href="Connect Tools.htm#Schedule-activities" target="_blank">Schedule activities</MadCap:xref>.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - mobile travelling status.png" alt="A screenshot of the Travelling mobile status button with a timestamp." class="border" />
+                </p>
+                <p>Tap <b>Start Work</b> to create a timestamp to begin the quote. This will again activate geostamping of the status location and, if enabled, update the quote status in simPRO accordingly. The status options will then disappear as the quote is in progress.</p>
+                <h3><a name="View-schedule-and-site-details"></a>View schedule and site details</h3>
+                <p>View the focus date and scheduled time for the quote below the status bar. Tap the focus date to change it as desired, then tap <b>Finished</b>. The site contact and address information are below the focus date.</p>
+                <p style="font-weight: normal;">Tap the  <b>phone</b> icon to view contact information for the <b>Site</b>, <b>Quote Customer</b>, or <b>Project Manager </b>if you are working with simPRO Enterprise. If you are using Connect on a device that can place phone calls and has an active connection to the mobile network, tap the desired phone number to initiate a phone call with the relevant contact.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect quotes - details - site and schedule.png" alt="A screenshot of the focus date, site, contact and schedule information for a quote in the Details page." class="border" />
+                </p>
+                <p>If you are using a device that cannot make phone calls, tap the desired phone number, then tap:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definitions" cellspacing="0">
+                    <col class="TableStyle-Definitions-Column-DarkShade" style="width: 146px;">
+                    </col>
+                    <col class="TableStyle-Definitions-Column-Regular">
+                    </col>
+                    <tbody>
+                        <tr class="TableStyle-Definitions-Body-LightRows">
+                            <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">Send Message</td>
+                            <td class="TableStyle-Definitions-BodyD-Regular-LightRows">Send the desired contact a message using iMessage. To set up iMessage for your device, go to <b>Settings &gt; Messages</b>.</td>
+                        </tr>
+                        <tr class="TableStyle-Definitions-Body-DarkerRows">
+                            <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">Add to Contacts</td>
+                            <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">Add the number to an existing contact or, alternatively, create a new contact in your device's contact list.</td>
+                        </tr>
+                        <tr class="TableStyle-Definitions-Body-LightRows">
+                            <td class="TableStyle-Definitions-BodyB-DarkShade-LightRows">Copy</td>
+                            <td class="TableStyle-Definitions-BodyA-Regular-LightRows">Copy the number.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Tap the <b>pin</b> icon to locate the site in your device's default mapping solution.</p>
+                <h3><a name="View-descriptions-materials-and-notes"></a>View descriptions, materials and notes</h3>
+                <p>Tap <b>Work To Be Performed</b> to view the <b>Quote Description</b>, the relevant cost centre and the <b>Parts</b> List, containing the quantities of all billlable and non-billable items required for the quote. The <b>currency</b> icon indicates that an item is billable.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - details - description.png" alt="A screenshot of the Quote Description, cost centre and parts list in the Details page of a quote." class="border" />
+                </p>
+                <p>Tap <b>Materials Required</b> to view material items applied to the quote in simPRO as well as their estimated quantities.</p>
+                <p>Tap <b>Notes &gt; Overview</b> to view private notes entered in simPRO regarding the quote, customer, or site. Tap <b>Other Information</b> to view order numbers or request numbers if applicable.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - details - notes.png" alt="A screenshot of the site notes in the details page of a quote in Connect." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="View-quote-pricing"></a>View quote pricing</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p style="font-weight: bold;">
+                    <MadCap:annotation MadCap:createDate="2016-10-18T16:41:03.5624048+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:41:06.7935923+10:00">**screenshot**</MadCap:annotation>
+                </p>
+                <p>
+                    <MadCap:xref href="#Add-billable-materials-to-a-quote">Add billable materials to a quote</MadCap:xref>, <MadCap:xref href="#Add-a-labour-rate">Add a labour rate</MadCap:xref>, and <MadCap:xref href="#Edit-final-pricing">Edit final pricing</MadCap:xref> in the <b>Pricing</b> page. You can also enter or adjust the quote <b>Description</b>.</p>
+                <p>If the customer has approved and signed off the quote, any changes to the <b>Pricing</b> page will delete the signature, regardless of whether the price of the quote has been altered. See <MadCap:xref href="#Adjust-the-quote-after-signing-off">Adjust the quote after signing off</MadCap:xref> for more information.</p>
+                <p class="Infotip">You need to set up automatic job card approval for Connect to adjust quote pricing and your device needs to be connected to the internet.</p>
+                <h3><a name="Add-billable-materials-to-a-quote"></a>Add billable materials to a quote</h3>
+                <p>You can <MadCap:xref href="#Add-items-from-catalogue-pre-build-stock">Add items from a catalogue / pre-build / stock</MadCap:xref> as well as <MadCap:xref href="#Add-service-fees">Add service fees</MadCap:xref> to a quote. Tap the <b>pencil</b> icon on an item to edit the quantity and unit price, or delete the item.</p>
+                <h4><a name="Add-items-from-catalogue-pre-build-stock"></a>Add items from a catalogue / pre-build / stock</h4>
+                <p>To add items from your catalogue / pre-builds / stock to a quote:</p>
+                <ol>
+                    <li>Navigate to the <b>Pricing</b> page of the desired quote using the jump menu or navigation arrows.</li>
+                    <li>Tap  <b>Add Material &gt; Catalogue </b>/<b> Pre-Builds </b>/<b> Stock Items</b>.</li>
+                    <li>Tap <b>Filter &gt; Select Group</b> / <b>Select Storage</b> to narrow your search according to a specific catalogue group / pre-build group / storage device if desired.<ul><li>Tap <b>Select Sub-Group</b> to narrow according to a specific catalogue / pre-build sub-group.</li></ul></li>
+                    <li>Enter the name or part number of the desired item in <b>Search Catalogue / Prebuilds / Stock</b>, then tap <b>Search</b>.<ul><li>Alternatively, tap <b>Search</b> to view all catalogue / pre-build / stock items.</li></ul></li>
+                    <li>Enter the desired <b>Qty</b> for the relevant items, then tap  <b>Add Parts</b>.<ul><li>​​Alternatively, tap the  <b>add</b> icon as desired, then tap  <b>Add Parts</b>.</li></ul></li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - catalogue.png" alt="A screenshot of the options to add catalogue items to a quote." class="border" />
+                </p>
+                <h4><a name="Add-service-fees"></a>Add service fees</h4>
+                <p>To add a service fee to  a quote:</p>
+                <ol>
+                    <li>Navigate to the <b>Pricing</b> page of the desired quote using the jump menu or navigation arrows.</li>
+                    <li>Tap  <b>Add Material &gt; Service Fees</b>.</li>
+                    <li>Under the relevant cost centre, select the service fee you wish to add to the quote.</li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - service fees.png" alt="A screenshot of service fees available to add to a quote in Connect." class="border" />
+                </p>
+                <h3><a name="Add-a-labour-rate"></a>Add a labour rate</h3>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - add a labour rate.png" alt="A screenshot of labour rates available to add to a quote from a drop-down list in Connect." class="border" />
+                </p>
+                <p>To add a labour rate to a quote in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Pricing</b> page of the desired quote using the jump menu or navigation arrows.</li>
+                    <li>Tap  <b>Add Labour</b>.</li>
+                    <li>Select the labour rate you wish to apply to the quote.</li>
+                    <li>Tap <b>Add</b>.</li>
+                </ol>
+                <p>Tap the <b>pencil</b> icon to edit the time and sell price of a labour rate, or delete the labour rate.</p>
+                <h3><a name="Edit-final-pricing"></a>Edit final pricing</h3>
+                <p style="font-weight: bold;">
+                    <MadCap:annotation MadCap:createDate="2016-10-18T16:46:07.8586620+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:46:13.7785971+10:00">**screenshot</MadCap:annotation>
+                </p>
+                <p>You can edit the final pricing of a quote in the <b>Pricing</b> page in Connect, as well as update the simPRO-defined tax code and apply a discount or additional fee.</p>
+                <p>To edit the final price of a quote in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Pricing</b> page of the desired quote using the jump menu or navigation arrows.</li>
+                    <li>In the <b>Quote Totals</b> table, tap <b>Edit</b>.</li>
+                    <li>Enter the desired final <b>Price</b>.</li>
+                    <li>Select the desired <b>Tax Code</b>.<ul><li>Select <b>Inc. Tax</b> to include tax in the final price, or clear the option to exclude tax from the final price.</li></ul></li>
+                    <li>Under <b>Direction</b>, select:<ul><li><b>Down (Discount)</b> to apply a discount to the final price if desired.</li><li><b>Up (Fee)</b> to apply an additional fee to the final price if desired.</li></ul></li>
+                    <li>Enter the <b>Percentage</b> or <b>Amount</b> of the <b>Discount / Fee</b> if applicable.</li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p class="Infotip">If you are using Connect with simPRO Enterprise and a quote has multiple cost centres, you can only edit the final pricing of the cost centre sub-total. You cannot edit the <b>Quote Totals</b>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead><a name="Complete-pre-audits-for-quotes"></a>
+                <MadCap:dropDownHotspot>Complete pre-audits for quotes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Complete pre-audits in Connect to assess safety conditions, work methods and equipment quality before starting work on a quote.</p>
+                <p>simPRO audits are arranged in three types: Safe Work Method Statements (SWMS), Job Safety Analysis (JSA) and Quality Assurance (QA). <MadCap:xref href="Set Up Connect Audits.htm" target="_blank">Set Up Connect Audits</MadCap:xref> in simPRO.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect quotes - pre-audits.png" class="border" alt="A screenshot of pre-audits to complete when working on a quote." />
+                </p>
+                <p>Pre-audits marked as <b>Required</b> are mandatory to complete and will restrict access to almost all other pages in the workflow until they are completed. A <b>green spanner</b> icon indicates a pre-audit is in progress. Certain questions in pre-audits may contain responses that, if selected, are set up to prevent the user from submitting a quote as <b>Complete</b>.</p>
+                <p>Once a pre-audit is complete and a sync is performed, you can view the completed audit in Connect and simPRO.</p>
+                <p>To complete a pre-audit in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Pre Audits</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Select additional field technicians to include to complete the audit if desired, then tap <b>Next</b>.</li>
+                    <li>Answer the questionnaire as required, tapping <b>Next</b> to continue.</li>
+                    <li>Confirm any audit messages, then tap <b>Get Signature.</b></li>
+                    <li>Trace your signature using a finger or using a stylus, then tap <b>Done</b>.<ul><li>To re-write your signature, tap <b>Cancel &gt; Get Signature</b>.</li></ul></li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p>To start a pre-audit again and erase your existing answers, tap <b>Cancel &gt; Yes</b> to confirm, then begin the audit as normal.</p>
+                <p class="Infotip">You can still access the <b>Pricing, Attachments</b> and <b>Email Quote </b>pages in the workflow when a required pre-audit has not been completed.</p>
+                <h3><a name="View-completed-pre-audits"></a>View completed pre-audits</h3>
+                <p>After you <MadCap:xref href="Connect Tools.htm#Sync-Connect-with-simPRO" target="_blank">Sync Connect with simPRO</MadCap:xref>, completed pre-audits will save as PDF attachments to the quote and can be viewed in <b>Attachments</b> in Connect and simPRO.</p>
+                <p>PDFs will be formatted according to the audit type selected.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View attachments</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>View and download quote attachments to your mobile device, as well as <MadCap:xref href="#Capture-and-upload-an-image">Capture and upload an image</MadCap:xref> and <MadCap:xref href="#Upload-an-image-from-the-gallery">Upload an image from the gallery</MadCap:xref> to a quote in Connect. After syncing your Connect device, you can view attachments in simPRO in <b>Details &gt; Attachments</b> in the quote. </p>
+                <p>The larger the quantity of attached photos, the longer a sync from Connect to simPRO will take. It is recommended you perform a sync of quotes with multiple attachments with a stable internet connection. When syncing with simPRO, Connect will reduce the size of attachments to reduce the time to upload.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Service Quotes - summary.png" alt="A screenshot of attachments available to download from Connect." class="border" />
+                </p>
+                <p>The <b>download</b> icon indicates an attachment has not been downloaded to the device. The <b>magnifying glass</b> icon indicates that the attachment has been downloaded and can be viewed.</p>
+                <p>To view and download an attachment in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Attachments</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Tap the desired attachment to download and view on your device.</li>
+                    <li>Depending on your device, copy, message or email the audit as desired.</li>
+                </ol>
+                <p>Tap the <b>trash</b> icon to delete an attachment.</p>
+                <p class="Infotip">Your device needs to be connected to the internet to download attachments.</p>
+                <h3><a name="Capture-and-upload-an-image"></a>Capture and upload an image</h3>
+                <p>You can capture a photo from within the app to upload as an image attachment to a quote in Connect.</p>
+                <p>To capture a photo to upload to a quote:</p>
+                <ol>
+                    <li>Navigate to the <b>Attachments</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Tap <b>Take Photo</b>.</li>
+                    <li>Capture the desired image using your device's camera functionalities.<ul><li>Tap <b>Retake</b> to retake a photo.</li></ul></li>
+                    <li>When you have captured the desired image, tap <b>Use Photo</b>.</li>
+                    <li>Enter the desired image name in <b>Enter new name here</b>.</li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p class="Infotip">If you tap <b>Cancel</b> when renaming the image, the image will still appear as an attachment under its original name.</p>
+                <h3><a name="Upload-an-image-from-the-gallery"></a>Upload an image from the gallery</h3>
+                <p>To upload a photo from your device's image gallery to a quote in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Attachments</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Tap <b>Gallery</b>.</li>
+                    <li>Navigate through the image gallery as your device permits, then then tap the desired photo.</li>
+                    <li>Enter the desired image name in <b>Enter new name here</b>.</li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p class="Infotip">If you tap <b>Cancel</b> when renaming the image, the image will still appear as an attachment under its original name.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Enter-work-notes"></a>Enter work notes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Enter work notes to describe the works completed for a quote in Connect. You can also view descriptions of past works completed on the quote by a field technician under History.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - work notes.png" alt="A screenshot of work notes entered for a quote in Connect." class="border" />
+                </p>
+                <p>To enter information about works completed for a quote:</p>
+                <ol>
+                    <li>Navigate to the <b>Work Notes</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Enter notes as desired.<ul><li>Alternatively, tap <b>Insert Script</b> to select a script created in simPRO and enabled for Connect to describe works completed, then enter any additional information as required.</li></ul></li>
+                    <li>When finished, continue through the workflow as desired.</li>
+                </ol>
+                <p>To view work notes in simPRO after syncing, simply access the relevant quote card, then click <b>Actual &gt; Work Completed</b>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Complete-tasks"></a>Complete tasks</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="Infotip">This feature is only available when Connect is working with simPRO Enterprise.</p>
+                <p>View, edit and complete tasks in Connect. You can also record the actual amount of time it takes to complete a task.</p>
+                <p>Tasks available in Connect are created and assigned to customers in Enterprise. You can access tasks from the dashboard, or alternatively, within a scheduled or assigned quote. To access a task assigned to a specific customer of a quote, access the quote from the runsheet, then navigate to the <b>Tasks</b> page using the navigation arrows or the jump menu.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - tasks.png" alt="A screenshot of the tasks available to complete in Connect." class="border" />
+                </p>
+                <p>To complete a task in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Tasks</b> page of the desired quote using the navigation arrows or the jump menu.<ul><li>Alternatively, go to the dashboard, then tap <b>Tasks</b>.</li></ul></li>
+                    <li>Tap the desired task.</li>
+                    <li>Review the task description and <b>Date Due</b>.<ul><li>If you are completing a task from the dashboard, you can also review the <b>Estimated Time</b> for the task, as well as the <b>Customer</b>, <b>Quote</b>, and <b>Site</b> information, <b>Status</b>, and <b>Priority</b>.</li></ul></li>
+                    <li>Tap <b>Start</b> to create a timestamp a record the actual time to complete the task.</li>
+                    <li>Enter <b>Notes</b> as desired.</li>
+                    <li>Enter the <b>Date Completed</b>.</li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p>Your tasks in Enterprise will be updated when you <MadCap:xref href="Connect Tools.htm#Sync-Connect-with-simPRO" target="_blank">Sync Connect with simPRO</MadCap:xref>. When you have completed a task with a <b>Date Completed</b>, the task will be marked as <b>Closed</b> in Enterprise.</p>
+                <p class="Infotip">You need to tap <b>Stop</b> when timing a task to accurately record how long it takes to complete.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Approve-a-email-the-quote"></a>Approve and email the quote</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The <b>Quote Summary</b> page of the workflow allows you to record a customer's approval of a quote and alters your Connect workflow accordingly. You can also <MadCap:xref href="#Enter-a-PO-number">Enter a PO number</MadCap:xref> supplied by the customer, and <MadCap:xref href="#Email-a-quote-to-the-customer">Email a quote to the customer</MadCap:xref> using specific quote forms.</p>
+                <p>If a customer chooses not to approve a quote and proceed with the job, tap <b>No</b> under <b>Is the customer ready to accept?</b>, and proceed through the workflow as normal.</p>
+                <p style="font-weight: bold;">
+                    <MadCap:annotation MadCap:createDate="2016-10-18T16:54:39.1263710+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:54:42.2546329+10:00">**screenshot - customer approval</MadCap:annotation>
+                </p>
+                <p>If a customer chooses to approve a quote and proceed with the job, you need to collect their signature. When you <MadCap:xref href="Connect Tools.htm#Sync-Connect-with-simPRO" target="_blank">Sync Connect with simPRO</MadCap:xref> you can <MadCap:xref href="#View-signatures-in-simPRO" target="_blank">View signatures in simPRO</MadCap:xref> when you access the quote card. You can then <MadCap:xref href="#Submit-a-quote">Submit and convert a quote</MadCap:xref> in the <b>Submit</b> page.</p>
+                <p>To view and sign off on a quote in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Quote Summary</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Under <b>Does the customer want to proceed?</b>, tap <b>Yes</b>.</li>
+                    <li>
+                        <MadCap:xref href="#Enter-a-PO-number">Enter a PO number</MadCap:xref> if required.</li>
+                    <li>Verify the <b>Client Name</b>.</li>
+                    <li>To edit, tap the name and make changes as desired.</li>
+                    <li>Tap <b>Get Signature</b>.</li>
+                    <li>Allow the customer to trace their signature on the screen by hand or using a stylus.</li>
+                    <li>To rewrite a signature, tap <b>Delete Signature &gt; Yes &gt; Get Signature</b>.</li>
+                    <li>Tap <b>Done</b>.</li>
+                </ol>
+                <p>To change whether the customer has accepted and approved the quote, tap the pencil icon next to <b>The customer has NOT ACCEPTED</b> / <b>The customer has ACCEPTED</b>. </p>
+                <p class="Infotip">Your device needs to be connected to the internet for a customer to accept a quote.</p>
+                <p class="WarningTip">If you <MadCap:xref href="#Adjust-the-quote-after-signing-off">Adjust the quote after signing off</MadCap:xref> in any way, the signature will be deleted.</p>
+                <h3><a name="Email-a-quote-to-the-customer"></a>Email a quote to the customer</h3>
+                <p>Email quote forms to a customer from Connect. You need to enable the forms you wish to send from Connect in <b>System &gt; Setup &gt; Forms Setup &gt; Quotes &gt; Forms</b> in simPRO.</p>
+                <p><b><MadCap:annotation MadCap:createDate="2016-10-18T16:54:49.8302327+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:54:53.0235823+10:00">**screenshot** - Connect Quotes UI - email quote forms</MadCap:annotation></b>
+                </p>
+                <p>To email a quote form to the customer:</p>
+                <ol>
+                    <li>Navigate to the <b>Quote Summary</b> page of the desired quote using the navigation arrows or the jump menu, then tap <b>Email Quote</b>.<ul><li>Alternatively, access the jump menu, then tap <b>Email Quote</b>.</li></ul></li>
+                    <li>Tap <b>Add Recipients</b> to send the email to other recipients (the customer's or your email address should appear by default).<ul><li>Under <b>Emails</b>, select the desired simPRO-defined email address from the drop-down list, then tap <b>Finished</b>.</li><li>Alternatively, enter the desired email address under <b>Manual Entry</b>, then tap <b>Finished</b>.</li></ul></li>
+                    <li>Select the desired quote form from the drop-down list.</li>
+                    <li>Leave the <b>Subject</b> and <b>Message</b> blank to send the <b>Email Template</b> as set up in <b>System &gt; Setup &gt; Forms Setup &gt; Quotes &gt; Email</b>.<ul><li>Alternatively, manually enter a <b>Subject</b> and <b>Message</b> to override the template.</li></ul></li>
+                    <li>Tap <b>Send</b>.</li>
+                </ol>
+                <h3><a name="Enter-a-PO-number"></a>Enter a PO number</h3>
+                <p>If the customer has been set up in simPRO to require a purchase order number, you need to enter this information when signing off the quote. A purchase order number is an extra reference for the customer and does not have to be a number.</p>
+                <p>In Connect, you can submit, but not convert the quote without a PO number. This is different to the workflow in simPRO where a PO number can be supplied after a quote conversion.</p>
+                <p><b><MadCap:annotation MadCap:createDate="2016-10-18T16:54:57.3787432+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:55:00.3953893+10:00">**SCREENSHOT**</MadCap:annotation></b>
+                </p>
+                <p>Tap the <b>pencil</b> icon to edit a <b>PO Number</b>.</p>
+                <p class="Infotip">If you add or edit a PO number after the customer has signed off on the quote, the customer signature will be deleted.</p>
+                <h3><a name="Adjust-the-quote-after-signing-off"></a>Adjust the quote after signing off</h3>
+                <p>When you attempt to alter the quote pricing or the PO number after the customer has signed off, a warning will appear to advise you that any changes will delete the customer signature. This will occur even if the final price of the quote remains the same.</p>
+                <p>Tap <b>Yes</b> to continue making changes. Tap <b>Cancel</b> to leave the quote pricing as is and retain the customer signature.</p>
+                <p style="font-weight: bold;">
+                    <MadCap:annotation MadCap:createDate="2016-10-18T16:55:04.5573568+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:55:07.6712722+10:00">**SCREENSHOT**</MadCap:annotation>
+                </p>
+                <h3><a name="View-signatures-in-simPRO"></a>View signatures in simPRO</h3>
+                <p>Access the relevant quote in simPRO to view the collected customer signature.</p>
+                <p><b><MadCap:annotation MadCap:createDate="2016-10-18T16:55:11.3008230+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:55:13.9999711+10:00">**screenshot - will this be available?</MadCap:annotation></b>
+                </p>
+                <p>To view a customer signature in the quote card:</p>
+                <ol>
+                    <li>Hover over <b>Quotes</b>, then access the quote card as normal.</li>
+                    <li>Click the <b>Schedule</b> tab.</li>
+                    <li>Under <b>Scheduled Resources</b>, click <b>Options &gt; Quote Card &gt; Open Quote Card</b> on the applicable time block.</li>
+                    <li>Click <b>Mobile</b>.</li>
+                </ol>
+                <p>You can view the collected signatures under <b>Signatures</b>.</p>
+                <p class="Infotip">When a customer has signed off on a quote, any changes to the accepted quote in the <b>Quote Pricing</b> page will delete the customer's signature and it will not appear in the quote card.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Record-quote-times"></a>Record quote times</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Use the <b>Times</b> page of the workflow in Connect to <MadCap:xref href="#Edit-actual-times">Edit actual times</MadCap:xref> and <MadCap:xref href="#Add-a-new-time-blcok">Add a new time block</MadCap:xref> to reflect hours worked or time spent on a quote. You can also <MadCap:xref href="#Resolve-mismatching-times">Resolve mismatching times</MadCap:xref> to match the scheduled time.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - times.png" alt="A screenshot of the timesheet page for a quote in Connect." class="border" />
+                </p>
+                <h3><a name="Edit-actual-times"></a>Edit actual times</h3>
+                <p>To edit actual time for a quote:</p>
+                <ol>
+                    <li>Navigate to the <b>Times</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Under <b>Actual Time (date)</b>, select your actual start and finish times from the drop-down lists.</li>
+                    <li>If applicable, select a user-defined schedule <b>Rate</b> (such as Overtime 2.0x) from the drop-down list.</li>
+                    <li>Continue with the workflow.</li>
+                </ol>
+                <p>Schedule rates will only be available to select in Connect if enabled in simPRO under <b>System &gt; Setup &gt; System Setup &gt; Labour &gt; Schedule Rates</b>.</p>
+                <h3><a name="Add-a-new-time-blcok"></a>Add a new time block</h3>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - add time block.png" alt="A screenshot of the New Time Block options, including the technician selection, start and finish times and pay rate." class="border" />
+                </p>
+                <p>To add a new time block to a quote:</p>
+                <ol>
+                    <li>Navigate to the <b>Times</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Tap <b>New Time Block</b>.</li>
+                    <li>Select <b>Start</b> and <b>Finish</b> times.</li>
+                    <li>If applicable, select a user-defined <b>Rate</b> (such as Overtime 2.0x​) from the drop-down list.</li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p>By default, the logged-in user will be selected as the field technician. You can add other technicians or plant items from the <b>Technician</b> drop-down list if they are assigned to the applicable cost centre and zone.</p>
+                <p>Schedule rates will only be available to select in Connect if enabled in simPRO under <b>System &gt; Setup &gt; System Setup &gt; Labour &gt; Schedule Rates</b>.</p>
+                <p class="Infotip">Locked schedules cannot be updated.</p>
+                <h3><a name="Resolve-mismatching-times"></a>Resolve mismatching times</h3>
+                <p>A <b>Time Mismatch</b> warning will appear if your recorded actual time does not match the original scheduled time for the quote.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - time mismatch.png" alt="A screenshot of the Time Mismatch warning containing a Resolve button." class="border" />
+                </p>
+                <p>To resolve mismatching times:</p>
+                <ol>
+                    <li>Tap <b>Resolve</b> on the <b>Time Mismatch</b> warning.</li>
+                    <li>Tap <b>Update Actual Times</b>.</li>
+                    <li>Tap the <b>Delete</b> icon to delete the old schedule. If the times are close enough, the actual time will automatically be deleted in favor of the scheduled time.</li>
+                    <li>Submit the quote as normal to <MadCap:xref href="Connect Tools.htm#Sync-in-the-background" target="_blank">Sync in the background</MadCap:xref>, or alternatively, <MadCap:xref href="Connect Tools.htm#Sync-all-data" target="_blank">Sync all data</MadCap:xref> as normal.</li>
+                </ol>
+                <p>When you access the quote in simPRO, the schedule will be updated with the new time.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Complete-post-audits-for-quotes"></a>Complete post-audits for quotes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Complete post-audits in Connect that have been set up in simPRO to assess safety conditions, work methods and equipment quality after completing work on a quote.</p>
+                <p>simPRO audits are arranged in three types: Safe Work Method Statements (SWMS), Job Safety Analysis (JSA) and Quality Assurance (QA). See <MadCap:xref href="Set Up Connect Audits.htm" target="_blank">Set Up Connect Audits</MadCap:xref> for more information.</p>
+                <p>Post-audits marked as <b>Required</b> are mandatory to complete and will prevent a quote from being submitted with a <b>Complete</b> status until they are completed. A <b>green spanner</b> icon indicates a post-audit is in progress. Certain questions in post-audits may contain responses that, if selected, are set up to prevent the user from submitting a quote as Complete.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Quotes - post audits.png" alt="A screenshot post-audits available to complete in Connect, including a mandatory questionnaire." class="border" />
+                </p>
+                <p>To complete a post-audit in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Post Audits</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Select additional employees to include to complete the audit if desired, then tap <b>Next</b>.</li>
+                    <li>Answer the questionnaire as required, tapping <b>Next</b> to continue.</li>
+                    <li>Confirm any audit messages, then tap <b>Get Signature</b>.</li>
+                    <li>Trace your signature by hand or using a stylus, then tap <b>Done</b>.<ul><li>To re-write your signature, tap <b>Cancel &gt; Get Signature</b>.</li></ul></li>
+                    <li>Tap <b>Finished</b>.</li>
+                </ol>
+                <p>To start a post-audit again and erase your existing answers, tap <b>Cancel &gt; Yes</b> to confirm, then begin the audit as normal. Once a post-audit is complete and a sync is performed, you can <MadCap:xref href="#View-completed-post-audits">View completed post-audits</MadCap:xref> in Connect and simPRO.</p>
+                <h3><a name="View-completed-post-audits"></a>View completed post-audits</h3>
+                <p>After you <MadCap:xref href="Connect Tools.htm#Sync-Connect-with-simPRO" target="_blank">Sync Connect with simPRO</MadCap:xref>, completed post-audits will save as PDF attachments to the quote and can be viewed in <b>Attachments</b> in Connect and simPRO.</p>
+                <p>PDFs will be formatted according to the audit type selected.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Submit-a-quote"></a>Submit and convert a quote</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When you submit a quote in Connect that a customer has approved on the <b>Quote Summary</b> page, you can <MadCap:xref href="#Convert-a-quote-to-an-assigned-job-with-due-date">Convert a quote to an assigned job with a due date</MadCap:xref> to be started immediately.</p>
+                <p>Alternatively, you can <MadCap:xref href="#Convert-a-quote-to-an-unassigned-job">Convert a quote to an unassigned job</MadCap:xref> and leave it to be assigned and scheduled in simPRO.</p>
+                <p style="font-weight: bold;">
+                    <MadCap:annotation MadCap:createDate="2016-10-18T16:57:33.1608777+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:57:36.5379707+10:00">**SCREENSHOT**</MadCap:annotation>
+                </p>
+                <p>Your device needs to be online and have a stable internet connection to submit and / or convert a quote to a job. If you attempt to convert a quote to a job without an internet connection, tap <b>Try Again</b> to re-attempt the conversion, or alternatively, tap <b>Try Later</b> to return to the runsheet and attempt to convert the quote when you have a stable internet connection.</p>
+                <h3><a name="Convert-a-quote-to-an-assigned-job-with-due-date"></a>Convert a quote to an assigned job with a due date</h3>
+                <p>To convert a quote to an unassigned job in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Submit</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Select <b>Completed</b> from the drop-down list.</li>
+                    <li>Select <b>Start Work</b> immediately.</li>
+                    <li>Tap <b>Submit</b>.</li>
+                </ol>
+                <p>You will then be taken to the <b>Details</b> page of the converted job, which will have been auto-assigned to you. The job will appear on the <b>Today</b> page of the runsheet.</p>
+                <p class="Infotip">A converted job can only be assigned to the field technician who submitted the quote in Connect. You can reassign or reschedule the job to another technician in simPRO.</p>
+                <h3><a name="Convert-a-quote-to-an-unassigned-job"></a>Convert a quote to an unassigned job</h3>
+                <p>To convert a quote to an unassigned job in Connect:</p>
+                <ol>
+                    <li>Navigate to the <b>Submit</b> page of the desired quote using the navigation arrows or the jump menu.</li>
+                    <li>Select <b>Completed</b> from the drop-down list.</li>
+                    <li>Tap <b>Submit</b>.</li>
+                </ol>
+                <p>You will then be taken to the runsheet with the converted job in the <b>Other</b> page. You can then schedule the job in simPRO as normal.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Advanced"></a>Advanced</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h3><a name="Convert-a-quote-with-multiple-cost-centres"></a>Convert a quote with multiple cost centres</h3>
+                <p>simPRO Enterprise only</p>
+                <p class="Infotip">This feature is only available when Connect is working with simPRO Enterprise.</p>
+                <p style="font-weight: bold;">
+                    <MadCap:annotation MadCap:createDate="2016-10-18T16:57:41.2048097+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Screenshot here" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T16:57:44.5132605+10:00">**screenshot**</MadCap:annotation>
+                </p>
+                <p>When you submit and convert a quote with multiple cost centres, the <b>Start Work immediately</b> option will not appear, and you will need to assign the job in Enterprise.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

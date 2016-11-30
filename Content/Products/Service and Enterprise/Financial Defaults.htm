@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2367" MadCap:lastWidth="1461">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Financial Defaults</h1>
+        <h2>Overview</h2>
+        <p>Go to <b>System &gt; Setup &gt; Defaults &gt; Financial</b> to set up <b>Accounts</b> and <b>Invoicing</b> details shared between simPRO and your accounting package. Be sure to click <b>Save</b> after making any changes.</p>
+        <p>These account numbers or names all relate to the codes in your integrated accounting package's chart of accounts.</p>
+        <h2>Set up account defaults</h2>
+        <p>Enter default accounts to record financial transactions, such as income, deposit and expenses. The <b>Accounts</b> options available are:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col style="width: 176px;" class="TableStyle-Definition_List_table-Column-Column1" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Finance Charge Label</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Rename the <b>Finance Charge</b> field. The new name will be used throughout the system and on forms.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Income Account</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Default income account, overridden by cost centres to break up income.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Deposit Account
+</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Default deposit account, overridden by payment methods to break up payments and to post to the correct account in your accounting package.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Expense Account
+</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Default expense account, overridden by cost centres to break up expenses for material purchases. This default account is also used for stock purchases that are not inventory tracked.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Retention Asset Account
+</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">An asset account for retention being withheld by your customers for your completed works, until claimed.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Retention Liability Account</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">A liability account for retention you are withholding from contractors invoicing you for works they have completed.</td>
+                </tr>
+                <tr MadCap:conditions="Default.Enterprise" class="TableStyle-Definition_List_table-Body-Body1">
+                    <td MadCap:conditions="" style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <MadCap:conditionalText MadCap:conditions="Default.Enterprise">Retention Asset Account
+</MadCap:conditionalText>
+                    </td>
+                    <td MadCap:conditions="" class="TableStyle-Definition_List_table-BodyD-Column2-Body1">An asset account for retention being withheld by your customers for your completed works, until claimed.</td>
+                </tr>
+                <tr MadCap:conditions="Default.Enterprise" class="TableStyle-Definition_List_table-Body-Body1">
+                    <td MadCap:conditions="" style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Retention Liability Account</td>
+                    <td MadCap:conditions="" class="TableStyle-Definition_List_table-BodyD-Column2-Body1">A liability account for retention you are withholding from contractors invoicing you for works they have completed.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Finance Charge Account
+</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Account for fees associated with using various credit cards. This field can be renamed as desired.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Freight Account
+</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Account for tracking transactions when sites charge you for freight and you record it in the Freight field, rather than as a catalogue item on the order.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Restocking Fee Account
+</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Account for site credits when they charge a restocking fee.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">(UK only) <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> CIS Tax Suffered Account</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Account for CIS deductions on sales invoices.
+</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">(UK only) <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> CIS Liability Account</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Account for CIS deductions on contractor invoices.
+</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.UK">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="">CIS Tax Suffered Account</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">Account for CIS deductions on sales invoices.
+</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.UK">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="">CIS Liability Account</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">Account for CIS deductions on contractor invoices.
+</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="">(US only) Tax Account</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">Tax expense account to accurately post tax values to your accounting package.</td>
+                </tr>
+                <tr MadCap:conditions="Default.US" class="TableStyle-Definition_List_table-Body-Body1">
+                    <td MadCap:conditions="" style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Tax Account</td>
+                    <td MadCap:conditions="" class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Tax expense account to accurately post tax values to your accounting package.</td>
+                </tr>
+                <tr MadCap:conditions="Default.Phase 1" class="TableStyle-Definition_List_table-Body-Body1">
+                    <td MadCap:conditions="" style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">(AU only) STCs Account</td>
+                    <td MadCap:conditions="" class="TableStyle-Definition_List_table-BodyD-Column2-Body1">After enabling STCs, enter an STCs account.</td>
+                </tr>
+                <tr MadCap:conditions="Default.Phase 1" class="TableStyle-Definition_List_table-Body-Body1">
+                    <td MadCap:conditions="" style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">(AU only) VEECS Account</td>
+                    <td MadCap:conditions="" class="TableStyle-Definition_List_table-BodyD-Column2-Body1">After enabling STCs and VEECs, enter a VEECS account.</td>
+                </tr>
+                <tr MadCap:conditions="Default.AUS Enterprise" class="TableStyle-Definition_List_table-Body-Body1">
+                    <td MadCap:conditions="" style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">STCs Account</td>
+                    <td MadCap:conditions="" class="TableStyle-Definition_List_table-BodyD-Column2-Body1">After enabling STCs, enter an STCs account.</td>
+                </tr>
+                <tr MadCap:conditions="Default.AUS Enterprise" class="TableStyle-Definition_List_table-Body-Body1">
+                    <td MadCap:conditions="" style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyE-Column1-Body1">VEECS Account</td>
+                    <td MadCap:conditions="" class="TableStyle-Definition_List_table-BodyD-Column2-Body1">After enabling STCs and VEECs, enter a VEECS account.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td style="font-weight: normal;" class="TableStyle-Definition_List_table-BodyB-Column1-Body1">Start of Financial Year
+</td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">Select the desired start date for the financial year.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Set up invoicing defaults</h2>
+        <p>Before you invoice and collect payments, set up your invoicing defaults such as payment terms and a late payment fee. The <b>Invoicing</b> options available are:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 149px;" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" style="font-weight: bold;"><span style="font-weight: normal;">Show Sell and Cost Prices</span>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Display sell and cost prices inclusive or exclusive of tax.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" style="font-weight: normal;">Payment Terms</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">A default payment term for customers. This will apply to all new customers. Select <b>Update all Customers</b> to apply it to all existing customers.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" style="font-weight: normal;">Late Payment Fee</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">The percentage of an invoice to increment each month when customers have not met your payment terms.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" style="font-weight: normal;">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Tracking</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Helps classify transactions for use in your accounting package. Based on categories (selected at each transaction) or business groups (integrated with cost centres).</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" style="font-weight: normal;">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Multiple Currencies</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Useful if you have customers or sites who use a currency different to your default currency. Set up currencies under <b>System &gt; Setup &gt; System Setup &gt; Currencies</b>.
+</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" style="font-weight: normal;">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Retentions</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Hold retentions inclusive or exclusive of tax.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Enterprise">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="" style="font-weight: normal;">Tracking</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">Helps classify transactions for use in your accounting package. Based on categories (selected at each transaction) or business groups (integrated with cost centres).</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Enterprise">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="" style="font-weight: normal;">Multiple Currencies</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">Useful if you have customers or sites who use a currency different to your default currency. Set up currencies under <b>System &gt; Setup &gt; System Setup &gt; Currencies</b>.
+</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Enterprise">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="" style="font-weight: normal;">Retentions</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">Hold retentions inclusive or exclusive of tax.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="" style="font-weight: normal;">(AU only) STCs Value</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">After enabling STCs, enter the current STC value and update as needed.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.Phase 1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="" style="font-weight: normal;">(AU only) VEECs Value</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">After enabling STCs and VEECs, enter the current VEECs value and update as needed.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.AUS Enterprise">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1" MadCap:conditions="" style="font-weight: normal;">STCs Value</td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1" MadCap:conditions="">After enabling STCs, enter the current STC value and update as needed.</td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1" MadCap:conditions="Default.AUS Enterprise">
+                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1" MadCap:conditions="" style="font-weight: normal;">VEECs Value</td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1" MadCap:conditions="">After enabling STCs and VEECs, enter the current VEECs value and update as needed.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

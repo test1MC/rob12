@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1822" MadCap:lastWidth="1448">
+    <head>
+    </head>
+    <body>
+        <h1>Import Overview</h1>
+        <h2>Overview</h2>
+        <p>Migrate your existing operational data into simPRO when implementing the system into your business.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Utilities/import-overview.png" alt="A screenshot of the Imports page." class="border" />
+        </p>
+        <p MadCap:conditions="Default.Phase 1">Go to <strong>Utilities &gt; Import</strong> to import data formatted in CSV and text spreadsheets, including, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> assets, plant items, generic catalogues, supplier-specific catalogues, pre-builds, jobs, customers and customer notes, employees and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors, sites, suppliers and supplier invoices.</p>
+        <p MadCap:conditions="Default.Enterprise">Go to <strong>Utilities &gt; Import</strong> to import data formatted in CSV and text spreadsheets, including,  assets, plant items, generic catalogues, supplier-specific catalogues, pre-builds, jobs, customers and customer notes, employees and  contractors, sites, suppliers and supplier invoices.</p>
+        <p MadCap:conditions="Default.Service">Go to <strong>Utilities &gt; Import</strong> to import data formatted in CSV and text spreadsheets, including, plant items, generic catalogues, supplier-specific catalogues, pre-builds, jobs, customers and customer notes, employees, sites, suppliers and supplier invoices.</p>
+        <p>It is important to note that while importing is a valuable exercise, it requires careful attention and planning.</p>
+        <p class="Infotip" MadCap:conditions="Default.Phase 1">You need to have the applicable security group permissions enabled to import <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> customer assets, plant items, customers, employees and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors, jobs, pre-builds, sites, suppliers, and stock (generic and simPRO-formatted supplier catalogues).</p>
+        <p class="Infotip" MadCap:conditions="Default.Enterprise">You need to have the applicable security group permissions enabled to import  customer assets, plant items, customers, employees and  contractors, jobs, pre-builds, sites, suppliers, and stock (generic and simPRO-formatted supplier catalogues).</p>
+        <p class="Infotip" MadCap:conditions="Default.Service">You need to have the applicable security group permissions enabled to import  plant items, customers, employees, jobs, pre-builds, sites, suppliers, and stock (generic and simPRO-formatted supplier catalogues).</p>
+        <h2>Import your operational data</h2>
+        <p>simPRO uses an import process known as <strong>Extract</strong>, <strong>Transform</strong>, <strong>Load (ETL)</strong>. Data is extracted from the source system, for example, your existing accounting package, your current software package, or your spreadsheet records, then transformed into a compatible format, and loaded into the target system (simPRO). Successful <strong>ETL </strong>requires a sound understanding of the source and target systems, as well as careful attention to data quality and integrity.</p>
+        <p>simPRO is glad to guide you in loading and updating your data once it is in the specified format. However, we are unable to extract the data from your current system and transform it for you, because we do not know your current systems the way you do and cannot guarantee the integrity of your data when extracting it.</p>
+        <p>Should you choose to import the data yourself, we recommend you first review your data for integrity and completeness. You may wish to use a data quality or profiling tool to assist with this process, many of which are available online with varying degrees of ongoing support.</p>
+        <p>You can then follow the instructions for each import process to prepare your data in a CSV (.csv), text (txt) or ZIP (.zip) file according to simPRO's specific requirements.</p>
+        <p>If you need more help with migrating your data to simPRO, ask your simPRO Implementation Consultant about our Data Migration Partners.</p>
+        <p class="Infotip">It is recommended to test the import process by importing a test file with one or two items before importing all operational data.</p>
+        <h2>Troubleshoot the import process</h2>
+        <p>The following steps may assist in troubleshooting any issues with the import process:</p>
+        <ol>
+            <li>If applicable, download the error file CSV and check the error text.</li>
+            <li>Refer to the file's preparation and import settings instructions.</li>
+            <li>Ensure column headings and data are formatted identically to how they appear in simPRO and according to field requirements.<ul><li>This includes spacing, case and number formatting. If the file is saved in Microsoft Excel, certain numerical fields may need to have <strong>Text formatting</strong> applied to prevent leading zeros from being truncated.</li><li MadCap:conditions="Default.Phase 1">Fields containing names of employees, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors, customers etc, may need to be separated into <strong>First Name</strong> and <strong>Last Name</strong> columns depending on how they are set up in the card files.</li><li style="font-weight: normal;" MadCap:conditions="Default.Enterprise">Fields containing names of employees,  contractors, customers etc, may need to be separated into <strong>First Name</strong> and <strong>Last Name</strong> columns depending on how they are set up in the card files.</li><li style="font-weight: normal;" MadCap:conditions="Default.Service">Fields containing names of employees,  customers etc, may need to be separated into <strong>First Name</strong> and <strong>Last Name</strong> columns depending on how they are set up in the card files.</li></ul></li>
+            <li>Ensure the format for any dates is the same as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Date Format</strong>.</li>
+            <li>Ensure cells that have been intentionally left blank to not contain spaces or clear text.</li>
+            <li>Re-save the file in a CSV (.csv) or text (.txt) format.</li>
+            <li>Import a smaller number of items in a test file before attempting the entire list.<ul><li>This may also reduce the file size, as files larger than 75 MB cannot be processed.</li></ul></li>
+        </ol>
+    </body>
+</html>

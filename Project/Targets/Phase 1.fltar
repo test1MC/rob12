@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Phase 1 Publishing"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[&quot;Default.Phase 1&quot;] exclude[Default.AU or &quot;Default.AUS Enterprise&quot; or &quot;Default.AUS Service&quot; or Default.Connect or Default.Enterprise or &quot;Default.Not Ready for Publish&quot; or Default.NZ or &quot;Default.NZ Enterprise&quot; or &quot;Default.NZ Service&quot; or Default.PrintOnly or Default.ScreenOnly or Default.Service or Default.UK or &quot;Default.UK Enterprise&quot; or &quot;Default.UK Service&quot; or Default.US or &quot;Default.US Enterprise&quot; or &quot;Default.US Service&quot;] "
+  MasterToc="/Project/TOCs/Table of Conents (Enterprise and Service).fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/simPROStyles.css"
+  Skin="/Project/Skins/simPRO Top Nav.flskn"
+  DefaultUrl="/Content/Welcome.htm"
+  MenuSkin="/Project/Skins/simPRO Menu.flskn"
+  MasterPage="/Content/Resources/MasterPages/KB_Master_Page.flmsp">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/Production.fldes" />
+  </Destinations>
+</CatapultTarget>

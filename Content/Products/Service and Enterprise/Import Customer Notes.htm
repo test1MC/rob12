@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2462" MadCap:lastWidth="1422">
+    <head>
+    </head>
+    <body>
+        <h1>Import Customer Notes</h1>
+        <h2>Overview</h2>
+        <p>Use customer notes in simPRO to record any correspondence logged against a customer. You can manually enter notes about customers in the Notes tab of a customer card file, or save time and reduce data entry error by importing a customer notes list.</p>
+        <p>If you include a <strong>Notes </strong>column when importing a customer list, the data will upload to the <strong>Notes </strong>text box in<strong> Profile &gt; Settings </strong>in the customer card file.</p>
+        <p class="Infotip">Customers for whom you wish to import notes for must exist in simPRO before importing.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Prepare to import a customer notes list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To prepare to import customer notes into simPRO:</p>
+                <ol>
+                    <li>Ensure the corresponding customers exist in simPRO. You can manually create or import customers.</li>
+                    <li>Save your file in your system as a compatible file type: CSV (.csv), text (.txt) or a ZIP file (.zip). Consult your spreadsheet software for file saving instructions if required.</li>
+                    <li>Separate your data using clear headings.<ul><li>To import successfully, specify the headings for <strong>Note</strong>, <strong>First Name</strong> and <strong>Last Name</strong> for an individuals, and <strong>Company Name </strong>for companies.</li><li>Other headings may include <strong>Subject </strong>and <strong>Date</strong>.</li></ul></li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+                    </li>
+                </ol>
+                <p class="Infotip"><strong>Notes </strong>data including <strong>Reference No.</strong><strong>Follow Up</strong> and <strong>Assign To</strong> must be entered manually in the customer card file.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import a customer notes list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/importnotes-import.png" alt="A screenshot of the Import Customer Notes page." class="border" />
+                </p>
+                <p>To import a customer notes list:</p>
+                <ol>
+                    <li>Go to <strong>Utilities &gt; Import &gt; Customers &gt; Customer Notes</strong>.</li>
+                    <li>Under<strong> Import Options - First Record is</strong>, select:<ul><li><strong>Header Record</strong> if the first row of your customer notes list contains column titles.</li><li><strong>Data Record</strong> if the first row contains specific data.</li></ul></li>
+                    <li MadCap:conditions="Default.Phase 1">
+                        <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Under <strong>Customer Status</strong>, select whether the upload file contains <strong>Customers </strong>or <strong>Leads</strong>.</li>
+                    <li MadCap:conditions="Default.Enterprise">Under <strong>Customer Status</strong>, select whether the upload file contains <strong>Customers </strong>or <strong>Leads</strong>.</li>
+                    <li>Click <strong>Choose File</strong> / <strong>Browse </strong>to locate and open your customer notes import file.</li>
+                    <li>When the name of the file displays, click <strong>Next</strong>.</li>
+                    <li>Match <strong>Customer Notes Import Columns</strong> as applicable using the drop-down lists.</li>
+                    <li>If you do not want to include a column in the import, select <strong>Ignore</strong>.</li>
+                    <li>Click <strong>Import Customers</strong>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/importnotes-columns.png" alt="A screenshot of the Customer Notes Import Columns page." class="border" />
+                </p>
+                <p class="Infotip">You may wish to test the import process with one or two customer note items before importing an entire list.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Check import success</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importnotes-summary.png" alt="A screenshot of the Import Customer Notes Summary." class="border" />
+                        </p>
+                        <p>After uploading an import file, the <strong>Import Customer Notes Summary</strong> page will display a breakdown of your import, including <strong>Notes Added</strong> and <strong>Customers Multi Matched</strong>.</p>
+                        <p>Click <strong>Customers Notes</strong> imported successfully to download a CSV file of imported customer notes for your records.</p>
+                        <p>After a successful import, it is recommended you manually check customer card files to ensure customer note data has imported correctly. To do this, go to <strong>People &gt; Customers</strong>, click an imported customer, then check the <strong>Notes </strong>tab for errors. Click a note to manually amend if required.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/Utilities/importnotes-view.png" alt="A screenshot of the Customer Notes tab." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Amend import errors</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If your customer notes import file does not contain columns for <strong>Note</strong>, <strong>First </strong>and <strong>Last Name </strong>or <strong>Company Name</strong>, the import will fail and you will receive an error message.</p>
+                <p>To amend the error, click <strong>OK</strong>, then enter details in the required fields in your import list and restart the import process.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/importnotes-error.png" alt="A screenshot of an import file error warning." class="border" />
+                </p>
+                <p>If your file contains other errors, an error message will display on the <strong>Import Customer Notes Summary</strong> page, and the table will display the number of errors found.</p>
+                <p>Click <strong>click here</strong> to download a CSV file of import errors. The <strong>Error Text </strong>column will explain why entries failed. Amend your customer notes import list accordingly and restart the import process.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

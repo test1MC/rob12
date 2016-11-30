@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3988" MadCap:lastWidth="1266">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Import Sites</h1>
+        <h2>Overview</h2>
+        <p>In simPRO, you can manually add <MadCap:xref href="Sites.htm">Sites</MadCap:xref> to the system through <strong>People &gt; Create New Site</strong>, or save time and reduce data entry errors by importing a site list.</p>
+        <p class="Infotip">You may wish to test the import process with one or two sites before importing an entire list.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Prepare to import sites</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To prepare to import sites into simPRO:</p>
+                <ol>
+                    <li MadCap:conditions="Default.Phase 1">Download and use simPRO's <strong>Site Import Template</strong> for:<ul><li><a href="../../Resources/Downloadable/Site Import Template - AU.csv">Australia</a></li><li><a href="../../Resources/Downloadable/Site Import Template - NZ.csv">New Zealand</a></li><li><a href="../../Resources/Downloadable/Site Import Template - UK.csv">United Kingdom</a></li><li><a href="../../Resources/Downloadable/Site Import Template - US.csv">United States</a></li></ul></li>
+                    <li MadCap:conditions="Default.AU">Download and use simPRO's <strong><a href="../../Resources/Downloadable/Site Import Template - AU.csv">Site Import Template</a></strong>.</li>
+                    <li MadCap:conditions="Default.NZ">Download and use simPRO's <strong><a href="../../Resources/Downloadable/Site Import Template - NZ.csv">Site Import Template</a></strong>.</li>
+                    <li MadCap:conditions="Default.UK">Download and use simPRO's <strong><a href="../../Resources/Downloadable/Site Import Template - UK.csv"><strong>Site Import Template</strong></a></strong>.</li>
+                    <li MadCap:conditions="Default.US">Download and use simPRO's <strong><a href="../../Resources/Downloadable/Site Import Template - US.csv">Site Import Template</a></strong>.</li>
+                    <li>Alternatively, create your own import list. Leave out any fields that do not apply to your sites.</li>
+                    <li>Save your file in your system as a compatible file type: CSV (.csv like the Site Import Template above), text (.txt) or a zip file (.zip). Consult your spreadsheet software for file saving instructions if required.</li>
+                    <li>Separate your data using the same or similar headings as the <strong>Site Import Template</strong>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+                    </li>
+                    <li>If your list contains customers that already exist in simPRO, make sure their names match exactly so the sites will automatically link with each customer in simPRO.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+                    </li>
+                </ol>
+                <p>simPRO can recognise and import all the headings and information listed in the <strong>Site Import Template</strong>. Site names are compulsory.</p>
+                <p class="WarningTip">If sites were created during an initial accounting package import, be careful not to import those sites again or duplicate site cards will be created.</p>
+                <p class="Infotip" MadCap:conditions="Default.Not Ready for Publish">
+                    <MadCap:annotation MadCap:createDate="2016-10-14T13:33:11.4471325+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Awaiting Numeric-only Custom Field feature" MadCap:editor="Zoe" MadCap:editDate="2016-10-14T13:33:37.2320834+10:00">If a site has a numeric-only custom field in simPRO but there is non-numeric data entered in the field in the site list, you will receive an error warning and the import will fail. Numbers must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Number Thousands Separator</strong> / <strong>Negative Number Format</strong> to import successfully.</MadCap:annotation>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import a site list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After preparing your site list, work through the following steps to import your list to simPRO.</p>
+                <h3>Adjust site import settings</h3>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Sites - adjust settings.png" alt="A screenshot of the Site Import Settings." class="border" />
+                </p>
+                <p>To adjust site import settings, go to<strong> Utilities &gt; Import &gt; Sites</strong>.</p>
+                <p>The options available include:</p>
+                <table class="TableStyle-Definition_List_table" style="mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="0">
+                    <col style="width: 199px;" class="TableStyle-Definition_List_table-Column-Column1" />
+                    <col style="width: 50%;" class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>First Record Is</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <strong>Header Record</strong> if your list's first row contains column titles, or select <strong>Data Record</strong> if your list's first row contains specific site details.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>If Site Already Exists</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>In case simPRO finds duplicated sites (sites with the same name), select whether you want to <strong>Do Nothing</strong> or to <strong>Update Site Details</strong> for the existing site in simPRO.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                <p>Create New Customer</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <strong>Yes </strong>if you want to create a new customer card file for customers associated with a site. Select <strong>No </strong>if you do not wish to create new customers. Sites do not have to be associated with customers, but when creating a quote, job or <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> lead, after choosing a customer, you will need to click <strong>Site &gt; All </strong>to choose from a list of all sites.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                <p>If Custom List Value Not Found</p>
+                            </td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>If any of the entries are a drop-down list in simPRO (for instance, the <strong>State </strong>field is a drop-down list with QLD, NSW, SA etc), and your file contains any additional values (or 'custom list values') not available in simPRO's list, select <strong>Create New List Option</strong> to add the additional value to the drop-down list in your site card file. Otherwise, select <strong>Reject and Warn </strong>to ignore the field and receive a warning.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Select an import file</h3>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Sites - select file.png" alt="A screenshot of the Choose File button." class="border" />
+                </p>
+                <p>To select an import file:</p>
+                <ol>
+                    <li>Go to <strong>Utilities &gt; Import &gt; Sites</strong>.</li>
+                    <li>Adjust site import settings, then click <strong>Browse</strong> / <strong>Choose File</strong>.</li>
+                    <li>Locate your site import file and click <strong>Open</strong>.</li>
+                    <li>Click <strong>Next</strong>.</li>
+                </ol>
+                <h3>Match site import columns</h3>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Sites - adjust columns.png" alt="A screenshot of the Site Import Columns page." class="border" />
+                </p>
+                <p>After selecting an import file, manually match or check your list columns with the fields available in simPRO. You may wish to have both simPRO and your list open at the same time.</p>
+                <p>To match site import columns:</p>
+                <ol>
+                    <li>Select your import file as above.</li>
+                    <li>On the <strong>Site Import Columns</strong> page, the column headings from your imported list will appear in brackets, such as <strong>(Site Name)</strong>. Use the drop-down list under each heading to select the matching field in simPRO.</li>
+                    <li>If you wish to leave a column out of the import entirely, select <strong>Ignore </strong>from its drop-down list.</li>
+                    <li>Click <strong>Import Sites</strong>.</li>
+                </ol>
+                <p>To add additional site contacts, continue to select the <strong>Secondary Contact </strong>options for each additional contact.</p>
+                <h3>Check site import success</h3>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Sites - site summary.png" alt="A screenshot of the Import Site Summary page." class="border" />
+                </p>
+                <p>After uploading an import file, the<strong> Import Site Summary</strong> page will display a breakdown of your import, including <strong>Sites Added </strong>/ <strong>Updated </strong>/ <strong>Ignored </strong>and<strong> Customers Created</strong>.</p>
+                <p>If the import was not successful, an error message will appear.</p>
+                <p>If the import was successful, click <strong>Sites </strong>imported successfully to download a CSV file of imported sites for your records. After a successful import, it is recommended you manually check imported sites to ensure data has imported correctly.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Sites - check imported site.png" alt="A screenshot of a site." class="border" />
+                </p>
+                <p>To do this, go to <strong>People &gt; Sites</strong>, click an imported site, and check <strong>Profile &gt; Details </strong>for errors. Manually amend if required.</p>
+                <h3>Amend site import errors</h3>
+                <p>If your site import file does not contain site names, you will receive an error message.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Sites - compulsory field.png" alt="A screenshot of the Site Fields incorrectly assigned pop-up window." class="border" />
+                </p>
+                <p>Click <strong>OK</strong>, add a site names column and data to your site import file and start the import process again.</p>
+                <p>If your file contains other errors, an error message will display on the <strong>Import Site Summary</strong> page, and the table will detail how many errors were found.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/Import Sites - errors.png" alt="A screenshot of an error in the Site Import Summary page." class="border" />
+                </p>
+                <p>Click <strong>click here</strong> to download a CSV file of import errors. The<strong> Error Text </strong>column will explain why entries failed. Amend your site import list accordingly and start the import process again.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

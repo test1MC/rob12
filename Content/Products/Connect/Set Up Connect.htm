@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="11794" MadCap:lastWidth="1799">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Set Up Connect</h1>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>You can manage the majority of your Connect settings within simPRO. These settings apply to all Connect users.</p>
+        <p>To access your Connect settings in simPRO, go to <b>System &gt; Setup &gt; Mobile</b>, then adjust settings through the <b>General</b>, <b>Pages</b>, and<b> Statuses</b> sub-tabs as desired. You can also set up geostamping in simPRO to track where and when employees and, in simPRO Enterprise,  contractors in the field update their mobile job statuses.</p>
+        <p>To manage how an individual Connect device retrieves, sends and displays data, access your <MadCap:xref href="#In-App-settings">In-app settings</MadCap:xref>. To manage audits in Connect, learn more in <MadCap:xref href="Set Up Connect Audits.htm" target="_blank">Set Up Connect Audits</MadCap:xref>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="General-settings"></a>General settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Adjust general user permissions, runsheet settings and billing settings for Connect in simPRO. These settings will apply to all Connect users.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect General Setup - general settings.png" class="border" alt="A screenshot of the general Connect settings and check box options." />
+                </p>
+                <p>To adjust general and billing settings for Connect, go to <b>System &gt; Setup &gt; Mobile &gt; General</b>. You can then restrict Connect functionality as desired with the following options:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 142px;" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Storage Device Access</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>This setting is separate from the security group permissions for assigning and transferring stock in simPRO. Select <b>Do not restrict</b> to give Connect users access to stock in all storage devices.
+</p>
+                                <p>Select <b>Restrict to assigned</b> to restrict access to the assigned storage devices in their employee or, in simPRO Enterprise, contractor card files.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Today's Run Sheet Shows</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <b>Scheduled and due projects</b> to show both scheduled and due jobs and quotes on the <b>Today</b> runsheet in Connect. See <MadCap:xref href="Connect Tools.htm#View-the-runsheet" target="_blank">View the runsheet</MadCap:xref>
+for more information.</p>
+                                <p>Select <b>Only scheduled</b> to show only scheduled jobs and quotes. Jobs or quotes that are assigned but not scheduled will only appear in the Today runsheet when their due date is the same as the focus date.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Project Creation</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <b>Enable for jobs and quotes</b> to allow users to <MadCap:xref href="Connect Jobs.htm#Create-a-job-in-Connect" target="_blank">Create a job in Connect</MadCap:xref> and <MadCap:xref href="Connect Quotes.htm#Create-a-quote-in-Connect">Create a quote in Connect</MadCap:xref> (and new customers, sites, and if using simPRO Enterprise, leads). The created jobs or quotes will appear in simPRO after syncing.
+</p>
+                                <p>Select <b>Enable for jobs only</b> or <b>Enable quotes only</b> as applicable.
+</p>
+                                <p>Select <b>Disable</b> to prevent Connect users from creating jobs or quotes.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Travel Time</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <b>Schedule</b> to project to schedule travel time to the project as a job cost.
+</p>
+                                <p>Select <b>Do not schedule</b> if you wish for travel time to be non-billable.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Update Billable Labour</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>Select <b>Automatically, based on schedule</b> to have Connect update billable labour automatically when a job has been submitted.
+</p>
+                                <p>Select <b>Manually</b> to have Connect users manually update billable labour.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Approve Jobcards</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                <p>
+Select <b>Automatically</b> to automatically approve submitted job cards.
+</p>
+                                <p>Select <b>Manually</b> to have job cards manually approved in simPRO.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">Geostamping</td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                <p>Select <b>Enabled</b> to record the geographical location of a Connect user's mobile status updates, such as starting travel or starting a job.
+</p>
+                                <p>Select <b>Force</b> to prevent users from switching off location services and allow additional time to acquire a geostamp.</p>
+                                <p>See <MadCap:xref href="#Geostamping-settings">Geostamping settings</MadCap:xref> for more information.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3><a name="Billing-settings"></a>Billing settings</h3>
+                <p>To adjust billing settings in Connect, go to <b>System &gt; Setup &gt; Mobile &gt; General</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect General Setup - billing settings.png" alt="A screenshot of Billing settings for Connect." class="border" />
+                </p>
+                <p>Select <b>Enable</b> under <b>Mobile Billing</b> to allow field technicians to collect payments in the field.</p>
+                <p>Under the <b>Payment Methods</b> table, select <b>Enable for Connect</b> for the payment methods you want to enable field technicians to collect in the field. These can include simPRO Payments-associated card types.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Pages-settings"></a>Pages settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can control which pages are visible to field technicians using Connect, as well as the order of pages in the workflow and jump menu. Disabling unnecessary pages reduces the number of steps in the workflow, making it faster for your field technicians to complete jobs.</p>
+                <p>To access the jump menu in Connect, access a job or quote from the runsheet, then tap the <b>list</b> icon in the top left.</p>
+                <h3><a name="Customise-your-workflow"></a>Customise your workflow</h3>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Setup - connect job pages.png" alt="A screenshot of the Pages tab with check boxes to select and include the pages in the workflow." class="border" />
+                </p>
+                <p>To customise your Connect workflow in simPRO:</p>
+                <ol>
+                    <li>Go to <b>System &gt; Setup &gt; Mobile &gt; Pages</b>.</li>
+                    <li>Select <b>Include in Work Flow</b> for the pages you want your field technicians to navigate through when completing a job / quote.</li>
+                    <li>Select <b>Include in Jump Menu </b>for the pages you want your field technicians to be able to access through the jump menu.</li>
+                    <li>Click and drag the <b>grey drag handle</b> to move pages into the desired workflow order.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p>You will need to <MadCap:xref href="Connect Tools.htm#Sync-Connect-with-simPRO" target="_blank">Sync Connect with simPRO</MadCap:xref> to update these changes.</p>
+                <p>If you are unsure about the right mobile job workflow for your business, we recommend starting with our standard workflow and reviewing enabled pages after using Connect. To view the workflow, see <MadCap:xref href="Connect Jobs.htm" target="_blank">Connect Jobs</MadCap:xref>.</p>
+                <p class="Infotip">You cannot remove the <b>Details</b> and <b>Submit</b> pages from the Connect workflow or jump menu.</p>
+                <h3><a name="Manage-attachments-and-times"></a>Manage Attachments and Times</h3>
+                <p>The <b>Attachments</b> and <b>Times</b> pages have additional settings.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Setup - attachments page settings.png" alt="A screenshot of the Connect Attachments settings, including checkboxes for public and private viewing options." class="border" />
+                </p>
+                <p>To manage the <b>Attachments</b> page settings:</p>
+                <ol>
+                    <li>Go to <b>System &gt; Setup &gt; Mobile &gt; Pages &gt;&#160;Attachments</b>.</li>
+                    <li>Click <b>Settings</b>.</li>
+                    <li>Select whether you wish to <b>Make Uploaded Attachments Public</b>.</li>
+                    <li>Select whether you wish to <b>Allow Viewing of Private Attachments</b> as defined in simPRO.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect Setup - times page settings.png" alt="A screenshot of the Times page settings for Connect, including check boxes for allowing employees to specify overtime and a drop-down list for time block thresholds." class="border" />
+                </p>
+                <p>To manage <b>Times</b> page settings:</p>
+                <ol>
+                    <li>Go to <b>System &gt; Setup &gt; Mobile &gt; Pages &gt; Times</b>.</li>
+                    <li>Click <b>Settings</b>.</li>
+                    <li>Under <b>Allow Employee to Specify Overtime</b>, select <b>Yes</b> to let field technicians specify their own overtime in Connect.</li>
+                    <li>Enter the desired <b>Time Block Threshold</b>.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Statuses-settings"></a>Statuses settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Images/Connect setup - status colours.png" class="border" alt="A screenshot of the mobile status setup page, including sliders to select colours and job stage drop-down lists." />
+                </p>
+                <p>Enable job and quote statuses for field technicians to update in Connect. You can use mobile status colours to make it easier for field technicians to see the status of all the jobs on their runsheet.</p>
+                <p>You can also set up these statuses to automatically update a job or quote in simPRO using triggers.</p>
+                <p>To set up statuses for Connect in simPRO:</p>
+                <ol>
+                    <li>Go to <b>System &gt; Setup &gt; Mobile &gt; Statuses</b>.</li>
+                    <li>Select <b>Enable</b> for the statuses you wish to use in Connect.</li>
+                    <li>To update the job or quote stage in simPRO when the mobile status is updated in Connect, select the desired job stage under <b>Update to Job Stage</b>.</li>
+                    <li>Use the slider to select colours to make the statuses easy to distinguish.</li>
+                    <li>Click <b>Save</b> to update your changes.</li>
+                </ol>
+                <p>When you submit a job in Connect, the job will appear with a coloured strip on the runsheet, corresponding to the current status.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Statuses setup - mobile statuses.jpg" alt="A screenshot of mobile status colours marking different jobs and quotes  in Connect." class="border" />
+                </p>
+                <p>The mobile job statuses will also update the job status in simPRO to reflect the progress of the job according to the automatic triggers set up for <b>Mobile Jobs</b>.</p>
+                <p class="Infotip">It is recommended that you create status codes that are specific for mobile users, so you can easily distinguish if a job has been updated from a mobile device.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Geostamping-settings"></a>Geostamping settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Use geostamping for GPS-enabled Connect devices to know where and when your field technicians updated their mobile job and quote statuses.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Geostamping - enable.png" alt="A screenshot of the Mobile setup tab." class="border" />
+                </p>
+                <p>To enable Connect geostamping in simPRO, go to <b>System &gt; Setup &gt; Mobile &gt;&#160;Geostamping</b> and select <b>Enable</b>.</p>
+                <p>Select <b>Force</b> to prevent field technicians from progressing through the workflow or updating the job or quote status if their device's location services are disabled or unavailable. This also allows extra time to acquire a signal for the device.</p>
+                <p class="Infotip">It is not recommended to enable <b>Force</b> mode for <b>Geostamping</b> if users frequently operate in remote areas with poor signals.</p>
+                <h3><a name="View-status-updates"></a>View status updates</h3>
+                <p>Once geostamping is enabled, you can view geostamped mobile status updates.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Geostamping - status log.png" alt="A screenshot of the mobile status log with corresponding coloured geostamps and statuses." class="border" />
+                </p>
+                <p>To view geostamped mobile status updates for several jobs:</p>
+                <ol>
+                    <li>Go to <b>Reports &gt; View Reports &gt; Mobile &gt; Status Log</b>.</li>
+                    <li>Filter the report as desired by selecting a <b>Log Date</b> and <b>Employee(s)</b>.</li>
+                    <li>The coordinates recorded at the time of each mobile status update will appear in the <b>Geostamping</b> column.</li>
+                    <li>Select the check boxes in the <b>Map</b> column to show the locations of mobile status updates as pins on the map.</li>
+                </ol>
+                <p>To view the mobile status updates for a specific job, go to the <b>Mobile</b> tab in a job card or the <b>Schedule</b> tab in a job.</p>
+                <p>The size of the circle on the map represents the accuracy of the geostamp, which can be affected by the strength of your network signal. You can adjust the status colour of the circle in your <MadCap:xref href="#Statuses-settings">Statuses settings</MadCap:xref>.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Geostamping - jobcard.png" alt="A screenshot of the Mobile tab in a job card." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="In-App-settings"></a>In-app settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Use in-app settings in Connect to manage what type of data your Connect device retrieves. You can also use the settings page to find information about your device's sync operations as well as the current version, server and user.</p>
+                <p>To access in-app settings, go to the Connect dashboard, then tap <b>Settings</b>. Alternatively, if you have not logged in to Connect, you can access in-app settings by tapping Settings on the login page.</p>
+                <h3><a name="Change-the-default-language"></a>Change the default language</h3>
+                <p>You can change the default language in which you view Connect to proceed through the workflow more efficiently.</p>
+                <p>The current languages available in simPRO and Connect are:</p>
+                <ul>
+                    <li>English (Australia) / English (United Kingdom) / English (United States)</li>
+                    <li>Spanish</li>
+                </ul>
+                <p>You can change the default language that you view in Connect in the employee card in simPRO. Alternatively, set your default language in Connect by going to <b>Settings &gt; Language</b>, then selecting the desired language from the drop-down list.</p>
+                <p>When you change the default language in Connect, your changes will reflect in simPRO, and vice versa.</p>
+                <p class="Infotip">The login screen will remain in English.</p>
+                <h3><a name="Manage-data-retrieval"></a>Manage data retrieval</h3>
+                <p>To manage which jobs, quotes and tasks are available when you <MadCap:xref href="Connect Tools.htm#View-the-runsheet">View the runsheet</MadCap:xref>, you need to set up what data your Connect device retrieves from simPRO.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/in-app settings - data retrieval.png" alt="A screenshot of the data retrieval drop-down list." class="border" />
+                </p>
+                <p>Under <b>Data Retrieval Options</b>, tap the drop-down list to select the job types you wish to retrieve from your simPRO server:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 205px;" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Pending and Progress</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">View all outstanding assigned or scheduled jobs and quotes.
+</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Pend, Prog, Comp, Inv.</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">View all oustanding, completed and invoiced jobs and quotes that you have been assigned or scheduled to. Completed and invoiced jobs and quotes will appear in your <b>Other</b> runsheet.
+</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">All (+Archived)</td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">View all oustanding, completed, invoiced and archived jobs and quotes, you have been assigned or scheduled to regardless of date. Completed, invoiced and archived jobs and quotes will appear in your <b>Other</b> runsheet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>To view only outstanding assigned jobs and quotes, select <b>Pending</b> and <b>Progress</b> from the drop-down list, then select <b>Also retrieve all pending/progress (Jobs / Quotes / Tasks) for other days</b>. Your pending and progress jobs or quotes due or scheduled for dates other than the specified focus date will appear in your <b>Other</b> runsheet.</p>
+                <p>Select <b>48hr Scheduling</b> to display all scheduled jobs or quotes within a 48-hour period of time when you <MadCap:xref href="Connect Tools.htm#View-the-48-hour-runsheet" target="_blank">View the runsheet for a 48-hour period</MadCap:xref>, for example, if you have a night shift scheduled.</p>
+                <p>Select <b>Use SSL</b> to enable SSL attachment uploads. Clear if you wish to use HTTP attachments.</p>
+                <p>When you have finished setting up your data retrieval options, tap <b>Finished</b> and Connect will <MadCap:xref href="Connect Tools.htm#Sync-in-the-background">Sync in the background</MadCap:xref>.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/in-app settings - all data retrieval options.png" alt="A screenshot of the check box options for data retrieval in Connect." class="border" />
+                </p>
+                <h3><a name="Manage-sync-operations"></a>Manage sync operations</h3>
+                <p>
+                    <img src="../../Resources/Images/Images/in-app settings - sync operations.png" alt="A screenshot of the sync operations options in the Connect in-app settings." class="border" />
+                </p>
+                <p>Manage your <b>Sync Operations</b> to monitor how Connect operates on your device.</p>
+                <p>Tap <b>Go Offline</b>, then <b>Finished</b> to use Connect without an internet connection. This option is useful when Connect cannot perform a sync due to an unreliable internet connection, for example, when a field technician is working on a job site in a remote area with poor mobile coverage.</p>
+                <p>When you use Connect in offline mode, all data will be stored on the device while you work in existing jobs and quotes. You cannot sync updated data to simPRO, request a purchase order, or create jobs, quotes or activities in offline mode. To allow the app to connect to the internet and sync with simPRO, tap <b>Go Online</b>, then <b>Finished</b> and Connect will automatically sync all updated data.</p>
+                <p>Tap <b>View Log</b> to view a log of app activity. If you are working with simPRO Support to resolve any issues you are having with Connect, you may need to send a copy of the log by tapping <b>Post</b>.</p>
+                <p>Tap <b>Reset Database</b> to delete all data from Connect and log out the current user. If you are working with simPRO Support to resolve issues with corrupt data, you may need to tap this option.</p>
+                <p class="Infotip">Various functionalities will be restricted when you <MadCap:xref href="Connect Tools.htm#Work-offline" target="_blank">Work offline</MadCap:xref> in Connect.</p>
+                <h3><a name="View-Connect-information"></a>View Connect information</h3>
+                <p>You can view the following information under <b>About simPRO Connect</b>:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 146px;" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Version</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">The current version of Connect used on the device. You need to access your device's app store to ensure you are using the latest version of Connect.</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Server</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">The simPRO build that the app is connected to and syncing with.</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">User</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">The current user's name, or, if viewing Connect settings while logged out of the app, the name of the last user to have logged in.</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Last Sync</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">A timestamp of the most recently recorded sync between Connect and simPRO.</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Uploaded Status</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Indicates whether there is data that needs to be synced with simPRO.</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">Device</td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">The mobile device type and operating system.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

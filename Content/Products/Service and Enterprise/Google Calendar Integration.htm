@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2833" MadCap:lastWidth="949">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Google Calendar Integration</h1>
+        <h2>Overview</h2>
+        <p>By integrating simPRO with <a href="https://www.google.com/calendar" target="_blank">Google Calendar</a>, you can view simPRO schedules alongside other appointments or events in the same calendar. This is a two-way integration, viewable in both the simPRO schedule views and and within Google Calendar, and enables a comprehensive view of availability.</p>
+        <p class="Infotip">This feature is only available for businesses using <a href="http://apps.google.com/" target="_blank">Google Apps for Work</a>. The calendar will synchronise all entries created after the integration.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Install simPRO Google Calendar Integration</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This step can only be performed by your Google Apps for Work administrator. If you are the administrator, please follow the <MadCap:xref href="Google Calendar Integration - Administrator's Guide.htm">Google Calendar Integration - Administrator's Guide</MadCap:xref> to install simPRO Google Calendar Integration.</p>
+                <p>After integration is enabled in Google and simPRO, users will need to individually authorise their Google Calendar accounts to integrate them with simPRO.</p>
+                <p>Before integrating Google Calendar and simPRO, please consider how this feature may affect your business. It is particularly important to note that if a person's calendar is integrated and they delete a quote or job schedule in their Google Calendar, that schedule block will also be removed from simPRO along with associated costs.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Authorise a Google Calendar account</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After you enable Google Calendar integration, individual users can authorise their Google Calendar accounts to integrate with simPRO.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/More/googlecalendar-authorise.png" alt="A screenshot of the Send Verification Code button." class="border" />
+                </p>
+                <p>To authorise a user's Google Calendar account to integrate with simPRO:</p>
+                <ol>
+                    <li>Open the user's card file.</li>
+                    <li>Go to <strong>Profile &gt; Details &gt; Primary Contact</strong>.</li>
+                    <li>Ensure the <strong>Email </strong>address is the address linked to the user's <strong>Google Calendar</strong> account (for instance, employee@simpro.co).</li>
+                    <li>Go to <strong>Profile &gt; Settings</strong>.</li>
+                    <li>Under <strong>Google Calendar Integration</strong>, click <strong>Send Verification Code</strong>. A confirmation email will be sent to the email address from step 3.</li>
+                    <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                    <li>In a separate browser window or tab, open the email account from step 3.</li>
+                    <li>Find the calendar integration authorisation request, and click the link to enable the integration.</li>
+                </ol>
+                <p>A confirmation screen will appear.</p>
+                <p class="Infotip">If the email saved in a user's card file under <strong>Profile &gt; Details &gt; Primary Contact &gt; Email </strong>is changed, it must be authorised again. If you cannot see the calendar authorisation email, please check your email account's spam or junk folders.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View Google Calendar events in simPRO</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Events created in Google Calendar will appear in simPRO's schedule view as an activity schedule block titled '<strong>Busy</strong>', regardless of Google Calendar privacy settings. They are visible by any simPRO user with the necessary security group settings.</p>
+                <p>Google Calendar event-specific features such as descriptions, notifications, guests, event colours and visibility do not carry across to simPRO.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/More/googlecalendar-appointment.png" alt="A screenshot of an appointment in Google Calendar creating a Busy schedule block in simPRO." class="border" />
+                </p>
+                <p>While these blocks are activities, they will not have any associated labour costs.</p>
+                <p>Deleting or rescheduling Google Calendar events in simPRO will not delete or reschedule the event in Google Calendar.</p>
+                <p>Google Calendar events can only display in 15 or 30 minute blocks in simPRO, depending on your settings under <strong>System &gt; Defaults &gt; Schedule</strong>. If a Google Calendar event's start or finish time does not match this format, it will be rounded to the nearest 15 or 30 minute time. For example, if an event starts at 11:05 in Google Calendar, it will display in simPRO as starting at 11:00.</p>
+                <p>To prevent multiple-day events taking up too much schedule room in simPRO, multiple-day Google Calendar events will only schedule to midnight of the first day in simPRO.</p>
+                <p class="WarningTip">The Google Calendar events in simPRO are all Busy activity types. If you right-click a Google Calendar event in simPRO and click Remove Schedule, all Busy activity schedule blocks for that day will be removed in simPRO as they are all the same activity type, although they will not be removed from Google Calendar. If you want to remove an individual event, click <strong>Remove Block </strong>instead. For example, if two meetings are saved in Google Calendar for Thursday, they will both appear in simPRO as <strong>Busy </strong>activity schedules. To delete just one of them from simPRO, right-click it and click <strong>Remove Block</strong>. Otherwise, clicking <strong>Remove Schedule</strong> will remove both meetings from Thursday in simPRO.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View simPRO schedules in Google Calendar</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Schedules in simPRO will appear in Google Calendar as events. Details that carry across from simPRO include the schedule name, date, start and end times, site address, description and schedule notes.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/More/googlecalendar-job.png" alt="A screenshot of a job scheduled in simPRO creating an event in Google Calendar." class="border" />
+                </p>
+                <p>If a schedule in simPRO consists of two or more schedule blocks, those blocks will be created as separate events in Google Calendar.</p>
+                <p>If you change a schedule's description in simPRO, this change will not reflect in Google Calendar unless the schedule is moved.</p>
+                <p>If you adjust the site or title in simPRO, this change will not reflect in Google Calendar.</p>
+                <p>Duplicating a simPRO schedule in Google Calendar will not create a new schedule for it in simPRO. Instead, the duplicated schedule will display as a <strong>Busy </strong>activity block in simPRO.</p>
+                <p class="WarningTip">Deleting a quote or job schedule Google Calendar removes it from simPRO schedule, and removes associated labour costs. This will be noted in the quote or job's <strong>Log </strong>tab as being removed by simPRO System.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Remove an integrated Google Calendar account</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/More/googlecalendar-remove.png" alt="A screenshot of the Disable Integration button." class="border" />
+                </p>
+                <p>To remove an integrated Google Calendar account from simPRO:</p>
+                <ol>
+                    <li>Open the user's card file.</li>
+                    <li>Go to <strong>Profile &gt; Settings</strong>.</li>
+                    <li>Under <strong>Google Calendar Integration</strong>, click <strong>Disable Integration</strong>.</li>
+                    <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                </ol>
+                <p class="Infotip">Disabling a Google Calendar account will not remove schedules and events from Google and simPRO; they will need to be removed manually if desired.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

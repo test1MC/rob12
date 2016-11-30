@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2818" MadCap:lastWidth="1755" MadCap:conditions="Default.Phase 1">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>CIS Monthly Returns (UK only)</h1>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <h2>Overview</h2>
+        <p>If you do business with sub-contractors in the UK, you can generate the CIS Monthly Returns report for information you will need to file your monthly returns with HM Revenue and Customs (HMRC). You can also print and save a CIS Payment and Deduction Statement to provide each sub-contractor with a summary of the money you deducted and paid to HMRC.</p>
+        <p>The report can include information on total payments, amounts liable, amounts deducted, and amounts payable (including and excluding VAT). You may wish to regularly generate the report to reconcile CIS amounts with those in your accounting package.</p>
+        <p>This article only provides instructions for using the CIS features in simPRO, and should not be interpreted as legal or financial advice. Read more about CIS in our <MadCap:xref href="CIS Guide (UK Only).htm">CIS Guide (UK Only)</MadCap:xref>, or read about your CIS obligations <a href="https://www.gov.uk/what-you-must-do-as-a-cis-contractor/overview">on the UK Government's CIS website</a>.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View the report</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Reports/monthlyreturns.png" alt="A screenshot of the CIS Monthly Returns report filters." class="border" />
+                </p>
+                <p>To view the CIS Monthly Returns report:</p>
+                <ol>
+                    <li>Go to <strong>Reports &gt; View Reports &gt; Contractors &gt; CIS Monthly Returns</strong>.</li>
+                    <li>Use the date picker to select a <strong>Contractor Invoice Date Range</strong>.</li>
+                    <li>Select whether you want to view the report <strong>Type </strong>as a <strong>Summary </strong>or a <strong>Breakdown</strong>.</li>
+                    <li>Select options from the other filters as required.</li>
+                    <li>Click <strong>Search</strong>.</li>
+                </ol>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Use report filters</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Use the report filters to make your report as specific as you require. The filters include:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definitions" cellspacing="0">
+                            <col class="TableStyle-Definitions-Column-DarkShade" style="width: 212px;" />
+                            <col class="TableStyle-Definitions-Column-Regular" />
+                            <tbody>
+                                <tr class="TableStyle-Definitions-Body-LightRows">
+                                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                                        <p>Date Based On</p>
+                                    </td>
+                                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                                        <p>Select whether you want to view results by the<strong> Date Paid </strong>or <strong>Date Created</strong>. The<strong> Date Paid</strong> option is only useful if you record contractor invoice payments in simPRO.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                                        <p>Contractor Invoice Date Range</p>
+                                    </td>
+                                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                                        <p>Use the date picker in this filter to select the desired invoice date range. This filter is mandatory.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definitions-Body-LightRows">
+                                    <td class="TableStyle-Definitions-BodyE-DarkShade-LightRows">
+                                        <p>Paid / Unpaid</p>
+                                    </td>
+                                    <td class="TableStyle-Definitions-BodyD-Regular-LightRows">
+                                        <p>Select whether you want to view <strong>Paid Invoices </strong>or <strong>Unpaid Invoices</strong>. This filter is only useful if you record contractor invoice payments in simPRO; this is important to record, as CIS is only due after invoices have been paid and not when they are raised.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definitions-Body-DarkerRows">
+                                    <td class="TableStyle-Definitions-BodyE-DarkShade-DarkerRows">
+                                        <p>Type</p>
+                                    </td>
+                                    <td class="TableStyle-Definitions-BodyD-Regular-DarkerRows">
+                                        <p>Select whether you want to view the report as a <strong>Summary </strong>or a <strong>Breakdown</strong>.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/Screenshots/Reports/monthlyreturns-breakdown.png" alt="A screenshot of the report as a breakdown." class="border" style="max-width: 500pt;" />
+                                        </p>
+                                        <p>If you view the report as a <strong>Breakdown</strong>, invoices for the selected date range will be grouped by contractor. For each invoice you will see an<strong> Invoice Date</strong>, <strong>Paid Date</strong> (if applicable), <strong>Total Payment (Ex VAT)</strong>, <strong>Materials Paid</strong>, <strong>Amount Liable</strong>, <strong>Amount Deducted</strong>, <strong>Amount Payable (Inc VAT)</strong> and <strong>Amount Payable (Ex VAT)</strong>. The <strong>Total </strong>of these figures will appear at the bottom of each contractor's table.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/Screenshots/Reports/monthlyreturns-summary.png" alt="A screenshot of the report as a summary." class="border" style="max-width: 500pt;" />
+                                        </p>
+                                        <p>If you view the report as a <strong>Summary</strong>, a summary of information for each contractor will be displayed, including <strong>UTR Number</strong>, <strong>Verification Number</strong>, <strong>Total Payments (Ex VAT)</strong>, <strong>Materials Paid</strong>, <strong>Amount Liable</strong>, <strong>Amount Deducted</strong> and <strong>Amount Payable (Ex VAT)</strong>.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definitions-Body-LightRows">
+                                    <td class="TableStyle-Definitions-BodyB-DarkShade-LightRows">
+                                        <p>Contractor</p>
+                                    </td>
+                                    <td class="TableStyle-Definitions-BodyA-Regular-LightRows">
+                                        <p>Select the contractor(s) whose information you want included in the report.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Print a CIS Payment and Deduction Statement</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Reports/monthlyreturns-csv.png" alt="A screenshot of the Print option." class="border" />
+                </p>
+                <p>To print a CIS Payment and Deduction Statement:</p>
+                <ol>
+                    <li>Generate the CIS Monthly Returns report as desired.</li>
+                    <li>Select the check boxes of the information you wish to print, or click <strong>Select All</strong> at the bottom of the page.</li>
+                    <li>At the bottom of the page, click <strong>Print</strong>.</li>
+                    <li>Save or print as desired.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Download the report as a CSV file</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../../Resources/Snippets/SN Download the report as a CSV file.flsnp" />
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Reports/monthlyreturns-csv.png" alt="A screenshot of the Download CSV option." class="border" />
+                </p>
+                <p>To download a CSV of specific report results, select the desired result check boxes when viewing the report as a <strong>Breakdown</strong>, then click <strong>Download CSV</strong> at the bottom of the screen.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

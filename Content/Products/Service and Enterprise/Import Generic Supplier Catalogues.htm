@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4100" MadCap:lastWidth="1517">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Import Generic Supplier Catalogues</h1>
+        <h2>Overview</h2>
+        <p>Import supplier catalogues to simPRO in a generic format.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Utilities/importgeneric.png" alt="A screenshot of the Import Catalogue - Generic page." class="border" />
+        </p>
+        <p>There are three types of imports you can perform with a generic catalogue:</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css'); margin-left: 0; margin-right: auto;" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col class="TableStyle-Definition_List_table-Column-Column1" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Complete</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Imports all items from the new price file in the groups and subgroups defined in the file. Select when performing an initial import.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Update and Create New Part</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Compares the part numbers of items from the new price file with those in the existing catalogue. If a part number in the new price file is not found in the catalogue, a new item entry will be created in the catalogue in a group and subgroup defined by the new price file.</p>
+                        <p>If you are updating your catalogue with your default supplier, trade prices will also be updated. This option is useful if you wish to build up your catalogue to include all products from additional suppliers.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                        <p>Update Only</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                        <p>Compares the part numbers of items from the price file with those in the existing catalogue but ignores additional items in the new price file. If you are updating your catalogue with your default supplier, trade prices will also be updated.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>If you are updating your catalogue using the <strong>Update and Create New Part</strong> or <strong>Update Only</strong> options and matching part numbers are found between the catalogue and the new price file, the import will merge those items into one catalogue item with multiple suppliers. This is useful for comparing prices between different suppliers when raising a purchase order.</p>
+        <p>You can also import supplier-specific catalogues that have been especially formatted for simPRO. Contact your local branch or log in to a supplier's website to see if they have a supplier-specific catalogue.</p>
+        <p class="Infotip">You may wish to test the import process with one or two catalogue items before importing an entire file.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Prepare a generic supplier catalogue for import</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To prepare to import a generic catalogue into simPRO:</p>
+                <ol>
+                    <li>Download, add data to and edit the <strong>Catalogue Import Template</strong> for:<ul><li><a href="../../Resources/Downloadable/Catalogue Import Template AU.csv">Australia</a></li><li><a href="../../Resources/Downloadable/Catalogue Import Template - NZ.csv">New Zealand</a></li><li><a href="../../Resources/Downloadable/Catalogue Import Template - UK.csv">United Kingdom</a></li><li><a href="../../Resources/Downloadable/Catalog Import Template - US.csv">United States</a></li></ul></li>
+                    <li>Alternatively, you can create your own import list and leave out any fields that do not apply to your suppliers.</li>
+                    <li>Save the price file in your system as an editable spreadsheet or text file. Compatible file types include CSV (.csv) or text (.txt), and can be imported while stored in a ZIP (.zip) file.</li>
+                    <li>Ensure data is separated by visible column headings marking fields for importing. Field requirements for importing into simPRO are outlined below.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+                        <ul>
+                            <li>If your supplier catalogue is saved in Microsoft Excel, you may need to apply Text formatting to the Part Numbers column in order to prevent part numbers with leading zeros from being truncated.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions3.flsnp" />
+                    </li>
+                </ol>
+                <h3>Catalogue import field requirements</h3>
+                <p>simPRO can import many different types of fields of information to specify and arrange different catalogue items.</p>
+                <p>simPRO generic catalogues should contain at a minimum the following data fields:</p>
+                <ul>
+                    <li><strong>Group</strong>
+                    </li>
+                    <li><strong>Subgroup</strong>
+                    </li>
+                    <li><strong>Part Number</strong>
+                    </li>
+                    <li><strong>Description</strong>
+                    </li>
+                    <li><strong>Cost Price</strong>
+                    </li>
+                    <li><strong>Trade Price</strong>
+                    </li>
+                </ul>
+                <p>If the price file does not contain <strong>Group </strong>and <strong>Subgroup </strong>data, it is recommended you create and insert your own into the file so that the relevant items can be arranged and located efficiently in simPRO. If a <strong>Trade Price</strong> is not available in the price file, it will be set to the same value as the <strong>Cost Price</strong>.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/importgeneric-map.png" alt="A screenshot of the Catalogue Import Columns page." class="border" />
+                </p>
+                <p>You may need to adjust your price files according to the following field requirements:</p>
+                <ul>
+                    <li>Certain fields will only import if other related fields are specified. For example, a <strong>Sell Price</strong> cannot be imported without a <strong>Buy Price</strong>.</li>
+                    <li>Before importing price files containing tax codes for purchasing and / or selling, you need to ensure the relevant tax codes have been created in simPRO. If a tax code has been specified in the import but has not been created in simPRO, the import will fail and an error message will appear.</li>
+                    <li>Tax codes must be specifically mapped as either a <strong>Purchase Tax Code</strong> or <strong>Sales Tax Code</strong> when preparing the price file so as to be matched accurately when matching the <strong>Catalogue Import Columns</strong> during the import.</li>
+                    <li>Data fields specified in the import process that contain no data will import as normal but will be blank in simPRO.</li>
+                    <li>For custom fields, you need to add a new column per custom field and head it with the <strong>Field Name</strong>.<ul><li>The <strong>Field Name</strong> headers must be identical to how they are formatted in simPRO. It is recommended to copy and paste field names to ensure a successful import.</li><li>Custom field data in the form of list options must also be identical to how it is formatted in simPRO. If entering new list options, be sure to select <strong>Create New List Option</strong> in your import settings.</li><li>If a catalogue item has a<MadCap:annotation MadCap:createDate="2016-10-07T15:24:13.6854063+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Awaiting the Numeric Only Custom Field feature" MadCap:editor="Zoe" MadCap:editDate="2016-10-07T15:24:24.9011413+10:00"> numeric-only custom field </MadCap:annotation>in simPRO but there is non-numeric data entered in the field in the price file, you will receive an error warning and the import will fail. Numbers must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Number Thousands Separator</strong> / <strong>Negative Number Format</strong> to import successfully.</li></ul></li>
+                </ul>
+                <p class="Infotip">Although a price file can import successfully with only the mandatory data fields as listed above, it is recommended to enter as much information as possible about your catalogue items to reduce manual data entry. Consult the <strong>Catalogue Import Template</strong> above to view which fields you can enter data into in your price files.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import a generic supplier catalogue</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you are performing an initial import, it is recommended to import the catalogue of your primary supplier, or alternatively, a major supplier with a well-structured catalogue.</p>
+                <p>To update the catalogue:</p>
+                <ol>
+                    <li>Go to <strong>Utilities &gt; Import &gt; Catalogue &gt; Generic</strong>.</li>
+                    <li>Under <strong>Select Supplier</strong>, search and select the desired supplier from drop-down list as created / imported in simPRO.</li>
+                    <li>Select <strong>Set as Default Supplier </strong>if desired.</li>
+                    <li>Under <strong>First Record Is</strong>, select:<ul><li><strong>Header Record</strong> if the first row of the price file contains column titles</li><li><strong>Data Record</strong> if the first row of the price file contains specific item data.</li></ul></li>
+                    <li>Under <strong>Import Options</strong>, select:<ul><li><strong>Complete </strong>to import all items</li><li><strong>Update Only </strong>to update existing items with supplier part numbers and prices</li><li>​​<strong>Update and Create New Part</strong> to update existing items with supplier part numbers and prices, and to add additional items.</li></ul></li>
+                    <li>Click <strong>Browse</strong>, then locate and open the desired price file.</li>
+                    <li>Under <strong>Attached File</strong>, verify the name and size of the file.<ul><li>A <strong>green tick</strong> icon will indicate the file has uploaded successfully.</li></ul></li>
+                    <li>Click <strong>Next</strong>.</li>
+                    <li>Use the drop-down lists to match the <strong>Catalogue Import Columns</strong> with the fields available in simPRO.<ul><li>If you wish to leave a column out of the import entirely, select <strong>Ignore</strong>.</li><li>You may wish to have the price file open at the same time to check the contents of the columns.</li></ul></li>
+                    <li>Click <strong>Import</strong>.</li>
+                </ol>
+                <p>When the price file has finished importing, the <strong>Import Catalogue Summary</strong> will show the number of<strong> Line Items Loaded</strong>, <strong>Catalogue Items Created </strong>and <strong>Catalogue Items Updated</strong>.</p>
+                <p>Go to <strong>Materials &gt; Catalogue</strong> to check that your catalogue groups, subgroups and items have imported correctly.</p>
+                <p class="Infotip">Please ensure you only select <strong>Update </strong>or <strong>Update and Create New Part</strong> when updating the catalogue. If you select <strong>Complete </strong>when you are not performing an initial import, items may be duplicated in the catalogue.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

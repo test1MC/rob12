@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1102" MadCap:lastWidth="1474" MadCap:conditions="Default.Not Ready for Publish">
+    <head>
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Xero Overview</h1>
+        <h2>Overview</h2>
+        <p>Verify what data you can transfer between simPRO and Xero, both in the setup and ongoing operation of the accounting link between the two software applications.</p>
+        <p>For security reasons, the connection between simPRO and Xero uses what is known as three-legged OAuth authentication. This means that while the access token that allows you to use simPRO and Xero expires every 30 minutes, a refresh token enabled by the Xero partner API re-authenticates it to last up to ten years as long as the Xero connection is still active.</p>
+        <p class="Infotip">If for any reason the authentication becomes invalid, you will need to reconnect.</p>
+        <h2>Customers and suppliers</h2>
+        <h3>Transferring customers and suppliers from simPRO to Xero</h3>
+        <p>When transferring from simPRO, customers and suppliers will become contacts in Xero. Contacts in Xero are defined according to the transactions against the contact card. Therefore a contact will only be recognised as a customer or supplier when you transfer or create the appropriate transaction against it.</p>
+        <p>Because the Xero link matches customers and suppliers by name, it is possible that any card files with the same name in simPRO will link to only one contact in Xero. This means that one contact may be recognised as both a supplier and customer in Xero once you have transferred the relevant transactions against the contact card.</p>
+        <h3>Transferring customers and suppliers from Xero to simPRO</h3>
+        <p>If a contact card is recognised as both a supplier and customer in Xero, it will transfer and create both a customer and supplier card file in simPRO.</p>
+        <p>Another way to reflect the same customer, supplier and contractor information in both simPRO and Xero is to export your customer, supplier and contractor contact cards from Xero. You can then go to <strong>Utilities &gt; <MadCap:xref href="Import Overview.htm">Import</MadCap:xref></strong> in simPRO to import the contact cards into simPRO.</p>
+        <h2>Payments</h2>
+        <p>You can transfer payments both ways between simPRO and Xero.</p>
+        <p>However, you may wish to enter your payments in Xero and then transfer them to simPRO because:</p>
+        <ul>
+            <li>In simPRO, you can create payments to pay off multiple invoices at once. You cannot do this in Xero, which means that if you apply a payment to multiple invoices in simPRO and then transfer that payment to Xero, separate payments will be created, which will complicate reconciliation.</li>
+            <li>Xero offers direct bank feeds, which means you can easily transfer bank payments to Xero, then to simPRO.</li>
+        </ul>
+        <h2>Information that can only be transferred from simPRO to Xero</h2>
+        <p>The following areas of information can only be transferred from simPRO to Xero:</p>
+        <ul>
+            <li>Invoices</li>
+            <li>Invoice credits (also known as credit notes in Xero)</li>
+            <li>Supplier invoices (also known as bills in Xero)</li>
+            <li>Supplier credits (also known as credit notes in Xero)</li>
+            <li MadCap:conditions="Default.Phase 1">
+                <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Contractor invoices (also known as contractor bills in Xero)</li>
+            <li MadCap:conditions="Default.Enterprise">Contractor invoices (also known as contractor bills in Xero)</li>
+            <li MadCap:conditions="Default.Phase 1">
+                <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Inventory journals if you have enabled inventory tracking.</li>
+            <li MadCap:conditions="Default.Enterprise">Inventory journals if you have enabled inventory tracking.</li>
+        </ul>
+    </body>
+</html>

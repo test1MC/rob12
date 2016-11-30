@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="MadCap HTML5 Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterPage="/Content/Resources/MasterPages/KB_Master_Page.flmsp"
+  MasterStylesheetOverride="True"
+  EnableFeedbackService="false"
+  LiveHelpServer=""
+  LiveHelpKey=""
+  GetLatestBeforeCompile="true"
+  DefaultUrl="/Content/Welcome.htm">
+  <Variables>
+    <Variable
+      Name="MyVariables/Retainage">Retention</Variable>
+  </Variables>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/Production.fldes" />
+  </Destinations>
+</CatapultTarget>

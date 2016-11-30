@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="8405" MadCap:lastWidth="1142">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Tax Codes</h1>
+        <h2>Overview</h2>
+        <p>Your taxation system will use many tax codes to ensure appropriate revenue is set aside according to your local tax authorities' requirements.</p>
+        <p MadCap:conditions="Default.Phase 1">In simPRO, these codes will assist when exporting transactions to your accounting package, and ensuring your pricing incorporates the appropriate revenue when processing financial information for your customers, <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> contractors and suppliers.</p>
+        <p MadCap:conditions="Default.Enterprise">In simPRO, these codes will assist when exporting transactions to your accounting package, and ensuring your pricing incorporates the appropriate revenue when processing financial information for your customers, contractors and suppliers.</p>
+        <p MadCap:conditions="Default.Service">In simPRO, these codes will assist when exporting transactions to your accounting package, and ensuring your pricing incorporates the appropriate revenue when processing financial information for your customers and suppliers.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a new tax code</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-create.png" alt="A screenshot of the Create Tax Code page." class="border" />
+                </p>
+                <p>To create a new tax code:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Accounts &gt; Tax Codes</strong>.</li>
+                    <li>Click <strong>Create Tax Code</strong>.</li>
+                    <li>Enter the <strong>Tax Code</strong> recognised by the local tax authority for this tax.</li>
+                    <li>Enter the <strong>Tax Rate</strong>.</li>
+                    <li>Enter a <strong>Tax Name</strong> describing the code (read more on managing tax codes).</li>
+                    <li>If desired, select the check boxes to set the code as default for part income (all jobs and invoices), labour income (all jobs and invoices) or purchases.</li>
+                    <li>If you operate in the US, assign tax code members if desired.</li>
+                    <li>Click <strong>Create</strong>.</li>
+                </ol>
+                <p class="WarningTip">Please ensure your tax code has the same name as in your accounting package. For example, if it is NCG in your accounting package, create an NCG tax code in simPRO.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Select a tax type (US only)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If your business operates in the United States, you will need to set tax types for your tax codes. This allows for instances where you may need to apply several tax codes to the same invoice, such as local, state and federal taxes.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/System/taxcode-type.png" alt="A screenshot of the Tax Type drop-down." class="border">
+                            </img>
+                        </p>
+                        <p>The three tax types are:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1">
+                            </col>
+                            <col class="TableStyle-Definition_List_table-Column-Column2">
+                            </col>
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Single</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>This can be used as part of a combined tax code or by itself.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                                        <p>Component</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>This can only be used as part of a combined tax code.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                                        <p>Combined</p>
+                                    </td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                                        <p>A sum of multiple tax codes, or members, including both single and component tax codes.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="WarningTip">Once a tax code type has been set as a component, it cannot be changed to another type.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Assign tax code members (US only)</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>When you create a combined type tax code, you can assign component and single tax codes as members. The combined tax code will represent the sum total of its tax code members.</p>
+                        <p>
+                            <img src="../../Resources/Images/Screenshots/System/taxcode-members.png" alt="A screenshot of tax code members in a tax code." class="border">
+                            </img>
+                        </p>
+                        <p>To assign tax code members:</p>
+                        <ol>
+                            <li>Create the individual tax codes that make up the combined tax code.</li>
+                            <li>Create a new tax code to represent the group, leaving the <strong>Tax Rate </strong>at the default 0 %.</li>
+                            <li>Enter a <strong>Tax Name</strong> that clearly describes its use.</li>
+                            <li>Under <strong>Available Tax Code Members</strong>, click each tax code that you wish to make a member of your new combined tax code, or alternatively, click <strong>Add All</strong>.<ul><li>Click <strong>Assigned Tax Code Members </strong>to remove them from the combined tax code.</li></ul></li>
+                            <li>Click <strong>Save </strong>or <strong>Create</strong>.</li>
+                        </ol>
+                        <p>Once these tax settings reflect the tax setup in your accounting package, the sum total of a combined tax code that includes members is sent to the accounting package and divided into individual member tax rates upon receipt.</p>
+                        <p>Because of the limit on information that can be posted to accounting packages, avoid changing the tax rate of a tax code once it has been assigned as a tax code member.</p>
+                        <p class="Infotip">To change the tax rate of a single or component tax code that is assigned to a combined tax code, remove the tax code as a member, make changes as desired, then re-assign it to the tax code.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit a tax code</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-edit.png" alt="A screenshot of a tax code being edited." class="border" />
+                </p>
+                <p>To edit a tax code:</p>
+                <ol>
+                    <li>Go to<strong> System &gt; Setup &gt; System Setup &gt; Accounts &gt; Tax Codes</strong>.</li>
+                    <li>Click the tax code you wish to edit.</li>
+                    <li>Edit as desired, then click <strong>Save</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Delete a tax code</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you delete a tax code that has been used on any pending or in-progress jobs, quotes, invoices etc, you will be prompted to assign a new tax code to replace the one being deleted.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-delete.png" alt="A screenshot of a tax code being deleted." class="border" />
+                </p>
+                <p>To delete a tax code:</p>
+                <ol>
+                    <li>Go to <strong>System &gt; Setup &gt; System Setup &gt; Accounts &gt; Tax Codes</strong>.</li>
+                    <li>On the tax code you wish to delete, click the <strong>red delete </strong>icon.</li>
+                    <li>In the pop-up window, select another tax code from the drop-down list that will replace the deleted tax code on any pending or in-progress projects.</li>
+                    <li>Click <strong>OK</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Manage changes to tax codes</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When a tax code is created, it is allocated an internal ID in the simPRO database to keep track of it even if its details are modified. If you remove that tax code, you will be prompted to reassign the internal ID to a different tax code.</p>
+                <p>If your jurisdiction makes changes to these tax codes, initially make use of the tax name to describe the tax fully and include a date from which the tax rate applies. When a change comes through, create a new tax code with the new rate and a name that reflects the new start date (the tax code itself may be the same). At the changeover, archive the old and start using the new.</p>
+                <p>If this new tax code has been included as a tax member (US only) into a group, you will need to replicate the process at group level and create new groups in which the new tax code is a member.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Adjust tax codes in quotes and jobs</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can change the tax code on each line item for labour and materials when creating a quote or job.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-quote.png" alt="A screenshot of the Change Tax Code option." class="border" />
+                </p>
+                <p>To change a tax code for parts or materials within a quote or job:</p>
+                <ol>
+                    <li>Open a quote or job.</li>
+                    <li>Go to <strong>Parts &amp; Labour &gt; Billable</strong>.</li>
+                    <li>On the labour or part you wish to adjust, click <strong>Options</strong>.</li>
+                    <li>Click <strong>Change Tax Code</strong>.</li>
+                    <li>Select a <strong>Tax Code</strong> from the drop-down list.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+                    </li>
+                </ol>
+                <p>When your quote or job is not locked, you can also change the tax code on the cost centre. This change will overwrite your line item tax codes once finalised.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-costcentre.png" alt="A screenshot of the Tax Code drop-down in a cost centre." class="border" />
+                </p>
+                <p>To adjust the tax code on a cost centre within a quote or job:</p>
+                <ol>
+                    <li>Open a quote or job.</li>
+                    <li>Go to<strong> Details &gt; Summary</strong>.</li>
+                    <li>Under <strong>Parts &amp; Labour</strong>, click the pencil icon next to the tax entry.</li>
+                    <li>Select a <strong>Tax Code</strong> from the drop-down list and click <strong>Save</strong>.</li>
+                    <li>Click <strong>Save </strong>or <strong>Finish</strong>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign tax codes to an item</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can assign a purchase tax code and sales tax code to a specific catalogue item or item in stock.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-item.png" alt="A screenshot of the Purchase Tax Code and Sales Tax Code drop-downs in an item." class="border" />
+                </p>
+                <p>To assign tax codes to an item:</p>
+                <ol>
+                    <li>Open an item or create a new one.</li>
+                    <li>Go to <strong>Details</strong>.</li>
+                    <li>Select a <strong>Purchase Tax Code</strong> and / or<strong> Sales Tax Code</strong> from the drop-down list.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign a tax code to a supplier</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If needed, you can assign a purchase tax code to a supplier that will automatically apply to transactions with that supplier, or use the catalogue item purchase tax code.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-supplier.png" alt="A screenshot of the Purchase Tax Code drop-down in a supplier." class="border" />
+                </p>
+                <p>To assign a tax code to a supplier:</p>
+                <ol>
+                    <li>Open a supplier card file or create a new one.</li>
+                    <li>Go to <strong>Profile &gt; Settings</strong>.</li>
+                    <li>Select a <strong>Purchase Tax Code</strong> from the drop-down list.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Assign tax codes to a customer</h2>
+        <p>If needed, you can assign tax codes to specific customers that will automatically apply to transactions with that customer, or use the part tax code and labour tax code.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/System/taxcode-customer.png" alt="A screenshot of the Part Tax Code and Labour Tax Code drop-downs in a customer." class="border" />
+        </p>
+        <p>To assign tax codes to a customer:</p>
+        <ol>
+            <li>Open a customer or create a new one.</li>
+            <li>Go to <strong>Rates &gt; General</strong>.</li>
+            <li>Select a <strong>Part Tax Code</strong> and / or a <strong>Labour Tax Code</strong>.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+            </li>
+        </ol>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign tax codes to a site</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If needed, you can assign tax codes to a specific site. This is useful for companies managing destination-based sales taxes, and will override tax codes assigned to customers.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-site.png" alt="A screenshot of the Part Tax Code and Labour Tax Code drop-downs in a site." class="border" />
+                </p>
+                <p>To assign tax codes to a site:</p>
+                <ol>
+                    <li>Open an existing site or create a new one.</li>
+                    <li>Go to <strong>Profile &gt; Tax Settings</strong>.</li>
+                    <li>Select a <strong>Part Tax Code</strong> and / or a <strong>Labour Tax Code</strong>. If you select <strong>Use Customer Default</strong>, the tax rate assigned to the customer will be used in quotes and jobs.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+                    </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign a tax code to a pre-build</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When creating a pre-build, you can assign a specific tax code or use the default part tax code or the default labour tax code.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-prebuild.png" alt="A screenshot of the Sales Tax Code drop-down in a pre-build." class="border" />
+                </p>
+                <p>To assign a tax code to a pre-build:</p>
+                <ol>
+                    <li>Open an existing pre-build or create a new one.</li>
+                    <li>Go to<strong> Details &gt; Sales Tax Code</strong>. Read important notes on pre-build tax codes below.</li>
+                    <li>Select a tax code.</li>
+                    <li>
+                        <MadCap:snippetText src="../../Resources/Snippets/SN Click Save or Finish.flsnp" />
+                    </li>
+                </ol>
+                <p><strong>Sales Tax Code</strong>: If you are working in countries with differing tax codes, such as the US, you may wish to select certain tax codes on your pre-build:</p>
+                <ul>
+                    <li>For materials-only pre-builds, select <strong>Use default part tax code</strong> or a specific materials tax code</li>
+                    <li>For labour-only pre-builds, select <strong>Use default labour tax code</strong> or a specific labour tax code</li>
+                    <li>If your pre-build has both materials and labour, select any tax code but ensure you check and update line item tax codes in each quote or job as required.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>VAT on non-GBP quotes and invoices (UK and Enterprise only)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When invoicing your customers in foreign currencies, the quote and invoice forms will display the exchange rate and tax breakdown on VAT separately. The total amount due will display in the customer's associated currency.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/System/taxcode-vat.png" alt="A screenshot of VAT on a foreign currency invoice." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

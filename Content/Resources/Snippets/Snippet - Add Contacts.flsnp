@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="699" MadCap:lastWidth="1474">
+    <head>
+    </head>
+    <body>
+        <p>To add additional  contacts:</p>
+        <ol>
+            <li>Create or access a card file as normal.</li>
+            <li>Click <b>Profile &gt; Contacts &gt; Create Contact</b>.</li>
+            <li>Select a <b>Title</b> and enter the<b> First</b> and<b> Last Name</b>, <b>Position</b> and<b> Department</b> of the  contact.</li>
+            <li>Enter contact details and <b>Notes</b> as desired.</li>
+            <li>Under <b>Contact For</b>, select the areas for which this contact should be referred to.</li>
+            <li>For each area, select <b>Primary Contact</b> if applicable.</li>
+            <li>Click <b>Save</b> under <b>Notes</b>.</li>
+            <li>Click <b>Save</b> or <b>Finish</b> in the top right.</li>
+        </ol>
+        <p>When you send correspondence from the <b>Forms</b> tab in simPRO, the email will be addressed to the relevant <b>Primary Contact</b>, with the additional contacts available to add from the <strong>Contacts</strong> list.</p>
+        <p>If another contact has been assigned as <b>Primary Contact</b> for an area of correspondence, a <strong>person</strong> icon will appear. Hover over the icon to view the name of the other contact.</p>
+        <p>
+            <img src="../Images/contacts capture test.bmp" class="border" />
+        </p>
+    </body>
+</html>

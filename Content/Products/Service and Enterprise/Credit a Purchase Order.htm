@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2955" MadCap:lastWidth="1786">
+    <head>
+    </head>
+    <body>
+        <h1>Credit a Purchase Order</h1>
+        <h2>Overview</h2>
+        <p>Create a credit for a partially or fully receipted purchase order if, for example, there has been a shipping error or faulty goods supplied. You can create credits based on quantity, if you are returning goods, or based on price, if you are asking for a discount.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a credit</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/creditorder-create.png" alt="A screenshot of a purchase order credit being created." class="border" />
+                </p>
+                <p>To credit a purchase order:</p>
+                <ol>
+                    <li>Go to <strong>Materials &gt; Purchase Orders &gt; Receipts</strong>. Alternatively, open the desired purchase order and click the <strong>Receipts </strong>sub-tab.</li>
+                    <li>Click <strong>Options &gt; Create Credit</strong> on the desired receipt.</li>
+                    <li>For the <strong>Credit Type</strong>, select:<ul><li><strong>Price </strong>for the supplier to give a full or partial discount for the goods supplied.</li><li><strong>Quantity </strong>if you are returning the goods to the supplier.</li><li>You cannot change the credit type once the credit has been created.</li></ul></li>
+                    <li>Depending on the <strong>Credit Type</strong>, enter the:<ul><li><strong>Credit Price</strong>: the cost discount on the item supplied. Alternatively, you can set the credit price to zero.</li><li><strong>Credit Qty</strong>: the quantity of items being returned. Alternatively, you can set the credit quantity to zero.</li></ul></li>
+                    <li>Enter the <strong>Freight </strong>amount, <strong>Restocking Fee</strong> and / or <strong>Tax Adjustment</strong> as applicable.</li>
+                    <li>Enter <strong>Supplier Notes</strong> and <strong>Private Notes</strong> as desired.</li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>To send the credit to the supplier, click the <strong>Forms </strong>tab.</p>
+                <h3>Enter the credit invoice number</h3>
+                <p>Once the supplier has accepted the credit, add the <strong>Credit Invoice No.</strong> to the credit so that it will post as a transaction to your accounting link.</p>
+                <p>To add the <strong>Credit Invoice No</strong>:</p>
+                <ol>
+                    <li>Go to <strong>Materials &gt; Credits &gt; Pending Credits</strong>.</li>
+                    <li>Click the desired credit, then click <strong>Unlock</strong>.</li>
+                    <li>Enter the <strong>Credit Invoice No</strong>.</li>
+                    <li>Enter the <strong>Credit Date</strong>.</li>
+                    <li>Click <strong>Finish &gt; Finish</strong>.</li>
+                </ol>
+                <p>The credit will then move to Complete Credits.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Bulk set credit quantities / prices to zero</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you wish to only credit specific line items on a purchase order receipt, you can set all other line item quantities / prices to zero in bulk.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Materials/creditorder-bulkset.png" alt="A screenshot of the Set Qty to Zero option." class="border" />
+                </p>
+                <p>To bulk set credit quantities / prices to zero:</p>
+                <ol>
+                    <li>Go to <strong>Materials &gt; Purchase Orders</strong>.</li>
+                    <li>Create or access the desired credit as normal.</li>
+                    <li>Under <strong>Received Items</strong>, select the line items you do not wish to credit, then click <strong>Set Credit Qty to Zero</strong> / <strong>Set Credit Price to Zero</strong>.<ul><li>Alternatively, select <strong>Select All</strong>, then click <strong>Set Qty to Zero</strong> to set all credit quantities / prices to zero.</li></ul></li>
+                    <li>Continue crediting the purchase order receipt as normal.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Email a supplier credit note form</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can email supplier credit notes to suppliers directly from simPRO.</p>
+                <p>To email a supplier credit note form:</p>
+                <ol>
+                    <li>Go to<strong> Materials &gt; Credits</strong>, then click the desired credit note.<ul><li>Alternatively, create a supplier credit as normal, then click <strong>Finish</strong>.</li></ul></li>
+                    <li>Click <strong>Forms</strong>.</li>
+                    <li>Under <strong>Form</strong>, ensure<strong> Supplier Credit</strong> is selected.<ul><li>Alternatively, select <strong>Email Only</strong> to send an email with no form.</li></ul></li>
+                    <li>Click <strong>View </strong>to preview and / or print the form.</li>
+                    <li>Select a <strong>Primary Contact </strong>to email the form to and click to add additional <strong>Contacts </strong>if desired.<ul><li>Alternatively, you can manually enter email addresses and separate them with a comma.</li></ul></li>
+                    <li>Adjust the default <strong>Subject </strong>and <strong>Body </strong>if desired.<ul><li>Alternatively, click <strong>Clear Email</strong> to enter a new <strong>Subject </strong>and <strong>Body</strong>.</li></ul></li>
+                    <li>Click <strong>Send &gt; OK</strong> to confirm.</li>
+                </ol>
+                <p>Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Purchase Order &gt; Display Options &gt; Form Titles </strong>to enter a new title to display on the printable form document. The form will still retain its simPRO default title when you select it from the <strong>Form </strong>drop-down list.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

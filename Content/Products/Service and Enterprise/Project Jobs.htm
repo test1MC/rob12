@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="17760" MadCap:lastWidth="2119" MadCap:conditions="Default.Phase 1">
+    <head><title></title>
+        <meta name="template" content="Flare.htt" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <map id="map1">
+        <area shape="polygon" coords="305,263,302,314,357,347,411,311,409,263,303,262" href="Project Quotes.htm" target="_blank" />
+        <area shape="rectangle" coords="296,372,414,460" dragDirection="0" href="Convert a Quote.htm" target="_blank" />
+        <area shape="rectangle" coords="459,371,576,460" dragDirection="0" href="#Create-a-project-job" />
+        <area shape="rectangle" coords="677,331,932,461" dragDirection="0" href="#Create-a-project-job" />
+        <area shape="rectangle" coords="676,467,801,507" dragDirection="0" href="#Create-a-project-job" />
+        <area shape="rectangle" coords="675,547,802,612" dragDirection="0" href="#Add-sections-and-cost-centres" />
+        <area shape="rectangle" coords="675,615,802,680" dragDirection="0" href="#Add-parts-and-labour" />
+        <area shape="polygon" coords="461,783,517,739,574,783,519,828,460,784" href="#Enable-retention-retainage" />
+        <area shape="rectangle" coords="460,869,576,958" dragDirection="0" href="#Enable-retention-retainage" />
+        <area shape="rectangle" coords="1037,701,1204,748" dragDirection="0" href="#Schedule-the-project" />
+        <area shape="rectangle" coords="1037,756,1204,812" dragDirection="0" href="#Raise-contractor-work-orders" />
+        <area shape="rectangle" coords="981,963,1102,1012" dragDirection="0" href="#Add-variations" />
+        <area shape="rectangle" coords="1183,1046,1304,1138" dragDirection="0" href="#standard-variation" />
+        <area shape="rectangle" coords="981,1185,1101,1276" dragDirection="0" href="#linked-variation" />
+        <area shape="rectangle" coords="1909,1046,2028,1136" dragDirection="0" href="#Raise-progress-claims" />
+        <area shape="rectangle" coords="1563,1312,1682,1402" dragDirection="0" href="#Raise-the-final-progress-claim" />
+        <area shape="rectangle" coords="1564,1186,1683,1276" dragDirection="0" href="#Raise-the-final-progress-claim" />
+    </map>
+    <body>
+        <h1>
+            <MadCap:concept term="ConditionsBlockElementsTables" />
+            <MadCap:keyword term="Conditions" />Project Jobs</h1>
+        <h2>Overview</h2>
+        <MadCap:snippetBlock src="../../Resources/Snippets/SN Enterprise Only.flsnp" />
+        <p>Create project jobs in simPRO to manage medium to large scale projects. You can monitor your costs, schedule technicians, create progress claims, oversee the project as it progresses, and make changes as you need to.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Recommended workflow</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Click the steps below to view the corresponding instructions.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Project Jobs - workflow.png" usemap="#map1" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Create-a-project-job"></a>Create a project job</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can create a project job outright in simPRO in the event that you have not converted it from a project quote.</p>
+                <p>To create a project job:</p>
+                <ol>
+                    <li>Hover over <b>Jobs</b>, then click <b>Create New Project Job</b>.</li>
+                    <li>Select a <b>Customer</b> and <b>Site</b>.<ul><li>Alternatively, click <b>Create New</b> to create a new customer or site.</li></ul></li>
+                    <li>Select a <b>Primary</b> and <b>Additional</b> customer contact and a <b>Site Contact</b>.</li>
+                    <li>Enter the project <b>Description</b> to appear on the job card, in Connect, and on progress claims.<ul><li>This will appear on job forms as the <b>Overview Description</b>.</li></ul></li>
+                    <li>Enter an <b>Order Number</b> and / or <b>Request Number</b> if applicable.</li>
+                    <li>Select a <b>Salesperson</b> and <b>Project Manager</b> if applicable.</li>
+                    <li>Select <b>Project Tags</b> to categorise the job.</li>
+                    <li>Click <b>Next</b>.</li>
+                </ol>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Apply-project-specific-material-and-labour-rates"></a>Apply project-specific material and labour rates</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Click Optional in the Job Setup page to adjust default job rates and settings such as pricing tiers, labour overheads, defaults, fit times and tax codes, material markups, discounts and fees, and item tax codes.</p>
+                        <p>simPRO users in Australia can also adjust STC and VEEC values at the job setup stage.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/Project Jobs - rates tab.png" alt="A screenshot of the Optional tab when creating a Project Job." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Add-sections-and-cost-centres"></a>Add sections and cost centres</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The main difference between a project job and a service job is that a project job is split into sections. You can create sections to define different stages of the job, such as Fit Off, Rough In and Commissioning, and add cost centres to each section. You can then add the applicable parts and labour to each cost centre.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/project quotes - cost centre list1.png" class="border" alt="A screenshot of the Primary Cost Centre List in a project job, including sections." />
+                        </p>
+                        <p>To add sections:</p>
+                        <ol>
+                            <li>Access the desired project job, then click <b>Cost Centre List</b>.</li>
+                            <li>Enter the section <b>Name</b>.</li>
+                            <li>Enter a <b>Description</b> if desired.<ul><li>This is for reference only and will not appear on any forms.</li></ul></li>
+                            <li>Click <b>Add</b>.</li>
+                        </ol>
+                        <p>Continue adding sections as desired. To add cost centres to sections, select the desired <b>Cost Centres</b> from the drop-down list, then click <b>Add</b>. You can then continue adding cost centres to each section as desired.</p>
+                        <p>To move a cost centre from one section to another, click and drag the <b>grey drag handle</b> on the left of the cost centre.</p>
+                        <p>You can also copy a cost centre to a different job or quote by clicking <b>Options &gt; Copy To</b>, searching and selecting the desired job or quote, then clicking <b>OK</b>.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/project job - copy cost centre.png" alt="A screenshot of the Copy Cost Centre pop-up window." class="border" />
+                        </p>
+                        <p>When you have set up all your sections and cost centres, start adding parts and labour.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Add-parts-and-labour"></a>Add parts and labour</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>In a project job, parts and labour are added in each cost centre in each section. This is useful for budgeting how much you will delegate in each stage of the work.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/project quotes - parts and labour1.png" alt="A screenshot of the Parts &amp;amp; Labour tab in a project quote." class="border" />
+                        </p>
+                        <p>To add parts and labour to a project job:</p>
+                        <ol>
+                            <li>Access the desired project job, then click <b>Cost Centre List</b>.</li>
+                            <li>Locate the desired section, then click the applicable cost centre.</li>
+                            <li>Click <b>Parts and Labour</b>.</li>
+                            <li>Search and add pre-builds and catalogue items as desired.</li>
+                            <li>Click <b>Billable</b>.</li>
+                            <li>Select one or more labour rates as desired, then click <b>Add</b>.</li>
+                            <li>Adjust the estimated <b>Time</b> as applicable.<ul><li>When the labour rate check box is selected, the time is automatically calculated from the added materials in <b>the</b> Parts table. If you enter a new <b>Time</b>, the labour rate check box will clear and <b>Billable Time</b> will no longer be based on <b>Estimated Time</b>.</li></ul></li>
+                            <li>Click <b>Save</b>.</li>
+                            <li>To return to the <b>Cost Centre List</b>, click <b>Cost Centres</b> in the breadcrumbs at the top of the project job.</li>
+                        </ol>
+                        <p>You can then continue adding parts and labour for each cost centre in each section. Once you have added parts to the job, you will need to allocate stock from your storage devices so that your stock levels are accurate.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/project job - billable time.png" alt="A screenshot of Billable Time overriding Estimated Time." class="border" />
+                        </p>
+                        <p class="Infotip">You can also add take off templates to a project job. Keep in mind that you can only add a take off template to one section, so if the take off template encompasses a large amount of work, it may be best to add the individual components to each section where they are needed.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Manage-stock"></a>Manage stock in a project job</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Go to <b>Stock &gt; All</b> in a project job cost centre to manage all required or allocated stock items. You can filter stock items according to <b>Storage Location</b> (storage device), or alternatively, perform a local search by entering the part number, description or search terms, then clicking <b>Search</b>.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/Service Jobs - manage stock.png" alt="A screenshot of all stock items assigned to a project job." class="border" />
+                        </p>
+                        <p>In <b>Stock &gt; Required</b>, you can manage required items that have not yet been ordered or allocated from stock. These are items that have been added in <b>Parts &amp; Labour</b>. In <b>Stock &gt; Allocated</b>, manage items that have been assigned to the job. This is particularly useful for adjusting overallocation of stock.</p>
+                        <p>Click the <b>black arrows</b> or enter quantities in the <b>Assigned</b> column to adjust how many items have been assigned to the cost centre. You cannot assign more items than are <b>Required</b>. When you have finished making changes, click <b>Update Stock &gt; Save</b>. Then, go to <b>Billable &gt; Parts</b> to ensure your changes have been reflected.</p>
+                        <p>To allocate stock items to a project job:</p>
+                        <ol>
+                            <li>Access the desired project job, then click <b>Cost Centre List</b>.</li>
+                            <li>Locate the desired section, then click the applicable cost centre.</li>
+                            <li>Go to <b>Stock &gt; In Stock</b>.<ul><li>Alternatively, access the desired job, then go to <b>Parts &amp; Labour &gt; Stock</b>.</li></ul></li>
+                            <li>Click the applicable storage device.</li>
+                            <li>Locate and enter quantities for the desired items, then click <b>Add Items</b>.</li>
+                            <li>Click <b>Save</b> or <b>Finish</b>.</li>
+                        </ol>
+                        <p>If you do not have the necessary items in stock, create a purchase order for materials still required to order items directly to the job.</p>
+                        <p class="Infotip">To view, print, email or attach a list of all stock items assigned to a project job during a selected date range, go to <b>Details &gt; Forms</b> and select Picking Slip from the Form drop-down list.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Add-customer-assets"></a>Add customer assets</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>If the project involves servicing customer assets on site, you can add and manage them in <b>Customer Assets</b> in the relevant cost centre.</p>
+                        <p>To add a customer asset to the project job:</p>
+                        <ol>
+                            <li>Access the desired project job, then click <b>Cost Centre List</b>.</li>
+                            <li>Locate the desired section, then click the applicable cost centre.</li>
+                            <li>Click <b>Customer Assets</b>.</li>
+                            <li>Under <b>Add Asset</b>, search and select the desired asset.</li>
+                            <li>Click <b>Save</b>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Enable-retention-retainage"></a>Enable retention / retainage</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Retention, also known as retainage in the United States, is the percentage of payment held by the customer to ensure the job is completed to specific standards and to safeguard against defects in workmanship.</p>
+                <p>If retention / retainage was not applied to the quote before conversion, you can enable it in the job. simPRO will assist in tracking the retention held back from your customer, as well as in claiming your retention back on your final invoice and your period rebate claim with a reminder to invoice once the work has been signed off on.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/project quotes - retention.png" alt="A screenshot of the details to enter to enable retention for a project job." class="border" />
+                </p>
+                <p>To enable retention / retainage for a project job:</p>
+                <ol>
+                    <li>Access the desired project job, then go to <b>Details &gt; Settings &gt; Retention / Retainage</b>.</li>
+                    <li>Click <b>Enable Retention / Retainage</b>.</li>
+                    <li>Enter the retention / retainage <b>Period </b>and <b>Retention Amount</b> percentage.<ul><li>You can also enter the <b>Amount Per Claim</b> percentage if desired.</li></ul></li>
+                    <li>Enter the <b>Final Claim Rebate</b> percentage.</li>
+                    <li>Click <b>Save</b> or <b>Finish</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Order-materials"></a>Order materials</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Order materials for a section of the project before starting work. You can create purchase orders for an entire section or for each cost centre.</p>
+                <p>To order materials for a particular stage:</p>
+                <ol>
+                    <li>Access the desired project job, then go to <b>Project Overview &gt; Materials</b>.</li>
+                    <li>Select the check box for the desired section.</li>
+                    <li>In the footer options, select the <b>Purchase Stage</b> if desired.</li>
+                    <li>Select whether <b>Purchase Prices</b> are <b>Based on Supplier</b> or <b>Based on Job</b>.</li>
+                    <li>Select the <b>Purchase Currency</b> if applicable.<ul><li>Otherwise, select <b>Auto Select</b>.</li></ul></li>
+                    <li>Click <b>Create Purchase Order</b>.<ul><li>If you are creating a supplier quote, click <b>Create Supplier Quote</b>.</li></ul></li>
+                </ol>
+                <p>The purchase order will have all of the catalogue items added to each cost centre in the section. You can then send the purchase order as normal.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Schedule-the-project"></a>Schedule the project</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For a project job, it is often easiest to schedule technicians using <b>Day View</b> or <b>Week View</b>. To schedule using <b>Day View</b> or <b>Week View</b>, the job cannot be currently open.</p>
+                <p>To schedule a project job for several employees over several days:</p>
+                <ol>
+                    <li>Go to <b>Schedules &gt; Week View / Day View</b>.</li>
+                    <li>Select <b>Job</b> from the drop-down list next to the search bar, then search and select the desired project job.</li>
+                    <li>Select the desired cost centre next to the job number.</li>
+                    <li>Select the desired date / week at the top of the schedule.</li>
+                    <li>Under <b>Employee</b>, select <b>All Available Employees</b>.<ul><li>In <b>Day View</b>, you may need to select <b>Show All</b> to see all employees.</li></ul></li>
+                    <li>Click and drag on the desired day to create a schedule block.<ul><li>Adjust the length of individual schedules by clicking and dragging the bottom of the schedule block.</li></ul></li>
+                    <li>To copy the same schedule to other employees or days:<ul><li>Right-click the schedule block and click <b>Copy Schedule</b>, then right-click on another employee or another day and click <b>Paste Schedule</b>.</li></ul></li>
+                    <li>Once all applicable employees are scheduled, click <b>Finish</b>.</li>
+                </ol>
+                <p class="Infotip">You can also schedule one technician at a time using the <b>Schedule</b> tab within each cost centre in the job. See <MadCap:xref href="Service Jobs.htm#Schedule-tab" target="_blank">Schedule a service job from the Schedule tab</MadCap:xref> in our <b>Service Jobs</b> article for more information.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Raise-contractor-work-orders"></a>Raise contractor work orders</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Raise contractor work orders based on an hourly or set rate. Contractors with an hourly rate set in their card files can be scheduled to jobs the same way as employees, which will automatically create the work order.</p>
+                <p>You can also schedule contractors in the schedule <b>Day View / Week View</b>, and email the work order to the contractor.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Hourly-rate"></a>Create work orders based on an hourly rate</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Schedule a contractor with an hourly rate to automatically create a work order.</p>
+                        <p>To schedule a contractor:</p>
+                        <ol>
+                            <li>Access the desired project job, then click <b>Cost Centre List</b>.</li>
+                            <li>Locate the desired section, then click the applicable cost centre.</li>
+                            <li>Click <b>Schedule</b>.</li>
+                            <li>Click the <b>schedule</b> icon next to the contractor you wish to schedule.</li>
+                            <li>Click and drag the schedule block to the desired day and time.<ul><li>To extend or shorten a schedule block, hover over the top or bottom edge, then click and drag the <b>white arrows</b>.</li></ul></li>
+                            <li>Click the <b>close</b> icon in the top right corner.</li>
+                            <li>Click <b>Save</b> or <b>Finish</b>.</li>
+                        </ol>
+                        <p>The labour cost of the work order will automatically be calculated based on the contractor's pay rate and scheduled hours.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/project job - schedule based.png" alt="A screenshot of an hourly rate work order within a project job." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Set-price"></a>Create work orders based on a set price</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To create a work order for a contractor with a set price, you can enter the set price either as the cost of labour or cost of materials on the work order.</p>
+                        <p>To create a set price work order:</p>
+                        <ol>
+                            <li>Access the desired project job, then click <b>Cost Centre List</b>.</li>
+                            <li>Locate the desired section, then click the applicable cost centre.</li>
+                            <li>Go to <b>Details &gt; Contractor</b>.</li>
+                            <li>Click <b>New Work Order</b>.</li>
+                            <li>Select the <b>Contractor</b> and <b>Employee</b>.</li>
+                            <li>Select the <b>Date</b>.</li>
+                            <li>Select <b>Applying Retention?</b> if applicable, then enter the <b>Retention Amount</b>, <b>Amount Per Claim,</b> and <b>Retention Period</b>.</li>
+                            <li>Enter a <b>Description</b>.<ul><li>Alternatively, select a script.</li></ul></li>
+                            <li>Clear the <b>Schedule Based</b> check box and enter the set price value as either a <b>Labour</b> or <b>Materials</b> cost as desired.</li>
+                            <li>Select the applicable <b>Tax Code</b>.</li>
+                            <li>Click <b>Finish</b>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Add-variations"></a>Add variations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Use standard or linked variations to handle extra works that fall outside of the scope of estimation or add-ons as requested by the customer.</p>
+                <p>A standard variation is a separate cost centre within the same job and is invoiced with the job, while a linked variation is an entirely separate job / quote and is invoiced separately from the original job.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="standard-variation"></a>Add a standard variation</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To create a standard variation:</p>
+                        <ol>
+                            <li>Access the desired project job, then go to <b>Cost Centre List &gt; Variations</b>.</li>
+                            <li>Enter a descriptive variation section <b>Name</b>, then click <b>Add</b>.</li>
+                            <li>Select <b>Include section value in retention / retainage</b> totals if desired.</li>
+                            <li>Select the desired cost centre(s) from the drop-down list, then click <b>Add</b>.</li>
+                            <li>Click a cost centre to <MadCap:xref href="#Add-parts-and-labour">Add parts and labour</MadCap:xref> to the variation as normal.</li>
+                            <li>Click <b>Save</b> or <b>Finish</b> to update your changes.</li>
+                        </ol>
+                        <p>As the cost centre will not be locked, standard variations are generally ‘do and charge’ with labour and materials to be invoiced.</p>
+                        <p>If you wish to perform this variation for a fixed price, add your parts and labour first, then lock the cost centre. Alternatively, use a linked quote variation.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="linked-variation"></a>Add a linked variation</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>The <b>Linked Variations</b> sub-tab will appear after you have added parts or labour in a cost centre.</p>
+                        <p>To create a linked variation:</p>
+                        <ol>
+                            <li>Access the desired project job, then go to <b>Cost Centre List &gt; Linked Variations</b>.</li>
+                            <li>Click <b>Create Variatio</b>n under <b>Quotes / Jobs</b>.</li>
+                            <li>Click <b>OK</b> to confirm. <ul><li>This will create a new job or quote for the same customer and site.</li></ul></li>
+                            <li>In the newly created quote / job, click <b>Next</b>. </li>
+                            <li>Create the variation as normal and <MadCap:xref href="#Add-sections-and-cost-centres">Add sections and cost centres</MadCap:xref> and <MadCap:xref href="#Add-parts-and-labour">Add parts and labour</MadCap:xref>.</li>
+                            <li>Click <b>Save</b> or <b>Finish</b> to update your changes.</li>
+                        </ol>
+                        <p>The variation will appear under <b>Pending Quotes / Jobs</b> with the original job number as well as the variation number. If you have the original job and the linked variation open at the same time, you will need to click <b>Finish &gt; Edit Job</b> in the original job to update the <b>Linked Variation</b> sub-tab.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/project job - linked variation.png" alt="A screenshot of the Linked Variation sub-tab." class="border" />
+                        </p>
+                        <p class="Infotip">If you have created a linked quote variation that has then been converted to a job, your customer may wish to see this variation on the same invoice as the original project. You can merge your linked job variation with the project which will add an extra section under the <b>Primary</b> tab.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Raise-progress-claims"></a>Raise progress claims</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Raise progress claims to invoice each stage of the job as they are completed. Once the final stage is complete, you can start the final progress claim.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Manage-a-project-from-the-Project-Overview"></a>Manage a project from the Project Overview</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When the job is underway, use the <b>Project Overview</b> to keep track of your material and labour costs against your estimated budget and make forecasted changes to your current budget to account for any unforeseen challenges that may arise.</p>
+                <p>You can also access any invoices, purchase orders and work orders associated with the project, set milestones as parts of your project are completed, and review metrics of the project in the chart such as invoiced and invoiced profit against actual material and labour costs.</p>
+                <p class="Infotip">If your project was not converted from a quote, you can edit cost centre totals, lock individual cost centres and lock the whole project job. For projects that have been converted from quotes, the values are locked and making changes from the <b>Project Overview</b> will not update the project.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="View-projected-costs"></a>View projected costs<br /></MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Images/project job - projected.png" class="border" alt="A screenshot of the Projected cost to complete for the project in table form." />
+                        </p>
+                        <p>Go to <b>Project Overview &gt; Projected</b> to view the cost to complete the project.</p>
+                        <p>Select <b>Operations View</b> to view both the grand total as well as the original budget, current budget, and actual budget. You can also select to have <b>Actuals Include Overhead</b>, have <b>Actuals Include Committed Cost</b>, as well as <b>Show Variations</b> and <b>Show Revised Budget</b>. This view also includes a chart as a visual representation of your budgets.</p>
+                        <p>Select <b>Financial View</b> to view only the current budget and actual margin. You can select to have <b>Actuals Include Overhead</b> and <b>Actuals Include Committed Cost</b>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Manage-project-materials"></a>Manage project materials</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Images/project job - materials(1).png" alt="A screenshot of the Materials sub-tab." class="border" />
+                        </p>
+                        <p>Go to <b>Project Overview &gt; Materials</b> to track all materials as they are used on the project. You may also adjust the <b>Projected Remaining Cost</b> of your materials budget, which will then adjust your current budget.</p>
+                        <p>To adjust the sell price or markup for all cost centres, enter the adjustment in the <b>Adjust Material Sell</b> / <b>Adjust Material Markup</b> field near the top of the page and click <b>Update &gt; Save</b>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Manage-project-resources"></a>Manage project resources</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Images/project job - resources.png" alt="A screenshot of the Resources sub-tab." class="border" />
+                        </p>
+                        <p>Go to <b>Project Overview &gt; Resources</b> to adjust your <b>Projected Remaining Hours</b> by <b>Cost</b> or <b>Hours</b>. This will then adjust your current budget.</p>
+                        <p>To adjust the labour hours or labour markup for an individual cost centre, enter the adjustment in the correct column and click <b>Save</b>. To adjust the labour hours or labour markup for all cost centres, enter the adjustment in the <b>Global Adjust Hours</b> / <b>Will Adjust Hours by %</b> / <b>Adjust Labour Markup</b> field near the top of the page, then click <b>Update &gt; Save</b>.</p>
+                        <p>To download a CSV file of the job resources, click the <b>download</b> icon in the top right.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Adjust-project-budget"></a>Adjust the project budget</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>
+                            <img src="../../Resources/Images/Images/project job - adjustments.png" alt="A screenshot of the Adjustments sub-tab." class="border" />
+                        </p>
+                        <p>Go to <b>Project Overview &gt; Adjustments</b> to view a summary and chart of the project budget as well as make any of the same adjustments made in <b>Materials</b> and <b>Resources</b>. You can also add a fee or discount to the job.</p>
+                        <p>To apply a fee or discount:</p>
+                        <ol>
+                            <li>Under <b>Adjustment</b> type, select <b>Down (Discount)</b> / <b>Up (Fee)</b>.</li>
+                            <li>Enter the adjustment as a <b>Value</b> or <b>Percentage</b>.</li>
+                            <li>Click <b>Update Quote &gt; Save</b>.</li>
+                        </ol>
+                        <p>The fee / discount will display as a separate colour in the chart on the right.</p>
+                        <p>Click <b>Lock Job</b> to lock the job, as well as either estimates or items according to your settings in <b>System &gt; Setup &gt; Defaults &gt; System</b>.</p>
+                        <p>To print or download the chart, click the <b>list</b> icon in the top right of the chart.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Monitor-job-production"></a>Monitor job production</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Go to <b>Project Overview &gt; Production</b> to revise work completed on the job to date. As allocated materials are used on the project, select the <b>Date of revision</b>, enter the quantity in the <b>Completed</b> column, then click <b>Save Revision</b>. This helps you keep track of what materials are being used on specific days throughout the project's duration. You can also view previous revisions by selecting them from the <b>Revision</b> drop-down list.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/projected job - production.png" alt="A screenshot of the Production sub-tab." class="border" />
+                        </p>
+                        <p>Below the list of materials, view the totals of the revision and a graph of the labour cost, material cost, total cost, invoiced, and invoiced profit over the course of the project. To print or download the graph, click the <b>list</b> icon.</p>
+                        <p>To delete a revision, select it from the drop-down list and click <b>Delete Revision</b>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="View-contractor-work-orders"></a>View contractor work orders</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can view a list of work orders raised for the job in <b>Project Overview &gt; Contractor Jobs</b>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="View-purchase-orders"></a>View purchase orders</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Go to <b>Project Overview</b> &gt;&#160;<b>Orders</b> to view a list of all purchase orders raised for the project job to <MadCap:xref href="#Order-materials">Order materials</MadCap:xref>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Raise-the-final-progress-claim"></a>Raise the final progress claim</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Raise the final progress claim the same way as previous claims, but make sure you click <b>Finalise Claim</b>. After the final claim, the job will be moved to <b>Jobs &gt; Invoiced</b> and you cannot raise any more progress claims.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/project job - final claim.png" alt="A screenshot of the Finalise Claim button in a progress claim." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

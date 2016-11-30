@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2208" MadCap:lastWidth="1751">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Stock Management Overview</h1>
+        <h2>Overview</h2>
+        <p>Manage stock in simPRO to efficiently monitor the cost, quantity, and location of your stock items. You can then ensure you have the right materials available in your inventory and against each of your jobs.</p>
+        <p>Stock is organised in storage devices in simPRO. You may wish to have a main (default) storage device, such as a warehouse, and then secondary storage devices that contain stock, such as vehicles. These secondary devices can be assigned to technicians in the field in their employee /  contractor card files.</p>
+        <p MadCap:conditions="Default.Phase 1">For each of these storage devices, you can add the necessary stock items through a stock adjustment or stocktake, receipting a purchase order, or a stock transfer from another storage device. You can also set minimum and restock levels to receive alerts when items need restocking, adjust over allocation, and <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> enable inventory tracking.</p>
+        <p MadCap:conditions="Default.Enterprise">For each of these storage devices, you can add the necessary stock items through a stock adjustment or stocktake, receipting a purchase order, or a stock transfer from another storage device. You can also set minimum and restock levels to receive alerts when items need restocking, adjust over allocation, and enable inventory tracking.</p>
+        <p MadCap:conditions="Default.Service">For each of these storage devices, you can add the necessary stock items through a stock adjustment or stocktake, receipting a purchase order, or a stock transfer from another storage device. You can also set minimum and restock levels to receive alerts when items need restocking, and adjust over allocation.</p>
+        <h2>Manage stock using the First In, First Out method (FIFO)</h2>
+        <p>simPRO stock management is based on the First In, First Out method, also known as FIFO. FIFO essentially means that the first goods purchased by your business for stock are also the first goods sold to customers. This is useful for accurately tracking stock prices, reducing wasted stock, and ensuring an efficient cost flow.</p>
+        <p>In simPRO, the value of each stock item remains at the price for which it was receipted into the storage device. When a stock item is assigned to a job, the earliest goods purchased are the first to be assigned from the storage device, and will retain their originally receipted price as an actual cost, even if the price has been updated in the catalogue.</p>
+        <p>When you view the <strong>Stock Value</strong> report in <strong>Reports &gt; View Reports &gt; Stock &gt; Value</strong>, the value displayed is a combined total of all stock items added together, not an average.</p>
+        <p class="Infotip">If you assign stock to an unlocked job and a stock item has a FIFO material cost greater than what you are currently billing for the item, you will receive an alert to update the cost and sell price of the item to achieve a better profit margin if desired.</p>
+        <h2>View items in stock</h2>
+        <p>To view all items in stock, hover over <strong>Materials </strong>in the main menu, then click <strong>Stock </strong>in the <strong>Materials </strong>sub-menu.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Stock/stock-overview.png" alt="A screenshot of the Stock option in the Materials menu." class="border" />
+        </p>
+        <p>Your stock items will then be organised according to storage devices. To locate a stock item, click the applicable storage device, or alternatively, perform a local search from the stock page using the item's part number, description, or search terms as specified in the catalogue item card file.</p>
+        <p>Click <strong>Advanced </strong>to filter stock items according to the <strong>Supplier</strong>, <strong>Stock Item Status</strong>, <strong>Storage Device Status</strong> or <strong>Storage Device</strong>.</p>
+        <p>You can then save these filter options as a saved search to access stock items more quickly.</p>
+        <p>
+            <img src="../../Resources/Images/Screenshots/Stock/stock-search.png" alt="A screenshot of the Advanced search in the stock table." class="border" />
+        </p>
+        <h3>Access storage device options</h3>
+        <p>Access the following options when you right-click or click <strong>Options </strong>on a storage device in <strong>Materials &gt; Stock</strong>:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+            <col class="TableStyle-Definition_List_table-Column-Column1" />
+            <col class="TableStyle-Definition_List_table-Column-Column2" />
+            <tbody>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>View Stock</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>View all allocated stock in the storage device. You can also click the storage device to view its allocated stock.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Edit</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Edit the storage device name and select whether it is your <strong>Default Device</strong>. Click <strong>Update </strong>to save your changes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Delete</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Delete the storage device. You cannot delete a storage device that has items in stock. Before deleting a storage device, you need to transfer any associated stock to another storage device.</p>
+                        <p>To view deleted storage devices, click <strong>Advanced</strong>, then select <strong>Archived </strong>or <strong>Active &amp; Archived</strong> from the <strong>Storage Device Status</strong> drop-down list. To activate a storage device in your system, click <strong>Options &gt; Activate</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Stock Levels</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Adjust the <strong>Minimum Level</strong> and <strong>Restock Level </strong>for items in the storage device.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">
+                        <p>Transfer Stock</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                        <p>Transfer stock items to another storage device.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">
+                        <p>Stock Take</p>
+                    </td>
+                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">
+                        <p>Perform a stock take or adjustment for items in the storage device.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

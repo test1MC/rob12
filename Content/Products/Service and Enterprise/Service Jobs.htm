@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="17092" MadCap:lastWidth="1754">
+    <head>
+        <link href="../../Resources/TableStyles/simPRO-Definition-List-Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/simPROStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <map id="map1">
+        <area shape="polygon" coords="298,254,401,254,402,306,349,336,295,304,296,254" href="Service Quotes.htm" target="_blank" />
+        <area shape="rectangle" coords="291,366,407,455" dragDirection="0" href="Convert a Quote.htm" target="_blank" />
+        <area shape="rectangle" coords="666,302,923,467" dragDirection="0" href="#Create-a-service-job" />
+        <area shape="rectangle" coords="445,364,561,453" dragDirection="0" href="#Create-a-service-job" />
+        <area shape="rectangle" coords="667,471,791,514" dragDirection="0" href="#Create-a-service-job" />
+        <area shape="rectangle" coords="444,480,560,569" dragDirection="0" href="#Create-a-service-job" />
+        <area shape="rectangle" coords="668,604,784,693" dragDirection="0" href="#Create-a-service-job" />
+        <area shape="rectangle" coords="830,604,946,693" dragDirection="0" href="#Create-a-service-job" />
+        <area shape="rectangle" coords="445,740,561,829" dragDirection="0" href="#Schedule-Job-Setup" />
+        <area shape="rectangle" coords="443,855,559,944" dragDirection="0" href="#Schedule-Job-Setup" />
+        <area shape="rectangle" coords="445,972,561,1061" dragDirection="0" href="#Schedule-Job-Setup" />
+        <area shape="rectangle" coords="446,1229,562,1318" dragDirection="0" href="#Schedule-Job-Setup" />
+        <area shape="rectangle" coords="647,1093,763,1182" dragDirection="0" href="#Schedule-Job-Setup" />
+        <area shape="polygon" coords="945,1555,887,1587,832,1548,833,1498,943,1499,944,1555" href="../Connect/Connect Jobs.htm" />
+    </map>
+    <body>
+        <h1>Service Jobs</h1>
+        <h2>Overview</h2>
+        <p>Create 'do and charge' or service jobs in simPRO. When you create a service job, you can also schedule technicians and, in simPRO Enterprise, contractors, send job forms, add labour and materials, and raise purchase orders.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Simplified service job workflow</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Images/Service Jobs - workflow.png" title="Click a step in the workflow to view the corresponding instructions." alt="A screenshot of the simplified service job workflow in simPRO." class="border" usemap="#map1" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Create-a-service-job"></a>Create a service job</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can create a service job from the <b>Jobs</b> menu, from the schedule <b>Day View / Week View</b>, or from within the customer / site card file. You can also convert an quote into a job, so that all of the information already entered will carry over.</p>
+                <p>To create a service job from the <b>Jobs</b> menu:</p>
+                <ol>
+                    <li>Go to <strong>Jobs &gt; </strong><b><strong>Create New Job </strong>/ Create New Service Job</b>.</li>
+                    <li>Search and select a <b>Customer</b> and <b>Site</b> from the drop-down lists.<ul><li>Alternatively, click <b>Create New</b> to create a new customer and / or site.</li></ul></li>
+                    <li>Select a <b>Customer Contact</b> and <b>Site Contact</b>, or click <b>Create New</b> to create new contacts.<ul><li>The contact phone numbers will then be available in Connect. The <b>Site Contact</b> may be a store manager, building manager etc.</li></ul></li>
+                    <li>Select the desired <b>Cost Centre</b>.<ul><li>Cost centres separate operational costs and services within your business to assist in reporting.</li></ul></li>
+                    <li>Enter an <b>Order Number</b> and <b>Request Number</b> if required.</li>
+                    <li>Enter the job <b>Description</b> to appear on the job card, in Connect, and on the customer invoice.​​<ul><li>Alternatively, select a script from the <b>Insert Script</b> drop-down list. You can then adjust the description as desired using the text formatting options.</li></ul></li>
+                    <li MadCap:conditions="Default.Phase 1">Assign a <b>Salesperson</b> and / or  <b><img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Project Manager</b> and enter a <b>Due Date</b> if desired.<ul><li MadCap:conditions="Default.Phase 1">You need to mark employees as <b>Salesperson</b> / <b>Project Manager</b> in their card files to select them.</li></ul></li>
+                    <li MadCap:conditions="Default.Service">Assign a <b>Salesperson</b> and enter a <b>Due Date</b> if desired.<ul><li MadCap:conditions="Default.Service"><MadCap:conditionalText MadCap:conditions="Default.Service">You need to mark employees as <b>Salesperson</b> in their card files to select them.</MadCap:conditionalText></li></ul></li>
+                    <li MadCap:conditions="Default.Enterprise">Assign a <b>Salesperson</b> and / or<b> Project Manager</b> and enter a <b>Due Date</b> if desired.<ul><li MadCap:conditions="Default.Enterprise">You need to mark employees as <b>Salesperson</b> / <b>Project Manager</b> in their card files to select them.</li></ul></li>
+                    <li>Select <b>Tags</b> to categorise the job.</li>
+                    <li>Schedule a technician to the job using the options in the grey area to the right.<ul><li>Alternatively, you can schedule the job in the Schedule View or in the Schedule tab of the job after creating it.</li></ul><ul><li>You may wish to assign a <b>Technician</b> and a <b>Due Date</b> under the job <b>Description</b> instead of scheduling to allow the technician to respond to and complete a job at their earliest convenience. If you both assign and schedule a technician, the job will appear twice in Connect.</li></ul></li>
+                    <li>Click <b>Finish</b> to create and exit the job.<ul><li>Alternatively, click <b>Next</b> to continue building the job.</li></ul></li>
+                </ol>
+                <p>
+                    <img src="../../Resources/Images/Images/Service Jobs - Job Setup page.png" title="Select a Customer, Site, and Cost Centre for the job." alt="A screenshot of the Service Job Setup page." class="border" />
+                </p>
+                <p>When you have clicked <b>Finish</b> on a service job, you can choose to:</p>
+                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                    <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 129px;" />
+                    <col class="TableStyle-Definition_List_table-Column-Column2" />
+                    <tbody>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">View Jobs</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">View all jobs in the <b>Pending / Progress Jobs</b> table, depending on how you have set up your automatic triggers in <b>System &gt; Setup &gt; System Setup &gt; Status Codes &gt; Automatic Triggers</b>.</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Edit Job</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Go to the <b>Job Summary</b> to continue building the job.</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Schedule Job</td>
+                            <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Schedule the job to a technician in the <b>Day View / Week View</b>, depending on your settings in <b>System &gt; Setup &gt; Defaults &gt; Schedule &gt;&#160;Default View</b>.</td>
+                        </tr>
+                        <tr class="TableStyle-Definition_List_table-Body-Body1">
+                            <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">Invoice Job</td>
+                            <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">Invoice the job.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>You can return to the <b>Job Setup</b> page to make changes by accessing the desired job, then going to <b>Details &gt; Settings &gt; Job Setup</b>, or by clicking the beginning of the breadcrumb at the top of the job.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="adjust-default-job-rates-and-settings"></a>Adjust default job rates and settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p MadCap:conditions="Default.Enterprise">Click the <b>Optional</b> tab in the <b>Job Setup</b> page to adjust <img src="../../Resources/Images/Icons/icon-service-only-sm.png" title="This feature is only available in simPRO Service." alt="simPRO Service only." /> default material markups and / or  <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> pricing tiers, labour rates, tax codes, discounts and fees, and STC and VEEC values (only available in Australia in simPRO Enterprise).</p>
+                        <p MadCap:conditions="Default.Enterprise">Click the <b>Optional</b> tab in the <b>Job Setup</b> page to adjust   pricing tiers, labour rates, tax codes, discounts and fees, and STC and VEEC values (only available in Australia in simPRO Enterprise).</p>
+                        <p MadCap:conditions="Default.Service">Click the <b>Optional</b> tab in the <b>Job Setup</b> page to adjust  default material markups, labour rates, tax codes, discounts and fees, and STC and VEEC values (only available in Australia in simPRO Enterprise).</p>
+                        <p>If you are using simPRO in the United States, this is particularly important for selecting different part and labour tax codes to apply to the entire job.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/Service Jobs - Rates section.png" title="Click Optional to adjust default rates and settings prior to creating the job." alt="A screenshot of the service job Optional tab." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Schedule-a-service-job"></a>Schedule a service job</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>There are several ways to schedule service jobs to specific technicians in simPRO:</p>
+                <ul>
+                    <li>In <b>Job Setup</b> when you create a service job.</li>
+                    <li>In the <b>Schedule</b> tab of a service job.</li>
+                    <li>In the schedule <b>Day View / Week View / Manual View</b>.</li>
+                </ul>
+                <p>Before you begin scheduling service jobs, you may wish to use a number of simPRO scheduling tools to increase scheduling accuracy and efficiency.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Schedule-Job-Setup"></a>Schedule a service job in Job Setup</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To schedule a service job:</p>
+                        <ol>
+                            <li>Create a job as normal.</li>
+                            <li>In the grey area to the right, enter the <b>Job Duration</b>, then search and select the applicable <b>Zone</b>.</li>
+                            <li>Under <b>Preferred Time</b>, click a time allotment in the <b>AM</b> or <b>PM</b> of the desired day.<ul><li>​​Select <b>Hide Weekends</b> or click the <b>blue arrows</b> to alter the schedule view as desired.</li></ul></li>
+                            <li>Click <b>Calculate</b> to filter <b>Technician(s) to Schedule</b> by <b>Travel Distance</b> to the job site.</li>
+                            <li>Enter a <b>Start Time</b> and / or <b>Finish Time</b> for the desired technician(s), then click <b>Select</b>.</li>
+                            <li>Click <b>Finish</b> to create and exit the job or click <b>Next</b> to continue building the job.<ul><li>​​If you have accessed <b>Job Setup</b> from <b>Details &gt; Settings</b> within the job, click <b>Update</b> to save your changes.</li></ul></li>
+                        </ol>
+                        <p>
+                            <img src="../../Resources/Images/Images/Service Jobs - schedule.png" title="Enter the Job Duration and select the Zone and Preferred Time to filter available technicians." alt="A screenshot of the scheduling filter options in the Job Setup page." class="border" />
+                        </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Schedule-tab"></a>Schedule a service job from the Schedule tab</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Go to <b>Schedule</b> in a created service job to schedule technicians and, in simPRO Enterprise, teams to the job.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/Service Jobs - schedule page 2.png" alt="A screenshot of the Schedule tab in a service job." class="border" />
+                        </p>
+                        <p>To schedule a job in the <b>Schedule</b> tab:</p>
+                        <ol>
+                            <li>Access the desired job, then go to <b>Schedule</b>.</li>
+                            <li>Under <b>Available Resources</b>, click the <b>calendar</b> icon next to the employee, or in simPRO Enterprise, contractor /  team you wish to schedule.<ul><li>Click an employee / contractor / team to view their available hours over the next five days.</li></ul></li>
+                            <li>In the top left of the schedule view, select the desired schedule rate.</li>
+                            <li>Click the desired time block to add a schedule block.<ul><li>Click and drag the schedule block to move it to a different day or hour.</li><li>Click and drag the top and bottom edges to lengthen or shorten the schedule block.</li></ul></li>
+                            <li>When you have finished scheduling, click the <b>close</b> icon in the top right.</li>
+                            <li>Click <b>Save</b>.</li>
+                        </ol>
+                        <p>
+                            <img src="../../Resources/Images/Images/Service Jobs - schedule view.png" alt="A screenshot of the schedule view within a job." class="border" />
+                        </p>
+                        <p>Alternatively, click Help me decide to schedule a job using the same <b>Filter Options</b> as the <b>Job Setup</b> page.</p>
+                        <p>If the quantity of hours scheduled is different to the quantity of hours being billed in <b>Parts &amp; Labour</b>, or the scheduled labour rate type is different to the labour rate being billed to the customer, a warning will appear. Click <b>Update Time</b> to match billed time to that of the scheduled hours and labour rate including time associated with service fees.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="View-the-job-summary"></a>View the job summary</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Go to <b>Details &gt; Summary</b> in a service job to adjust the job description, enter private notes visible in Connect but not visible to the customer, manage the total costs of associated parts and labour, and view a timeline of all job activity in simPRO.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Service Jobs - Summary.png" alt="A screenshot of the Job Summary page." class="border" />
+                </p>
+                <p>In the remaining <b>Details</b> sub-tabs, you can adjust job settings, email a job form to the customer, upload job attachments, and view a log of the job history. In simPRO Enterprise, you can also create job tasks and assign contractors.</p>
+                <p>Within any sub-tab, click the <b>black drop-down arrow</b> in the top right to view customer and site details, the job total, the assigned technician if applicable and the cost centre description.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Service Jobs - dropdown.png" alt="A screenshot of the drop-down information available in the Details sub-tabs." class="border" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Adjust-job-settings"></a>Adjust job settings</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Go to <b>Details &gt;&#160;Settings</b> in a service job to adjust the overall settings for the job and access the following options:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 100px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">SMS Job</td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">If you have registered for and set up SMS in simPRO, you can send SMS to mobile devices directly from the job.</td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">Copy Job</td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">Create an identical copy of the service job with a different job number and creation date.</td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">Job Setup</td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">Return to the Job Setup page to change the customer and / or site for the job.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>You can also enter a <b>Request No.</b> supplied by the customer to add additional reference information to the job, as well as an <b>Order No.</b> if required by the customer.</p>
+                        <p>If desired, adjust the date when the job was <b>Created</b>, as well as the <b>Due Date</b> / <b>Time</b>  to receive system alerts. You can also assign a <b>Technician</b> to the job, as well as a <b>Salesperson</b> and, in simPRO Enterprise, <b>Manager</b> if the relevant employees have been designated  in their employee card files.</p>
+                        <p>To manually move the job to a different <b>Stage</b> or change the <b>Status</b>, select as applicable from the drop-down list. Alternatively, select <b>Auto Adjust</b> to use automatic triggers.</p>
+                        <p>Search and select to apply project <b>Tags</b> to the job, and select a different <b>Cost Centre</b> if desired. You can also enter information in <b>Custom Fields</b> as set up in <b>System &gt; Setup &gt; System Setup &gt; Custom Fields &gt; Leads, Quotes, Jobs &amp; Recurring</b>.</p>
+                        <p class="Infotip">Jobs will appear twice in Connect if you both assign and schedule the applicable technician.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown MadCap:conditions="Default.Phase 1">
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Create-a-contractor-work-order"></a>
+                            <img src="../../Resources/Images/Icons/icon-enterprise-only-sm.png" class="enterpriseicon" title="This feature is only available in simPRO Enterprise" alt="Enterprise Only" /> Create a contractor work order</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Go to <b>Details &gt; Contractors</b> in a service job to create a contractor work order. Once the contractor has completed and invoiced the job, you can record the invoice in simPRO.</p>
+                        <p>Alternatively, you can schedule a contractor in the <b>Job Setup</b> page or <b>Schedule</b> tab to automatically create a work order with the scheduled hours automatically applied.</p>
+                        <p class="Infotip">If the contractor works for an hourly rate, this should be defined in the Rates tab of the contractor card file.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Enterprise">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Create-a-contractor-work-order"></a>Create a contractor work order</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Go to <b>Details &gt; Contractors</b> in a service job to create a contractor work order. Once the contractor has completed and invoiced the job, you can record the invoice in simPRO.</p>
+                <p>Alternatively, you can schedule a contractor in the <b>Job Setup</b> page or <b>Schedule</b> tab to automatically create a work order with the scheduled hours automatically applied.</p>
+                <p class="Infotip">If the contractor works for an hourly rate, this should be defined in the Rates tab of the contractor card file.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead><a name="manage-parts-and-labour"></a>
+                <MadCap:dropDownHotspot>Manage parts and labour in a service job</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Go to <b>Parts &amp; Labour &gt; Billable</b> to manage all billable and non-billable parts and labour in a service job. You can <MadCap:xref href="#add-a-service-fee">Add a service fee</MadCap:xref>, <MadCap:xref href="#Add-catalogue-items-pre-builds-take-off-templates">Add catalogue items, pre-builds and take off templates</MadCap:xref> (take off templates are only available in simPRO Enterprise), <MadCap:xref href="#Create-and-add-one-off-items">Create and add one off Items</MadCap:xref>, and <MadCap:xref href="#Manage-labour-in-a-service-job">Manage labour in a service job</MadCap:xref>. In simPRO Enterprise, you can also link a supplier quote to the job by selecting a <b>Supplier</b> and <b>Supplier Quote</b>, then clicking <b>Apply</b>.</p>
+                <p>In the <b>Parts</b> table, you can adjust the estimated <b>Time</b> for an item, and in simPRO Enterprise, you can also select a <b>Fit Time</b> multiplier. When adjusting <b>Time</b> for items, remember this will affect the <b>Estimated Time</b> and <b>Time Billed</b> in the <b>Labour</b> table.</p>
+                <p>You can adjust the <b>Price</b>, <b>Markup</b>, <b>Sell Price</b> and <b>Qty</b> of items. To reset the <b>Price</b>, select the check box or click <b>Options &gt; Reset Pricing</b>.</p>
+                <p>Clicking <b>Options</b> will also allow you to open and edit an item, remove it, change the tax code or make it non-billable.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Service Jobs - parts table.png" alt="A screenshot of the Billable Parts table in a service job." class="border" />
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="add-a-service-fee"></a>Add a service fee</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>In simPRO, a service fee is an additional fee you charge on a job, such as a call-out fee, with or without labour included. Service fees set as a default in <b>System Setup &gt; Labour &gt; Service Fees</b> or the customer card file will be automatically added to a service job in <b>Details &gt; Parts &amp; Labour &gt; Parts</b>.</p>
+                        <p>To add a service fee to a service job:</p>
+                        <ol>
+                            <li>Access the desired job.</li>
+                            <li>Go to <b>Parts &amp; Labour &gt; Billable</b>.</li>
+                            <li>Select a <b>Call out / Service Fee</b>, then click <b>Add</b>.</li>
+                            <li>In the <b>Parts</b> table, adjust the <b>Time</b>, <b>Markup</b> / <b>Sell Price</b> and <b>Qty</b> of the service fee.</li>
+                            <li>Click <b>Options</b> to remove the fee, reset pricing, change the tax code or make the fee non-billable.</li>
+                            <li>Click <b>Save</b> or <b>Finish</b>.</li>
+                        </ol>
+                        <p>Click <b>Options &gt; Remove Item</b> to remove a service fee from a service job. Alternatively, select the service fee check box, then click <b>Remove</b> under the table.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Add-catalogue-items-pre-builds-take-off-templates"></a>Add catalogue items, pre-builds and take off templates</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To add catalogue items, pre-builds, and, in simPRO Enterprise, take off templates to a service job:</p>
+                        <ol>
+                            <li>Access the desired job.</li>
+                            <li>Go to <b>Parts &amp; Labour &gt; Catalogue / Pre-Builds / Take Off</b>.</li>
+                            <li>Locate the desired  items in the applicable <b>Groups</b> and / or <b>Subgroups</b>.</li>
+                            <li>Within each group / subgroup, enter the desired quantity per item, then click <b>Add Items</b>.<ul><li style="font-weight: normal;">Alternatively, click <b>Create Pre-Build / Create Item</b> to create a new pre-build / catalogue item.</li></ul></li>
+                            <li style="font-weight: bold;"><span style="font-weight: normal;">Click </span><b>Billable </b><span style="font-weight: normal;">to </span>
+                            </li>
+                            <li>Click <b>Billable </b>to <MadCap:xref href="#manage-parts-and-labour">Manage parts and labour in a service job</MadCap:xref> as normal.</li>
+                            <ul>
+                                <li>Click <b>Options &gt; Edit Pre-Build On Job</b> to adjust the materials in the pre-build only in that job. The original pre-build quantity will not be affected.</li>
+                            </ul>
+                            <li>Click <b>Save</b> or <b>Finish</b>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Create-and-add-one-off-items"></a>Create and add one off Items</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Create one off items to cost non-catalogue expenses such as parking, government charges, and custom-engineered tools to a service job.</p>
+                        <p>To create a one off item in a service job:</p>
+                        <ol>
+                            <li>Access the desired job, then go to <b>Parts &amp; Labour &gt; One Off Items</b>.</li>
+                            <li>Click <b>Add One Off Item</b>.</li>
+                            <li>Select the item <b>Type</b>.</li>
+                            <li>Select <b>Billable</b> to add the item to the customer invoice.</li>
+                            <li>Select <b>Inventory Item</b> to be able to order and track the item as you Manage stock within a service job.</li>
+                            <li>Enter a detailed item <b>Description</b>.</li>
+                            <li>Enter the <b>Estimated Cost</b> and <b>Markup %</b> / <b>Sell Price</b>.<ul><li>If the item has associated labour, enter an <b>Estimated Time</b> in minutes.</li></ul></li>
+                            <li>Enter the required <b>Quantity</b>.</li>
+                            <li>Select a <b>Sales Tax Code.</b></li>
+                            <li>Click <b>Finish</b>.</li>
+                            <li>Click <b>Billable </b>to <MadCap:xref href="#manage-parts-and-labour">Manage parts and labour in a service job</MadCap:xref> as normal.</li>
+                            <li>Click <b>Save</b> or <b>Finish</b>.</li>
+                        </ol>
+                        <p class="Infotip">If the actual cost of an item becomes known while a job is in progress, go to <b>Parts &amp; Labour &gt; One Off Items</b> in the desired job, then enter the <b>Actual Cost</b> and the <b>Actual Cost Date</b> upon which the cost was incurred.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Manage-labour-in-a-service-job"></a>Manage labour in a service job</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>A labour rate that has been marked as default in the customer card file will be automatically selected in the <b>Labour</b> table when the job is created. To add a labour rate, select as desired from the <b>Labour</b> drop-down list, then click <b>Add</b>. You can then adjust the <b>Markup</b>, <b>Sell Price</b> and <b>Time</b> as desired.</p>
+                        <p>You can also adjust labour automatically to be based on hours added when you <MadCap:xref href="#Schedule-tab">Schedule a service job from the Schedule tab</MadCap:xref>. If the quantity of hours scheduled is different to the quantity of hours being billed in <b>Parts &amp; Labour</b>, or the scheduled labour rate type is different to the labour rate being billed to the customer, you will be prompted to update the billable labour from the <b>Schedule</b> tab.</p>
+                        <p>Click <b>Options</b> on a labour rate to remove it or change the tax code if desired.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/Service Jobs - add labour.png" alt="A screenshot of the Billable Labour table in a service job." class="border" />
+                        </p>
+                        <p class="Infotip">You need to assign labour rates in the customer card file to add them to a job for the customer.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Manage-stock"></a>Manage stock within a service job</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Go to <b>Stock &gt; All</b> in a service job to manage all required or allocated stock items. You can filter stock items according to <b>Storage Location</b> (storage device), or alternatively, perform a local search by entering the part number, description or search terms, then clicking <b>Search</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Service Jobs - manage stock.png" alt="A screenshot of stock items assigned to a service job." class="border" />
+                </p>
+                <p>In <b>Stock &gt; Required</b>, you can manage required items that have not yet been ordered or allocated from stock. These are items that have been added as you <MadCap:xref href="#manage-parts-and-labour">Manage parts and labour in a service job</MadCap:xref>. </p>
+                <p>In <b>Stock &gt; Allocated</b>, manage items that have been assigned to the job. This is particularly useful for adjusting overallocation of stock.</p>
+                <p>Click the <b>black arrows</b> or enter quantities in the <b>Assigned</b> column to adjust quantities assigned to the service job. You cannot assign more items than are <b>Required</b>. When you have finished making changes, click <b>Update Stock &gt; Save</b>. Then, go to <b>Billable &gt; Parts</b> to ensure your changes have been reflected.</p>
+                <p class="Infotip">To view, print, email or attach a list of all stock items assigned to a service job during a selected date range, go to <b>Details &gt; Forms</b> and select <b>Picking Slip</b> from the <b>Form</b> drop-down list.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Allocate-stock"></a>Allocate stock items</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To allocate stock items to a service job:</p>
+                        <ol>
+                            <li>Access the desired job, then go to <b>Stock &gt; In Stock</b>.<ul><li>Alternatively, access the desired job, then go to <b>Parts &amp; Labour &gt; Stock</b>.</li></ul></li>
+                            <li>Click the appropriate storage device.</li>
+                            <li>Locate and enter quantities for the desired items, then click <b>Add Items</b>.</li>
+                            <li>Click <b>Billable </b>to <MadCap:xref href="#manage-parts-and-labour">Manage parts and labour in a service job</MadCap:xref> as normal.</li>
+                            <li>Click <b>Save</b> or <b>Finish</b>.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Raise-a-PO"></a>Raise a purchase order within a service job</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>To raise a purchase order within a service job:</p>
+                        <ol>
+                            <li>Access the desired job, then go to <b>Stock &gt; Order</b>.</li>
+                            <li>Under <b>Purchase Type</b>, select:<ul><li><b>Blank</b> to order an item not defined in the job.</li><li><b>Stock Still Required</b> to raise a purchase order based on items in <b>Stock &gt; Required</b> that have already been specified for the job from a quote.</li><li><b>Purchase Order Number</b> to raise a blank purchase order to be updated with items prior to receipting the supplier invoice.</li></ul></li>
+                            <li>In simPRO Enterprise, select a <b>Purchasing Stage</b> and <b>Purchase Currency</b> if applicable.</li>
+                            <li>Select whether you wish to base <b>Purchase Prices</b> on the supplier or job.</li>
+                            <li>Click <b>Create Purchase Order</b>.</li>
+                        </ol>
+                        <p>Once you have created a <b>Blank</b> or <b>Stock Still Required</b> purchase order, you need to select the appropriate <b>PO Type</b> to order items:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/simPRO-Definition-List-Table.css');" class="TableStyle-Definition_List_table" cellspacing="0">
+                            <col class="TableStyle-Definition_List_table-Column-Column1" style="width: 154px;" />
+                            <col class="TableStyle-Definition_List_table-Column-Column2" />
+                            <tbody>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">From Catalogue</td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select <b>Pre-Build</b> components or <b>Catalogue</b> items. You can then return to the <b>Order</b> to select a different <b>Supplier</b>, as well as edit <b>Quantity</b> and <b>Pricing</b>. </p>
+                                        <p>You can also click <b>Show Cheapest Supplier / Show Cheapest Order</b> if you have more than one supplier linked to an item.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyE-Column1-Body1">From Description</td>
+                                    <td class="TableStyle-Definition_List_table-BodyD-Column2-Body1">
+                                        <p>Select to enter a <b>Description</b> and purchase <b>Amount</b> for the required item(s). As quantities and stock names cannot be specified for the system, you cannot partially receipt the order.</p>
+                                        <p>Leave the <b>Inventory Item</b> check box clear to ensure the order does not impact your stock levels in simPRO.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Definition_List_table-Body-Body1">
+                                    <td class="TableStyle-Definition_List_table-BodyB-Column1-Body1">From Item Entry</td>
+                                    <td class="TableStyle-Definition_List_table-BodyA-Column2-Body1">Select to order items not yet created or imported in the catalogue by manually entering the <b>Part No</b>, <b>Stock Name</b>, <b>Quantity</b> and <b>Price</b>. These would most likely be items you are unlikely to purchase again.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Once you have selected the <b>PO Type</b>, you need to select the <b>Storage Device</b>, enter <b>Optional</b> information, and enter <b>Supplier Notes</b> and <b>Private Notes</b> or select a script to specify delivery information. In simPRO Enterprise, you can also select a purchasing <b>Stage</b>.</p>
+                        <p>
+                            <img src="../../Resources/Images/Images/Create a new catalogue order.png" alt="A screenshot of a catalogue purchase order." class="border" />
+                        </p>
+                        <p>When you have finished creating the purchase order, including adding or specifying the required items, click <b>Finish &gt; OK</b>. Alternatively, click a purchase order in the confirmation box to exit the job and access the purchase order.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Email-a-job-form"></a>Email a job form to the customer</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Email job forms to the customer using the form templates assigned in <b>System &gt; Setup &gt; Forms Setup &gt; Job &gt; Forms</b>. You can also select and customise a <b>Job Detail Form</b> to send to the customer. If you need to email job cards to your employees, you can also do this here.</p>
+                <p>
+                    <img src="../../Resources/Images/Images/Service Jobs - forms.png" alt="A screenshot of the Forms tab within a service job." class="border" />
+                </p>
+                <p>To email a job form to a customer:</p>
+                <ol>
+                    <li>Access the desired job, then go to <b>Details &gt; Forms</b>.</li>
+                    <li>Select the desired <b>Form</b> depending on the amount of detail you wish to provide the customer.<ul><li>To send an email with no form, select <b>Email Only</b>.</li></ul></li>
+                    <li>Click <b>View</b> to preview and / or print the form.</li>
+                    <li>Select a <b>Primary Contact</b> to address the form to and click to add additional <b>Contacts</b> if desired.<ul><li>Alternatively, you can manually enter email addresses and separate them with a comma.</li></ul></li>
+                    <li>Leave the <b>Subject</b> and <b>Message</b> fields blank to send the email template as defined in your forms setup.<ul><li>Alternatively, enter a <b>Subject</b> and <b>Message</b> to override it.</li></ul></li>
+                    <li>Click <b>Send &gt; OK</b> to confirm.</li>
+                </ol>
+                <p>A pop-up may then appear confirming the email address you have just sent the form to. Click <b>OK</b> to return to the job, then click <b>Attach</b> to attach a copy of the sent form to the job for your records.</p>
+                <p>Go to <strong>System &gt; Setup &gt; Forms Setup &gt; Quote &gt; Display Options &gt; Form Title</strong> to enter a new form title to display on the printable form document. The form will still retain its simPRO default title when you select it from the <strong>Form </strong>drop-down list.</p>
+                <p>You can also enter a new <strong>Estimate Form Title</strong> to display when you select <strong>Show as Estimate</strong> when emailing a quote form.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Advanced"></a>Advanced</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="Infotip">These features are only available in simPRO Enterprise.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Multiple-cost-centres"></a>Create a service job with multiple cost centres</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>You can create service jobs with multiple cost centres if the job requires works performed by different areas in your business. This process depends on whether you have single cost centre jobs enabled in <b>System &gt; Setup &gt; Defaults &gt; System &gt; General &gt; Service Jobs and Quotes</b>.</p>
+                        <p>To create a service job with multiple cost centres when you do <b>not</b> have single cost centre jobs enabled:</p>
+                        <ol>
+                            <li>Create the job as normal.</li>
+                            <li>Click <b>Next</b>.</li>
+                            <li>In <b>Cost Centre List &gt; Primary</b>, select the desired <b>Cost Centres</b> from the drop-down box, then click <b>Add</b>.</li>
+                            <li>​​Once you have built your job you may wish to use the <b>Stage</b>, <b>Budget Status</b> and <b>Name / ID</b> filter options to narrow your selection.</li>
+                            <li>Click <b>Finish</b> to create the job.</li>
+                        </ol>
+                        <p>
+                            <img src="../../Resources/Images/Images/Service Jobs - Multiple cost centres.png" alt="A screenshot of multiple cost centres in a drop-down list to add to a service job." class="border" />
+                        </p>
+                        <p>To create a service job with multiple cost centres when you <b>do</b> have single cost centre jobs enabled:</p>
+                        <ol>
+                            <li>
+                                <MadCap:xref href="#Create-a-service-job">Create a service job </MadCap:xref>as normal.</li>
+                            <li>Click <b>Next</b>.</li>
+                            <li>Click <b>Cost Centres</b> in the breadcrumbs at the top of the job.</li>
+                            <li>In <b>Cost Centre List &gt; Primary</b>, select the desired <b>Cost Centres</b> from the drop-down box, then click <b>Add</b>.<ul><li>Once you have built your job you may wish to use the <b>Stage</b>, <b>Budget Status</b> and <b>Name / ID</b> filter options to narrow your selection.</li></ul></li>
+                            <li>Click <b>Finish</b> to create the job.</li>
+                        </ol>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Create-tasks"></a>Create service job tasks</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Create tasks within service jobs to keep an interactive to-do list for the job. Then when a task is due or has been updated, the assigned technician(s) as well as any other nominated stakeholders, such as customers or employers, will receive email notifications and simPRO alerts.</p>
+                        <p>You can also add task templates created in your <strong>System Setup</strong> to add sets of tasks frequently carried out for certain types of jobs.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><a name="Enable-retention-retainage"></a>Enable retention / retainage</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Retention, also known as retainage in the United States, is the percentage of payment held by the customer to ensure the job is completed to specific standards and to safeguard against defects in workmanship.</p>
+                        <p>You may wish to <MadCap:xref href="Service Quotes.htm#enable-retention-retainage">Enable retention / retainage</MadCap:xref> for a service quote that you plan to merge into a project job. This is performed using the same process as for project quotes and is useful for calculating the amounts to be withheld to assist in invoicing.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

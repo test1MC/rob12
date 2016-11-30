@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Production"
+  Host="ushlp01.simprocloud.net"
+  User="MyAccountId"
+  Password=""
+  Directory=".\"
+  Port="21"
+  ViewUrl="http://ushlp01.simprocloud.net"
+  Type="ftp"
+  ConnectionMode="Passive"></CatapultDestination>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2190" MadCap:lastWidth="1516">
+    <head>
+    </head>
+    <body>
+        <h1>Import Pre-Builds</h1>
+        <h2>Overview</h2>
+        <p>Pre-builds combine materials and labour as a single billable item to appear on jobs, quotes and invoices. You can manually create pre-builds in simPRO, or alternatively, you can save time and reduce data entry errors by importing a pre-build list.</p>
+        <p class="Infotip">You may wish to test the import process with one or two pre-builds before importing an entire list.</p>
+        <h2>Prepare to import pre-builds</h2>
+        <p>To prepare to import pre-builds into simPRO:</p>
+        <ol>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Default.AU">Download, add data to, and edit the <a href="../../Resources/Downloadable/Pre-Build Import Template - AU.csv"><strong>Pre-Build Import Template</strong>.</a></MadCap:conditionalText>
+            </li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Default.NZ">Download, add data to, and edit the <strong><a href="../../Resources/Downloadable/Pre-Build Import Template - NZ.csv"><strong>Pre-Build Import Template</strong></a></strong>.</MadCap:conditionalText>
+            </li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Default.UK">Download, add data to, and edit the <a href="../../Resources/Downloadable/Pre-Build Import Template - NZ.csv"><strong><a href="../../Resources/Downloadable/Pre-Build Import Template - UK.csv"><strong>Pre-Build Import Template</strong></a></strong></a>.</MadCap:conditionalText>
+            </li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Default.US">Download, add data to, and edit the <strong><a href="../../Resources/Downloadable/Pre-Build Import Template - US.csv">Pre-Build Import Template</a></strong>.</MadCap:conditionalText>
+            </li>
+            <li MadCap:conditions="Default.Phase 1">Download, add data to, and edit the <strong>Pre-Build Import Template</strong> for:<ul><li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Pre-Build Import Template - AU.csv">Australia</a></li><li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Pre-Build Import Template - NZ.csv">New Zealand</a></li><li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Pre-Build Import Template - UK.csv">United Kingdom</a></li><li MadCap:conditions="Default.Phase 1"><a href="../../Resources/Downloadable/Pre-Build Import Template - US.csv">United States</a></li></ul></li>
+            <li>Alternatively, you can create your own import list and leave out any fields that do not apply.</li>
+            <li>Separate your data using the same or similar headings as the<strong> Pre-Build Import Template</strong>.</li>
+            <li>Leave out any fields that do not apply to your pre-builds.</li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions.flsnp" />
+            </li>
+            <li>
+                <MadCap:snippetText src="../../Resources/Snippets/SN Import File Save Instructions2.flsnp" />
+            </li>
+            <li>Save your file in your system as a compatible file type: CSV (.csv like the<strong> Pre-Build Import Template</strong> above), text (.txt) or a ZIP file (.zip). Consult your spreadsheet software for file saving instructions if required.</li>
+        </ol>
+        <p>simPRO can recognise and import all the headings and information listed in the <strong>Pre-Build Import Template</strong>. If you entered data in the <strong>Pre-build Price</strong> column, the pre-build will be added as a set price pre-build.</p>
+        <p class="Infotip">Columns for <strong>Group</strong>, <strong>Part No.</strong> and <strong>Pre-build Name </strong>are required for importing. The <strong>Group </strong>and <strong>Pre-build Name</strong> columns must also contain data; this is not necessary for the <strong>Part No. </strong>column.</p>
+        <p class="Infotip">
+            <MadCap:annotation MadCap:createDate="2016-10-18T09:30:19.8979834+10:00" MadCap:creator="Zoe" MadCap:initials="ZO" MadCap:comment="Awaiting Numeric-Only Custom Field feature" MadCap:editor="Zoe" MadCap:editDate="2016-10-18T09:30:38.7305026+10:00">If a pre-build has a numeric-only custom field in simPRO but there is non-numeric data entered in the field in the pre-build list, you will receive an error warning and the import will fail. Numbers must be formatted as specified in <strong>System &gt; Setup &gt; Defaults &gt; System &gt; Number Thousands Separator</strong> /<strong> Negative Number Format</strong> to import successfully.</MadCap:annotation>
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import a pre-build list</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/import-prebuild.png" alt="A screenshot of the Pre-Build Import Settings page." class="border" />
+                </p>
+                <p>To import a pre-build list:</p>
+                <ol>
+                    <li>Go to <strong>Utilities &gt; Import &gt; Pre-Builds</strong>.</li>
+                    <li>Click<strong> Choose File</strong> / <strong>Browse</strong>.</li>
+                    <li>Locate your pre-build import file and click <strong>Open</strong>.</li>
+                    <li>Click <strong>Next</strong>.</li>
+                    <li>Match your pre-build list fields to the fields in simPRO using the drop-down lists.<ul><li>To leave a column out of the import, select <strong>Ignore</strong>.</li></ul></li>
+                    <li>Click <strong>Finish</strong>.</li>
+                </ol>
+                <p>You will be taken to the <strong>Pre-Build Import Summary Page</strong>. It is recommended to review your imported pre-builds to check for errors by going to <strong>Materials &gt; Pre-Builds</strong>.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/import-prebuild-summary.png" alt="A screenshot of thePre-Build Import Summary page." class="border" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Amend pre-build import errors</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If your pre-build import file does not contain the correct data or columns, your pre-builds will not import and you will receive the <strong>Errors found in Import File</strong> error message.</p>
+                <p>To amend this error, you will need to edit the relevant data or columns as appropriate and import the pre-build list again as normal.</p>
+                <p>
+                    <img src="../../Resources/Images/Screenshots/Utilities/import-prebuild-errors.png" alt="A screenshot of errors in the Pre-Build Import Summary page." class="border" />
+                </p>
+                <p>If you receive the <strong>Errors found during processing of Pre-builds </strong>message, the pre-builds have uploaded into simPRO, but you may need to access the relevant pre-build and / or part and make changes as necessary.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>
